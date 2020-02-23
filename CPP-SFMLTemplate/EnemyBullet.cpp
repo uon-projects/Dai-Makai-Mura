@@ -19,13 +19,26 @@ EnemyBullet::~EnemyBullet()
 
 }
 
-void EnemyBullet::Init(std::string TextureName, sf::Vector2f Position, float BulletSpeed)
+void EnemyBullet::Init(std::string TextureName, sf::Vector2f Position, float BulletSpeed, int type)
 {
 //Local Variables
 
 //Main "Init()"
 	EnemyBulletSpeed = BulletSpeed;
 	BulletPosition = Position;
+	classType = type;
+
+	switch (classType)
+	{
+		case 1:
+			EnemyBulletSpeed *= 0.8;
+			break;
+		case 2:
+			EnemyBulletSpeed *= 5;
+			break;
+		default:
+			return;
+	}
 
 	BulletTexture.loadFromFile(TextureName.c_str()); //We Load The Enemy Bullet Texture.
 
@@ -39,6 +52,7 @@ void EnemyBullet::Update(float Speed)
 //Local Variables
 
 //Main "Update()"
+
 	BulletSprite.move(EnemyBulletSpeed * Speed,0);
 }
 

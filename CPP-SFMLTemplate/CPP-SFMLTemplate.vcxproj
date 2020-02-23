@@ -82,7 +82,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="EnemyBullet.cpp" />
+    <ClCompile Include="EnemyCharacter.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="MainCharacter.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="EnemyBullet.h" />
+    <ClInclude Include="EnemyCharacter.h" />
+    <ClInclude Include="MainCharacter.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

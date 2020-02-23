@@ -11,7 +11,7 @@ class EnemyBullet
 public:
 	EnemyBullet();
 	~EnemyBullet();
-	void Init(std::string TextureName, sf::Vector2f Position, float BulletSpeed);
+	void Init(std::string TextureName, sf::Vector2f Position, float BulletSpeed, int type);
 	void Update(float Speed);
 	sf::Sprite GetSprite();
 
@@ -20,4 +20,5 @@ private:
 	sf::Sprite BulletSprite;
 	sf::Vector2f BulletPosition;
 	float EnemyBulletSpeed;
+	int classType;
 };

@@ -39,7 +39,7 @@ void EnemyCharacter::Update(float Speed)
 //Local Variables
 
 //Main "Update()"
-	EnemyCharacterSprite.move(EnemyCharacterMovingSpeed * Speed,0);
+	EnemyCharacterSprite.move(EnemyCharacterMovingSpeed * Speed/3,0);
 }
 
 sf::Sprite EnemyCharacter::GetSprite()
