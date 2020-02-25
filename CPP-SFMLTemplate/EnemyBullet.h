@@ -13,12 +13,15 @@ public:
 	~EnemyBullet();
 	void Init(std::string TextureName, sf::Vector2f Position, float BulletSpeed, int type);
 	void Update(float Speed);
-	sf::Sprite GetSprite();
+	sf::RectangleShape GetSprite();
+	bool decreaseLife();
 
 private:
 	sf::Texture BulletTexture;
-	sf::Sprite BulletSprite;
+	sf::RectangleShape BulletSprite;
+	sf::Vector2u BulletSize;
 	sf::Vector2f BulletPosition;
 	float EnemyBulletSpeed;
 	int classType;
+	int lifes;
 };

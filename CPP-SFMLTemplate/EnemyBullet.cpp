@@ -32,19 +32,34 @@ void EnemyBullet::Init(std::string TextureName, sf::Vector2f Position, float Bul
 	{
 		case 1:
 			EnemyBulletSpeed *= 0.8;
+			BulletTexture.loadFromFile(TextureName.c_str());
+			BulletSize = BulletTexture.getSize();
+			BulletSize.x /= 10;
+			BulletSize.y /= 5;
+			lifes = 1;
 			break;
 		case 2:
-			EnemyBulletSpeed *= 5;
+			EnemyBulletSpeed *= 2;
+			BulletTexture.loadFromFile(TextureName.c_str());
+			BulletSize = BulletTexture.getSize();
+			BulletSize.x /= 11;
+			BulletSize.y /= 6;
+			lifes = 2;
 			break;
 		default:
 			return;
 	}
 
-	BulletTexture.loadFromFile(TextureName.c_str()); //We Load The Enemy Bullet Texture.
+	BulletPosition.y += 30;
+	BulletPosition.x += 5;
 
-	BulletSprite.setTexture(BulletTexture); //We Create The Sprite For The Emeny Bullet & We Attach The Texture.
+	BulletSprite.setSize(sf::Vector2f(60, 110));
+	BulletSprite.setTexture(&BulletTexture);
+	BulletSprite.setTextureRect(sf::IntRect(BulletSize.x*0, BulletSize.y*0, BulletSize.x, BulletSize.y));
 	BulletSprite.setPosition(BulletPosition);
-	BulletSprite.setOrigin(BulletTexture.getSize().x / 2,BulletTexture.getSize().y / 2);
+	BulletSprite.setScale(sf::Vector2f(0.6, 0.6));
+	BulletSprite.setRotation(-90);
+	BulletSprite.setOrigin(BulletSize.x / 2, BulletSize.y / 2);
 }
 
 void EnemyBullet::Update(float Speed)
@@ -56,11 +71,17 @@ void EnemyBullet::Update(float Speed)
 	BulletSprite.move(EnemyBulletSpeed * Speed,0);
 }
 
-sf::Sprite EnemyBullet::GetSprite()
+sf::RectangleShape EnemyBullet::GetSprite()
 {
 //Local Variables
 
 //Main "GetSprite()"
 
 return BulletSprite;
+}
+
+bool EnemyBullet::decreaseLife()
+{
+	lifes--;
+	return lifes == 0;
 }

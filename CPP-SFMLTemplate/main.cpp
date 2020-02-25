@@ -65,7 +65,7 @@ void Init()
 	}
 	BackgroundSprite.setTexture(BackgroundTexture);
 
-	GameCharacter.Init("Assets/MainCharacter.png",sf::Vector2f(TheGameWindow_CurrentDimensions.x * 0.25f, TheGameWindow_CurrentDimensions.y * 0.5f), 200);
+	GameCharacter.Init("Assets/main_character_vector.png",sf::Vector2f(TheGameWindow_CurrentDimensions.x * 0.25f, TheGameWindow_CurrentDimensions.y * 0.5f), 200);
 	srand((int)time(0));
 
 }
@@ -95,6 +95,14 @@ void InputListener()
 		{
 			ShootBullets(2);
 		}
+		else if (event.key.code == sf::Keyboard::Left)
+		{
+			GameCharacter.Move(-20.0f);
+		}
+		else if (event.key.code == sf::Keyboard::Right)
+		{
+			GameCharacter.Move(20.0f);
+		}
 	}
 }
 
@@ -116,7 +124,7 @@ void Draw()
 
 void Update(float Speed)
 {
-	int i;
+	int i, j;
 
 	GameCharacter.Update(Speed);
 	CurrentTime += Speed;
@@ -125,11 +133,11 @@ void Update(float Speed)
 		SpawnEnemy();
 		PreviousTime = CurrentTime;
 	}
-	for (i = 0; i < EnemyCharacters.size(); i++) //We Update The Enemy Characters.
+	for (i = 0; i < EnemyCharacters.size(); i++)
 	{
 		EnemyCharacter *Enemies = EnemyCharacters[i];
 		Enemies -> Update(Speed);
-		if ((Enemies -> GetSprite().getPosition().x) < 0)
+		if ((Enemies -> GetSprite().getPosition().x + Enemies -> GetSprite().getGlobalBounds().width) < 0)
 		{
 			EnemyCharacters.erase(EnemyCharacters.begin() + i);
 			delete(Enemies);
@@ -143,6 +151,29 @@ void Update(float Speed)
 		{
 			EnemyBullets.erase(EnemyBullets.begin() + i);
 			delete(Bullets);
+		}
+	}
+	for (i = 0; i < EnemyCharacters.size(); i++)
+	{
+		EnemyCharacter *Enemies = EnemyCharacters[i];
+		bool killed = false;
+		for (j = 0; j < EnemyBullets.size(); j++)
+		{
+			EnemyBullet* Bullets = EnemyBullets[j];
+			if(Enemies -> GetSprite().getGlobalBounds().intersects(Bullets -> GetSprite().getGlobalBounds()))
+			{
+				killed = true;
+				if(Bullets->decreaseLife())
+				{
+					EnemyBullets.erase(EnemyBullets.begin() + j);
+					delete(Bullets);
+					break;
+				}
+			}
+		}
+		if(killed) {
+			EnemyCharacters.erase(EnemyCharacters.begin() + i);
+			delete(Enemies);
 		}
 	}
 }
@@ -181,8 +212,23 @@ void SpawnEnemy()
 void ShootBullets(int type)
 {
 
+	String bulletAssest;
+	
+	switch (type)
+	{
+		case 1:
+			bulletAssest = "Assets/fireball_vector.png";
+			break;
+		case 2:
+			bulletAssest = "Assets/iceball_vector.png";
+			break;
+		default:
+			bulletAssest = "Assets/EnemyBullet.png";
+			return;
+	}
+
 	EnemyBullet* Bullets = new EnemyBullet();
-	Bullets -> Init("Assets/EnemyBullet.png",GameCharacter.GetSprite().getPosition(),400.0f, type);
+	Bullets -> Init(bulletAssest, GameCharacter.GetSprite().getPosition(), 400.0f, type);
 	EnemyBullets.push_back(Bullets);
 
 }
