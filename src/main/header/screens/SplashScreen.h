@@ -23,8 +23,15 @@
 
 // Created by TeodorHMX1 on 17/03/2020.
 
+#include <SFML/Graphics.hpp>
+
+using namespace sf;
+
 class SplashScreen
 {
+
+public:
+	Sprite zeoFlowSprite;
 
 public:
 	SplashScreen();

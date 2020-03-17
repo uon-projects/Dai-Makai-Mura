@@ -23,18 +23,30 @@
 
 // Created by TeodorHMX1 on 17/03/2020.
 
-#include <SFML/Graphics/RenderWindow.hpp>
+#include <SFML/Graphics.hpp>
 #include "../../header/screens/SplashScreen.h"
 
+using namespace sf;
+
 SplashScreen::SplashScreen()
-= default;
+{
+
+}
 
 SplashScreen::~SplashScreen()
 = default;
 
-void SplashScreen::draw(sf::RenderWindow &window)
+void SplashScreen::draw(RenderWindow &window)
 {
 
-
+	//the background for the splash screen
+	RectangleShape splashScreenBg;
+	splashScreenBg.setSize(Vector2f(window.getSize().x, window.getSize().y));
+	Color color(16, 16, 16);
+	splashScreenBg.setFillColor(color);
+	window.draw(splashScreenBg);
+	zeoFlowSprite.setScale(0.15, 0.15);
+	zeoFlowSprite = zfSFML.spriteInMiddle(zeoFlowSprite, window.getSize().x, window.getSize().y);
+	window.draw(zeoFlowSprite);
 
 }

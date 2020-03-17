@@ -1,5 +1,3 @@
-#pragma clang diagnostic push
-#pragma ide diagnostic ignored "cert-err58-cpp"
 /*
  * Copyright (c) 2020 Teodor G. (TeodorHMX1)
  *
@@ -125,5 +123,3 @@ void draw()
 	}
 
 }
-
-#pragma clang diagnostic pop
