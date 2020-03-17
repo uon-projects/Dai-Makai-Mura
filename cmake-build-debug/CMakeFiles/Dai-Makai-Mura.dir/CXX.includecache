@@ -6,27 +6,23 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/src/main/cpp/App.cpp
-../header/App.h
-C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/src/main/header/App.h
-
-C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/src/main/cpp/Utils.cpp
-../header/Utils.h
-C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/src/main/header/Utils.h
-
-C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/src/main/header/App.h
-Utils.h
-C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/src/main/header/Utils.h
-
-C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/src/main/header/Utils.h
-
-C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/src/main/main.cpp
-iostream
--
+C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/src/main/cpp/screen/SplashScreen.cpp
 SFML/Graphics.hpp
 -
-header/App.h
-C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/src/main/header/App.h
+../../header/screen/SplashScreen.h
+C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/src/main/header/screen/SplashScreen.h
+
+C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/src/main/header/library/Loader.h
+SFML/Graphics.hpp
+-
+list
+-
+
+C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/src/main/header/screen/SplashScreen.h
+SFML/Graphics.hpp
+-
+../../header/library/Loader.h
+C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/src/main/header/library/Loader.h
 
 C:/mingw32/include/SFML/Config.hpp
 TargetConditionals.h

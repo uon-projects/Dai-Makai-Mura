@@ -26,6 +26,7 @@
 #include <iostream>
 #include <SFML/Graphics.hpp>
 #include "header/App.h"
+#include "header/screen/SplashScreen.h"
 
 using namespace std;
 using namespace sf;
@@ -34,11 +35,13 @@ using namespace sf;
 #define WindowY 500
 
 App mApp;
+SplashScreen mSplashScreen;
 Vector2f theGameWindow_currentDimensions(WindowX, WindowY); // NOLINT(cert-err58-cpp)
 Vector2f theGameWindow_perspectiveDimensions(WindowX, WindowY); // NOLINT(cert-err58-cpp)
 RenderWindow theGameWindow( // NOLINT(cert-err58-cpp)
 		VideoMode(theGameWindow_currentDimensions.x, theGameWindow_currentDimensions.y),
 		"Dai Makai-Mura");
+Clock inGameClock;
 
 void init();
 
@@ -78,6 +81,8 @@ int main()
 void init()
 {
 
+	inGameClock.restart();
+
 }
 
 void inputListener()
@@ -106,7 +111,15 @@ void draw()
 	switch (mApp.getCurrentScreen()) {
 		case splash:
 		{
-
+			float sec = inGameClock.getElapsedTime().asSeconds();
+			if (sec < 2.0)
+			{
+				mSplashScreen.draw(theGameWindow);
+			}
+			else
+			{
+				mApp.setCurrentScreen(menu);
+			}
 		}
 		case menu:
 		{
