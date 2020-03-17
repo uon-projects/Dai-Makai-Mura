@@ -120,6 +120,7 @@ void draw()
 				mSplashScreen.draw(theGameWindow);
 			} else
 			{
+				inGameClock.restart();
 				mApp.setCurrentScreen(menu);
 			}
 		}
