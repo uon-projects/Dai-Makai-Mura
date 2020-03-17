@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/grigo/CLionProjects/untitled1
+# Install script for directory: C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/grigo/CLionProjects/untitled1/cmake-build-release/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/cmake-build-release/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
