@@ -35,8 +35,8 @@ using namespace sf;
 Vector2f theGameWindow_currentDimensions(WindowX, WindowY); // NOLINT(cert-err58-cpp)
 Vector2f theGameWindow_perspectiveDimensions(WindowX, WindowY); // NOLINT(cert-err58-cpp)
 RenderWindow theGameWindow( // NOLINT(cert-err58-cpp)
-        VideoMode(theGameWindow_currentDimensions.x, theGameWindow_currentDimensions.y),
-        "Dai Makai-Mura");
+		VideoMode(theGameWindow_currentDimensions.x, theGameWindow_currentDimensions.y),
+		"Dai Makai-Mura");
 
 void init();
 
@@ -48,40 +48,40 @@ void draw();
 
 int main()
 {
-    Clock clockTime;
-    Time speed;
+	Clock clockTime;
+	Time speed;
 
-    theGameWindow.setFramerateLimit(60);
-    init();
+	theGameWindow.setFramerateLimit(60);
+	init();
 
-    while (theGameWindow.isOpen())
-    {
-        inputListener();
+	while (theGameWindow.isOpen())
+	{
+		inputListener();
 
-        speed = clockTime.restart();
-        update(speed.asSeconds());
+		speed = clockTime.restart();
+		update(speed.asSeconds());
 
-        theGameWindow.clear();
+		theGameWindow.clear();
 
-        draw();
+		draw();
 
-        theGameWindow.display();
-    }
+		theGameWindow.display();
+	}
 
-    return 0;
+	return 0;
 }
 
 void init()
 {
-    Event event{};
+	Event event{};
 
-    while (theGameWindow.pollEvent(event))
-    {
-        if (event.key.code == Keyboard::Escape || event.type == Event::Closed)
-        {
-            theGameWindow.close();
-        }
-    }
+	while (theGameWindow.pollEvent(event))
+	{
+		if (event.key.code == Keyboard::Escape || event.type == Event::Closed)
+		{
+			theGameWindow.close();
+		}
+	}
 
 }
 
