@@ -1,5 +1,9 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Dai-Makai-Mura.dir/src/main/cpp/main.cpp.obj"
+  "CMakeFiles/Dai-Makai-Mura.dir/src/main/cpp/App.cpp.obj"
+  "CMakeFiles/Dai-Makai-Mura.dir/src/main/cpp/Utils.cpp.obj"
+  "CMakeFiles/Dai-Makai-Mura.dir/src/main/cpp/library/Loader.cpp.obj"
+  "CMakeFiles/Dai-Makai-Mura.dir/src/main/cpp/screen/SplashScreen.cpp.obj"
+  "CMakeFiles/Dai-Makai-Mura.dir/src/main/main.cpp.obj"
   "Dai-Makai-Mura.exe"
   "Dai-Makai-Mura.exe.manifest"
   "Dai-Makai-Mura.pdb"

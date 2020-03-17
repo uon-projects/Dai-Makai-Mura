@@ -56,28 +56,92 @@ include CMakeFiles/Dai-Makai-Mura.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Dai-Makai-Mura.dir/flags.make
 
-CMakeFiles/Dai-Makai-Mura.dir/src/main/cpp/main.cpp.obj: CMakeFiles/Dai-Makai-Mura.dir/flags.make
-CMakeFiles/Dai-Makai-Mura.dir/src/main/cpp/main.cpp.obj: CMakeFiles/Dai-Makai-Mura.dir/includes_CXX.rsp
-CMakeFiles/Dai-Makai-Mura.dir/src/main/cpp/main.cpp.obj: ../src/main/cpp/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\grigo\Desktop\BSc Games Programming\Year 1\Dai-Makai-Mura\cmake-build-release\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Dai-Makai-Mura.dir/src/main/cpp/main.cpp.obj"
-	C:\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Dai-Makai-Mura.dir\src\main\cpp\main.cpp.obj -c "C:\Users\grigo\Desktop\BSc Games Programming\Year 1\Dai-Makai-Mura\src\main\cpp\main.cpp"
+CMakeFiles/Dai-Makai-Mura.dir/src/main/main.cpp.obj: CMakeFiles/Dai-Makai-Mura.dir/flags.make
+CMakeFiles/Dai-Makai-Mura.dir/src/main/main.cpp.obj: CMakeFiles/Dai-Makai-Mura.dir/includes_CXX.rsp
+CMakeFiles/Dai-Makai-Mura.dir/src/main/main.cpp.obj: ../src/main/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\grigo\Desktop\BSc Games Programming\Year 1\Dai-Makai-Mura\cmake-build-release\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Dai-Makai-Mura.dir/src/main/main.cpp.obj"
+	C:\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Dai-Makai-Mura.dir\src\main\main.cpp.obj -c "C:\Users\grigo\Desktop\BSc Games Programming\Year 1\Dai-Makai-Mura\src\main\main.cpp"
 
-CMakeFiles/Dai-Makai-Mura.dir/src/main/cpp/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Dai-Makai-Mura.dir/src/main/cpp/main.cpp.i"
-	C:\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\grigo\Desktop\BSc Games Programming\Year 1\Dai-Makai-Mura\src\main\cpp\main.cpp" > CMakeFiles\Dai-Makai-Mura.dir\src\main\cpp\main.cpp.i
+CMakeFiles/Dai-Makai-Mura.dir/src/main/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Dai-Makai-Mura.dir/src/main/main.cpp.i"
+	C:\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\grigo\Desktop\BSc Games Programming\Year 1\Dai-Makai-Mura\src\main\main.cpp" > CMakeFiles\Dai-Makai-Mura.dir\src\main\main.cpp.i
 
-CMakeFiles/Dai-Makai-Mura.dir/src/main/cpp/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Dai-Makai-Mura.dir/src/main/cpp/main.cpp.s"
-	C:\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\grigo\Desktop\BSc Games Programming\Year 1\Dai-Makai-Mura\src\main\cpp\main.cpp" -o CMakeFiles\Dai-Makai-Mura.dir\src\main\cpp\main.cpp.s
+CMakeFiles/Dai-Makai-Mura.dir/src/main/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Dai-Makai-Mura.dir/src/main/main.cpp.s"
+	C:\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\grigo\Desktop\BSc Games Programming\Year 1\Dai-Makai-Mura\src\main\main.cpp" -o CMakeFiles\Dai-Makai-Mura.dir\src\main\main.cpp.s
+
+CMakeFiles/Dai-Makai-Mura.dir/src/main/cpp/App.cpp.obj: CMakeFiles/Dai-Makai-Mura.dir/flags.make
+CMakeFiles/Dai-Makai-Mura.dir/src/main/cpp/App.cpp.obj: CMakeFiles/Dai-Makai-Mura.dir/includes_CXX.rsp
+CMakeFiles/Dai-Makai-Mura.dir/src/main/cpp/App.cpp.obj: ../src/main/cpp/App.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\grigo\Desktop\BSc Games Programming\Year 1\Dai-Makai-Mura\cmake-build-release\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Dai-Makai-Mura.dir/src/main/cpp/App.cpp.obj"
+	C:\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Dai-Makai-Mura.dir\src\main\cpp\App.cpp.obj -c "C:\Users\grigo\Desktop\BSc Games Programming\Year 1\Dai-Makai-Mura\src\main\cpp\App.cpp"
+
+CMakeFiles/Dai-Makai-Mura.dir/src/main/cpp/App.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Dai-Makai-Mura.dir/src/main/cpp/App.cpp.i"
+	C:\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\grigo\Desktop\BSc Games Programming\Year 1\Dai-Makai-Mura\src\main\cpp\App.cpp" > CMakeFiles\Dai-Makai-Mura.dir\src\main\cpp\App.cpp.i
+
+CMakeFiles/Dai-Makai-Mura.dir/src/main/cpp/App.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Dai-Makai-Mura.dir/src/main/cpp/App.cpp.s"
+	C:\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\grigo\Desktop\BSc Games Programming\Year 1\Dai-Makai-Mura\src\main\cpp\App.cpp" -o CMakeFiles\Dai-Makai-Mura.dir\src\main\cpp\App.cpp.s
+
+CMakeFiles/Dai-Makai-Mura.dir/src/main/cpp/Utils.cpp.obj: CMakeFiles/Dai-Makai-Mura.dir/flags.make
+CMakeFiles/Dai-Makai-Mura.dir/src/main/cpp/Utils.cpp.obj: CMakeFiles/Dai-Makai-Mura.dir/includes_CXX.rsp
+CMakeFiles/Dai-Makai-Mura.dir/src/main/cpp/Utils.cpp.obj: ../src/main/cpp/Utils.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\grigo\Desktop\BSc Games Programming\Year 1\Dai-Makai-Mura\cmake-build-release\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Dai-Makai-Mura.dir/src/main/cpp/Utils.cpp.obj"
+	C:\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Dai-Makai-Mura.dir\src\main\cpp\Utils.cpp.obj -c "C:\Users\grigo\Desktop\BSc Games Programming\Year 1\Dai-Makai-Mura\src\main\cpp\Utils.cpp"
+
+CMakeFiles/Dai-Makai-Mura.dir/src/main/cpp/Utils.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Dai-Makai-Mura.dir/src/main/cpp/Utils.cpp.i"
+	C:\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\grigo\Desktop\BSc Games Programming\Year 1\Dai-Makai-Mura\src\main\cpp\Utils.cpp" > CMakeFiles\Dai-Makai-Mura.dir\src\main\cpp\Utils.cpp.i
+
+CMakeFiles/Dai-Makai-Mura.dir/src/main/cpp/Utils.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Dai-Makai-Mura.dir/src/main/cpp/Utils.cpp.s"
+	C:\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\grigo\Desktop\BSc Games Programming\Year 1\Dai-Makai-Mura\src\main\cpp\Utils.cpp" -o CMakeFiles\Dai-Makai-Mura.dir\src\main\cpp\Utils.cpp.s
+
+CMakeFiles/Dai-Makai-Mura.dir/src/main/cpp/screen/SplashScreen.cpp.obj: CMakeFiles/Dai-Makai-Mura.dir/flags.make
+CMakeFiles/Dai-Makai-Mura.dir/src/main/cpp/screen/SplashScreen.cpp.obj: CMakeFiles/Dai-Makai-Mura.dir/includes_CXX.rsp
+CMakeFiles/Dai-Makai-Mura.dir/src/main/cpp/screen/SplashScreen.cpp.obj: ../src/main/cpp/screen/SplashScreen.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\grigo\Desktop\BSc Games Programming\Year 1\Dai-Makai-Mura\cmake-build-release\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Dai-Makai-Mura.dir/src/main/cpp/screen/SplashScreen.cpp.obj"
+	C:\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Dai-Makai-Mura.dir\src\main\cpp\screen\SplashScreen.cpp.obj -c "C:\Users\grigo\Desktop\BSc Games Programming\Year 1\Dai-Makai-Mura\src\main\cpp\screen\SplashScreen.cpp"
+
+CMakeFiles/Dai-Makai-Mura.dir/src/main/cpp/screen/SplashScreen.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Dai-Makai-Mura.dir/src/main/cpp/screen/SplashScreen.cpp.i"
+	C:\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\grigo\Desktop\BSc Games Programming\Year 1\Dai-Makai-Mura\src\main\cpp\screen\SplashScreen.cpp" > CMakeFiles\Dai-Makai-Mura.dir\src\main\cpp\screen\SplashScreen.cpp.i
+
+CMakeFiles/Dai-Makai-Mura.dir/src/main/cpp/screen/SplashScreen.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Dai-Makai-Mura.dir/src/main/cpp/screen/SplashScreen.cpp.s"
+	C:\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\grigo\Desktop\BSc Games Programming\Year 1\Dai-Makai-Mura\src\main\cpp\screen\SplashScreen.cpp" -o CMakeFiles\Dai-Makai-Mura.dir\src\main\cpp\screen\SplashScreen.cpp.s
+
+CMakeFiles/Dai-Makai-Mura.dir/src/main/cpp/library/Loader.cpp.obj: CMakeFiles/Dai-Makai-Mura.dir/flags.make
+CMakeFiles/Dai-Makai-Mura.dir/src/main/cpp/library/Loader.cpp.obj: CMakeFiles/Dai-Makai-Mura.dir/includes_CXX.rsp
+CMakeFiles/Dai-Makai-Mura.dir/src/main/cpp/library/Loader.cpp.obj: ../src/main/cpp/library/Loader.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\grigo\Desktop\BSc Games Programming\Year 1\Dai-Makai-Mura\cmake-build-release\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Dai-Makai-Mura.dir/src/main/cpp/library/Loader.cpp.obj"
+	C:\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Dai-Makai-Mura.dir\src\main\cpp\library\Loader.cpp.obj -c "C:\Users\grigo\Desktop\BSc Games Programming\Year 1\Dai-Makai-Mura\src\main\cpp\library\Loader.cpp"
+
+CMakeFiles/Dai-Makai-Mura.dir/src/main/cpp/library/Loader.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Dai-Makai-Mura.dir/src/main/cpp/library/Loader.cpp.i"
+	C:\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\grigo\Desktop\BSc Games Programming\Year 1\Dai-Makai-Mura\src\main\cpp\library\Loader.cpp" > CMakeFiles\Dai-Makai-Mura.dir\src\main\cpp\library\Loader.cpp.i
+
+CMakeFiles/Dai-Makai-Mura.dir/src/main/cpp/library/Loader.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Dai-Makai-Mura.dir/src/main/cpp/library/Loader.cpp.s"
+	C:\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\grigo\Desktop\BSc Games Programming\Year 1\Dai-Makai-Mura\src\main\cpp\library\Loader.cpp" -o CMakeFiles\Dai-Makai-Mura.dir\src\main\cpp\library\Loader.cpp.s
 
 # Object files for target Dai-Makai-Mura
 Dai__Makai__Mura_OBJECTS = \
-"CMakeFiles/Dai-Makai-Mura.dir/src/main/cpp/main.cpp.obj"
+"CMakeFiles/Dai-Makai-Mura.dir/src/main/main.cpp.obj" \
+"CMakeFiles/Dai-Makai-Mura.dir/src/main/cpp/App.cpp.obj" \
+"CMakeFiles/Dai-Makai-Mura.dir/src/main/cpp/Utils.cpp.obj" \
+"CMakeFiles/Dai-Makai-Mura.dir/src/main/cpp/screen/SplashScreen.cpp.obj" \
+"CMakeFiles/Dai-Makai-Mura.dir/src/main/cpp/library/Loader.cpp.obj"
 
 # External object files for target Dai-Makai-Mura
 Dai__Makai__Mura_EXTERNAL_OBJECTS =
 
-Dai-Makai-Mura.exe: CMakeFiles/Dai-Makai-Mura.dir/src/main/cpp/main.cpp.obj
+Dai-Makai-Mura.exe: CMakeFiles/Dai-Makai-Mura.dir/src/main/main.cpp.obj
+Dai-Makai-Mura.exe: CMakeFiles/Dai-Makai-Mura.dir/src/main/cpp/App.cpp.obj
+Dai-Makai-Mura.exe: CMakeFiles/Dai-Makai-Mura.dir/src/main/cpp/Utils.cpp.obj
+Dai-Makai-Mura.exe: CMakeFiles/Dai-Makai-Mura.dir/src/main/cpp/screen/SplashScreen.cpp.obj
+Dai-Makai-Mura.exe: CMakeFiles/Dai-Makai-Mura.dir/src/main/cpp/library/Loader.cpp.obj
 Dai-Makai-Mura.exe: CMakeFiles/Dai-Makai-Mura.dir/build.make
 Dai-Makai-Mura.exe: C:/mingw32/lib/libsfml-system.a
 Dai-Makai-Mura.exe: C:/mingw32/lib/libsfml-window.a
@@ -85,7 +149,7 @@ Dai-Makai-Mura.exe: C:/mingw32/lib/libsfml-graphics.a
 Dai-Makai-Mura.exe: CMakeFiles/Dai-Makai-Mura.dir/linklibs.rsp
 Dai-Makai-Mura.exe: CMakeFiles/Dai-Makai-Mura.dir/objects1.rsp
 Dai-Makai-Mura.exe: CMakeFiles/Dai-Makai-Mura.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\grigo\Desktop\BSc Games Programming\Year 1\Dai-Makai-Mura\cmake-build-release\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable Dai-Makai-Mura.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\grigo\Desktop\BSc Games Programming\Year 1\Dai-Makai-Mura\cmake-build-release\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable Dai-Makai-Mura.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Dai-Makai-Mura.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

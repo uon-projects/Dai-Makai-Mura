@@ -18,84 +18,21 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
- *
+ * 
  **/
 
 // Created by TeodorHMX1 on 17/03/2020.
 
-#include <iostream>
-#include <SFML/Graphics.hpp>
+#include <string>
+#include "../../header/library/Loader.h"
 
-using namespace std;
-using namespace sf;
-
-#define WindowX 800
-#define WindowY 500
-
-Vector2f theGameWindow_currentDimensions(WindowX, WindowY); // NOLINT(cert-err58-cpp)
-Vector2f theGameWindow_perspectiveDimensions(WindowX, WindowY); // NOLINT(cert-err58-cpp)
-RenderWindow theGameWindow( // NOLINT(cert-err58-cpp)
-		VideoMode(theGameWindow_currentDimensions.x, theGameWindow_currentDimensions.y),
-		"Dai Makai-Mura");
-
-void init();
-
-void inputListener();
-
-void update(float seconds);
-
-void draw();
-
-int main()
+Sprite Loader::loadSpriteFromTexture(std::string assetPath, std::string assetName, std::string assetExtension)
 {
-	Clock clockTime;
-	Time speed;
-
-	theGameWindow.setFramerateLimit(60);
-	init();
-
-	while (theGameWindow.isOpen())
-	{
-//		inputListener();
-//
-//		speed = clockTime.restart();
-//		update(speed.asSeconds());
-//
-//		theGameWindow.clear();
-//
-//		draw();
-
-		theGameWindow.display();
+	sf::Texture zfTexture;
+	if (!zfTexture.loadFromFile(assetPath + "/" + assetName + "." + assetExtension)) {
+		system("pause");
 	}
-
-	return 0;
-}
-
-void init()
-{
-	Event event{};
-
-	while (theGameWindow.pollEvent(event))
-	{
-		if (event.key.code == Keyboard::Escape || event.type == Event::Closed)
-		{
-			theGameWindow.close();
-		}
-	}
-
-}
-
-void inputListener()
-{
-
-}
-
-void update(float seconds)
-{
-
-}
-
-void draw()
-{
-
+	zfTextures.push_front(zfTexture);
+	sf::Sprite zfSprite(zfTextures.front());
+	return zfSprite;
 }
