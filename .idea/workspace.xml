@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="Dai-Makai-Mura" targetName="Dai-Makai-Mura" />
+    </generated>
+  </component>
+  <component name="CMakeSettings" AUTO_RELOAD="true">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+      <configuration PROFILE_NAME="Release" CONFIG_NAME="Release" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f5136dbc-fa19-4e83-9ace-75ad5814e213" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Dai-Makai-Mura.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Dai-Makai-Mura.dir/objects.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Dai-Makai-Mura.dir/src/main/cpp/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Dai-Makai-Mura.dir/src/main/cpp/main.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Dai-Makai-Mura.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Dai-Makai-Mura.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/cpp/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/cpp/main.cpp" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1ZGjSR3fa7qDIbOjpCwGG3QxmK0" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../clion-sfml-template" />
+    <property name="settings.editor.selected.configurable" value="fileTemplates" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\grigo\CLionProjects\untitled1" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\grigo\CLionProjects\untitled1" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Dai-Makai-Mura" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Dai-Makai-Mura" TARGET_NAME="Dai-Makai-Mura" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Dai-Makai-Mura" RUN_TARGET_NAME="Dai-Makai-Mura">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f5136dbc-fa19-4e83-9ace-75ad5814e213" name="Default Changelist" comment="" />
+      <created>1584472323971</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1584472323971</updated>
+      <workItem from="1584472326082" duration="4317000" />
+      <workItem from="1584477005347" duration="3144000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="137" y="42" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584476226939">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="137" y="42" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.768@0.0.1366.768" timestamp="1584476226939" />
+    <state x="434" y="194" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1584475414986">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="434" y="194" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.768@0.0.1366.768" timestamp="1584475414986" />
+    <state x="463" y="142" key="FileChooserDialogImpl" timestamp="1584478819212">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="463" y="142" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1584478819212" />
+    <state width="1323" height="192" key="GridCell.Tab.0.bottom" timestamp="1584480303056">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1323" height="192" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1584480303056" />
+    <state width="1323" height="192" key="GridCell.Tab.0.center" timestamp="1584480303056">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1323" height="192" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1584480303056" />
+    <state width="1323" height="192" key="GridCell.Tab.0.left" timestamp="1584480303056">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1323" height="192" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1584480303056" />
+    <state width="1323" height="192" key="GridCell.Tab.0.right" timestamp="1584480303056">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1323" height="192" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1584480303056" />
+    <state width="1323" height="238" key="GridCell.Tab.1.bottom" timestamp="1584478456853">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1323" height="238" key="GridCell.Tab.1.bottom/0.0.1366.768@0.0.1366.768" timestamp="1584478456853" />
+    <state width="1323" height="238" key="GridCell.Tab.1.center" timestamp="1584478456853">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1323" height="238" key="GridCell.Tab.1.center/0.0.1366.768@0.0.1366.768" timestamp="1584478456853" />
+    <state width="1323" height="238" key="GridCell.Tab.1.left" timestamp="1584478456853">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1323" height="238" key="GridCell.Tab.1.left/0.0.1366.768@0.0.1366.768" timestamp="1584478456853" />
+    <state width="1323" height="238" key="GridCell.Tab.1.right" timestamp="1584478456853">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1323" height="238" key="GridCell.Tab.1.right/0.0.1366.768@0.0.1366.768" timestamp="1584478456853" />
+    <state x="204" y="9" key="SettingsEditor" timestamp="1584480216421">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="204" y="9" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1584480216421" />
+    <state x="408" y="32" key="refactoring.ChangeSignatureDialog" timestamp="1584477715473">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="408" y="32" key="refactoring.ChangeSignatureDialog/0.0.1366.768@0.0.1366.768" timestamp="1584477715473" />
+  </component>
+</project>

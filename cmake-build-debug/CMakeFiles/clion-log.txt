@@ -1,0 +1,5 @@
+"C:\Program Files\JetBrains\CLion 2019.3.4\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" "C:\Users\grigo\Desktop\BSc Games Programming\Year 1\Dai-Makai-Mura"
+-- Found SFML 2.4.0 in C:/mingw32/include
+-- Configuring done
+-- Generating done
+-- Build files have been written to: C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/cmake-build-debug
