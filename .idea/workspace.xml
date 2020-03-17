@@ -13,9 +13,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f5136dbc-fa19-4e83-9ace-75ad5814e213" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/cpp/app.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Dai-Makai-Mura.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Dai-Makai-Mura.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Dai-Makai-Mura.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Dai-Makai-Mura.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Dai-Makai-Mura.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Dai-Makai-Mura.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Dai-Makai-Mura.dir/objects1.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Dai-Makai-Mura.dir/objects1.rsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Dai-Makai-Mura.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Dai-Makai-Mura.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Dai-Makai-Mura.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Dai-Makai-Mura.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Dai-Makai-Mura.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Dai-Makai-Mura.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Dai-Makai-Mura.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Dai-Makai-Mura.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Dai-Makai-Mura.dir/objects1.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Dai-Makai-Mura.dir/objects1.rsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Dai-Makai-Mura.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Dai-Makai-Mura.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/cpp/App.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/cpp/App.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/header/App.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/header/App.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/header/App.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/header/app.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -48,8 +66,8 @@
       <recent name="C:\Users\grigo\CLionProjects\untitled1" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\grigo\Desktop\BSc Games Programming\Year 1\Dai-Makai-Mura\src\main" />
       <recent name="C:\Users\grigo\Desktop\BSc Games Programming\Year 1\Dai-Makai-Mura\src\main\header" />
+      <recent name="C:\Users\grigo\Desktop\BSc Games Programming\Year 1\Dai-Makai-Mura\src\main" />
       <recent name="C:\Users\grigo\Desktop\BSc Games Programming\Year 1\Dai-Makai-Mura\src\main\cpp" />
       <recent name="C:\Users\grigo\CLionProjects\untitled1" />
     </key>
@@ -124,13 +142,13 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state width="1323" height="238" key="GridCell.Tab.1.right/0.0.1366.768@0.0.1366.768" timestamp="1584481941141" />
-    <state x="204" y="9" key="SettingsEditor" timestamp="1584482518284">
+    <state x="204" y="9" key="SettingsEditor" timestamp="1584483630157">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="204" y="9" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1584482518284" />
-    <state x="408" y="32" key="refactoring.ChangeSignatureDialog" timestamp="1584477715473">
+    <state x="204" y="9" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1584483630157" />
+    <state x="408" y="32" key="refactoring.ChangeSignatureDialog" timestamp="1584483301237">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="408" y="32" key="refactoring.ChangeSignatureDialog/0.0.1366.768@0.0.1366.768" timestamp="1584477715473" />
+    <state x="408" y="32" key="refactoring.ChangeSignatureDialog/0.0.1366.768@0.0.1366.768" timestamp="1584483301237" />
   </component>
 </project>

@@ -33,6 +33,7 @@ using namespace sf;
 #define WindowX 800
 #define WindowY 500
 
+App mApp;
 Vector2f theGameWindow_currentDimensions(WindowX, WindowY); // NOLINT(cert-err58-cpp)
 Vector2f theGameWindow_perspectiveDimensions(WindowX, WindowY); // NOLINT(cert-err58-cpp)
 RenderWindow theGameWindow( // NOLINT(cert-err58-cpp)
@@ -40,6 +41,7 @@ RenderWindow theGameWindow( // NOLINT(cert-err58-cpp)
 		"Dai Makai-Mura");
 
 void init();
+
 
 void inputListener();
 
@@ -101,6 +103,21 @@ void update(float seconds)
 void draw()
 {
 
-	switch (App.getCurr)
+	switch (mApp.getCurrentScreen()) {
+		case App::splash:
+		{
+
+		}
+		case App::menu:
+		{
+
+		}
+		case App::game:
+		{
+
+		}
+		default:
+			break;
+	}
 
 }

@@ -23,24 +23,4 @@
 
 // Created by TeodorHMX1 on 17/03/2020.
 
-#include "../header/App.h"
-
-App::App()
-{
-
-}
-
-App::~App()
-{
-
-}
-
-int App::getCurrentScreen()
-{
-	return App::currentScreen;
-}
-
-void App::setCurrentScreen(App::screen screenChose)
-{
-	this->currentScreen = screenChose;
-}
+#include "../header/Utils.h"
