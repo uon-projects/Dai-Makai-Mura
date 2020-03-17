@@ -24,7 +24,15 @@
 // Created by TeodorHMX1 on 17/03/2020.
 
 
+enum screen : int
+{
+	splash = 0,
+	menu = 1,
+	game = 2
+};
+
 class Utils
 {
+
 
 };

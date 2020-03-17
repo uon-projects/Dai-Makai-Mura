@@ -104,15 +104,15 @@ void draw()
 {
 
 	switch (mApp.getCurrentScreen()) {
-		case App::splash:
+		case splash:
 		{
 
 		}
-		case App::menu:
+		case menu:
 		{
 
 		}
-		case App::game:
+		case game:
 		{
 
 		}
