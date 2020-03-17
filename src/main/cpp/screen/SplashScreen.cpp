@@ -31,7 +31,7 @@ using namespace sf;
 SplashScreen::SplashScreen()
 {
 
-	splashScreenBg.setFillColor(Color(16, 16, 16));
+	splashScreenBg.setFillColor(Color(88, 52, 235));
 //	mSplashLogo = mLoader.loadSpriteFromTexture("", "zeoflow_logo", "png");
 
 }
