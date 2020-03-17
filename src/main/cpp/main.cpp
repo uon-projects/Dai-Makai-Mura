@@ -7,55 +7,70 @@ using namespace sf;
 #define WindowX 800
 #define WindowY 500
 
-Vector2f TheGameWindow_CurrentDimensions(WindowX,WindowY);
-Vector2f TheGameWindow_PerspectiveDimensions(WindowX,WindowY);
-RenderWindow TheGameWindow(sf::VideoMode(TheGameWindow_CurrentDimensions.x,TheGameWindow_CurrentDimensions.y),"Dai Makai-Mura");
+Vector2f theGameWindow_currentDimensions(WindowX, WindowY); // NOLINT(cert-err58-cpp)
+Vector2f theGameWindow_perspectiveDimensions(WindowX, WindowY); // NOLINT(cert-err58-cpp)
+RenderWindow theGameWindow( // NOLINT(cert-err58-cpp)
+        VideoMode(theGameWindow_currentDimensions.x, theGameWindow_currentDimensions.y),
+        "Dai Makai-Mura");
 
-void Init();
-void InputListener();
-void Update(float seconds);
-void Draw();
+void init();
+
+void inputListener();
+
+void update(float seconds);
+
+void draw();
 
 int main()
 {
-    Clock ClockTime;
-    Time Speed;
+    Clock clockTime;
+    Time speed;
 
-    TheGameWindow.setFramerateLimit(60);
-    Init();
+    theGameWindow.setFramerateLimit(60);
+    init();
 
-    while (TheGameWindow.isOpen())
+    while (theGameWindow.isOpen())
     {
-        InputListener();
+        inputListener();
 
-        Speed = ClockTime.restart();
-        Update(Speed.asSeconds());
+        speed = clockTime.restart();
+        update(speed.asSeconds());
 
-        TheGameWindow.clear();
+        theGameWindow.clear();
 
-        Draw();
+        draw();
 
-        TheGameWindow.display();
+        theGameWindow.display();
     }
 
     return 0;
 }
 
-void Init()
+void init()
+{
+    Event event{};
+
+    while (theGameWindow.pollEvent(event))
+    {
+        if (event.key.code == Keyboard::Escape || event.type == Event::Closed)
+        {
+            theGameWindow.close();
+        }
+    }
+
+}
+
+void inputListener()
 {
 
 }
 
-void InputListener()
+void update(float seconds)
 {
 
 }
 
-void Update(float seconds)
+void draw()
 {
-
-}
-
-void Draw() {
 
 }
