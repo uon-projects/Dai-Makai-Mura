@@ -1,3 +1,3 @@
-C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/cmake-build-release/CMakeFiles/sfml-test.dir
+C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/cmake-build-release/CMakeFiles/Dai-Makai-Mura.dir
 C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/cmake-build-release/CMakeFiles/edit_cache.dir
 C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/cmake-build-release/CMakeFiles/rebuild_cache.dir

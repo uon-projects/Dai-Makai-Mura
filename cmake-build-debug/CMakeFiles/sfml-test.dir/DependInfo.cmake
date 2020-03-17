@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/src/game/main.cpp" "C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/cmake-build-debug/CMakeFiles/sfml-test.dir/src/game/main.cpp.obj"
+  "C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/src/main/cpp/main.cpp" "C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/cmake-build-debug/CMakeFiles/sfml-test.dir/src/main/cpp/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

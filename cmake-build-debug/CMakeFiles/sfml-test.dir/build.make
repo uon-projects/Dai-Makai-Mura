@@ -56,28 +56,28 @@ include CMakeFiles/sfml-test.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/sfml-test.dir/flags.make
 
-CMakeFiles/sfml-test.dir/src/game/main.cpp.obj: CMakeFiles/sfml-test.dir/flags.make
-CMakeFiles/sfml-test.dir/src/game/main.cpp.obj: CMakeFiles/sfml-test.dir/includes_CXX.rsp
-CMakeFiles/sfml-test.dir/src/game/main.cpp.obj: ../src/game/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\grigo\Desktop\BSc Games Programming\Year 1\Dai-Makai-Mura\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/sfml-test.dir/src/game/main.cpp.obj"
-	C:\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\sfml-test.dir\src\game\main.cpp.obj -c "C:\Users\grigo\Desktop\BSc Games Programming\Year 1\Dai-Makai-Mura\src\game\main.cpp"
+CMakeFiles/sfml-test.dir/src/main/cpp/main.cpp.obj: CMakeFiles/sfml-test.dir/flags.make
+CMakeFiles/sfml-test.dir/src/main/cpp/main.cpp.obj: CMakeFiles/sfml-test.dir/includes_CXX.rsp
+CMakeFiles/sfml-test.dir/src/main/cpp/main.cpp.obj: ../src/main/cpp/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\grigo\Desktop\BSc Games Programming\Year 1\Dai-Makai-Mura\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/sfml-test.dir/src/main/cpp/main.cpp.obj"
+	C:\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\sfml-test.dir\src\main\cpp\main.cpp.obj -c "C:\Users\grigo\Desktop\BSc Games Programming\Year 1\Dai-Makai-Mura\src\main\cpp\main.cpp"
 
-CMakeFiles/sfml-test.dir/src/game/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sfml-test.dir/src/game/main.cpp.i"
-	C:\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\grigo\Desktop\BSc Games Programming\Year 1\Dai-Makai-Mura\src\game\main.cpp" > CMakeFiles\sfml-test.dir\src\game\main.cpp.i
+CMakeFiles/sfml-test.dir/src/main/cpp/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sfml-test.dir/src/main/cpp/main.cpp.i"
+	C:\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\grigo\Desktop\BSc Games Programming\Year 1\Dai-Makai-Mura\src\main\cpp\main.cpp" > CMakeFiles\sfml-test.dir\src\main\cpp\main.cpp.i
 
-CMakeFiles/sfml-test.dir/src/game/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sfml-test.dir/src/game/main.cpp.s"
-	C:\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\grigo\Desktop\BSc Games Programming\Year 1\Dai-Makai-Mura\src\game\main.cpp" -o CMakeFiles\sfml-test.dir\src\game\main.cpp.s
+CMakeFiles/sfml-test.dir/src/main/cpp/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sfml-test.dir/src/main/cpp/main.cpp.s"
+	C:\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\grigo\Desktop\BSc Games Programming\Year 1\Dai-Makai-Mura\src\main\cpp\main.cpp" -o CMakeFiles\sfml-test.dir\src\main\cpp\main.cpp.s
 
 # Object files for target sfml-test
 sfml__test_OBJECTS = \
-"CMakeFiles/sfml-test.dir/src/game/main.cpp.obj"
+"CMakeFiles/sfml-test.dir/src/main/cpp/main.cpp.obj"
 
 # External object files for target sfml-test
 sfml__test_EXTERNAL_OBJECTS =
 
-sfml-test.exe: CMakeFiles/sfml-test.dir/src/game/main.cpp.obj
+sfml-test.exe: CMakeFiles/sfml-test.dir/src/main/cpp/main.cpp.obj
 sfml-test.exe: CMakeFiles/sfml-test.dir/build.make
 sfml-test.exe: C:/mingw32/lib/libsfml-system-d.a
 sfml-test.exe: C:/mingw32/lib/libsfml-window-d.a

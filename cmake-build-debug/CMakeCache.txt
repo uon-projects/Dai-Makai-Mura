@@ -14,6 +14,18 @@
 # EXTERNAL cache entries
 ########################
 
+//Value Computed by CMake
+"Dai_BINARY_DIR:STATIC=C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/cmake-build-debug
+
+//Value Computed by CMake
+"Dai_SOURCE_DIR:STATIC=C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura
+
+//Value Computed by CMake
+"//Dai Makai Mura//_BINARY_DIR":STATIC=C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/cmake-build-debug
+
+//Value Computed by CMake
+"//Dai Makai Mura//_SOURCE_DIR":STATIC=C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura
+
 //Path to a program.
 CMAKE_AR:FILEPATH=C:/mingw32/bin/ar.exe
 
@@ -156,7 +168,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=sfml-test
+CMAKE_PROJECT_NAME:STATIC=Dai-Makai-Mura
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=C:/mingw32/bin/ranlib.exe
@@ -237,6 +249,24 @@ CMAKE_STRIP:FILEPATH=C:/mingw32/bin/strip.exe
 // during the make.  This is useful for debugging only. With Visual
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
+
+//Value Computed by CMake
+Dai Makai Mura_BINARY_DIR:STATIC=C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/cmake-build-debug
+
+//Value Computed by CMake
+Dai Makai Mura_SOURCE_DIR:STATIC=C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura
+
+//Value Computed by CMake
+Dai-Makai-Mura_BINARY_DIR:STATIC=C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/cmake-build-debug
+
+//Value Computed by CMake
+Dai-Makai-Mura_SOURCE_DIR:STATIC=C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura
+
+//Value Computed by CMake
+Dai_BINARY_DIR:STATIC=C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/cmake-build-debug
+
+//Value Computed by CMake
+Dai_SOURCE_DIR:STATIC=C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura
 
 //Path to a library.
 SFML_GRAPHICS_LIBRARY_DYNAMIC_DEBUG:FILEPATH=C:/mingw32/lib/libsfml-graphics-d.a

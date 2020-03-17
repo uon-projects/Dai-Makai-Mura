@@ -110,44 +110,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named sfml-test
+# Target rules for targets named Dai-Makai-Mura
 
 # Build rule for target.
-sfml-test: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 sfml-test
-.PHONY : sfml-test
+Dai-Makai-Mura: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 Dai-Makai-Mura
+.PHONY : Dai-Makai-Mura
 
 # fast build rule for target.
-sfml-test/fast:
-	$(MAKE) -f CMakeFiles\sfml-test.dir\build.make CMakeFiles/sfml-test.dir/build
-.PHONY : sfml-test/fast
+Dai-Makai-Mura/fast:
+	$(MAKE) -f CMakeFiles\Dai-Makai-Mura.dir\build.make CMakeFiles/Dai-Makai-Mura.dir/build
+.PHONY : Dai-Makai-Mura/fast
 
-src/game/main.obj: src/game/main.cpp.obj
+src/main/cpp/main.obj: src/main/cpp/main.cpp.obj
 
-.PHONY : src/game/main.obj
+.PHONY : src/main/cpp/main.obj
 
 # target to build an object file
-src/game/main.cpp.obj:
-	$(MAKE) -f CMakeFiles\sfml-test.dir\build.make CMakeFiles/sfml-test.dir/src/game/main.cpp.obj
-.PHONY : src/game/main.cpp.obj
+src/main/cpp/main.cpp.obj:
+	$(MAKE) -f CMakeFiles\Dai-Makai-Mura.dir\build.make CMakeFiles/Dai-Makai-Mura.dir/src/main/cpp/main.cpp.obj
+.PHONY : src/main/cpp/main.cpp.obj
 
-src/game/main.i: src/game/main.cpp.i
+src/main/cpp/main.i: src/main/cpp/main.cpp.i
 
-.PHONY : src/game/main.i
+.PHONY : src/main/cpp/main.i
 
 # target to preprocess a source file
-src/game/main.cpp.i:
-	$(MAKE) -f CMakeFiles\sfml-test.dir\build.make CMakeFiles/sfml-test.dir/src/game/main.cpp.i
-.PHONY : src/game/main.cpp.i
+src/main/cpp/main.cpp.i:
+	$(MAKE) -f CMakeFiles\Dai-Makai-Mura.dir\build.make CMakeFiles/Dai-Makai-Mura.dir/src/main/cpp/main.cpp.i
+.PHONY : src/main/cpp/main.cpp.i
 
-src/game/main.s: src/game/main.cpp.s
+src/main/cpp/main.s: src/main/cpp/main.cpp.s
 
-.PHONY : src/game/main.s
+.PHONY : src/main/cpp/main.s
 
 # target to generate assembly for a file
-src/game/main.cpp.s:
-	$(MAKE) -f CMakeFiles\sfml-test.dir\build.make CMakeFiles/sfml-test.dir/src/game/main.cpp.s
-.PHONY : src/game/main.cpp.s
+src/main/cpp/main.cpp.s:
+	$(MAKE) -f CMakeFiles\Dai-Makai-Mura.dir\build.make CMakeFiles/Dai-Makai-Mura.dir/src/main/cpp/main.cpp.s
+.PHONY : src/main/cpp/main.cpp.s
 
 # Help Target
 help:
@@ -155,12 +155,12 @@ help:
 	@echo ... all (the default if no target is provided)
 	@echo ... clean
 	@echo ... depend
-	@echo ... sfml-test
+	@echo ... Dai-Makai-Mura
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... src/game/main.obj
-	@echo ... src/game/main.i
-	@echo ... src/game/main.s
+	@echo ... src/main/cpp/main.obj
+	@echo ... src/main/cpp/main.i
+	@echo ... src/main/cpp/main.s
 .PHONY : help
 
 

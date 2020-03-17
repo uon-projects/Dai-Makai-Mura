@@ -82,7 +82,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/src/game/main.cpp">
+		<Unit filename="C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/src/main/cpp/main.cpp">
 			<Option target="sfml-test"/>
 		</Unit>
 		<Unit filename="C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/CMakeLists.txt">

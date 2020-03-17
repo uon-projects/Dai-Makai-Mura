@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/sfml-test.dir/src/game/main.cpp.obj"
+  "CMakeFiles/sfml-test.dir/src/main/cpp/main.cpp.obj"
   "libsfml-test.dll.a"
   "sfml-test.exe"
   "sfml-test.exe.manifest"
