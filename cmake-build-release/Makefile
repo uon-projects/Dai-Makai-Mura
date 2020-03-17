@@ -176,6 +176,33 @@ src/main/cpp/Utils.cpp.s:
 	$(MAKE) -f CMakeFiles\Dai-Makai-Mura.dir\build.make CMakeFiles/Dai-Makai-Mura.dir/src/main/cpp/Utils.cpp.s
 .PHONY : src/main/cpp/Utils.cpp.s
 
+src/main/cpp/screens/SplashScreen.obj: src/main/cpp/screens/SplashScreen.cpp.obj
+
+.PHONY : src/main/cpp/screens/SplashScreen.obj
+
+# target to build an object file
+src/main/cpp/screens/SplashScreen.cpp.obj:
+	$(MAKE) -f CMakeFiles\Dai-Makai-Mura.dir\build.make CMakeFiles/Dai-Makai-Mura.dir/src/main/cpp/screens/SplashScreen.cpp.obj
+.PHONY : src/main/cpp/screens/SplashScreen.cpp.obj
+
+src/main/cpp/screens/SplashScreen.i: src/main/cpp/screens/SplashScreen.cpp.i
+
+.PHONY : src/main/cpp/screens/SplashScreen.i
+
+# target to preprocess a source file
+src/main/cpp/screens/SplashScreen.cpp.i:
+	$(MAKE) -f CMakeFiles\Dai-Makai-Mura.dir\build.make CMakeFiles/Dai-Makai-Mura.dir/src/main/cpp/screens/SplashScreen.cpp.i
+.PHONY : src/main/cpp/screens/SplashScreen.cpp.i
+
+src/main/cpp/screens/SplashScreen.s: src/main/cpp/screens/SplashScreen.cpp.s
+
+.PHONY : src/main/cpp/screens/SplashScreen.s
+
+# target to generate assembly for a file
+src/main/cpp/screens/SplashScreen.cpp.s:
+	$(MAKE) -f CMakeFiles\Dai-Makai-Mura.dir\build.make CMakeFiles/Dai-Makai-Mura.dir/src/main/cpp/screens/SplashScreen.cpp.s
+.PHONY : src/main/cpp/screens/SplashScreen.cpp.s
+
 src/main/main.obj: src/main/main.cpp.obj
 
 .PHONY : src/main/main.obj
@@ -218,6 +245,9 @@ help:
 	@echo ... src/main/cpp/Utils.obj
 	@echo ... src/main/cpp/Utils.i
 	@echo ... src/main/cpp/Utils.s
+	@echo ... src/main/cpp/screens/SplashScreen.obj
+	@echo ... src/main/cpp/screens/SplashScreen.i
+	@echo ... src/main/cpp/screens/SplashScreen.s
 	@echo ... src/main/main.obj
 	@echo ... src/main/main.i
 	@echo ... src/main/main.s

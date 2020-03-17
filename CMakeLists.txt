@@ -10,7 +10,7 @@ set(CMAKE_MODULE_PATH /SFML/cmake/Modules)
 set(SFML_DIR "/SFML")
 find_package(SFML 2.4 COMPONENTS system window graphics)
 
-add_executable(${project_title} src/main/main.cpp src/main/cpp/App.cpp src/main/header/App.h src/main/cpp/Utils.cpp src/main/header/Utils.h)
+add_executable(${project_title} src/main/main.cpp src/main/cpp/App.cpp src/main/header/App.h src/main/cpp/Utils.cpp src/main/header/Utils.h src/main/cpp/screens/SplashScreen.cpp src/main/header/screens/SplashScreen.h)
 target_link_libraries(${project_title} sfml-system sfml-window sfml-graphics)
 if (SFML_FOUND)
     include_directories(${SFML_INCLUDE_DIR})
