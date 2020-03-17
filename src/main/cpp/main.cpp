@@ -56,14 +56,14 @@ int main()
 
 	while (theGameWindow.isOpen())
 	{
-		inputListener();
-
-		speed = clockTime.restart();
-		update(speed.asSeconds());
-
-		theGameWindow.clear();
-
-		draw();
+//		inputListener();
+//
+//		speed = clockTime.restart();
+//		update(speed.asSeconds());
+//
+//		theGameWindow.clear();
+//
+//		draw();
 
 		theGameWindow.display();
 	}
