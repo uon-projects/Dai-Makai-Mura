@@ -313,6 +313,12 @@ sfml-test_BINARY_DIR:STATIC=C:/Users/grigo/Desktop/BSc Games Programming/Year 1/
 //Value Computed by CMake
 sfml-test_SOURCE_DIR:STATIC=C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura
 
+//Value Computed by CMake
+template_BINARY_DIR:STATIC=C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/cmake-build-debug
+
+//Value Computed by CMake
+template_SOURCE_DIR:STATIC=C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura
+
 
 ########################
 # INTERNAL cache entries

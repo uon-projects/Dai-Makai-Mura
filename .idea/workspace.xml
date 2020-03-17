@@ -13,11 +13,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f5136dbc-fa19-4e83-9ace-75ad5814e213" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Dai-Makai-Mura.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Dai-Makai-Mura.dir/objects.a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Dai-Makai-Mura.dir/src/main/cpp/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Dai-Makai-Mura.dir/src/main/cpp/main.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Dai-Makai-Mura.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Dai-Makai-Mura.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeCache.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/cpp/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/cpp/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,8 +44,8 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C/C++" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../clion-sfml-template" />
+    <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -71,7 +73,7 @@
       <option name="presentableId" value="Default" />
       <updated>1584472323971</updated>
       <workItem from="1584472326082" duration="4317000" />
-      <workItem from="1584477005347" duration="1565000" />
+      <workItem from="1584477005347" duration="3144000" />
     </task>
     <servers />
   </component>
@@ -87,26 +89,26 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="434" y="194" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.768@0.0.1366.768" timestamp="1584475414986" />
-    <state x="463" y="142" key="FileChooserDialogImpl" timestamp="1584473355774">
+    <state x="463" y="142" key="FileChooserDialogImpl" timestamp="1584478819212">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="463" y="142" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1584473355774" />
-    <state width="1323" height="238" key="GridCell.Tab.0.bottom" timestamp="1584478456852">
+    <state x="463" y="142" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1584478819212" />
+    <state width="1323" height="192" key="GridCell.Tab.0.bottom" timestamp="1584480303056">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="238" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1584478456852" />
-    <state width="1323" height="238" key="GridCell.Tab.0.center" timestamp="1584478456852">
+    <state width="1323" height="192" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1584480303056" />
+    <state width="1323" height="192" key="GridCell.Tab.0.center" timestamp="1584480303056">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="238" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1584478456852" />
-    <state width="1323" height="238" key="GridCell.Tab.0.left" timestamp="1584478456852">
+    <state width="1323" height="192" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1584480303056" />
+    <state width="1323" height="192" key="GridCell.Tab.0.left" timestamp="1584480303056">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="238" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1584478456852" />
-    <state width="1323" height="238" key="GridCell.Tab.0.right" timestamp="1584478456852">
+    <state width="1323" height="192" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1584480303056" />
+    <state width="1323" height="192" key="GridCell.Tab.0.right" timestamp="1584480303056">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="238" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1584478456852" />
+    <state width="1323" height="192" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1584480303056" />
     <state width="1323" height="238" key="GridCell.Tab.1.bottom" timestamp="1584478456853">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -123,10 +125,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state width="1323" height="238" key="GridCell.Tab.1.right/0.0.1366.768@0.0.1366.768" timestamp="1584478456853" />
-    <state x="204" y="9" key="SettingsEditor" timestamp="1584478604360">
+    <state x="204" y="9" key="SettingsEditor" timestamp="1584480216421">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="204" y="9" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1584478604360" />
+    <state x="204" y="9" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1584480216421" />
     <state x="408" y="32" key="refactoring.ChangeSignatureDialog" timestamp="1584477715473">
       <screen x="0" y="0" width="1366" height="768" />
     </state>

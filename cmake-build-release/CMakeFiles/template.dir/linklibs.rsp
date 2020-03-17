@@ -1,0 +1,1 @@
+-lsfml-system -lsfml-window -lsfml-graphics C:/mingw32/lib/libsfml-system.a C:/mingw32/lib/libsfml-window.a C:/mingw32/lib/libsfml-graphics.a -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 
