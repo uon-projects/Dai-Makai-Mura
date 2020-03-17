@@ -122,32 +122,59 @@ Dai-Makai-Mura/fast:
 	$(MAKE) -f CMakeFiles\Dai-Makai-Mura.dir\build.make CMakeFiles/Dai-Makai-Mura.dir/build
 .PHONY : Dai-Makai-Mura/fast
 
-src/main/cpp/main.obj: src/main/cpp/main.cpp.obj
+src/main/cpp/App.obj: src/main/cpp/App.cpp.obj
 
-.PHONY : src/main/cpp/main.obj
+.PHONY : src/main/cpp/App.obj
 
 # target to build an object file
-src/main/cpp/main.cpp.obj:
-	$(MAKE) -f CMakeFiles\Dai-Makai-Mura.dir\build.make CMakeFiles/Dai-Makai-Mura.dir/src/main/cpp/main.cpp.obj
-.PHONY : src/main/cpp/main.cpp.obj
+src/main/cpp/App.cpp.obj:
+	$(MAKE) -f CMakeFiles\Dai-Makai-Mura.dir\build.make CMakeFiles/Dai-Makai-Mura.dir/src/main/cpp/App.cpp.obj
+.PHONY : src/main/cpp/App.cpp.obj
 
-src/main/cpp/main.i: src/main/cpp/main.cpp.i
+src/main/cpp/App.i: src/main/cpp/App.cpp.i
 
-.PHONY : src/main/cpp/main.i
+.PHONY : src/main/cpp/App.i
 
 # target to preprocess a source file
-src/main/cpp/main.cpp.i:
-	$(MAKE) -f CMakeFiles\Dai-Makai-Mura.dir\build.make CMakeFiles/Dai-Makai-Mura.dir/src/main/cpp/main.cpp.i
-.PHONY : src/main/cpp/main.cpp.i
+src/main/cpp/App.cpp.i:
+	$(MAKE) -f CMakeFiles\Dai-Makai-Mura.dir\build.make CMakeFiles/Dai-Makai-Mura.dir/src/main/cpp/App.cpp.i
+.PHONY : src/main/cpp/App.cpp.i
 
-src/main/cpp/main.s: src/main/cpp/main.cpp.s
+src/main/cpp/App.s: src/main/cpp/App.cpp.s
 
-.PHONY : src/main/cpp/main.s
+.PHONY : src/main/cpp/App.s
 
 # target to generate assembly for a file
-src/main/cpp/main.cpp.s:
-	$(MAKE) -f CMakeFiles\Dai-Makai-Mura.dir\build.make CMakeFiles/Dai-Makai-Mura.dir/src/main/cpp/main.cpp.s
-.PHONY : src/main/cpp/main.cpp.s
+src/main/cpp/App.cpp.s:
+	$(MAKE) -f CMakeFiles\Dai-Makai-Mura.dir\build.make CMakeFiles/Dai-Makai-Mura.dir/src/main/cpp/App.cpp.s
+.PHONY : src/main/cpp/App.cpp.s
+
+src/main/main.obj: src/main/main.cpp.obj
+
+.PHONY : src/main/main.obj
+
+# target to build an object file
+src/main/main.cpp.obj:
+	$(MAKE) -f CMakeFiles\Dai-Makai-Mura.dir\build.make CMakeFiles/Dai-Makai-Mura.dir/src/main/main.cpp.obj
+.PHONY : src/main/main.cpp.obj
+
+src/main/main.i: src/main/main.cpp.i
+
+.PHONY : src/main/main.i
+
+# target to preprocess a source file
+src/main/main.cpp.i:
+	$(MAKE) -f CMakeFiles\Dai-Makai-Mura.dir\build.make CMakeFiles/Dai-Makai-Mura.dir/src/main/main.cpp.i
+.PHONY : src/main/main.cpp.i
+
+src/main/main.s: src/main/main.cpp.s
+
+.PHONY : src/main/main.s
+
+# target to generate assembly for a file
+src/main/main.cpp.s:
+	$(MAKE) -f CMakeFiles\Dai-Makai-Mura.dir\build.make CMakeFiles/Dai-Makai-Mura.dir/src/main/main.cpp.s
+.PHONY : src/main/main.cpp.s
 
 # Help Target
 help:
@@ -158,9 +185,12 @@ help:
 	@echo ... Dai-Makai-Mura
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... src/main/cpp/main.obj
-	@echo ... src/main/cpp/main.i
-	@echo ... src/main/cpp/main.s
+	@echo ... src/main/cpp/App.obj
+	@echo ... src/main/cpp/App.i
+	@echo ... src/main/cpp/App.s
+	@echo ... src/main/main.obj
+	@echo ... src/main/main.i
+	@echo ... src/main/main.s
 .PHONY : help
 
 

@@ -4,7 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/src/main/cpp/main.cpp" "C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/cmake-build-debug/CMakeFiles/Dai-Makai-Mura.dir/src/main/cpp/main.cpp.obj"
+  "C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/src/main/cpp/App.cpp" "C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/cmake-build-debug/CMakeFiles/Dai-Makai-Mura.dir/src/main/cpp/App.cpp.obj"
+  "C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/src/main/main.cpp" "C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/cmake-build-debug/CMakeFiles/Dai-Makai-Mura.dir/src/main/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

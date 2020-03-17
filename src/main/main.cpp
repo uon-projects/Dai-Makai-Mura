@@ -25,6 +25,7 @@
 
 #include <iostream>
 #include <SFML/Graphics.hpp>
+#include "header/App.h"
 
 using namespace std;
 using namespace sf;
