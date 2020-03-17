@@ -101,4 +101,6 @@ void update(float seconds)
 void draw()
 {
 
+	switch (App.getCurr)
+
 }

@@ -24,3 +24,19 @@
 // Created by TeodorHMX1 on 17/03/2020.
 
 #include "../header/App.h"
+
+App::App()
+= default;
+
+App::~App()
+= default;
+
+int App::getCurrentScreen()
+{
+	return App::currentScreen;
+}
+
+void App::setCurrentScreen(App::screen screenChose)
+{
+	this->currentScreen = screenChose;
+}

@@ -23,7 +23,24 @@
 
 // Created by TeodorHMX1 on 17/03/2020.
 
-#ifndef DAI_MAKAI_MURA_APP_H
-#define DAI_MAKAI_MURA_APP_H
+class App
+{
 
-#endif //DAI_MAKAI_MURA_APP_H
+public:
+	App();
+	~App();
+
+public:
+	enum screen : int
+	{
+		splash = 0,
+		menu = 1,
+		game = 2
+	};
+	int getCurrentScreen();
+	void setCurrentScreen(screen);
+
+private:
+	screen currentScreen = splash;
+
+};
