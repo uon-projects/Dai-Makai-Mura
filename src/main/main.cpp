@@ -1,3 +1,5 @@
+#pragma clang diagnostic push
+#pragma ide diagnostic ignored "cert-err58-cpp"
 /*
  * Copyright (c) 2020 Teodor G. (TeodorHMX1)
  *
@@ -26,6 +28,7 @@
 #include <iostream>
 #include <SFML/Graphics.hpp>
 #include "header/App.h"
+#include "header/screens/SplashScreen.h"
 
 using namespace std;
 using namespace sf;
@@ -34,6 +37,7 @@ using namespace sf;
 #define WindowY 500
 
 App mApp;
+SplashScreen mSplashScreen;
 Vector2f theGameWindow_currentDimensions(WindowX, WindowY); // NOLINT(cert-err58-cpp)
 Vector2f theGameWindow_perspectiveDimensions(WindowX, WindowY); // NOLINT(cert-err58-cpp)
 RenderWindow theGameWindow( // NOLINT(cert-err58-cpp)
@@ -106,7 +110,7 @@ void draw()
 	switch (mApp.getCurrentScreen()) {
 		case splash:
 		{
-
+			mSplashScreen.draw(theGameWindow);
 		}
 		case menu:
 		{
@@ -121,3 +125,5 @@ void draw()
 	}
 
 }
+
+#pragma clang diagnostic pop

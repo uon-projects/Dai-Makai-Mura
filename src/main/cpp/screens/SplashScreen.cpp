@@ -23,4 +23,18 @@
 
 // Created by TeodorHMX1 on 17/03/2020.
 
+#include <SFML/Graphics/RenderWindow.hpp>
 #include "../../header/screens/SplashScreen.h"
+
+SplashScreen::SplashScreen()
+= default;
+
+SplashScreen::~SplashScreen()
+= default;
+
+void SplashScreen::draw(sf::RenderWindow &window)
+{
+
+
+
+}

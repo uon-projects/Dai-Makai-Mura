@@ -26,4 +26,12 @@
 class SplashScreen
 {
 
+public:
+	SplashScreen();
+
+	~SplashScreen();
+
+public:
+	void draw(sf::RenderWindow &window);
+
 };
