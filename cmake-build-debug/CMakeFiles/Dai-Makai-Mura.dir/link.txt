@@ -1,3 +1,0 @@
-"C:\Program Files\JetBrains\CLion 2019.3.4\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\Dai-Makai-Mura.dir/objects.a
-C:\mingw32\bin\ar.exe cr CMakeFiles\Dai-Makai-Mura.dir/objects.a @CMakeFiles\Dai-Makai-Mura.dir\objects1.rsp
-C:\mingw32\bin\g++.exe  -std=c++11 -static -static-libgcc -static-libstdc++ -g   -Wl,--whole-archive CMakeFiles\Dai-Makai-Mura.dir/objects.a -Wl,--no-whole-archive  -o Dai-Makai-Mura.exe -Wl,--out-implib,libDai-Makai-Mura.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\Dai-Makai-Mura.dir\linklibs.rsp
