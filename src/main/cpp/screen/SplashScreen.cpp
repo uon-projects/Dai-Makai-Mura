@@ -24,21 +24,28 @@
 // Created by TeodorHMX1 on 17/03/2020.
 
 #include <SFML/Graphics.hpp>
+#include "../../header/screen/SplashScreen.h"
 
 using namespace sf;
 
-class SplashScreen
+SplashScreen::SplashScreen()
 {
 
-public:
-	Sprite zeoFlowSprite;
+	splashScreenBg.setFillColor(Color(16, 16, 16));
+//	mSplashLogo = mLoader.loadSpriteFromTexture("", "zeoflow_logo", "png");
 
-public:
-	SplashScreen();
+}
 
-	~SplashScreen();
+SplashScreen::~SplashScreen()
+= default;
 
-public:
-	void draw(sf::RenderWindow &window);
+void SplashScreen::draw(RenderWindow &window)
+{
 
-};
+	splashScreenBg.setSize(Vector2f(window.getSize().x, window.getSize().y));
+	window.draw(splashScreenBg);
+
+	mSplashLogo.setScale(0.15, 0.15);
+	window.draw(mSplashLogo);
+
+}

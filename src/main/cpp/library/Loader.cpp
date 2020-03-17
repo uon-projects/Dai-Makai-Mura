@@ -23,30 +23,16 @@
 
 // Created by TeodorHMX1 on 17/03/2020.
 
-#include <SFML/Graphics.hpp>
-#include "../../header/screens/SplashScreen.h"
+#include <string>
+#include "../../header/library/Loader.h"
 
-using namespace sf;
-
-SplashScreen::SplashScreen()
+Sprite Loader::loadSpriteFromTexture(std::string assetPath, std::string assetName, std::string assetExtension)
 {
-
-}
-
-SplashScreen::~SplashScreen()
-= default;
-
-void SplashScreen::draw(RenderWindow &window)
-{
-
-	//the background for the splash screen
-	RectangleShape splashScreenBg;
-	splashScreenBg.setSize(Vector2f(window.getSize().x, window.getSize().y));
-	Color color(16, 16, 16);
-	splashScreenBg.setFillColor(color);
-	window.draw(splashScreenBg);
-	zeoFlowSprite.setScale(0.15, 0.15);
-	zeoFlowSprite = zfSFML.spriteInMiddle(zeoFlowSprite, window.getSize().x, window.getSize().y);
-	window.draw(zeoFlowSprite);
-
+	sf::Texture zfTexture;
+	if (!zfTexture.loadFromFile(assetPath + "/" + assetName + "." + assetExtension)) {
+		system("pause");
+	}
+	zfTextures.push_front(zfTexture);
+	sf::Sprite zfSprite(zfTextures.front());
+	return zfSprite;
 }
