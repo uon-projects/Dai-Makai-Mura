@@ -27,6 +27,7 @@
 #include <SFML/Graphics.hpp>
 #include "header/App.h"
 #include "header/screen/SplashScreen.h"
+#include "header/screen/GameMenuScreen.h"
 
 using namespace std;
 using namespace sf;
@@ -36,6 +37,7 @@ using namespace sf;
 
 App mApp;
 SplashScreen mSplashScreen;
+GameMenuScreen mGameMenu;
 Vector2f theGameWindow_currentDimensions(WindowX, WindowY); // NOLINT(cert-err58-cpp)
 Vector2f theGameWindow_perspectiveDimensions(WindowX, WindowY); // NOLINT(cert-err58-cpp)
 RenderWindow theGameWindow( // NOLINT(cert-err58-cpp)
@@ -108,22 +110,22 @@ void update(float seconds)
 void draw()
 {
 
-	switch (mApp.getCurrentScreen()) {
+	switch (mApp.getCurrentScreen())
+	{
 		case splash:
 		{
 			float sec = inGameClock.getElapsedTime().asSeconds();
 			if (sec < 2.0)
 			{
 				mSplashScreen.draw(theGameWindow);
-			}
-			else
+			} else
 			{
 				mApp.setCurrentScreen(menu);
 			}
 		}
 		case menu:
 		{
-
+			mGameMenu.draw(theGameWindow);
 		}
 		case game:
 		{

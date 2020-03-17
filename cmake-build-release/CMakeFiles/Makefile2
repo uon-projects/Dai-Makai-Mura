@@ -73,12 +73,12 @@ preinstall:
 CMakeFiles/Dai-Makai-Mura.dir/all:
 	$(MAKE) -f CMakeFiles\Dai-Makai-Mura.dir\build.make CMakeFiles/Dai-Makai-Mura.dir/depend
 	$(MAKE) -f CMakeFiles\Dai-Makai-Mura.dir\build.make CMakeFiles/Dai-Makai-Mura.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="C:\Users\grigo\Desktop\BSc Games Programming\Year 1\Dai-Makai-Mura\cmake-build-release\CMakeFiles" --progress-num=1,2,3,4,5,6 "Built target Dai-Makai-Mura"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="C:\Users\grigo\Desktop\BSc Games Programming\Year 1\Dai-Makai-Mura\cmake-build-release\CMakeFiles" --progress-num=1,2,3,4,5,6,7 "Built target Dai-Makai-Mura"
 .PHONY : CMakeFiles/Dai-Makai-Mura.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Dai-Makai-Mura.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\grigo\Desktop\BSc Games Programming\Year 1\Dai-Makai-Mura\cmake-build-release\CMakeFiles" 6
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\grigo\Desktop\BSc Games Programming\Year 1\Dai-Makai-Mura\cmake-build-release\CMakeFiles" 7
 	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/Dai-Makai-Mura.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\grigo\Desktop\BSc Games Programming\Year 1\Dai-Makai-Mura\cmake-build-release\CMakeFiles" 0
 .PHONY : CMakeFiles/Dai-Makai-Mura.dir/rule

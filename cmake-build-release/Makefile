@@ -203,6 +203,33 @@ src/main/cpp/library/Loader.cpp.s:
 	$(MAKE) -f CMakeFiles\Dai-Makai-Mura.dir\build.make CMakeFiles/Dai-Makai-Mura.dir/src/main/cpp/library/Loader.cpp.s
 .PHONY : src/main/cpp/library/Loader.cpp.s
 
+src/main/cpp/screen/GameMenuScreen.obj: src/main/cpp/screen/GameMenuScreen.cpp.obj
+
+.PHONY : src/main/cpp/screen/GameMenuScreen.obj
+
+# target to build an object file
+src/main/cpp/screen/GameMenuScreen.cpp.obj:
+	$(MAKE) -f CMakeFiles\Dai-Makai-Mura.dir\build.make CMakeFiles/Dai-Makai-Mura.dir/src/main/cpp/screen/GameMenuScreen.cpp.obj
+.PHONY : src/main/cpp/screen/GameMenuScreen.cpp.obj
+
+src/main/cpp/screen/GameMenuScreen.i: src/main/cpp/screen/GameMenuScreen.cpp.i
+
+.PHONY : src/main/cpp/screen/GameMenuScreen.i
+
+# target to preprocess a source file
+src/main/cpp/screen/GameMenuScreen.cpp.i:
+	$(MAKE) -f CMakeFiles\Dai-Makai-Mura.dir\build.make CMakeFiles/Dai-Makai-Mura.dir/src/main/cpp/screen/GameMenuScreen.cpp.i
+.PHONY : src/main/cpp/screen/GameMenuScreen.cpp.i
+
+src/main/cpp/screen/GameMenuScreen.s: src/main/cpp/screen/GameMenuScreen.cpp.s
+
+.PHONY : src/main/cpp/screen/GameMenuScreen.s
+
+# target to generate assembly for a file
+src/main/cpp/screen/GameMenuScreen.cpp.s:
+	$(MAKE) -f CMakeFiles\Dai-Makai-Mura.dir\build.make CMakeFiles/Dai-Makai-Mura.dir/src/main/cpp/screen/GameMenuScreen.cpp.s
+.PHONY : src/main/cpp/screen/GameMenuScreen.cpp.s
+
 src/main/cpp/screen/SplashScreen.obj: src/main/cpp/screen/SplashScreen.cpp.obj
 
 .PHONY : src/main/cpp/screen/SplashScreen.obj
@@ -275,6 +302,9 @@ help:
 	@echo ... src/main/cpp/library/Loader.obj
 	@echo ... src/main/cpp/library/Loader.i
 	@echo ... src/main/cpp/library/Loader.s
+	@echo ... src/main/cpp/screen/GameMenuScreen.obj
+	@echo ... src/main/cpp/screen/GameMenuScreen.i
+	@echo ... src/main/cpp/screen/GameMenuScreen.s
 	@echo ... src/main/cpp/screen/SplashScreen.obj
 	@echo ... src/main/cpp/screen/SplashScreen.i
 	@echo ... src/main/cpp/screen/SplashScreen.s
