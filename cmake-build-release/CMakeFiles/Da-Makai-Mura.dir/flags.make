@@ -6,5 +6,5 @@ CXX_FLAGS =  -std=c++11 -static -static-libgcc -static-libstdc++ -O3 -DNDEBUG   
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = @CMakeFiles/template.dir/includes_CXX.rsp
+CXX_INCLUDES = @CMakeFiles/Da-Makai-Mura.dir/includes_CXX.rsp
 

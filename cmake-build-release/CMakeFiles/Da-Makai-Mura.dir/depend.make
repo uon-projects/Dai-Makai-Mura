@@ -1,2 +1,2 @@
-# Empty dependencies file for template.
+# Empty dependencies file for Da-Makai-Mura.
 # This may be replaced when dependencies are built.
