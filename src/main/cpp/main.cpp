@@ -56,14 +56,15 @@ int main()
 
 	while (theGameWindow.isOpen())
 	{
-//		inputListener();
-//
-//		speed = clockTime.restart();
-//		update(speed.asSeconds());
-//
-//		theGameWindow.clear();
-//
-//		draw();
+
+		inputListener();
+
+		speed = clockTime.restart();
+		update(speed.asSeconds());
+
+		theGameWindow.clear();
+
+		draw();
 
 		theGameWindow.display();
 	}
@@ -73,6 +74,12 @@ int main()
 
 void init()
 {
+
+}
+
+void inputListener()
+{
+
 	Event event{};
 
 	while (theGameWindow.pollEvent(event))
@@ -82,11 +89,6 @@ void init()
 			theGameWindow.close();
 		}
 	}
-
-}
-
-void inputListener()
-{
 
 }
 
