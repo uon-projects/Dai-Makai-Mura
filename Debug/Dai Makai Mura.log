@@ -1,15 +1,42 @@
-﻿Build started 18/03/2020 15:18:33.
+﻿Build started 18/03/2020 15:22:45.
      1>Project "C:\Users\grigo\Desktop\BSc Games Programming\Year 1\Dai-Makai-Mura\Dai Makai Mura.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I"C:\SFML v2.4.0 (Win32 - Visual Studio 2012)\include" /Zi /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt src\main\main.cpp
          main.cpp
-     1>c:\users\grigo\desktop\bsc games programming\year 1\dai-makai-mura\src\main\header/App.h(40): error C2864: 'App::currentScreen' : only static const integral data members can be initialized within a class
      1>src\main\main.cpp(44): warning C4244: 'argument' : conversion from 'float' to 'unsigned int', possible loss of data
-     1>src\main\main.cpp(92): error C2601: 'event' : local function definitions are illegal
-                 src\main\main.cpp(90): this line contains a '{' which has not yet been matched
-     1>src\main\main.cpp(92): fatal error C1903: unable to recover from previous error(s); stopping compilation
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\grigo\Desktop\BSc Games Programming\Year 1\Dai-Makai-Mura\Debug\Dai Makai Mura.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\SFML v2.4.0 (Win32 - Visual Studio 2012)\lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\grigo\Desktop\BSc Games Programming\Year 1\Dai-Makai-Mura\Debug\Dai Makai Mura.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\grigo\Desktop\BSc Games Programming\Year 1\Dai-Makai-Mura\Debug\Dai Makai Mura.lib" /MACHINE:X86 Debug\main.obj
+     1>main.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::Time::Time(void)" (__imp_??0Time@sf@@QAE@XZ) referenced in function _main
+     1>main.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: float __thiscall sf::Time::asSeconds(void)const " (__imp_?asSeconds@Time@sf@@QBEMXZ) referenced in function "void __cdecl draw(void)" (?draw@@YAXXZ)
+     1>main.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::Clock::Clock(void)" (__imp_??0Clock@sf@@QAE@XZ) referenced in function _main
+     1>main.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: class sf::Time __thiscall sf::Clock::getElapsedTime(void)const " (__imp_?getElapsedTime@Clock@sf@@QBE?AVTime@2@XZ) referenced in function "void __cdecl draw(void)" (?draw@@YAXXZ)
+     1>main.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: class sf::Time __thiscall sf::Clock::restart(void)" (__imp_?restart@Clock@sf@@QAE?AVTime@2@XZ) referenced in function "void __cdecl init(void)" (?init@@YAXXZ)
+     1>main.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::String::String(char const *,class std::locale const &)" (__imp_??0String@sf@@QAE@PBDABVlocale@std@@@Z) referenced in function "void __cdecl `dynamic initializer for 'theGameWindow''(void)" (??__EtheGameWindow@@YAXXZ)
+     1>main.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::String::~String(void)" (__imp_??1String@sf@@QAE@XZ) referenced in function "void __cdecl `dynamic initializer for 'theGameWindow''(void)" (??__EtheGameWindow@@YAXXZ)
+     1>main.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::VideoMode::VideoMode(unsigned int,unsigned int,unsigned int)" (__imp_??0VideoMode@sf@@QAE@III@Z) referenced in function "void __cdecl `dynamic initializer for 'theGameWindow''(void)" (??__EtheGameWindow@@YAXXZ)
+     1>main.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: void __thiscall sf::Window::close(void)" (__imp_?close@Window@sf@@QAEXXZ) referenced in function "void __cdecl inputListener(void)" (?inputListener@@YAXXZ)
+     1>main.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: bool __thiscall sf::Window::isOpen(void)const " (__imp_?isOpen@Window@sf@@QBE_NXZ) referenced in function _main
+     1>main.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: bool __thiscall sf::Window::pollEvent(class sf::Event &)" (__imp_?pollEvent@Window@sf@@QAE_NAAVEvent@2@@Z) referenced in function "void __cdecl inputListener(void)" (?inputListener@@YAXXZ)
+     1>main.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: void __thiscall sf::Window::setFramerateLimit(unsigned int)" (__imp_?setFramerateLimit@Window@sf@@QAEXI@Z) referenced in function _main
+     1>main.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: void __thiscall sf::Window::display(void)" (__imp_?display@Window@sf@@QAEXXZ) referenced in function _main
+     1>main.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::Color::Color(unsigned char,unsigned char,unsigned char,unsigned char)" (__imp_??0Color@sf@@QAE@EEEE@Z) referenced in function _main
+     1>main.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: void __thiscall sf::RenderTarget::clear(class sf::Color const &)" (__imp_?clear@RenderTarget@sf@@QAEXABVColor@2@@Z) referenced in function _main
+     1>main.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: __thiscall sf::RenderWindow::RenderWindow(class sf::VideoMode,class sf::String const &,unsigned int,struct sf::ContextSettings const &)" (__imp_??0RenderWindow@sf@@QAE@VVideoMode@1@ABVString@1@IABUContextSettings@1@@Z) referenced in function "void __cdecl `dynamic initializer for 'theGameWindow''(void)" (??__EtheGameWindow@@YAXXZ)
+     1>main.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: virtual __thiscall sf::RenderWindow::~RenderWindow(void)" (__imp_??1RenderWindow@sf@@UAE@XZ) referenced in function "void __cdecl `dynamic atexit destructor for 'theGameWindow''(void)" (??__FtheGameWindow@@YAXXZ)
+     1>main.obj : error LNK2019: unresolved external symbol "public: __thiscall App::App(void)" (??0App@@QAE@XZ) referenced in function "void __cdecl `dynamic initializer for 'mApp''(void)" (??__EmApp@@YAXXZ)
+     1>main.obj : error LNK2019: unresolved external symbol "public: __thiscall App::~App(void)" (??1App@@QAE@XZ) referenced in function "void __cdecl `dynamic atexit destructor for 'mApp''(void)" (??__FmApp@@YAXXZ)
+     1>main.obj : error LNK2019: unresolved external symbol "public: enum screen __thiscall App::getCurrentScreen(void)" (?getCurrentScreen@App@@QAE?AW4screen@@XZ) referenced in function "void __cdecl draw(void)" (?draw@@YAXXZ)
+     1>main.obj : error LNK2019: unresolved external symbol "public: void __thiscall App::setCurrentScreen(enum screen)" (?setCurrentScreen@App@@QAEXW4screen@@@Z) referenced in function "void __cdecl draw(void)" (?draw@@YAXXZ)
+     1>main.obj : error LNK2019: unresolved external symbol "public: __thiscall SplashScreen::SplashScreen(void)" (??0SplashScreen@@QAE@XZ) referenced in function "void __cdecl `dynamic initializer for 'mSplashScreen''(void)" (??__EmSplashScreen@@YAXXZ)
+     1>main.obj : error LNK2019: unresolved external symbol "public: __thiscall SplashScreen::~SplashScreen(void)" (??1SplashScreen@@QAE@XZ) referenced in function "void __cdecl `dynamic atexit destructor for 'mSplashScreen''(void)" (??__FmSplashScreen@@YAXXZ)
+     1>main.obj : error LNK2019: unresolved external symbol "public: void __thiscall SplashScreen::draw(class sf::RenderWindow &)" (?draw@SplashScreen@@QAEXAAVRenderWindow@sf@@@Z) referenced in function "void __cdecl draw(void)" (?draw@@YAXXZ)
+     1>main.obj : error LNK2019: unresolved external symbol "public: __thiscall GameMenuScreen::GameMenuScreen(void)" (??0GameMenuScreen@@QAE@XZ) referenced in function "void __cdecl `dynamic initializer for 'mGameMenu''(void)" (??__EmGameMenu@@YAXXZ)
+     1>main.obj : error LNK2019: unresolved external symbol "public: __thiscall GameMenuScreen::~GameMenuScreen(void)" (??1GameMenuScreen@@QAE@XZ) referenced in function "void __cdecl `dynamic atexit destructor for 'mGameMenu''(void)" (??__FmGameMenu@@YAXXZ)
+     1>main.obj : error LNK2019: unresolved external symbol "public: void __thiscall GameMenuScreen::draw(class sf::RenderWindow &)" (?draw@GameMenuScreen@@QAEXAAVRenderWindow@sf@@@Z) referenced in function "void __cdecl draw(void)" (?draw@@YAXXZ)
+     1>MSVCRTD.lib(crtexew.obj) : error LNK2019: unresolved external symbol _WinMain@16 referenced in function ___tmainCRTStartup
+     1>C:\Users\grigo\Desktop\BSc Games Programming\Year 1\Dai-Makai-Mura\Debug\Dai Makai Mura.exe : fatal error LNK1120: 28 unresolved externals
      1>Done Building Project "C:\Users\grigo\Desktop\BSc Games Programming\Year 1\Dai-Makai-Mura\Dai Makai Mura.vcxproj" (Build target(s)) -- FAILED.
 
 Build FAILED.
 
-Time Elapsed 00:00:02.20
+Time Elapsed 00:00:01.85

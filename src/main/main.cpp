@@ -89,7 +89,7 @@ void init()
 void inputListener()
 {
 
-	Event event{};
+	Event event; // NOLINT(cppcoreguidelines-pro-type-member-init,hicpp-member-init)
 
 	while (theGameWindow.pollEvent(event))
 	{
