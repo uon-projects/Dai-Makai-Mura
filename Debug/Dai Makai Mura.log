@@ -1,0 +1,15 @@
+﻿Build started 18/03/2020 15:18:33.
+     1>Project "C:\Users\grigo\Desktop\BSc Games Programming\Year 1\Dai-Makai-Mura\Dai Makai Mura.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I"C:\SFML v2.4.0 (Win32 - Visual Studio 2012)\include" /Zi /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt src\main\main.cpp
+         main.cpp
+     1>c:\users\grigo\desktop\bsc games programming\year 1\dai-makai-mura\src\main\header/App.h(40): error C2864: 'App::currentScreen' : only static const integral data members can be initialized within a class
+     1>src\main\main.cpp(44): warning C4244: 'argument' : conversion from 'float' to 'unsigned int', possible loss of data
+     1>src\main\main.cpp(92): error C2601: 'event' : local function definitions are illegal
+                 src\main\main.cpp(90): this line contains a '{' which has not yet been matched
+     1>src\main\main.cpp(92): fatal error C1903: unable to recover from previous error(s); stopping compilation
+     1>Done Building Project "C:\Users\grigo\Desktop\BSc Games Programming\Year 1\Dai-Makai-Mura\Dai Makai Mura.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:02.20
