@@ -26,10 +26,14 @@
 #include "../header/App.h"
 
 App::App()
-= default;
+{
+	this->currentScreen = splash;
+}
 
 App::~App()
-= default;
+{
+
+}
 
 screen App::getCurrentScreen()
 {

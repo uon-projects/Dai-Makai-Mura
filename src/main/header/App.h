@@ -37,6 +37,6 @@ public:
 	void setCurrentScreen(screen);
 
 private:
-	screen currentScreen = splash;
+	screen currentScreen;
 
 };
