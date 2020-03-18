@@ -23,20 +23,22 @@
 
 // Created by TeodorHMX1 on 17/03/2020.
 
-#include "../header/App.h"
+#include "../../header/screen/GameMenuScreen.h"
 
-App::App()
-= default;
-
-App::~App()
-= default;
-
-screen App::getCurrentScreen()
+GameMenuScreen::GameMenuScreen()
 {
-	return splash;
+
+	gameMenuScreenBackground.setFillColor(Color(52, 235, 116));
+
 }
 
-void App::setCurrentScreen(screen screenChose)
+GameMenuScreen::~GameMenuScreen()
+= default;
+
+void GameMenuScreen::draw(RenderWindow &window)
 {
-	this->currentScreen = screenChose;
+
+	gameMenuScreenBackground.setSize(Vector2f(window.getSize().x, window.getSize().y));
+	window.draw(gameMenuScreenBackground);
+
 }

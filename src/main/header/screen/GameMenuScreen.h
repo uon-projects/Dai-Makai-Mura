@@ -23,20 +23,22 @@
 
 // Created by TeodorHMX1 on 17/03/2020.
 
-#include "../header/App.h"
+#include <SFML/Graphics.hpp>
 
-App::App()
-= default;
+using namespace sf;
 
-App::~App()
-= default;
-
-screen App::getCurrentScreen()
+class GameMenuScreen
 {
-	return splash;
-}
 
-void App::setCurrentScreen(screen screenChose)
-{
-	this->currentScreen = screenChose;
-}
+public:
+	RectangleShape gameMenuScreenBackground;
+
+public:
+	GameMenuScreen();
+
+	~GameMenuScreen();
+
+public:
+	void draw(sf::RenderWindow &window);
+
+};

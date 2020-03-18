@@ -7,6 +7,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/src/main/cpp/App.cpp" "C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/cmake-build-debug/CMakeFiles/Dai-Makai-Mura.dir/src/main/cpp/App.cpp.obj"
   "C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/src/main/cpp/Utils.cpp" "C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/cmake-build-debug/CMakeFiles/Dai-Makai-Mura.dir/src/main/cpp/Utils.cpp.obj"
   "C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/src/main/cpp/library/Loader.cpp" "C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/cmake-build-debug/CMakeFiles/Dai-Makai-Mura.dir/src/main/cpp/library/Loader.cpp.obj"
+  "C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/src/main/cpp/screen/GameMenuScreen.cpp" "C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/cmake-build-debug/CMakeFiles/Dai-Makai-Mura.dir/src/main/cpp/screen/GameMenuScreen.cpp.obj"
   "C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/src/main/cpp/screen/SplashScreen.cpp" "C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/cmake-build-debug/CMakeFiles/Dai-Makai-Mura.dir/src/main/cpp/screen/SplashScreen.cpp.obj"
   "C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/src/main/main.cpp" "C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/cmake-build-debug/CMakeFiles/Dai-Makai-Mura.dir/src/main/main.cpp.obj"
   )

@@ -33,7 +33,7 @@ public:
 	~App();
 
 public:
-	int getCurrentScreen();
+	screen getCurrentScreen();
 	void setCurrentScreen(screen);
 
 private:
