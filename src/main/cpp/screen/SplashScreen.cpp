@@ -37,7 +37,9 @@ SplashScreen::SplashScreen()
 }
 
 SplashScreen::~SplashScreen()
-= default;
+{
+
+}
 
 void SplashScreen::draw(RenderWindow &window)
 {
