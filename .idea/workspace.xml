@@ -14,114 +14,9 @@
   <component name="ChangeListManager">
     <list default="true" id="f5136dbc-fa19-4e83-9ace-75ad5814e213" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFML/Audio.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFML/Audio/AlResource.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFML/Audio/Export.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFML/Audio/InputSoundFile.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFML/Audio/Listener.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFML/Audio/Music.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFML/Audio/OutputSoundFile.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFML/Audio/Sound.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFML/Audio/SoundBuffer.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFML/Audio/SoundBufferRecorder.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFML/Audio/SoundFileFactory.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFML/Audio/SoundFileFactory.inl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFML/Audio/SoundFileReader.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFML/Audio/SoundFileWriter.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFML/Audio/SoundRecorder.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFML/Audio/SoundSource.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFML/Audio/SoundStream.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFML/Config.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFML/Graphics.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFML/Graphics/BlendMode.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFML/Graphics/CircleShape.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFML/Graphics/Color.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFML/Graphics/ConvexShape.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFML/Graphics/Drawable.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFML/Graphics/Export.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFML/Graphics/Font.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFML/Graphics/Glsl.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFML/Graphics/Glsl.inl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFML/Graphics/Glyph.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFML/Graphics/Image.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFML/Graphics/PrimitiveType.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFML/Graphics/Rect.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFML/Graphics/Rect.inl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFML/Graphics/RectangleShape.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFML/Graphics/RenderStates.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFML/Graphics/RenderTarget.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFML/Graphics/RenderTexture.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFML/Graphics/RenderWindow.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFML/Graphics/Shader.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFML/Graphics/Shape.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFML/Graphics/Sprite.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFML/Graphics/Text.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFML/Graphics/Texture.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFML/Graphics/Transform.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFML/Graphics/Transformable.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFML/Graphics/Vertex.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFML/Graphics/VertexArray.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFML/Graphics/View.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFML/Main.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFML/Network.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFML/Network/Export.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFML/Network/Ftp.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFML/Network/Http.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFML/Network/IpAddress.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFML/Network/Packet.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFML/Network/Socket.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFML/Network/SocketHandle.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFML/Network/SocketSelector.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFML/Network/TcpListener.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFML/Network/TcpSocket.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFML/Network/UdpSocket.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFML/OpenGL.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFML/System.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFML/System/Clock.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFML/System/Err.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFML/System/Export.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFML/System/FileInputStream.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFML/System/InputStream.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFML/System/Lock.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFML/System/MemoryInputStream.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFML/System/Mutex.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFML/System/NativeActivity.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFML/System/NonCopyable.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFML/System/Sleep.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFML/System/String.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFML/System/String.inl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFML/System/Thread.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFML/System/Thread.inl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFML/System/ThreadLocal.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFML/System/ThreadLocalPtr.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFML/System/ThreadLocalPtr.inl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFML/System/Time.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFML/System/Utf.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFML/System/Utf.inl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFML/System/Vector2.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFML/System/Vector2.inl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFML/System/Vector3.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFML/System/Vector3.inl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFML/Window.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFML/Window/Context.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFML/Window/ContextSettings.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFML/Window/Event.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFML/Window/Export.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFML/Window/GlResource.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFML/Window/Joystick.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFML/Window/Keyboard.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFML/Window/Mouse.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFML/Window/Sensor.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFML/Window/Touch.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFML/Window/VideoMode.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFML/Window/Window.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFML/Window/WindowHandle.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SFML/Window/WindowStyle.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Dai-Makai-Mura.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Dai-Makai-Mura.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Dai-Makai-Mura.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Dai-Makai-Mura.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Dai-Makai-Mura.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Dai-Makai-Mura.dir/depend.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Dai-Makai-Mura.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Dai-Makai-Mura.dir/objects.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/header/Utils.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/header/Utils.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/cpp/App.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/cpp/App.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -224,38 +119,38 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="463" y="142" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1584541440081" />
-    <state width="1323" height="192" key="GridCell.Tab.0.bottom" timestamp="1584543570221">
+    <state width="1323" height="192" key="GridCell.Tab.0.bottom" timestamp="1584543928814">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1584543570221" />
-    <state width="1323" height="192" key="GridCell.Tab.0.center" timestamp="1584543570221">
+    <state width="1323" height="192" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1584543928814" />
+    <state width="1323" height="192" key="GridCell.Tab.0.center" timestamp="1584543928814">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1584543570221" />
-    <state width="1323" height="192" key="GridCell.Tab.0.left" timestamp="1584543570220">
+    <state width="1323" height="192" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1584543928814" />
+    <state width="1323" height="192" key="GridCell.Tab.0.left" timestamp="1584543928813">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1584543570220" />
-    <state width="1323" height="192" key="GridCell.Tab.0.right" timestamp="1584543570221">
+    <state width="1323" height="192" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1584543928813" />
+    <state width="1323" height="192" key="GridCell.Tab.0.right" timestamp="1584543928814">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1584543570221" />
-    <state width="1323" height="238" key="GridCell.Tab.1.bottom" timestamp="1584543241734">
+    <state width="1323" height="192" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1584543928814" />
+    <state width="1323" height="238" key="GridCell.Tab.1.bottom" timestamp="1584543771377">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="238" key="GridCell.Tab.1.bottom/0.0.1366.768@0.0.1366.768" timestamp="1584543241734" />
-    <state width="1323" height="238" key="GridCell.Tab.1.center" timestamp="1584543241734">
+    <state width="1323" height="238" key="GridCell.Tab.1.bottom/0.0.1366.768@0.0.1366.768" timestamp="1584543771377" />
+    <state width="1323" height="238" key="GridCell.Tab.1.center" timestamp="1584543771377">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="238" key="GridCell.Tab.1.center/0.0.1366.768@0.0.1366.768" timestamp="1584543241734" />
-    <state width="1323" height="238" key="GridCell.Tab.1.left" timestamp="1584543241734">
+    <state width="1323" height="238" key="GridCell.Tab.1.center/0.0.1366.768@0.0.1366.768" timestamp="1584543771377" />
+    <state width="1323" height="238" key="GridCell.Tab.1.left" timestamp="1584543771377">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="238" key="GridCell.Tab.1.left/0.0.1366.768@0.0.1366.768" timestamp="1584543241734" />
-    <state width="1323" height="238" key="GridCell.Tab.1.right" timestamp="1584543241734">
+    <state width="1323" height="238" key="GridCell.Tab.1.left/0.0.1366.768@0.0.1366.768" timestamp="1584543771377" />
+    <state width="1323" height="238" key="GridCell.Tab.1.right" timestamp="1584543771377">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="238" key="GridCell.Tab.1.right/0.0.1366.768@0.0.1366.768" timestamp="1584543241734" />
+    <state width="1323" height="238" key="GridCell.Tab.1.right/0.0.1366.768@0.0.1366.768" timestamp="1584543771377" />
     <state x="204" y="9" key="SettingsEditor" timestamp="1584535185415">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
