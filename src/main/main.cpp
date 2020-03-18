@@ -47,7 +47,6 @@ Clock inGameClock;
 
 void init();
 
-
 void inputListener();
 
 void update(float seconds);
@@ -111,7 +110,7 @@ void draw()
 {
 
 	mApp.setCurrentScreen(menu);
-	cout<<mApp.getCurrentScreen()<<'\n';
+	cout << mApp.getCurrentScreen() << '\n';
 	switch (mApp.getCurrentScreen())
 	{
 		case splash:

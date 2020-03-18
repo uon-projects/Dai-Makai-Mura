@@ -162,6 +162,8 @@ Dai-Makai-Mura.exe: CMakeFiles/Dai-Makai-Mura.dir/build.make
 Dai-Makai-Mura.exe: C:/mingw32/lib/libsfml-system.a
 Dai-Makai-Mura.exe: C:/mingw32/lib/libsfml-window.a
 Dai-Makai-Mura.exe: C:/mingw32/lib/libsfml-graphics.a
+Dai-Makai-Mura.exe: C:/mingw32/lib/libsfml-network.a
+Dai-Makai-Mura.exe: C:/mingw32/lib/libsfml-audio.a
 Dai-Makai-Mura.exe: CMakeFiles/Dai-Makai-Mura.dir/linklibs.rsp
 Dai-Makai-Mura.exe: CMakeFiles/Dai-Makai-Mura.dir/objects1.rsp
 Dai-Makai-Mura.exe: CMakeFiles/Dai-Makai-Mura.dir/link.txt
