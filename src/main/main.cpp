@@ -109,32 +109,21 @@ void update(float seconds)
 void draw()
 {
 
-	mApp.setCurrentScreen(menu);
-	cout << mApp.getCurrentScreen() << '\n';
-	switch (mApp.getCurrentScreen())
+	if (mApp.getCurrentScreen() == splash)
 	{
-		case splash:
+		float sec = inGameClock.getElapsedTime().asSeconds();
+		mSplashScreen.draw(theGameWindow);
+		if (sec >= 2.0)
 		{
-			float sec = inGameClock.getElapsedTime().asSeconds();
-			if (sec < 2.0)
-			{
-				mSplashScreen.draw(theGameWindow);
-			} else
-			{
-//				inGameClock.restart();
-				mApp.setCurrentScreen(menu);
-			}
+			inGameClock.restart();
+			mApp.setCurrentScreen(menu);
 		}
-		case menu:
-		{
-//			mGameMenu.draw(theGameWindow);
-		}
-		case game:
-		{
+	} else if (mApp.getCurrentScreen() == menu)
+	{
+		mGameMenu.draw(theGameWindow);
+	} else if (mApp.getCurrentScreen() == game)
+	{
 
-		}
-		default:
-			break;
 	}
 
 }

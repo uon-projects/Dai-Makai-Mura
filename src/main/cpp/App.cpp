@@ -33,7 +33,7 @@ App::~App()
 
 screen App::getCurrentScreen()
 {
-	return splash;
+	return this->currentScreen;
 }
 
 void App::setCurrentScreen(screen screenChose)
