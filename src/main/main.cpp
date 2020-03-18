@@ -55,6 +55,7 @@ void draw();
 
 int main()
 {
+
 	Clock clockTime;
 	Time speed;
 

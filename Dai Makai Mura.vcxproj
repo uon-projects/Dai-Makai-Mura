@@ -73,7 +73,19 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\main\cpp\App.cpp" />
+    <ClCompile Include="src\main\cpp\library\Loader.cpp" />
+    <ClCompile Include="src\main\cpp\screen\GameMenuScreen.cpp" />
+    <ClCompile Include="src\main\cpp\screen\SplashScreen.cpp" />
+    <ClCompile Include="src\main\cpp\Utils.cpp" />
     <ClCompile Include="src\main\main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\main\header\App.h" />
+    <ClInclude Include="src\main\header\library\Loader.h" />
+    <ClInclude Include="src\main\header\screen\GameMenuScreen.h" />
+    <ClInclude Include="src\main\header\screen\SplashScreen.h" />
+    <ClInclude Include="src\main\header\Utils.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

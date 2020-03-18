@@ -31,7 +31,9 @@ App::App()
 }
 
 App::~App()
-= default;
+{
+
+}
 
 screen App::getCurrentScreen()
 {

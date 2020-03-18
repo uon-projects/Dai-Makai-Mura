@@ -33,7 +33,9 @@ GameMenuScreen::GameMenuScreen()
 }
 
 GameMenuScreen::~GameMenuScreen()
-= default;
+{
+
+}
 
 void GameMenuScreen::draw(RenderWindow &window)
 {
