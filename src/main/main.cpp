@@ -110,6 +110,8 @@ void update(float seconds)
 void draw()
 {
 
+	mApp.setCurrentScreen(menu);
+	cout<<mApp.getCurrentScreen()<<'\n';
 	switch (mApp.getCurrentScreen())
 	{
 		case splash:
@@ -120,13 +122,13 @@ void draw()
 				mSplashScreen.draw(theGameWindow);
 			} else
 			{
-				inGameClock.restart();
+//				inGameClock.restart();
 				mApp.setCurrentScreen(menu);
 			}
 		}
 		case menu:
 		{
-			mGameMenu.draw(theGameWindow);
+//			mGameMenu.draw(theGameWindow);
 		}
 		case game:
 		{

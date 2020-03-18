@@ -31,9 +31,9 @@ App::App()
 App::~App()
 = default;
 
-int App::getCurrentScreen()
+screen App::getCurrentScreen()
 {
-	return App::currentScreen;
+	return splash;
 }
 
 void App::setCurrentScreen(screen screenChose)
