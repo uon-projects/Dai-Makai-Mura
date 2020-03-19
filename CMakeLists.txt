@@ -5,7 +5,7 @@ project(${project_title})
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -static -static-libgcc -static-libstdc++")
 
-add_executable(${project_title} app/src/main/main.cpp app/src/main/cpp/App.cpp app/src/main/header/App.h app/src/main/cpp/Utils.cpp app/src/main/header/Utils.h app/src/main/cpp/screen/SplashScreen.cpp app/src/main/header/screen/SplashScreen.h library/src/main/cpp/Loader.cpp library/src/main/header/Loader.h app/src/main/cpp/screen/GameMenuScreen.cpp app/src/main/header/screen/GameMenuScreen.h)
+add_executable(${project_title} app/src/main/main.cpp app/src/main/cpp/App.cpp app/src/main/header/App.h app/src/main/cpp/Utils.cpp app/src/main/header/Utils.h app/src/main/cpp/screen/SplashScreen.cpp app/src/main/header/screen/SplashScreen.h library/src/main/cpp/Loader.cpp library/src/main/header/Loader.h app/src/main/cpp/screen/GameMenuScreen.cpp app/src/main/header/screen/GameMenuScreen.h library/src/main/cpp/RoundedRectangleShape.cpp library/src/main/header/RoundedRectangleShape.h)
 
 set(CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/cmake" ${CMAKE_MODULE_PATH})
 

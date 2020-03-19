@@ -284,6 +284,33 @@ library/src/main/cpp/Loader.cpp.s:
 	$(MAKE) -f CMakeFiles\Dai-Makai-Mura.dir\build.make CMakeFiles/Dai-Makai-Mura.dir/library/src/main/cpp/Loader.cpp.s
 .PHONY : library/src/main/cpp/Loader.cpp.s
 
+library/src/main/cpp/RoundedRectangleShape.obj: library/src/main/cpp/RoundedRectangleShape.cpp.obj
+
+.PHONY : library/src/main/cpp/RoundedRectangleShape.obj
+
+# target to build an object file
+library/src/main/cpp/RoundedRectangleShape.cpp.obj:
+	$(MAKE) -f CMakeFiles\Dai-Makai-Mura.dir\build.make CMakeFiles/Dai-Makai-Mura.dir/library/src/main/cpp/RoundedRectangleShape.cpp.obj
+.PHONY : library/src/main/cpp/RoundedRectangleShape.cpp.obj
+
+library/src/main/cpp/RoundedRectangleShape.i: library/src/main/cpp/RoundedRectangleShape.cpp.i
+
+.PHONY : library/src/main/cpp/RoundedRectangleShape.i
+
+# target to preprocess a source file
+library/src/main/cpp/RoundedRectangleShape.cpp.i:
+	$(MAKE) -f CMakeFiles\Dai-Makai-Mura.dir\build.make CMakeFiles/Dai-Makai-Mura.dir/library/src/main/cpp/RoundedRectangleShape.cpp.i
+.PHONY : library/src/main/cpp/RoundedRectangleShape.cpp.i
+
+library/src/main/cpp/RoundedRectangleShape.s: library/src/main/cpp/RoundedRectangleShape.cpp.s
+
+.PHONY : library/src/main/cpp/RoundedRectangleShape.s
+
+# target to generate assembly for a file
+library/src/main/cpp/RoundedRectangleShape.cpp.s:
+	$(MAKE) -f CMakeFiles\Dai-Makai-Mura.dir\build.make CMakeFiles/Dai-Makai-Mura.dir/library/src/main/cpp/RoundedRectangleShape.cpp.s
+.PHONY : library/src/main/cpp/RoundedRectangleShape.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -311,6 +338,9 @@ help:
 	@echo ... library/src/main/cpp/Loader.obj
 	@echo ... library/src/main/cpp/Loader.i
 	@echo ... library/src/main/cpp/Loader.s
+	@echo ... library/src/main/cpp/RoundedRectangleShape.obj
+	@echo ... library/src/main/cpp/RoundedRectangleShape.i
+	@echo ... library/src/main/cpp/RoundedRectangleShape.s
 .PHONY : help
 
 

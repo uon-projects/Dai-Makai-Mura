@@ -21,36 +21,38 @@
  * 
  **/
 
-// Created by TeodorHMX1 on 17/03/2020.
+// Created by TeodorHMX1 on 19/03/2020.
 
-#include "../../header/screen/GameMenuScreen.h"
-#include "../../../../../library/src/main/header/RoundedRectangleShape.h"
+#include <SFML/Graphics.hpp>
 
-GameMenuScreen::GameMenuScreen()
+using namespace sf;
+
+class RoundedRectangleShape : public Shape
 {
 
-	gameMenuScreenBackground.setFillColor(Color(52, 235, 116));
+public:
+	~RoundedRectangleShape();
 
-}
+public:
+	explicit RoundedRectangleShape(const Vector2f &size = Vector2f(0, 0), float radius = 0,
+	                               unsigned int cornerPointCount = 0);
 
-GameMenuScreen::~GameMenuScreen()
-{
+	void setSize(const Vector2f &size);
 
-}
+	const Vector2f &getSize() const;
 
-void GameMenuScreen::draw(RenderWindow &window)
-{
+	void setCornersRadius(float radius);
 
-	gameMenuScreenBackground.setSize(Vector2f(window.getSize().x, window.getSize().y));
-	window.draw(gameMenuScreenBackground);
+	float getCornersRadius() const;
 
-	RoundedRectangleShape roundedRectangle;
-	roundedRectangle.setSize(sf::Vector2f(100, 100));
-	roundedRectangle.setCornersRadius(5);
-	roundedRectangle.setOutlineThickness(5);
-	roundedRectangle.setPosition(100, 100);
-	roundedRectangle.setFillColor(Color::Black);
+	void setCornerPointCount(unsigned int count);
 
-	window.draw(roundedRectangle);
+	virtual std::size_t getPointCount() const;
 
-}
+	virtual Vector2f getPoint(std::size_t index) const;
+
+private:
+	Vector2f mySize;
+	float myRadius;
+	unsigned int myCornerPointCount;
+};

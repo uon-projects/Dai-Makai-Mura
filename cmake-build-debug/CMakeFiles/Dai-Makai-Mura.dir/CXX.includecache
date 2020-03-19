@@ -6,63 +6,19 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/app/src/main/cpp/App.cpp
-../header/App.h
-C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/app/src/main/header/App.h
-
-C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/app/src/main/cpp/Utils.cpp
-../header/Utils.h
-C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/app/src/main/header/Utils.h
-
-C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/app/src/main/cpp/library/Loader.cpp
-string
--
-../../header/library/Loader.h
-C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/app/src/main/header/library/Loader.h
-
 C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/app/src/main/cpp/screen/GameMenuScreen.cpp
 ../../header/screen/GameMenuScreen.h
 C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/app/src/main/header/screen/GameMenuScreen.h
-
-C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/app/src/main/cpp/screen/SplashScreen.cpp
-SFML/Graphics.hpp
--
-../../header/screen/SplashScreen.h
-C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/app/src/main/header/screen/SplashScreen.h
-
-C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/app/src/main/header/App.h
-Utils.h
-C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/app/src/main/header/Utils.h
-
-C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/app/src/main/header/Utils.h
-
-C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/app/src/main/header/library/Loader.h
-SFML/Graphics.hpp
--
-list
--
+../../../../../library/src/main/header/RoundedRectangleShape.h
+C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/library/src/main/header/RoundedRectangleShape.h
 
 C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/app/src/main/header/screen/GameMenuScreen.h
 SFML/Graphics.hpp
 -
 
-C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/app/src/main/header/screen/SplashScreen.h
+C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/library/src/main/header/RoundedRectangleShape.h
 SFML/Graphics.hpp
 -
-../library/Loader.h
-C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/app/src/main/header/library/Loader.h
-
-C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/app/src/main/main.cpp
-iostream
--
-SFML/Graphics.hpp
--
-header/App.h
-C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/app/src/main/header/App.h
-header/screen/SplashScreen.h
-C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/app/src/main/header/screen/SplashScreen.h
-header/screen/GameMenuScreen.h
-C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/app/src/main/header/screen/GameMenuScreen.h
 
 C:/mingw32/include/SFML/Config.hpp
 TargetConditionals.h
