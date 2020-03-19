@@ -23,16 +23,31 @@
 
 // Created by TeodorHMX1 on 17/03/2020.
 
-#include <string>
-#include "../../header/library/Loader.h"
+#include "../../header/screen/GameMenuScreen.h"
+#include "../../../../../library/src/main/header/MaterialButton.h"
 
-Sprite Loader::loadSpriteFromTexture(std::string assetPath, std::string assetName, std::string assetExtension)
+GameMenuScreen::GameMenuScreen()
 {
-	sf::Texture zfTexture;
-	if (!zfTexture.loadFromFile(assetPath + "/" + assetName + "." + assetExtension)) {
-		system("pause");
-	}
-	zfTextures.push_front(zfTexture);
-	sf::Sprite zfSprite(zfTextures.front());
-	return zfSprite;
+
+	gameMenuScreenBackground.setFillColor(Color(52, 235, 116));
+
+}
+
+GameMenuScreen::~GameMenuScreen()
+{
+
+}
+
+void GameMenuScreen::draw(RenderWindow &window)
+{
+
+	gameMenuScreenBackground.setSize(Vector2f(window.getSize().x, window.getSize().y));
+	window.draw(gameMenuScreenBackground);
+
+	MaterialButton rectangle;
+	rectangle.setSize(Vector2f(100, 50));
+	rectangle.setPosition(0, 0);
+	rectangle.setFillColor(Color(23, 23, 23));
+	window.draw(rectangle);
+
 }

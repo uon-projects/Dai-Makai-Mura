@@ -23,25 +23,16 @@
 
 // Created by TeodorHMX1 on 17/03/2020.
 
-#include <SFML/Graphics.hpp>
-#include "../../header/library/Loader.h"
+#include <string>
+#include "../header/Loader.h"
 
-using namespace sf;
-
-class SplashScreen
+Sprite Loader::loadSpriteFromTexture(std::string assetPath, std::string assetName, std::string assetExtension)
 {
-
-public:
-	RectangleShape splashScreenBg;
-	Sprite mSplashLogo;
-	Loader mLoader;
-
-public:
-	SplashScreen();
-
-	~SplashScreen();
-
-public:
-	void draw(sf::RenderWindow &window);
-
-};
+	sf::Texture zfTexture;
+	if (!zfTexture.loadFromFile(assetPath + "/" + assetName + "." + assetExtension)) {
+		system("pause");
+	}
+	zfTextures.push_front(zfTexture);
+	sf::Sprite zfSprite(zfTextures.front());
+	return zfSprite;
+}
