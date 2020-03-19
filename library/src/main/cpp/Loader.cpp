@@ -24,7 +24,7 @@
 // Created by TeodorHMX1 on 17/03/2020.
 
 #include <string>
-#include "../../header/library/Loader.h"
+#include "../header/Loader.h"
 
 Sprite Loader::loadSpriteFromTexture(std::string assetPath, std::string assetName, std::string assetExtension)
 {

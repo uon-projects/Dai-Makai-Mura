@@ -24,7 +24,7 @@
 // Created by TeodorHMX1 on 17/03/2020.
 
 #include <SFML/Graphics.hpp>
-#include "../library/Loader.h"
+#include "../../../../../library/src/main/header/Loader.h"
 
 using namespace sf;
 

@@ -176,33 +176,6 @@ app/src/main/cpp/Utils.cpp.s:
 	$(MAKE) -f CMakeFiles\Dai-Makai-Mura.dir\build.make CMakeFiles/Dai-Makai-Mura.dir/app/src/main/cpp/Utils.cpp.s
 .PHONY : app/src/main/cpp/Utils.cpp.s
 
-app/src/main/cpp/library/Loader.obj: app/src/main/cpp/library/Loader.cpp.obj
-
-.PHONY : app/src/main/cpp/library/Loader.obj
-
-# target to build an object file
-app/src/main/cpp/library/Loader.cpp.obj:
-	$(MAKE) -f CMakeFiles\Dai-Makai-Mura.dir\build.make CMakeFiles/Dai-Makai-Mura.dir/app/src/main/cpp/library/Loader.cpp.obj
-.PHONY : app/src/main/cpp/library/Loader.cpp.obj
-
-app/src/main/cpp/library/Loader.i: app/src/main/cpp/library/Loader.cpp.i
-
-.PHONY : app/src/main/cpp/library/Loader.i
-
-# target to preprocess a source file
-app/src/main/cpp/library/Loader.cpp.i:
-	$(MAKE) -f CMakeFiles\Dai-Makai-Mura.dir\build.make CMakeFiles/Dai-Makai-Mura.dir/app/src/main/cpp/library/Loader.cpp.i
-.PHONY : app/src/main/cpp/library/Loader.cpp.i
-
-app/src/main/cpp/library/Loader.s: app/src/main/cpp/library/Loader.cpp.s
-
-.PHONY : app/src/main/cpp/library/Loader.s
-
-# target to generate assembly for a file
-app/src/main/cpp/library/Loader.cpp.s:
-	$(MAKE) -f CMakeFiles\Dai-Makai-Mura.dir\build.make CMakeFiles/Dai-Makai-Mura.dir/app/src/main/cpp/library/Loader.cpp.s
-.PHONY : app/src/main/cpp/library/Loader.cpp.s
-
 app/src/main/cpp/screen/GameMenuScreen.obj: app/src/main/cpp/screen/GameMenuScreen.cpp.obj
 
 .PHONY : app/src/main/cpp/screen/GameMenuScreen.obj
@@ -284,6 +257,33 @@ app/src/main/main.cpp.s:
 	$(MAKE) -f CMakeFiles\Dai-Makai-Mura.dir\build.make CMakeFiles/Dai-Makai-Mura.dir/app/src/main/main.cpp.s
 .PHONY : app/src/main/main.cpp.s
 
+library/src/main/cpp/Loader.obj: library/src/main/cpp/Loader.cpp.obj
+
+.PHONY : library/src/main/cpp/Loader.obj
+
+# target to build an object file
+library/src/main/cpp/Loader.cpp.obj:
+	$(MAKE) -f CMakeFiles\Dai-Makai-Mura.dir\build.make CMakeFiles/Dai-Makai-Mura.dir/library/src/main/cpp/Loader.cpp.obj
+.PHONY : library/src/main/cpp/Loader.cpp.obj
+
+library/src/main/cpp/Loader.i: library/src/main/cpp/Loader.cpp.i
+
+.PHONY : library/src/main/cpp/Loader.i
+
+# target to preprocess a source file
+library/src/main/cpp/Loader.cpp.i:
+	$(MAKE) -f CMakeFiles\Dai-Makai-Mura.dir\build.make CMakeFiles/Dai-Makai-Mura.dir/library/src/main/cpp/Loader.cpp.i
+.PHONY : library/src/main/cpp/Loader.cpp.i
+
+library/src/main/cpp/Loader.s: library/src/main/cpp/Loader.cpp.s
+
+.PHONY : library/src/main/cpp/Loader.s
+
+# target to generate assembly for a file
+library/src/main/cpp/Loader.cpp.s:
+	$(MAKE) -f CMakeFiles\Dai-Makai-Mura.dir\build.make CMakeFiles/Dai-Makai-Mura.dir/library/src/main/cpp/Loader.cpp.s
+.PHONY : library/src/main/cpp/Loader.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -299,9 +299,6 @@ help:
 	@echo ... app/src/main/cpp/Utils.obj
 	@echo ... app/src/main/cpp/Utils.i
 	@echo ... app/src/main/cpp/Utils.s
-	@echo ... app/src/main/cpp/library/Loader.obj
-	@echo ... app/src/main/cpp/library/Loader.i
-	@echo ... app/src/main/cpp/library/Loader.s
 	@echo ... app/src/main/cpp/screen/GameMenuScreen.obj
 	@echo ... app/src/main/cpp/screen/GameMenuScreen.i
 	@echo ... app/src/main/cpp/screen/GameMenuScreen.s
@@ -311,6 +308,9 @@ help:
 	@echo ... app/src/main/main.obj
 	@echo ... app/src/main/main.i
 	@echo ... app/src/main/main.s
+	@echo ... library/src/main/cpp/Loader.obj
+	@echo ... library/src/main/cpp/Loader.i
+	@echo ... library/src/main/cpp/Loader.s
 .PHONY : help
 
 
