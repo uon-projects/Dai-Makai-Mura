@@ -14,21 +14,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f5136dbc-fa19-4e83-9ace-75ad5814e213" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dai Makai Mura.sdf" beforeDir="false" afterPath="$PROJECT_DIR$/Dai Makai Mura.sdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dai Makai Mura.vcxproj" beforeDir="false" afterPath="$PROJECT_DIR$/Dai Makai Mura.vcxproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dai Makai Mura.vcxproj.filters" beforeDir="false" afterPath="$PROJECT_DIR$/Dai Makai Mura.vcxproj.filters" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Debug/CL.read.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/Debug/CL.read.1.tlog" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Debug/CL.write.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/Debug/CL.write.1.tlog" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Debug/Dai Makai Mura.log" beforeDir="false" afterPath="$PROJECT_DIR$/Debug/Dai Makai Mura.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Debug/Dai Makai Mura.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Debug/Dai Makai Mura.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Debug/cl.command.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/Debug/cl.command.1.tlog" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Debug/main.obj" beforeDir="false" afterPath="$PROJECT_DIR$/Debug/main.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Debug/vc110.idb" beforeDir="false" afterPath="$PROJECT_DIR$/Debug/vc110.idb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Debug/vc110.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Debug/vc110.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/cpp/App.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/cpp/App.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/cpp/screen/GameMenuScreen.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/cpp/screen/GameMenuScreen.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/cpp/screen/SplashScreen.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/cpp/screen/SplashScreen.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,6 +93,7 @@
       <workItem from="1584539705284" duration="1473000" />
       <workItem from="1584541406777" duration="6000" />
       <workItem from="1584541417558" duration="1258000" />
+      <workItem from="1584609836672" duration="220000" />
     </task>
     <servers />
   </component>
@@ -131,38 +117,38 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="463" y="142" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1584541440081" />
-    <state width="1323" height="192" key="GridCell.Tab.0.bottom" timestamp="1584545546115">
+    <state width="1323" height="192" key="GridCell.Tab.0.bottom" timestamp="1584609955823">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1584545546115" />
-    <state width="1323" height="192" key="GridCell.Tab.0.center" timestamp="1584545546115">
+    <state width="1323" height="192" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1584609955823" />
+    <state width="1323" height="192" key="GridCell.Tab.0.center" timestamp="1584609955823">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1584545546115" />
-    <state width="1323" height="192" key="GridCell.Tab.0.left" timestamp="1584545546115">
+    <state width="1323" height="192" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1584609955823" />
+    <state width="1323" height="192" key="GridCell.Tab.0.left" timestamp="1584609955823">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1584545546115" />
-    <state width="1323" height="192" key="GridCell.Tab.0.right" timestamp="1584545546115">
+    <state width="1323" height="192" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1584609955823" />
+    <state width="1323" height="192" key="GridCell.Tab.0.right" timestamp="1584609955823">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1584545546115" />
-    <state width="1323" height="238" key="GridCell.Tab.1.bottom" timestamp="1584543771377">
+    <state width="1323" height="192" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1584609955823" />
+    <state width="1323" height="238" key="GridCell.Tab.1.bottom" timestamp="1584576132929">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="238" key="GridCell.Tab.1.bottom/0.0.1366.768@0.0.1366.768" timestamp="1584543771377" />
-    <state width="1323" height="238" key="GridCell.Tab.1.center" timestamp="1584543771377">
+    <state width="1323" height="238" key="GridCell.Tab.1.bottom/0.0.1366.768@0.0.1366.768" timestamp="1584576132929" />
+    <state width="1323" height="238" key="GridCell.Tab.1.center" timestamp="1584576132928">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="238" key="GridCell.Tab.1.center/0.0.1366.768@0.0.1366.768" timestamp="1584543771377" />
-    <state width="1323" height="238" key="GridCell.Tab.1.left" timestamp="1584543771377">
+    <state width="1323" height="238" key="GridCell.Tab.1.center/0.0.1366.768@0.0.1366.768" timestamp="1584576132928" />
+    <state width="1323" height="238" key="GridCell.Tab.1.left" timestamp="1584576132928">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="238" key="GridCell.Tab.1.left/0.0.1366.768@0.0.1366.768" timestamp="1584543771377" />
-    <state width="1323" height="238" key="GridCell.Tab.1.right" timestamp="1584543771377">
+    <state width="1323" height="238" key="GridCell.Tab.1.left/0.0.1366.768@0.0.1366.768" timestamp="1584576132928" />
+    <state width="1323" height="238" key="GridCell.Tab.1.right" timestamp="1584576132928">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="238" key="GridCell.Tab.1.right/0.0.1366.768@0.0.1366.768" timestamp="1584543771377" />
+    <state width="1323" height="238" key="GridCell.Tab.1.right/0.0.1366.768@0.0.1366.768" timestamp="1584576132928" />
     <state x="204" y="9" key="SettingsEditor" timestamp="1584535185415">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
