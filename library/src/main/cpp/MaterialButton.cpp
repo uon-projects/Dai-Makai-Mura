@@ -21,33 +21,17 @@
  * 
  **/
 
-// Created by TeodorHMX1 on 17/03/2020.
+// Created by TeodorHMX1 on 19/03/2020.
 
-#include "../../header/screen/GameMenuScreen.h"
-#include "../../../../../library/src/main/header/MaterialButton.h"
+#include "../header/MaterialButton.h"
 
-GameMenuScreen::GameMenuScreen()
-{
-
-	gameMenuScreenBackground.setFillColor(Color(52, 235, 116));
-
-}
-
-GameMenuScreen::~GameMenuScreen()
+MaterialButton::~MaterialButton()
 {
 
 }
 
-void GameMenuScreen::draw(RenderWindow &window)
+MaterialButton::MaterialButton()
 {
-
-	gameMenuScreenBackground.setSize(Vector2f(window.getSize().x, window.getSize().y));
-	window.draw(gameMenuScreenBackground);
-
-	MaterialButton rectangle;
-	rectangle.setSize(Vector2f(100, 50));
-	rectangle.setPosition(0, 0);
-	rectangle.setFillColor(Color(23, 23, 23));
-	window.draw(rectangle);
-
+	setOrigin(0, 0);
+	update();
 }

@@ -284,6 +284,33 @@ library/src/main/cpp/Loader.cpp.s:
 	$(MAKE) -f CMakeFiles\Dai-Makai-Mura.dir\build.make CMakeFiles/Dai-Makai-Mura.dir/library/src/main/cpp/Loader.cpp.s
 .PHONY : library/src/main/cpp/Loader.cpp.s
 
+library/src/main/cpp/MaterialButton.obj: library/src/main/cpp/MaterialButton.cpp.obj
+
+.PHONY : library/src/main/cpp/MaterialButton.obj
+
+# target to build an object file
+library/src/main/cpp/MaterialButton.cpp.obj:
+	$(MAKE) -f CMakeFiles\Dai-Makai-Mura.dir\build.make CMakeFiles/Dai-Makai-Mura.dir/library/src/main/cpp/MaterialButton.cpp.obj
+.PHONY : library/src/main/cpp/MaterialButton.cpp.obj
+
+library/src/main/cpp/MaterialButton.i: library/src/main/cpp/MaterialButton.cpp.i
+
+.PHONY : library/src/main/cpp/MaterialButton.i
+
+# target to preprocess a source file
+library/src/main/cpp/MaterialButton.cpp.i:
+	$(MAKE) -f CMakeFiles\Dai-Makai-Mura.dir\build.make CMakeFiles/Dai-Makai-Mura.dir/library/src/main/cpp/MaterialButton.cpp.i
+.PHONY : library/src/main/cpp/MaterialButton.cpp.i
+
+library/src/main/cpp/MaterialButton.s: library/src/main/cpp/MaterialButton.cpp.s
+
+.PHONY : library/src/main/cpp/MaterialButton.s
+
+# target to generate assembly for a file
+library/src/main/cpp/MaterialButton.cpp.s:
+	$(MAKE) -f CMakeFiles\Dai-Makai-Mura.dir\build.make CMakeFiles/Dai-Makai-Mura.dir/library/src/main/cpp/MaterialButton.cpp.s
+.PHONY : library/src/main/cpp/MaterialButton.cpp.s
+
 library/src/main/cpp/RoundedRectangleShape.obj: library/src/main/cpp/RoundedRectangleShape.cpp.obj
 
 .PHONY : library/src/main/cpp/RoundedRectangleShape.obj
@@ -338,6 +365,9 @@ help:
 	@echo ... library/src/main/cpp/Loader.obj
 	@echo ... library/src/main/cpp/Loader.i
 	@echo ... library/src/main/cpp/Loader.s
+	@echo ... library/src/main/cpp/MaterialButton.obj
+	@echo ... library/src/main/cpp/MaterialButton.i
+	@echo ... library/src/main/cpp/MaterialButton.s
 	@echo ... library/src/main/cpp/RoundedRectangleShape.obj
 	@echo ... library/src/main/cpp/RoundedRectangleShape.i
 	@echo ... library/src/main/cpp/RoundedRectangleShape.s

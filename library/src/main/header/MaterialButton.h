@@ -21,33 +21,19 @@
  * 
  **/
 
-// Created by TeodorHMX1 on 17/03/2020.
+// Created by TeodorHMX1 on 19/03/2020.
 
-#include "../../header/screen/GameMenuScreen.h"
-#include "../../../../../library/src/main/header/MaterialButton.h"
+#include <SFML/Graphics.hpp>
 
-GameMenuScreen::GameMenuScreen()
+using namespace sf;
+
+class MaterialButton : public RectangleShape
 {
 
-	gameMenuScreenBackground.setFillColor(Color(52, 235, 116));
+public:
+	~MaterialButton();
 
-}
+public:
+	explicit MaterialButton();
 
-GameMenuScreen::~GameMenuScreen()
-{
-
-}
-
-void GameMenuScreen::draw(RenderWindow &window)
-{
-
-	gameMenuScreenBackground.setSize(Vector2f(window.getSize().x, window.getSize().y));
-	window.draw(gameMenuScreenBackground);
-
-	MaterialButton rectangle;
-	rectangle.setSize(Vector2f(100, 50));
-	rectangle.setPosition(0, 0);
-	rectangle.setFillColor(Color(23, 23, 23));
-	window.draw(rectangle);
-
-}
+};
