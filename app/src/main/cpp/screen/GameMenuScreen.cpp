@@ -45,12 +45,13 @@ void GameMenuScreen::draw(RenderWindow &window)
 	window.draw(gameMenuScreenBackground);
 
 	RoundedRectangleShape roundedRectangle;
-	roundedRectangle.setSize(sf::Vector2f(100, 100));
-	roundedRectangle.setCornersRadius(5);
-	roundedRectangle.setOutlineThickness(5);
+	roundedRectangle.setSize(Vector2f(100, 100));
 	roundedRectangle.setPosition(100, 100);
-	roundedRectangle.setFillColor(Color::Black);
-
 	window.draw(roundedRectangle);
+
+	RectangleShape rectangle;
+	rectangle.setSize(Vector2f(100, 50));
+	rectangle.setPosition(300, 20);
+	window.draw(rectangle);
 
 }
