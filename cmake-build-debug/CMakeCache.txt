@@ -256,9 +256,6 @@ SFML_AUDIO_LIBRARY_STATIC_DEBUG:FILEPATH=C:/mingw32/lib/libsfml-audio-s-d.a
 //Path to a library.
 SFML_AUDIO_LIBRARY_STATIC_RELEASE:FILEPATH=C:/mingw32/lib/libsfml-audio-s.a
 
-//The directory containing a CMake configuration file for SFML.
-SFML_DIR:PATH=SFML_DIR-NOTFOUND
-
 //Path to a library.
 SFML_GRAPHICS_LIBRARY_DYNAMIC_DEBUG:FILEPATH=C:/mingw32/lib/libsfml-graphics-d.a
 

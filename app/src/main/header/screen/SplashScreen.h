@@ -23,24 +23,25 @@
 
 // Created by TeodorHMX1 on 17/03/2020.
 
-#include "../../header/screen/GameMenuScreen.h"
+#include <SFML/Graphics.hpp>
+#include "../../../../../library/src/main/header/Loader.h"
 
-GameMenuScreen::GameMenuScreen()
+using namespace sf;
+
+class SplashScreen
 {
 
-	gameMenuScreenBackground.setFillColor(Color(52, 235, 116));
+public:
+	RectangleShape splashScreenBg;
+	Sprite mSplashLogo;
+	Loader mLoader;
 
-}
+public:
+	SplashScreen();
 
-GameMenuScreen::~GameMenuScreen()
-{
+	~SplashScreen();
 
-}
+public:
+	void draw(sf::RenderWindow &window);
 
-void GameMenuScreen::draw(RenderWindow &window)
-{
-
-	gameMenuScreenBackground.setSize(Vector2f(window.getSize().x, window.getSize().y));
-	window.draw(gameMenuScreenBackground);
-
-}
+};

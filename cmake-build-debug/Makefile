@@ -122,167 +122,221 @@ Dai-Makai-Mura/fast:
 	$(MAKE) -f CMakeFiles\Dai-Makai-Mura.dir\build.make CMakeFiles/Dai-Makai-Mura.dir/build
 .PHONY : Dai-Makai-Mura/fast
 
-src/main/cpp/App.obj: src/main/cpp/App.cpp.obj
+app/src/main/cpp/App.obj: app/src/main/cpp/App.cpp.obj
 
-.PHONY : src/main/cpp/App.obj
-
-# target to build an object file
-src/main/cpp/App.cpp.obj:
-	$(MAKE) -f CMakeFiles\Dai-Makai-Mura.dir\build.make CMakeFiles/Dai-Makai-Mura.dir/src/main/cpp/App.cpp.obj
-.PHONY : src/main/cpp/App.cpp.obj
-
-src/main/cpp/App.i: src/main/cpp/App.cpp.i
-
-.PHONY : src/main/cpp/App.i
-
-# target to preprocess a source file
-src/main/cpp/App.cpp.i:
-	$(MAKE) -f CMakeFiles\Dai-Makai-Mura.dir\build.make CMakeFiles/Dai-Makai-Mura.dir/src/main/cpp/App.cpp.i
-.PHONY : src/main/cpp/App.cpp.i
-
-src/main/cpp/App.s: src/main/cpp/App.cpp.s
-
-.PHONY : src/main/cpp/App.s
-
-# target to generate assembly for a file
-src/main/cpp/App.cpp.s:
-	$(MAKE) -f CMakeFiles\Dai-Makai-Mura.dir\build.make CMakeFiles/Dai-Makai-Mura.dir/src/main/cpp/App.cpp.s
-.PHONY : src/main/cpp/App.cpp.s
-
-src/main/cpp/Utils.obj: src/main/cpp/Utils.cpp.obj
-
-.PHONY : src/main/cpp/Utils.obj
+.PHONY : app/src/main/cpp/App.obj
 
 # target to build an object file
-src/main/cpp/Utils.cpp.obj:
-	$(MAKE) -f CMakeFiles\Dai-Makai-Mura.dir\build.make CMakeFiles/Dai-Makai-Mura.dir/src/main/cpp/Utils.cpp.obj
-.PHONY : src/main/cpp/Utils.cpp.obj
+app/src/main/cpp/App.cpp.obj:
+	$(MAKE) -f CMakeFiles\Dai-Makai-Mura.dir\build.make CMakeFiles/Dai-Makai-Mura.dir/app/src/main/cpp/App.cpp.obj
+.PHONY : app/src/main/cpp/App.cpp.obj
 
-src/main/cpp/Utils.i: src/main/cpp/Utils.cpp.i
+app/src/main/cpp/App.i: app/src/main/cpp/App.cpp.i
 
-.PHONY : src/main/cpp/Utils.i
+.PHONY : app/src/main/cpp/App.i
 
 # target to preprocess a source file
-src/main/cpp/Utils.cpp.i:
-	$(MAKE) -f CMakeFiles\Dai-Makai-Mura.dir\build.make CMakeFiles/Dai-Makai-Mura.dir/src/main/cpp/Utils.cpp.i
-.PHONY : src/main/cpp/Utils.cpp.i
+app/src/main/cpp/App.cpp.i:
+	$(MAKE) -f CMakeFiles\Dai-Makai-Mura.dir\build.make CMakeFiles/Dai-Makai-Mura.dir/app/src/main/cpp/App.cpp.i
+.PHONY : app/src/main/cpp/App.cpp.i
 
-src/main/cpp/Utils.s: src/main/cpp/Utils.cpp.s
+app/src/main/cpp/App.s: app/src/main/cpp/App.cpp.s
 
-.PHONY : src/main/cpp/Utils.s
+.PHONY : app/src/main/cpp/App.s
 
 # target to generate assembly for a file
-src/main/cpp/Utils.cpp.s:
-	$(MAKE) -f CMakeFiles\Dai-Makai-Mura.dir\build.make CMakeFiles/Dai-Makai-Mura.dir/src/main/cpp/Utils.cpp.s
-.PHONY : src/main/cpp/Utils.cpp.s
+app/src/main/cpp/App.cpp.s:
+	$(MAKE) -f CMakeFiles\Dai-Makai-Mura.dir\build.make CMakeFiles/Dai-Makai-Mura.dir/app/src/main/cpp/App.cpp.s
+.PHONY : app/src/main/cpp/App.cpp.s
 
-src/main/cpp/library/Loader.obj: src/main/cpp/library/Loader.cpp.obj
+app/src/main/cpp/Utils.obj: app/src/main/cpp/Utils.cpp.obj
 
-.PHONY : src/main/cpp/library/Loader.obj
+.PHONY : app/src/main/cpp/Utils.obj
 
 # target to build an object file
-src/main/cpp/library/Loader.cpp.obj:
-	$(MAKE) -f CMakeFiles\Dai-Makai-Mura.dir\build.make CMakeFiles/Dai-Makai-Mura.dir/src/main/cpp/library/Loader.cpp.obj
-.PHONY : src/main/cpp/library/Loader.cpp.obj
+app/src/main/cpp/Utils.cpp.obj:
+	$(MAKE) -f CMakeFiles\Dai-Makai-Mura.dir\build.make CMakeFiles/Dai-Makai-Mura.dir/app/src/main/cpp/Utils.cpp.obj
+.PHONY : app/src/main/cpp/Utils.cpp.obj
 
-src/main/cpp/library/Loader.i: src/main/cpp/library/Loader.cpp.i
+app/src/main/cpp/Utils.i: app/src/main/cpp/Utils.cpp.i
 
-.PHONY : src/main/cpp/library/Loader.i
+.PHONY : app/src/main/cpp/Utils.i
 
 # target to preprocess a source file
-src/main/cpp/library/Loader.cpp.i:
-	$(MAKE) -f CMakeFiles\Dai-Makai-Mura.dir\build.make CMakeFiles/Dai-Makai-Mura.dir/src/main/cpp/library/Loader.cpp.i
-.PHONY : src/main/cpp/library/Loader.cpp.i
+app/src/main/cpp/Utils.cpp.i:
+	$(MAKE) -f CMakeFiles\Dai-Makai-Mura.dir\build.make CMakeFiles/Dai-Makai-Mura.dir/app/src/main/cpp/Utils.cpp.i
+.PHONY : app/src/main/cpp/Utils.cpp.i
 
-src/main/cpp/library/Loader.s: src/main/cpp/library/Loader.cpp.s
+app/src/main/cpp/Utils.s: app/src/main/cpp/Utils.cpp.s
 
-.PHONY : src/main/cpp/library/Loader.s
+.PHONY : app/src/main/cpp/Utils.s
 
 # target to generate assembly for a file
-src/main/cpp/library/Loader.cpp.s:
-	$(MAKE) -f CMakeFiles\Dai-Makai-Mura.dir\build.make CMakeFiles/Dai-Makai-Mura.dir/src/main/cpp/library/Loader.cpp.s
-.PHONY : src/main/cpp/library/Loader.cpp.s
+app/src/main/cpp/Utils.cpp.s:
+	$(MAKE) -f CMakeFiles\Dai-Makai-Mura.dir\build.make CMakeFiles/Dai-Makai-Mura.dir/app/src/main/cpp/Utils.cpp.s
+.PHONY : app/src/main/cpp/Utils.cpp.s
 
-src/main/cpp/screen/GameMenuScreen.obj: src/main/cpp/screen/GameMenuScreen.cpp.obj
+app/src/main/cpp/screen/GameMenuScreen.obj: app/src/main/cpp/screen/GameMenuScreen.cpp.obj
 
-.PHONY : src/main/cpp/screen/GameMenuScreen.obj
+.PHONY : app/src/main/cpp/screen/GameMenuScreen.obj
 
 # target to build an object file
-src/main/cpp/screen/GameMenuScreen.cpp.obj:
-	$(MAKE) -f CMakeFiles\Dai-Makai-Mura.dir\build.make CMakeFiles/Dai-Makai-Mura.dir/src/main/cpp/screen/GameMenuScreen.cpp.obj
-.PHONY : src/main/cpp/screen/GameMenuScreen.cpp.obj
+app/src/main/cpp/screen/GameMenuScreen.cpp.obj:
+	$(MAKE) -f CMakeFiles\Dai-Makai-Mura.dir\build.make CMakeFiles/Dai-Makai-Mura.dir/app/src/main/cpp/screen/GameMenuScreen.cpp.obj
+.PHONY : app/src/main/cpp/screen/GameMenuScreen.cpp.obj
 
-src/main/cpp/screen/GameMenuScreen.i: src/main/cpp/screen/GameMenuScreen.cpp.i
+app/src/main/cpp/screen/GameMenuScreen.i: app/src/main/cpp/screen/GameMenuScreen.cpp.i
 
-.PHONY : src/main/cpp/screen/GameMenuScreen.i
+.PHONY : app/src/main/cpp/screen/GameMenuScreen.i
 
 # target to preprocess a source file
-src/main/cpp/screen/GameMenuScreen.cpp.i:
-	$(MAKE) -f CMakeFiles\Dai-Makai-Mura.dir\build.make CMakeFiles/Dai-Makai-Mura.dir/src/main/cpp/screen/GameMenuScreen.cpp.i
-.PHONY : src/main/cpp/screen/GameMenuScreen.cpp.i
+app/src/main/cpp/screen/GameMenuScreen.cpp.i:
+	$(MAKE) -f CMakeFiles\Dai-Makai-Mura.dir\build.make CMakeFiles/Dai-Makai-Mura.dir/app/src/main/cpp/screen/GameMenuScreen.cpp.i
+.PHONY : app/src/main/cpp/screen/GameMenuScreen.cpp.i
 
-src/main/cpp/screen/GameMenuScreen.s: src/main/cpp/screen/GameMenuScreen.cpp.s
+app/src/main/cpp/screen/GameMenuScreen.s: app/src/main/cpp/screen/GameMenuScreen.cpp.s
 
-.PHONY : src/main/cpp/screen/GameMenuScreen.s
+.PHONY : app/src/main/cpp/screen/GameMenuScreen.s
 
 # target to generate assembly for a file
-src/main/cpp/screen/GameMenuScreen.cpp.s:
-	$(MAKE) -f CMakeFiles\Dai-Makai-Mura.dir\build.make CMakeFiles/Dai-Makai-Mura.dir/src/main/cpp/screen/GameMenuScreen.cpp.s
-.PHONY : src/main/cpp/screen/GameMenuScreen.cpp.s
+app/src/main/cpp/screen/GameMenuScreen.cpp.s:
+	$(MAKE) -f CMakeFiles\Dai-Makai-Mura.dir\build.make CMakeFiles/Dai-Makai-Mura.dir/app/src/main/cpp/screen/GameMenuScreen.cpp.s
+.PHONY : app/src/main/cpp/screen/GameMenuScreen.cpp.s
 
-src/main/cpp/screen/SplashScreen.obj: src/main/cpp/screen/SplashScreen.cpp.obj
+app/src/main/cpp/screen/SplashScreen.obj: app/src/main/cpp/screen/SplashScreen.cpp.obj
 
-.PHONY : src/main/cpp/screen/SplashScreen.obj
+.PHONY : app/src/main/cpp/screen/SplashScreen.obj
 
 # target to build an object file
-src/main/cpp/screen/SplashScreen.cpp.obj:
-	$(MAKE) -f CMakeFiles\Dai-Makai-Mura.dir\build.make CMakeFiles/Dai-Makai-Mura.dir/src/main/cpp/screen/SplashScreen.cpp.obj
-.PHONY : src/main/cpp/screen/SplashScreen.cpp.obj
+app/src/main/cpp/screen/SplashScreen.cpp.obj:
+	$(MAKE) -f CMakeFiles\Dai-Makai-Mura.dir\build.make CMakeFiles/Dai-Makai-Mura.dir/app/src/main/cpp/screen/SplashScreen.cpp.obj
+.PHONY : app/src/main/cpp/screen/SplashScreen.cpp.obj
 
-src/main/cpp/screen/SplashScreen.i: src/main/cpp/screen/SplashScreen.cpp.i
+app/src/main/cpp/screen/SplashScreen.i: app/src/main/cpp/screen/SplashScreen.cpp.i
 
-.PHONY : src/main/cpp/screen/SplashScreen.i
+.PHONY : app/src/main/cpp/screen/SplashScreen.i
 
 # target to preprocess a source file
-src/main/cpp/screen/SplashScreen.cpp.i:
-	$(MAKE) -f CMakeFiles\Dai-Makai-Mura.dir\build.make CMakeFiles/Dai-Makai-Mura.dir/src/main/cpp/screen/SplashScreen.cpp.i
-.PHONY : src/main/cpp/screen/SplashScreen.cpp.i
+app/src/main/cpp/screen/SplashScreen.cpp.i:
+	$(MAKE) -f CMakeFiles\Dai-Makai-Mura.dir\build.make CMakeFiles/Dai-Makai-Mura.dir/app/src/main/cpp/screen/SplashScreen.cpp.i
+.PHONY : app/src/main/cpp/screen/SplashScreen.cpp.i
 
-src/main/cpp/screen/SplashScreen.s: src/main/cpp/screen/SplashScreen.cpp.s
+app/src/main/cpp/screen/SplashScreen.s: app/src/main/cpp/screen/SplashScreen.cpp.s
 
-.PHONY : src/main/cpp/screen/SplashScreen.s
+.PHONY : app/src/main/cpp/screen/SplashScreen.s
 
 # target to generate assembly for a file
-src/main/cpp/screen/SplashScreen.cpp.s:
-	$(MAKE) -f CMakeFiles\Dai-Makai-Mura.dir\build.make CMakeFiles/Dai-Makai-Mura.dir/src/main/cpp/screen/SplashScreen.cpp.s
-.PHONY : src/main/cpp/screen/SplashScreen.cpp.s
+app/src/main/cpp/screen/SplashScreen.cpp.s:
+	$(MAKE) -f CMakeFiles\Dai-Makai-Mura.dir\build.make CMakeFiles/Dai-Makai-Mura.dir/app/src/main/cpp/screen/SplashScreen.cpp.s
+.PHONY : app/src/main/cpp/screen/SplashScreen.cpp.s
 
-src/main/main.obj: src/main/main.cpp.obj
+app/src/main/main.obj: app/src/main/main.cpp.obj
 
-.PHONY : src/main/main.obj
+.PHONY : app/src/main/main.obj
 
 # target to build an object file
-src/main/main.cpp.obj:
-	$(MAKE) -f CMakeFiles\Dai-Makai-Mura.dir\build.make CMakeFiles/Dai-Makai-Mura.dir/src/main/main.cpp.obj
-.PHONY : src/main/main.cpp.obj
+app/src/main/main.cpp.obj:
+	$(MAKE) -f CMakeFiles\Dai-Makai-Mura.dir\build.make CMakeFiles/Dai-Makai-Mura.dir/app/src/main/main.cpp.obj
+.PHONY : app/src/main/main.cpp.obj
 
-src/main/main.i: src/main/main.cpp.i
+app/src/main/main.i: app/src/main/main.cpp.i
 
-.PHONY : src/main/main.i
+.PHONY : app/src/main/main.i
 
 # target to preprocess a source file
-src/main/main.cpp.i:
-	$(MAKE) -f CMakeFiles\Dai-Makai-Mura.dir\build.make CMakeFiles/Dai-Makai-Mura.dir/src/main/main.cpp.i
-.PHONY : src/main/main.cpp.i
+app/src/main/main.cpp.i:
+	$(MAKE) -f CMakeFiles\Dai-Makai-Mura.dir\build.make CMakeFiles/Dai-Makai-Mura.dir/app/src/main/main.cpp.i
+.PHONY : app/src/main/main.cpp.i
 
-src/main/main.s: src/main/main.cpp.s
+app/src/main/main.s: app/src/main/main.cpp.s
 
-.PHONY : src/main/main.s
+.PHONY : app/src/main/main.s
 
 # target to generate assembly for a file
-src/main/main.cpp.s:
-	$(MAKE) -f CMakeFiles\Dai-Makai-Mura.dir\build.make CMakeFiles/Dai-Makai-Mura.dir/src/main/main.cpp.s
-.PHONY : src/main/main.cpp.s
+app/src/main/main.cpp.s:
+	$(MAKE) -f CMakeFiles\Dai-Makai-Mura.dir\build.make CMakeFiles/Dai-Makai-Mura.dir/app/src/main/main.cpp.s
+.PHONY : app/src/main/main.cpp.s
+
+library/src/main/cpp/Loader.obj: library/src/main/cpp/Loader.cpp.obj
+
+.PHONY : library/src/main/cpp/Loader.obj
+
+# target to build an object file
+library/src/main/cpp/Loader.cpp.obj:
+	$(MAKE) -f CMakeFiles\Dai-Makai-Mura.dir\build.make CMakeFiles/Dai-Makai-Mura.dir/library/src/main/cpp/Loader.cpp.obj
+.PHONY : library/src/main/cpp/Loader.cpp.obj
+
+library/src/main/cpp/Loader.i: library/src/main/cpp/Loader.cpp.i
+
+.PHONY : library/src/main/cpp/Loader.i
+
+# target to preprocess a source file
+library/src/main/cpp/Loader.cpp.i:
+	$(MAKE) -f CMakeFiles\Dai-Makai-Mura.dir\build.make CMakeFiles/Dai-Makai-Mura.dir/library/src/main/cpp/Loader.cpp.i
+.PHONY : library/src/main/cpp/Loader.cpp.i
+
+library/src/main/cpp/Loader.s: library/src/main/cpp/Loader.cpp.s
+
+.PHONY : library/src/main/cpp/Loader.s
+
+# target to generate assembly for a file
+library/src/main/cpp/Loader.cpp.s:
+	$(MAKE) -f CMakeFiles\Dai-Makai-Mura.dir\build.make CMakeFiles/Dai-Makai-Mura.dir/library/src/main/cpp/Loader.cpp.s
+.PHONY : library/src/main/cpp/Loader.cpp.s
+
+library/src/main/cpp/MaterialButton.obj: library/src/main/cpp/MaterialButton.cpp.obj
+
+.PHONY : library/src/main/cpp/MaterialButton.obj
+
+# target to build an object file
+library/src/main/cpp/MaterialButton.cpp.obj:
+	$(MAKE) -f CMakeFiles\Dai-Makai-Mura.dir\build.make CMakeFiles/Dai-Makai-Mura.dir/library/src/main/cpp/MaterialButton.cpp.obj
+.PHONY : library/src/main/cpp/MaterialButton.cpp.obj
+
+library/src/main/cpp/MaterialButton.i: library/src/main/cpp/MaterialButton.cpp.i
+
+.PHONY : library/src/main/cpp/MaterialButton.i
+
+# target to preprocess a source file
+library/src/main/cpp/MaterialButton.cpp.i:
+	$(MAKE) -f CMakeFiles\Dai-Makai-Mura.dir\build.make CMakeFiles/Dai-Makai-Mura.dir/library/src/main/cpp/MaterialButton.cpp.i
+.PHONY : library/src/main/cpp/MaterialButton.cpp.i
+
+library/src/main/cpp/MaterialButton.s: library/src/main/cpp/MaterialButton.cpp.s
+
+.PHONY : library/src/main/cpp/MaterialButton.s
+
+# target to generate assembly for a file
+library/src/main/cpp/MaterialButton.cpp.s:
+	$(MAKE) -f CMakeFiles\Dai-Makai-Mura.dir\build.make CMakeFiles/Dai-Makai-Mura.dir/library/src/main/cpp/MaterialButton.cpp.s
+.PHONY : library/src/main/cpp/MaterialButton.cpp.s
+
+library/src/main/cpp/RoundedRectangleShape.obj: library/src/main/cpp/RoundedRectangleShape.cpp.obj
+
+.PHONY : library/src/main/cpp/RoundedRectangleShape.obj
+
+# target to build an object file
+library/src/main/cpp/RoundedRectangleShape.cpp.obj:
+	$(MAKE) -f CMakeFiles\Dai-Makai-Mura.dir\build.make CMakeFiles/Dai-Makai-Mura.dir/library/src/main/cpp/RoundedRectangleShape.cpp.obj
+.PHONY : library/src/main/cpp/RoundedRectangleShape.cpp.obj
+
+library/src/main/cpp/RoundedRectangleShape.i: library/src/main/cpp/RoundedRectangleShape.cpp.i
+
+.PHONY : library/src/main/cpp/RoundedRectangleShape.i
+
+# target to preprocess a source file
+library/src/main/cpp/RoundedRectangleShape.cpp.i:
+	$(MAKE) -f CMakeFiles\Dai-Makai-Mura.dir\build.make CMakeFiles/Dai-Makai-Mura.dir/library/src/main/cpp/RoundedRectangleShape.cpp.i
+.PHONY : library/src/main/cpp/RoundedRectangleShape.cpp.i
+
+library/src/main/cpp/RoundedRectangleShape.s: library/src/main/cpp/RoundedRectangleShape.cpp.s
+
+.PHONY : library/src/main/cpp/RoundedRectangleShape.s
+
+# target to generate assembly for a file
+library/src/main/cpp/RoundedRectangleShape.cpp.s:
+	$(MAKE) -f CMakeFiles\Dai-Makai-Mura.dir\build.make CMakeFiles/Dai-Makai-Mura.dir/library/src/main/cpp/RoundedRectangleShape.cpp.s
+.PHONY : library/src/main/cpp/RoundedRectangleShape.cpp.s
 
 # Help Target
 help:
@@ -293,24 +347,30 @@ help:
 	@echo ... Dai-Makai-Mura
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... src/main/cpp/App.obj
-	@echo ... src/main/cpp/App.i
-	@echo ... src/main/cpp/App.s
-	@echo ... src/main/cpp/Utils.obj
-	@echo ... src/main/cpp/Utils.i
-	@echo ... src/main/cpp/Utils.s
-	@echo ... src/main/cpp/library/Loader.obj
-	@echo ... src/main/cpp/library/Loader.i
-	@echo ... src/main/cpp/library/Loader.s
-	@echo ... src/main/cpp/screen/GameMenuScreen.obj
-	@echo ... src/main/cpp/screen/GameMenuScreen.i
-	@echo ... src/main/cpp/screen/GameMenuScreen.s
-	@echo ... src/main/cpp/screen/SplashScreen.obj
-	@echo ... src/main/cpp/screen/SplashScreen.i
-	@echo ... src/main/cpp/screen/SplashScreen.s
-	@echo ... src/main/main.obj
-	@echo ... src/main/main.i
-	@echo ... src/main/main.s
+	@echo ... app/src/main/cpp/App.obj
+	@echo ... app/src/main/cpp/App.i
+	@echo ... app/src/main/cpp/App.s
+	@echo ... app/src/main/cpp/Utils.obj
+	@echo ... app/src/main/cpp/Utils.i
+	@echo ... app/src/main/cpp/Utils.s
+	@echo ... app/src/main/cpp/screen/GameMenuScreen.obj
+	@echo ... app/src/main/cpp/screen/GameMenuScreen.i
+	@echo ... app/src/main/cpp/screen/GameMenuScreen.s
+	@echo ... app/src/main/cpp/screen/SplashScreen.obj
+	@echo ... app/src/main/cpp/screen/SplashScreen.i
+	@echo ... app/src/main/cpp/screen/SplashScreen.s
+	@echo ... app/src/main/main.obj
+	@echo ... app/src/main/main.i
+	@echo ... app/src/main/main.s
+	@echo ... library/src/main/cpp/Loader.obj
+	@echo ... library/src/main/cpp/Loader.i
+	@echo ... library/src/main/cpp/Loader.s
+	@echo ... library/src/main/cpp/MaterialButton.obj
+	@echo ... library/src/main/cpp/MaterialButton.i
+	@echo ... library/src/main/cpp/MaterialButton.s
+	@echo ... library/src/main/cpp/RoundedRectangleShape.obj
+	@echo ... library/src/main/cpp/RoundedRectangleShape.i
+	@echo ... library/src/main/cpp/RoundedRectangleShape.s
 .PHONY : help
 
 
