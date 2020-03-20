@@ -14,28 +14,8 @@
   <component name="ChangeListManager">
     <list default="true" id="f5136dbc-fa19-4e83-9ace-75ad5814e213" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/cpp/screen/GameMenuScreen.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/cpp/screen/GameMenuScreen.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Dai-Makai-Mura.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Dai-Makai-Mura.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Dai-Makai-Mura.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Dai-Makai-Mura.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Dai-Makai-Mura.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Dai-Makai-Mura.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Dai-Makai-Mura.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Dai-Makai-Mura.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Dai-Makai-Mura.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Dai-Makai-Mura.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Dai-Makai-Mura.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Dai-Makai-Mura.dir/depend.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Dai-Makai-Mura.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Dai-Makai-Mura.dir/objects.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Dai-Makai-Mura.dir/objects1.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Dai-Makai-Mura.dir/objects1.rsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Dai-Makai-Mura.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Dai-Makai-Mura.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Dai-Makai-Mura.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Dai-Makai-Mura.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Dai-Makai-Mura.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Dai-Makai-Mura.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Dai-Makai-Mura.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Dai-Makai-Mura.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Dai-Makai-Mura.dir/objects1.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Dai-Makai-Mura.dir/objects1.rsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Dai-Makai-Mura.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Dai-Makai-Mura.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/progress.marks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/Makefile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,9 +39,9 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/SFML/include/SFML" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/exe" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="CPPToolchains" />
+    <property name="settings.editor.selected.configurable" value="CMakeSettings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -116,6 +96,7 @@
       <workItem from="1584541406777" duration="6000" />
       <workItem from="1584541417558" duration="1258000" />
       <workItem from="1584609836672" duration="2403000" />
+      <workItem from="1584616213257" duration="376000" />
     </task>
     <servers />
   </component>
@@ -123,10 +104,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="137" y="42" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584476226939">
+    <state x="137" y="42" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584616358798">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="137" y="42" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.768@0.0.1366.768" timestamp="1584476226939" />
+    <state x="137" y="42" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.768@0.0.1366.768" timestamp="1584616358798" />
     <state x="434" y="194" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1584475414986">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -135,10 +116,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="413" y="134" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.768@0.0.1366.768" timestamp="1584487015088" />
-    <state x="463" y="142" key="FileChooserDialogImpl" timestamp="1584541440081">
+    <state x="463" y="142" key="FileChooserDialogImpl" timestamp="1584616312079">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="463" y="142" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1584541440081" />
+    <state x="463" y="142" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1584616312079" />
     <state width="1323" height="192" key="GridCell.Tab.0.bottom" timestamp="1584615598610">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -171,10 +152,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state width="1323" height="238" key="GridCell.Tab.1.right/0.0.1366.768@0.0.1366.768" timestamp="1584576132928" />
-    <state x="204" y="9" key="SettingsEditor" timestamp="1584535185415">
+    <state x="204" y="9" key="SettingsEditor" timestamp="1584616372096">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="204" y="9" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1584535185415" />
+    <state x="204" y="9" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1584616372096" />
     <state x="408" y="32" key="refactoring.ChangeSignatureDialog" timestamp="1584483301237">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
