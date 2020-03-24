@@ -86,6 +86,7 @@ CMakeFiles/Dai-Makai-Mura.dir/app/src/main/cpp/screen/GameMenuScreen.cpp.obj: C:
 
 CMakeFiles/Dai-Makai-Mura.dir/app/src/main/cpp/screen/SplashScreen.cpp.obj: ../../app/src/main/cpp/screen/SplashScreen.cpp
 CMakeFiles/Dai-Makai-Mura.dir/app/src/main/cpp/screen/SplashScreen.cpp.obj: ../../app/src/main/header/screen/SplashScreen.h
+CMakeFiles/Dai-Makai-Mura.dir/app/src/main/cpp/screen/SplashScreen.cpp.obj: ../../library/src/main/header/LoadFont.h
 CMakeFiles/Dai-Makai-Mura.dir/app/src/main/cpp/screen/SplashScreen.cpp.obj: ../../library/src/main/header/LoadImage.h
 CMakeFiles/Dai-Makai-Mura.dir/app/src/main/cpp/screen/SplashScreen.cpp.obj: C:/mingw32/include/SFML/Config.hpp
 CMakeFiles/Dai-Makai-Mura.dir/app/src/main/cpp/screen/SplashScreen.cpp.obj: C:/mingw32/include/SFML/Graphics.hpp
