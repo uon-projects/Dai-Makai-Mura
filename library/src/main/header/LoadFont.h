@@ -23,7 +23,14 @@
 
 // Created by TeodorHMX1 on 24/03/2020.
 
+#include <SFML/Graphics.hpp>
+
+using namespace sf;
+
 class LoadFont
 {
+
+public:
+	static Font loadFont(std::string);
 
 };

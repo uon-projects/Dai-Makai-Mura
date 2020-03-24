@@ -30,6 +30,7 @@ class App
 
 public:
 	App();
+
 	~App();
 
 public:

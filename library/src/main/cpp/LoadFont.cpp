@@ -24,3 +24,14 @@
 // Created by TeodorHMX1 on 24/03/2020.
 
 #include "../header/LoadFont.h"
+
+Font LoadFont::loadFont(std::string path)
+{
+	Font font;
+	if (!font.loadFromFile(path))
+	{
+		system("pause");
+	}
+	return font;
+
+}

@@ -24,6 +24,7 @@
 // Created by TeodorHMX1 on 17/03/2020.
 
 #include "../../header/screen/GameMenuScreen.h"
+#include "../../../../../library/src/main/header/LoadFont.h"
 
 GameMenuScreen::GameMenuScreen()
 {
@@ -86,11 +87,7 @@ void GameMenuScreen::draw(RenderWindow &window)
 	window.draw(rectangle);
 
 	Text text;
-	Font font;
-	if (!font.loadFromFile("res/font/font1.otf"))
-	{
-		system("pause");
-	}
+	Font font = LoadFont::loadFont("res/font/font1.otf");
 	text.setFont(font);
 	text.setString("Hello world");
 	text.setCharacterSize(24);
