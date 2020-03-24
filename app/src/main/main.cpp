@@ -35,9 +35,9 @@ using namespace sf;
 #define WindowX 800
 #define WindowY 500
 
-App mApp;
 SplashScreen mSplashScreen;
 GameMenuScreen mGameMenu;
+App mApp;
 Vector2f theGameWindow_currentDimensions(WindowX, WindowY); // NOLINT(cert-err58-cpp)
 Vector2f theGameWindow_perspectiveDimensions(WindowX, WindowY); // NOLINT(cert-err58-cpp)
 RenderWindow theGameWindow( // NOLINT(cert-err58-cpp)
@@ -110,7 +110,8 @@ void update(float seconds)
 void draw()
 {
 
-	if (mApp.getCurrentScreen() == splash)
+	screen currentScreen = mApp.getCurrentScreen();
+	if (currentScreen == splash)
 	{
 		float sec = inGameClock.getElapsedTime().asSeconds();
 		mSplashScreen.draw(theGameWindow);
@@ -119,10 +120,10 @@ void draw()
 			inGameClock.restart();
 			mApp.setCurrentScreen(menu);
 		}
-	} else if (mApp.getCurrentScreen() == menu)
+	} else if (currentScreen == menu)
 	{
 		mGameMenu.draw(theGameWindow);
-	} else if (mApp.getCurrentScreen() == game)
+	} else if (currentScreen == game)
 	{
 
 	}

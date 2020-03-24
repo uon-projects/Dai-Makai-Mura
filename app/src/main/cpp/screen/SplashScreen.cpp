@@ -35,6 +35,14 @@ SplashScreen::SplashScreen()
 	splashScreenBg.setFillColor(Color(21, 21, 21));
 	mSplashLogo = mLoader.loadSpriteFromTexture("zeoflow_logo", png);
 
+	font = LoadFont::loadFont();
+	text.setFont(font);
+	text.setFillColor(Color(88, 52, 235));
+	text.setOutlineColor(sf::Color::White);
+	text.setOutlineThickness(1);
+	text.setString("Dai Makai Mura");
+	text.setCharacterSize(40);
+
 }
 
 SplashScreen::~SplashScreen()
@@ -56,14 +64,6 @@ void SplashScreen::draw(RenderWindow &window)
 	mSplashLogo.setPosition(windowWidthHalf - spriteWidthHalf, windowHeightHalf - spriteHeightHalf - 30);
 	window.draw(mSplashLogo);
 
-	Font font = LoadFont::loadFont();
-	Text text;
-	text.setFont(font);
-	text.setFillColor(Color(88, 52, 235));
-	text.setOutlineColor(sf::Color::White);
-	text.setOutlineThickness(1);
-	text.setString("Dai Makai Mura");
-	text.setCharacterSize(40);
 	float textHeightHalf = text.getGlobalBounds().height / 2;
 	float textWidthHalf = text.getGlobalBounds().width / 2;
 	text.setPosition(windowWidthHalf - textWidthHalf, windowHeightHalf - textHeightHalf + 40);
