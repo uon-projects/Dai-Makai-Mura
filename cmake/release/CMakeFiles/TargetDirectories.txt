@@ -1,0 +1,3 @@
+C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/cmake/release/CMakeFiles/Dai-Makai-Mura.dir
+C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/cmake/release/CMakeFiles/edit_cache.dir
+C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/cmake/release/CMakeFiles/rebuild_cache.dir
