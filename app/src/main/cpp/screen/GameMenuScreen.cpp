@@ -41,6 +41,37 @@ GameMenuScreen::~GameMenuScreen()
 
 }
 
+#ifdef _WIN32
+#include <windows.h>
+
+std::string getexepath()
+{
+	char result[ MAX_PATH ];
+	return std::string( result, GetModuleFileName( NULL, result, MAX_PATH ) );
+}
+#endif
+
+#ifdef _WIN64
+#include <windows.h>
+
+std::string getexepath()
+{
+	char result[ MAX_PATH ];
+	return std::string( result, GetModuleFileName( NULL, result, MAX_PATH ) );
+}
+#endif
+
+#ifdef __linux
+#include <unistd.h>
+
+std::string getexepath()
+  {
+  char result[ PATH_MAX ];
+  ssize_t count = readlink( "/proc/self/exe", result, PATH_MAX );
+  return std::string( result, (count > 0) ? count : 0 );
+
+#endif
+
 void GameMenuScreen::draw(RenderWindow &window)
 {
 
@@ -56,15 +87,14 @@ void GameMenuScreen::draw(RenderWindow &window)
 
 	Text text;
 	Font font;
-	if (!font.loadFromFile("font1.otf"))
+	if (!font.loadFromFile("res/font/font1.otf"))
 	{
-		// error...
+		system("pause");
 	}
 	text.setFont(font);
 	text.setString("Hello world");
 	text.setCharacterSize(24);
-	text.setFillColor(sf::Color::Red);
-	text.setStyle(sf::Text::Bold | sf::Text::Underlined);
+	text.setFillColor(Color::Red);
 	text.setPosition(100, 100);
 	window.draw(text);
 

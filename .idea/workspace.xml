@@ -17,9 +17,7 @@
       <change beforePath="$PROJECT_DIR$/app/src/main/cpp/screen/GameMenuScreen.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/cpp/screen/GameMenuScreen.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake/debug/CMakeFiles/Dai-Makai-Mura.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake/debug/CMakeFiles/Dai-Makai-Mura.dir/CXX.includecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake/debug/CMakeFiles/Dai-Makai-Mura.dir/app/src/main/cpp/screen/GameMenuScreen.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake/debug/CMakeFiles/Dai-Makai-Mura.dir/app/src/main/cpp/screen/GameMenuScreen.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake/debug/CMakeFiles/Dai-Makai-Mura.dir/library/src/main/cpp/MaterialButton.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake/debug/CMakeFiles/Dai-Makai-Mura.dir/library/src/main/cpp/MaterialButton.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake/debug/CMakeFiles/Dai-Makai-Mura.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake/debug/CMakeFiles/Dai-Makai-Mura.dir/objects.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/src/main/cpp/MaterialButton.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/library/src/main/cpp/MaterialButton.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,24 +41,24 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/cpp/screen" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/cmake/debug" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="CMakeSettings" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\grigo\Desktop\BSc Games Programming\Year 1\Dai-Makai-Mura\library\src\main\header" />
+      <recent name="C:\Users\grigo\Desktop\BSc Games Programming\Year 1\Dai-Makai-Mura" />
+      <recent name="C:\Users\grigo\Desktop\BSc Games Programming\Year 1\Dai-Makai-Mura\app\src\main\cpp\screen" />
       <recent name="C:\Users\grigo\Desktop\BSc Games Programming\Year 1\Dai-Makai-Mura\library\src\main\cpp" />
       <recent name="C:\Users\grigo\Desktop\BSc Games Programming\Year 1\Dai-Makai-Mura\app" />
-      <recent name="C:\Users\grigo\Desktop\BSc Games Programming\Year 1\Dai-Makai-Mura" />
-      <recent name="C:\Users\grigo\Desktop\BSc Games Programming\Year 1\Dai-Makai-Mura\SFML\include\SFML\cmake" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\grigo\Desktop\BSc Games Programming\Year 1\Dai-Makai-Mura\cmake\debug" />
+      <recent name="C:\Users\grigo\Desktop\BSc Games Programming\Year 1\Dai-Makai-Mura\app" />
       <recent name="C:\Users\grigo\Desktop\BSc Games Programming\Year 1\Dai-Makai-Mura\app\src\main\cpp\screen" />
       <recent name="C:\Users\grigo\Desktop\BSc Games Programming\Year 1\Dai-Makai-Mura\app\src\main\res\font" />
       <recent name="C:\Users\grigo\Desktop\BSc Games Programming\Year 1\Dai-Makai-Mura\SFML\include\SFML" />
-      <recent name="C:\Users\grigo\Desktop\BSc Games Programming\Year 1\Dai-Makai-Mura" />
-      <recent name="C:\Users\grigo\Desktop\BSc Games Programming\Year 1\Dai-Makai-Mura\src\main\cpp\screen" />
     </key>
   </component>
   <component name="RunManager">
@@ -101,7 +99,7 @@
       <workItem from="1584541417558" duration="1258000" />
       <workItem from="1584609836672" duration="2403000" />
       <workItem from="1584616213257" duration="376000" />
-      <workItem from="1585053882904" duration="7624000" />
+      <workItem from="1585053882904" duration="8883000" />
     </task>
     <servers />
   </component>
@@ -129,22 +127,22 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="463" y="142" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1585054064994" />
-    <state width="1323" height="192" key="GridCell.Tab.0.bottom" timestamp="1585062595175">
+    <state width="1323" height="192" key="GridCell.Tab.0.bottom" timestamp="1585063825159">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1585062595175" />
-    <state width="1323" height="192" key="GridCell.Tab.0.center" timestamp="1585062595175">
+    <state width="1323" height="192" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1585063825159" />
+    <state width="1323" height="192" key="GridCell.Tab.0.center" timestamp="1585063825159">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1585062595175" />
-    <state width="1323" height="192" key="GridCell.Tab.0.left" timestamp="1585062595175">
+    <state width="1323" height="192" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1585063825159" />
+    <state width="1323" height="192" key="GridCell.Tab.0.left" timestamp="1585063825159">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1585062595175" />
-    <state width="1323" height="192" key="GridCell.Tab.0.right" timestamp="1585062595175">
+    <state width="1323" height="192" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1585063825159" />
+    <state width="1323" height="192" key="GridCell.Tab.0.right" timestamp="1585063825159">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1585062595175" />
+    <state width="1323" height="192" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1585063825159" />
     <state width="1323" height="238" key="GridCell.Tab.1.bottom" timestamp="1585056267814">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
