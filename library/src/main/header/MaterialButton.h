@@ -27,16 +27,29 @@
 
 using namespace sf;
 
-class MaterialButton : public RectangleShape
+class MaterialButton : public Shape
 {
 
 public:
 	~MaterialButton();
 
+	void setColor(Color color);
+
+	void setHoverColor(Color color);
+
+	void setActiveColor(Color color);
+
 public:
-	explicit MaterialButton();
+	explicit MaterialButton(const Vector2f& size = Vector2f(0, 0));
+
+	virtual std::size_t getPointCount() const;
+
+	virtual Vector2f getPoint(std::size_t index) const;
+
+	void setSize(const Vector2f &size);
 
 private:
+	Vector2f mySize;
 	IntRect btnBounders;
 
 };

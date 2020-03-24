@@ -30,12 +30,51 @@ MaterialButton::~MaterialButton()
 
 }
 
-MaterialButton::MaterialButton()
+MaterialButton::MaterialButton(const Vector2f &size)
 {
-	this->btnBounders(this->getPosition().x - this->getGlobalBounds().width / 2,
-	                  this->getPosition().y - this->getGlobalBounds().height / 2,
-	                  this->getGlobalBounds().width,
-	                  this->getGlobalBounds().height);
-	setOrigin(0, 0);
+	mySize = size;
 	update();
+}
+
+void MaterialButton::setSize(const Vector2f &size)
+{
+	mySize = size;
+	setOrigin(mySize.x/2, mySize.y/2);
+	btnBounders = IntRect(getPosition().x - getGlobalBounds().width / 2,
+	                  getPosition().y - getGlobalBounds().height / 2,
+	                  getGlobalBounds().width,
+	                  getGlobalBounds().height);
+	update();
+}
+
+std::size_t MaterialButton::getPointCount() const
+{
+	return 4;
+}
+
+Vector2f MaterialButton::getPoint(std::size_t index) const
+{
+	switch (index)
+	{
+		default:
+		case 0: return Vector2f(0, 0);
+		case 1: return Vector2f(mySize.x, 0);
+		case 2: return Vector2f(mySize.x, mySize.y);
+		case 3: return Vector2f(0, mySize.y);
+	}
+}
+
+void MaterialButton::setColor(Color color)
+{
+
+}
+
+void MaterialButton::setActiveColor(Color color)
+{
+
+}
+
+void MaterialButton::setHoverColor(Color color)
+{
+
 }
