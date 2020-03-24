@@ -32,6 +32,10 @@ MaterialButton::~MaterialButton()
 
 MaterialButton::MaterialButton()
 {
+	this->btnBounders(this->getPosition().x - this->getGlobalBounds().width / 2,
+	                  this->getPosition().y - this->getGlobalBounds().height / 2,
+	                  this->getGlobalBounds().width,
+	                  this->getGlobalBounds().height);
 	setOrigin(0, 0);
 	update();
 }

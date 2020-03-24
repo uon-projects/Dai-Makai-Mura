@@ -36,4 +36,7 @@ public:
 public:
 	explicit MaterialButton();
 
+private:
+	IntRect btnBounders;
+
 };
