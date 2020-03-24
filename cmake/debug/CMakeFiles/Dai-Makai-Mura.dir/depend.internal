@@ -87,7 +87,8 @@ CMakeFiles/Dai-Makai-Mura.dir/app/src/main/cpp/screen/GameMenuScreen.cpp.obj
 CMakeFiles/Dai-Makai-Mura.dir/app/src/main/cpp/screen/SplashScreen.cpp.obj
  C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/app/src/main/cpp/screen/SplashScreen.cpp
  C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/app/src/main/header/screen/SplashScreen.h
- C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/library/src/main/header/Loader.h
+ C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/library/src/main/header/LoadFont.h
+ C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/library/src/main/header/LoadImage.h
  C:/mingw32/include/SFML/Config.hpp
  C:/mingw32/include/SFML/Graphics.hpp
  C:/mingw32/include/SFML/Graphics/BlendMode.hpp
@@ -165,7 +166,7 @@ CMakeFiles/Dai-Makai-Mura.dir/app/src/main/main.cpp.obj
  C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/app/src/main/header/screen/GameMenuScreen.h
  C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/app/src/main/header/screen/SplashScreen.h
  C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/app/src/main/main.cpp
- C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/library/src/main/header/Loader.h
+ C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/library/src/main/header/LoadImage.h
  C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/library/src/main/header/MaterialButton.h
  C:/mingw32/include/SFML/Config.hpp
  C:/mingw32/include/SFML/Graphics.hpp
@@ -312,9 +313,9 @@ CMakeFiles/Dai-Makai-Mura.dir/library/src/main/cpp/LoadFont.cpp.obj
  C:/mingw32/include/SFML/Window/Window.hpp
  C:/mingw32/include/SFML/Window/WindowHandle.hpp
  C:/mingw32/include/SFML/Window/WindowStyle.hpp
-CMakeFiles/Dai-Makai-Mura.dir/library/src/main/cpp/Loader.cpp.obj
- C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/library/src/main/cpp/Loader.cpp
- C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/library/src/main/header/Loader.h
+CMakeFiles/Dai-Makai-Mura.dir/library/src/main/cpp/LoadImage.cpp.obj
+ C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/library/src/main/cpp/LoadImage.cpp
+ C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/library/src/main/header/LoadImage.h
  C:/mingw32/include/SFML/Config.hpp
  C:/mingw32/include/SFML/Graphics.hpp
  C:/mingw32/include/SFML/Graphics/BlendMode.hpp

@@ -23,18 +23,32 @@
 
 // Created by TeodorHMX1 on 17/03/2020.
 
+#include <string>
+#include "../header/LoadImage.h"
 
-#include <SFML/Graphics.hpp>
-#include <list>
-
-using namespace sf;
-
-class Loader
+Sprite LoadImage::loadSpriteFromTexture(std::string assetName, image_ext extension)
 {
-
-	std::list<sf::Texture> zfTextures;
-
-public:
-	Sprite loadSpriteFromTexture(std::string, std::string, std::string);
-
-};
+	std::string image_extension;
+	if (extension == png)
+	{
+		image_extension = ".png";
+	} else if (extension == jpg)
+	{
+		image_extension = ".jpg";
+	} else if (extension == jpeg)
+	{
+		image_extension = ".jpeg";
+	} else
+	{
+		image_extension = ".png";
+	}
+	sf::Texture zfTexture;
+	if (!zfTexture.loadFromFile("res/drawable/" + assetName + image_extension))
+	{
+		system("pause");
+	}
+	zfTexture.setSmooth(true);
+	zfTextures.push_front(zfTexture);
+	sf::Sprite zfSprite(zfTextures.front());
+	return zfSprite;
+}

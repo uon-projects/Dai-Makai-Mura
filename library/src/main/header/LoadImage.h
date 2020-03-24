@@ -23,16 +23,25 @@
 
 // Created by TeodorHMX1 on 17/03/2020.
 
-#include <string>
-#include "../header/Loader.h"
 
-Sprite Loader::loadSpriteFromTexture(std::string assetPath, std::string assetName, std::string assetExtension)
+#include <SFML/Graphics.hpp>
+#include <list>
+
+using namespace sf;
+
+enum image_ext
 {
-	sf::Texture zfTexture;
-	if (!zfTexture.loadFromFile(assetPath + "/" + assetName + "." + assetExtension)) {
-		system("pause");
-	}
-	zfTextures.push_front(zfTexture);
-	sf::Sprite zfSprite(zfTextures.front());
-	return zfSprite;
-}
+	png,
+	jpg,
+	jpeg
+};
+
+class LoadImage
+{
+
+	std::list<sf::Texture> zfTextures;
+
+public:
+	Sprite loadSpriteFromTexture(std::string, image_ext);
+
+};

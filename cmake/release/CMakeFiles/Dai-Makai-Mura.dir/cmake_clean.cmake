@@ -5,7 +5,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Dai-Makai-Mura.dir/app/src/main/cpp/screen/SplashScreen.cpp.obj"
   "CMakeFiles/Dai-Makai-Mura.dir/app/src/main/main.cpp.obj"
   "CMakeFiles/Dai-Makai-Mura.dir/library/src/main/cpp/LoadFont.cpp.obj"
-  "CMakeFiles/Dai-Makai-Mura.dir/library/src/main/cpp/Loader.cpp.obj"
+  "CMakeFiles/Dai-Makai-Mura.dir/library/src/main/cpp/LoadImage.cpp.obj"
   "CMakeFiles/Dai-Makai-Mura.dir/library/src/main/cpp/MaterialButton.cpp.obj"
   "CMakeFiles/Dai-Makai-Mura.dir/library/src/main/cpp/RoundedRectangleShape.cpp.obj"
   "Dai-Makai-Mura.exe"
