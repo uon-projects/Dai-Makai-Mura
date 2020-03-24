@@ -24,16 +24,16 @@
 // Created by TeodorHMX1 on 17/03/2020.
 
 #include "../../header/screen/GameMenuScreen.h"
+#include "../../../../../library/src/main/header/LoadFont.h"
 
 GameMenuScreen::GameMenuScreen()
 {
 
 	gameMenuScreenBackground.setFillColor(Color(52, 235, 116));
 	rectangle.setSize(Vector2f(100, 50));
-	rectangle.setColor(Color(255,224,178));
-	rectangle.setHoverColor(Color(255, 255, 255));
-	rectangle.setActiveColor(Color(255, 255, 255));
-	rectangle.setFillColor(Color(23, 23, 23));
+	rectangle.setColor(Color::Green);
+	rectangle.setHoverColor(Color::Blue);
+	rectangle.setActiveColor(Color::Cyan);
 
 }
 
@@ -42,29 +42,57 @@ GameMenuScreen::~GameMenuScreen()
 
 }
 
+#ifdef _WIN32
+#include <windows.h>
+
+std::string getexepath()
+{
+	char result[ MAX_PATH ];
+	return std::string( result, GetModuleFileName( NULL, result, MAX_PATH ) );
+}
+#endif
+
+#ifdef _WIN64
+#include <windows.h>
+
+std::string getexepath()
+{
+	char result[ MAX_PATH ];
+	return std::string( result, GetModuleFileName( NULL, result, MAX_PATH ) );
+}
+#endif
+
+#ifdef __linux
+#include <unistd.h>
+
+std::string getexepath()
+  {
+  char result[ PATH_MAX ];
+  ssize_t count = readlink( "/proc/self/exe", result, PATH_MAX );
+  return std::string( result, (count > 0) ? count : 0 );
+
+#endif
+
 void GameMenuScreen::draw(RenderWindow &window)
 {
 
 	gameMenuScreenBackground.setSize(Vector2f(window.getSize().x, window.getSize().y));
 	window.draw(gameMenuScreenBackground);
 
-//	sf::IntRect btnCharactersRect(rectangle.getPosition().x - rectangle.getGlobalBounds().width / 2,
-//	                              rectangle.getPosition().y - rectangle.getGlobalBounds().height / 2,
-//	                              rectangle.getGlobalBounds().width,
-//	                              rectangle.getGlobalBounds().height);
-//	if (btnCharactersRect.contains(sf::Mouse::getPosition(window)))
-//	{
-//		if (sf::Mouse::isButtonPressed(sf::Mouse::Left))
-//		{
-//
-//		}
-//		rectangle.setFillColor(sf::Color(255, 255, 255));
-//	}
-//	else
-//	{
-//		rectangle.setFillColor(sf::Color(255,224,178));
-//	}
-	rectangle.setPosition((float) window.getSize().x/2, (float) window.getSize().y/2);
+	rectangle.setPosition((float) window.getSize().x / 2, (float) window.getSize().y / 2);
+	if (rectangle.isClicked(window))
+	{
+		printf("clicked!\n");
+	}
 	window.draw(rectangle);
+
+	Text text;
+	Font font = LoadFont::loadFont("res/font/font1.otf");
+	text.setFont(font);
+	text.setString("Hello world");
+	text.setCharacterSize(24);
+	text.setFillColor(Color::Red);
+	text.setPosition(100, 100);
+	window.draw(text);
 
 }

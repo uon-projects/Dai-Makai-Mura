@@ -48,11 +48,16 @@ public:
 
 	void setSize(const Vector2f &size);
 
+	bool isClicked(RenderWindow &window);
+
 private:
 	Vector2f mySize;
 	IntRect btnBounders;
 	Color color;
 	Color hoverColor;
 	Color activeColor;
+	Font font;
+	Text text;
+	String content;
 
 };

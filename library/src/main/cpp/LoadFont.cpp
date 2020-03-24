@@ -21,28 +21,17 @@
  * 
  **/
 
-// Created by TeodorHMX1 on 17/03/2020.
+// Created by TeodorHMX1 on 24/03/2020.
 
-#include <SFML/Graphics.hpp>
-#include "../../../../../library/src/main/header/MaterialButton.h"
+#include "../header/LoadFont.h"
 
-using namespace sf;
-
-class GameMenuScreen
+Font LoadFont::loadFont(std::string path)
 {
+	Font font;
+	if (!font.loadFromFile(path))
+	{
+		system("pause");
+	}
+	return font;
 
-public:
-	RectangleShape gameMenuScreenBackground;
-
-public:
-	GameMenuScreen();
-
-	~GameMenuScreen();
-
-public:
-	void draw(RenderWindow &window);
-
-private:
-	MaterialButton rectangle;
-
-};
+}
