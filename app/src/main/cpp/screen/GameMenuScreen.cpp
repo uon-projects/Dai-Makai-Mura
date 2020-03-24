@@ -34,6 +34,8 @@ GameMenuScreen::GameMenuScreen()
 	rectangle.setColor(Color::Green);
 	rectangle.setHoverColor(Color::Blue);
 	rectangle.setActiveColor(Color::Cyan);
+	rectangle.setText("Hello There!");
+	rectangle.setCharacterSize(20);
 
 }
 
@@ -48,20 +50,12 @@ void GameMenuScreen::draw(RenderWindow &window)
 	gameMenuScreenBackground.setSize(Vector2f(window.getSize().x, window.getSize().y));
 	window.draw(gameMenuScreenBackground);
 
-	rectangle.setPosition((float) window.getSize().x / 2, (float) window.getSize().y / 2);
+	rectangle.setBtnPosition((float) window.getSize().x / 2, (float) window.getSize().y / 2);
 	if (rectangle.isClicked(window))
 	{
 		printf("clicked!\n");
 	}
 	window.draw(rectangle);
-
-	Text text;
-	Font font = LoadFont::loadFont();
-	text.setFont(font);
-	text.setString("Hello world");
-	text.setCharacterSize(24);
-	text.setFillColor(Color::Red);
-	text.setPosition(100, 100);
-	window.draw(text);
+	rectangle.drawText(window);
 
 }

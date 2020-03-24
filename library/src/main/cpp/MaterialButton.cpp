@@ -37,11 +37,14 @@ MaterialButton::MaterialButton(const Vector2f &size)
 	color = Color::Black;
 	hoverColor = Color::Black;
 	activeColor = Color::Black;
+
+	font = LoadFont::loadFont();
 	text.setFont(font);
-	text.setString("Hello world");
-	text.setCharacterSize(24);
-	text.setFillColor(sf::Color::Red);
-	text.setStyle(sf::Text::Bold | sf::Text::Underlined);
+	text.setFillColor(Color(0, 0, 0, 100));
+	text.setOutlineColor(sf::Color::White);
+	text.setOutlineThickness(1);
+	text.setFillColor(sf::Color::Black);
+
 	update();
 }
 
@@ -111,4 +114,30 @@ bool MaterialButton::isClicked(RenderWindow &window)
 		return false;
 	}
 
+}
+
+void MaterialButton::setText(std::string text)
+{
+	this->content = text;
+	this->text.setString(content);
+	this->text.setOrigin(this->text.getLocalBounds().width / 2, this->text.getLocalBounds().height / 1);
+	this->text.setPosition(0, 0);
+}
+
+void MaterialButton::setCharacterSize(int size)
+{
+	this->characterSize = size;
+	this->text.setCharacterSize(characterSize);
+	this->text.setOrigin(this->text.getLocalBounds().width / 2, this->text.getLocalBounds().height / 1);
+}
+
+void MaterialButton::setBtnPosition(float x, float y)
+{
+	this->setPosition(x, y);
+	this->text.setPosition(x, y);
+}
+
+void MaterialButton::drawText(RenderWindow &window)
+{
+	window.draw(text);
 }

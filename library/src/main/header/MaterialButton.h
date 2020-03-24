@@ -33,22 +33,30 @@ class MaterialButton : public Shape
 public:
 	~MaterialButton();
 
-	void setColor(Color color);
-
-	void setHoverColor(Color color);
-
-	void setActiveColor(Color color);
+	explicit MaterialButton(const Vector2f &size = Vector2f(0, 0));
 
 public:
-	explicit MaterialButton(const Vector2f& size = Vector2f(0, 0));
-
 	virtual size_t getPointCount() const;
 
-	virtual Vector2f getPoint(size_t index) const;
+	virtual Vector2f getPoint(size_t) const;
 
-	void setSize(const Vector2f &size);
+	void setSize(const Vector2f &);
 
-	bool isClicked(RenderWindow &window);
+	bool isClicked(RenderWindow &);
+
+	void setColor(Color);
+
+	void setHoverColor(Color);
+
+	void setActiveColor(Color);
+
+	void setText(std::string);
+
+	void setCharacterSize(int);
+
+	void setBtnPosition(float, float);
+
+	void drawText(RenderWindow &);
 
 private:
 	Vector2f mySize;
@@ -59,5 +67,6 @@ private:
 	Font font;
 	Text text;
 	String content;
+	int characterSize;
 
 };
