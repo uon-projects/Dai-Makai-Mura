@@ -87,7 +87,7 @@ void GameMenuScreen::draw(RenderWindow &window)
 	window.draw(rectangle);
 
 	Text text;
-	Font font = LoadFont::loadFont("res/font/font1.otf");
+	Font font = LoadFont::loadFont();
 	text.setFont(font);
 	text.setString("Hello world");
 	text.setCharacterSize(24);

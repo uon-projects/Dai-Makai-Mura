@@ -25,10 +25,10 @@
 
 #include "../header/LoadFont.h"
 
-Font LoadFont::loadFont(std::string path)
+Font LoadFont::loadFont()
 {
 	Font font;
-	if (!font.loadFromFile(path))
+	if (!font.loadFromFile("res/font/font1.otf"))
 	{
 		system("pause");
 	}

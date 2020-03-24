@@ -387,6 +387,7 @@ CMakeFiles/Dai-Makai-Mura.dir/library/src/main/cpp/Loader.cpp.obj: C:/mingw32/in
 CMakeFiles/Dai-Makai-Mura.dir/library/src/main/cpp/Loader.cpp.obj: C:/mingw32/include/SFML/Window/WindowStyle.hpp
 
 CMakeFiles/Dai-Makai-Mura.dir/library/src/main/cpp/MaterialButton.cpp.obj: ../../library/src/main/cpp/MaterialButton.cpp
+CMakeFiles/Dai-Makai-Mura.dir/library/src/main/cpp/MaterialButton.cpp.obj: ../../library/src/main/header/LoadFont.h
 CMakeFiles/Dai-Makai-Mura.dir/library/src/main/cpp/MaterialButton.cpp.obj: ../../library/src/main/header/MaterialButton.h
 CMakeFiles/Dai-Makai-Mura.dir/library/src/main/cpp/MaterialButton.cpp.obj: C:/mingw32/include/SFML/Config.hpp
 CMakeFiles/Dai-Makai-Mura.dir/library/src/main/cpp/MaterialButton.cpp.obj: C:/mingw32/include/SFML/Graphics.hpp

@@ -24,6 +24,7 @@
 // Created by TeodorHMX1 on 19/03/2020.
 
 #include "../header/MaterialButton.h"
+#include "../header/LoadFont.h"
 
 MaterialButton::~MaterialButton()
 {
@@ -89,8 +90,6 @@ void MaterialButton::setActiveColor(Color newActiveColor)
 
 bool MaterialButton::isClicked(RenderWindow &window)
 {
-	text.setPosition(21, 100);
-	window.draw(text);
 	btnBounders = IntRect(getPosition().x - getGlobalBounds().width / 2,
 	                      getPosition().y - getGlobalBounds().height / 2,
 	                      getGlobalBounds().width,
@@ -111,4 +110,5 @@ bool MaterialButton::isClicked(RenderWindow &window)
 		setFillColor(color);
 		return false;
 	}
+
 }

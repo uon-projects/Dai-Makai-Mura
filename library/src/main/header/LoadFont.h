@@ -31,6 +31,6 @@ class LoadFont
 {
 
 public:
-	static Font loadFont(std::string);
+	static Font loadFont();
 
 };
