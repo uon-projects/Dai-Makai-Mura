@@ -284,32 +284,32 @@ library/src/main/cpp/LoadFont.cpp.s:
 	$(MAKE) -f CMakeFiles\Dai-Makai-Mura.dir\build.make CMakeFiles/Dai-Makai-Mura.dir/library/src/main/cpp/LoadFont.cpp.s
 .PHONY : library/src/main/cpp/LoadFont.cpp.s
 
-library/src/main/cpp/Loader.obj: library/src/main/cpp/Loader.cpp.obj
+library/src/main/cpp/LoadImage.obj: library/src/main/cpp/LoadImage.cpp.obj
 
-.PHONY : library/src/main/cpp/Loader.obj
+.PHONY : library/src/main/cpp/LoadImage.obj
 
 # target to build an object file
-library/src/main/cpp/Loader.cpp.obj:
-	$(MAKE) -f CMakeFiles\Dai-Makai-Mura.dir\build.make CMakeFiles/Dai-Makai-Mura.dir/library/src/main/cpp/Loader.cpp.obj
-.PHONY : library/src/main/cpp/Loader.cpp.obj
+library/src/main/cpp/LoadImage.cpp.obj:
+	$(MAKE) -f CMakeFiles\Dai-Makai-Mura.dir\build.make CMakeFiles/Dai-Makai-Mura.dir/library/src/main/cpp/LoadImage.cpp.obj
+.PHONY : library/src/main/cpp/LoadImage.cpp.obj
 
-library/src/main/cpp/Loader.i: library/src/main/cpp/Loader.cpp.i
+library/src/main/cpp/LoadImage.i: library/src/main/cpp/LoadImage.cpp.i
 
-.PHONY : library/src/main/cpp/Loader.i
+.PHONY : library/src/main/cpp/LoadImage.i
 
 # target to preprocess a source file
-library/src/main/cpp/Loader.cpp.i:
-	$(MAKE) -f CMakeFiles\Dai-Makai-Mura.dir\build.make CMakeFiles/Dai-Makai-Mura.dir/library/src/main/cpp/Loader.cpp.i
-.PHONY : library/src/main/cpp/Loader.cpp.i
+library/src/main/cpp/LoadImage.cpp.i:
+	$(MAKE) -f CMakeFiles\Dai-Makai-Mura.dir\build.make CMakeFiles/Dai-Makai-Mura.dir/library/src/main/cpp/LoadImage.cpp.i
+.PHONY : library/src/main/cpp/LoadImage.cpp.i
 
-library/src/main/cpp/Loader.s: library/src/main/cpp/Loader.cpp.s
+library/src/main/cpp/LoadImage.s: library/src/main/cpp/LoadImage.cpp.s
 
-.PHONY : library/src/main/cpp/Loader.s
+.PHONY : library/src/main/cpp/LoadImage.s
 
 # target to generate assembly for a file
-library/src/main/cpp/Loader.cpp.s:
-	$(MAKE) -f CMakeFiles\Dai-Makai-Mura.dir\build.make CMakeFiles/Dai-Makai-Mura.dir/library/src/main/cpp/Loader.cpp.s
-.PHONY : library/src/main/cpp/Loader.cpp.s
+library/src/main/cpp/LoadImage.cpp.s:
+	$(MAKE) -f CMakeFiles\Dai-Makai-Mura.dir\build.make CMakeFiles/Dai-Makai-Mura.dir/library/src/main/cpp/LoadImage.cpp.s
+.PHONY : library/src/main/cpp/LoadImage.cpp.s
 
 library/src/main/cpp/MaterialButton.obj: library/src/main/cpp/MaterialButton.cpp.obj
 
@@ -392,9 +392,9 @@ help:
 	@echo ... library/src/main/cpp/LoadFont.obj
 	@echo ... library/src/main/cpp/LoadFont.i
 	@echo ... library/src/main/cpp/LoadFont.s
-	@echo ... library/src/main/cpp/Loader.obj
-	@echo ... library/src/main/cpp/Loader.i
-	@echo ... library/src/main/cpp/Loader.s
+	@echo ... library/src/main/cpp/LoadImage.obj
+	@echo ... library/src/main/cpp/LoadImage.i
+	@echo ... library/src/main/cpp/LoadImage.s
 	@echo ... library/src/main/cpp/MaterialButton.obj
 	@echo ... library/src/main/cpp/MaterialButton.i
 	@echo ... library/src/main/cpp/MaterialButton.s
