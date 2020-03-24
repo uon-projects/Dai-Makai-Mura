@@ -24,12 +24,12 @@
 // Created by TeodorHMX1 on 17/03/2020.
 
 #include <string>
-#include "../header/Loader.h"
+#include "../header/LoadImage.h"
 
-Sprite Loader::loadSpriteFromTexture(std::string assetPath, std::string assetName, std::string assetExtension)
+Sprite LoadImage::loadSpriteFromTexture(std::string assetName, image_ext extension)
 {
 	sf::Texture zfTexture;
-	if (!zfTexture.loadFromFile(assetPath + "/" + assetName + "." + assetExtension)) {
+	if (!zfTexture.loadFromFile("res/drawable/" + assetName + "." + assetExtension)) {
 		system("pause");
 	}
 	zfTextures.push_front(zfTexture);

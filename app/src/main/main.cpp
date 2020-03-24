@@ -117,7 +117,7 @@ void draw()
 		if (sec >= 2.0)
 		{
 			inGameClock.restart();
-			mApp.setCurrentScreen(menu);
+			//mApp.setCurrentScreen(menu);
 		}
 	} else if (mApp.getCurrentScreen() == menu)
 	{

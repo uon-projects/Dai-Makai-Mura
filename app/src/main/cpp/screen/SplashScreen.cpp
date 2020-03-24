@@ -32,7 +32,7 @@ SplashScreen::SplashScreen()
 {
 
 	splashScreenBg.setFillColor(Color(88, 52, 235));
-//	mSplashLogo = mLoader.loadSpriteFromTexture("", "zeoflow_logo", "png");
+	mSplashLogo = mLoader.loadSpriteFromTexture("zeoflow_logo", png);
 
 }
 

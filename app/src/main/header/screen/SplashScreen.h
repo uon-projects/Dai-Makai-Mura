@@ -24,7 +24,7 @@
 // Created by TeodorHMX1 on 17/03/2020.
 
 #include <SFML/Graphics.hpp>
-#include "../../../../../library/src/main/header/Loader.h"
+#include "../../../../../library/src/main/header/LoadImage.h"
 
 using namespace sf;
 
@@ -34,7 +34,7 @@ class SplashScreen
 public:
 	RectangleShape splashScreenBg;
 	Sprite mSplashLogo;
-	Loader mLoader;
+	LoadImage mLoader;
 
 public:
 	SplashScreen();

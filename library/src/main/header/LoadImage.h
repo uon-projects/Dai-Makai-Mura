@@ -29,12 +29,19 @@
 
 using namespace sf;
 
-class Loader
+enum image_ext
+{
+	png,
+	jpg,
+	jpeg
+};
+
+class LoadImage
 {
 
 	std::list<sf::Texture> zfTextures;
 
 public:
-	Sprite loadSpriteFromTexture(std::string, std::string, std::string);
+	Sprite loadSpriteFromTexture(std::string, image_ext);
 
 };
