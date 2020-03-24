@@ -54,4 +54,18 @@ void GameMenuScreen::draw(RenderWindow &window)
 	}
 	window.draw(rectangle);
 
+	Text text;
+	Font font;
+	if (!font.loadFromFile("app/src/main/res/font/font1.otf"))
+	{
+		// error...
+	}
+	text.setFont(font);
+	text.setString("Hello world");
+	text.setCharacterSize(24);
+	text.setFillColor(sf::Color::Red);
+	text.setStyle(sf::Text::Bold | sf::Text::Underlined);
+	text.setPosition(100, 100);
+	window.draw(text);
+
 }

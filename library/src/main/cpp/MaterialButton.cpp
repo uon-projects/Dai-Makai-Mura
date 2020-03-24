@@ -89,6 +89,8 @@ void MaterialButton::setActiveColor(Color newActiveColor)
 
 bool MaterialButton::isClicked(RenderWindow &window)
 {
+	text.setPosition(21, 100);
+	window.draw(text);
 	btnBounders = IntRect(getPosition().x - getGlobalBounds().width / 2,
 	                      getPosition().y - getGlobalBounds().height / 2,
 	                      getGlobalBounds().width,
