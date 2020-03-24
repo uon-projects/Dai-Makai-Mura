@@ -56,5 +56,8 @@ private:
 	Color color;
 	Color hoverColor;
 	Color activeColor;
+	Font font;
+	Text text;
+	String content;
 
 };

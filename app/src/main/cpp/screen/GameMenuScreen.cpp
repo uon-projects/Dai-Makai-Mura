@@ -46,10 +46,11 @@ void GameMenuScreen::draw(RenderWindow &window)
 
 	gameMenuScreenBackground.setSize(Vector2f(window.getSize().x, window.getSize().y));
 	window.draw(gameMenuScreenBackground);
+
 	rectangle.setPosition((float) window.getSize().x / 2, (float) window.getSize().y / 2);
 	if (rectangle.isClicked(window))
 	{
-		printf("clicked!\n")
+		printf("clicked!\n");
 	}
 	window.draw(rectangle);
 

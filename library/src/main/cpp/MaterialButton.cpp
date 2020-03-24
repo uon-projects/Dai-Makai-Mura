@@ -36,6 +36,11 @@ MaterialButton::MaterialButton(const Vector2f &size)
 	color = Color::Black;
 	hoverColor = Color::Black;
 	activeColor = Color::Black;
+	text.setFont(font);
+	text.setString("Hello world");
+	text.setCharacterSize(24);
+	text.setFillColor(sf::Color::Red);
+	text.setStyle(sf::Text::Bold | sf::Text::Underlined);
 	update();
 }
 
