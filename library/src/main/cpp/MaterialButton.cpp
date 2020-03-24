@@ -99,6 +99,8 @@ bool MaterialButton::isClicked(RenderWindow &window)
 	                      getGlobalBounds().height);
 	if (btnBounders.contains(Mouse::getPosition(window)))
 	{
+		this->text.setCharacterSize(characterSize - 2);
+		this->text.setOrigin(this->text.getLocalBounds().width / 2, this->text.getLocalBounds().height / 1);
 		if (Mouse::isButtonPressed(Mouse::Left))
 		{
 			setFillColor(activeColor);
@@ -110,6 +112,8 @@ bool MaterialButton::isClicked(RenderWindow &window)
 		}
 	} else
 	{
+		this->text.setCharacterSize(characterSize);
+		this->text.setOrigin(this->text.getLocalBounds().width / 2, this->text.getLocalBounds().height / 1);
 		setFillColor(color);
 		return false;
 	}
@@ -121,7 +125,6 @@ void MaterialButton::setText(std::string text)
 	this->content = text;
 	this->text.setString(content);
 	this->text.setOrigin(this->text.getLocalBounds().width / 2, this->text.getLocalBounds().height / 1);
-	this->text.setPosition(0, 0);
 }
 
 void MaterialButton::setCharacterSize(int size)
