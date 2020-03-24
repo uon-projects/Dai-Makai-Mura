@@ -44,5 +44,6 @@ public:
 
 private:
 	MaterialButton exitBtn;
+	MaterialButton playBtn;
 
 };
