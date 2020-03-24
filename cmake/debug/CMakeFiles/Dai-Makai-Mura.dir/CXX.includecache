@@ -6,6 +6,14 @@
 
 #IncludeRegexTransform: 
 
+C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/app/src/main/cpp/screen/SplashScreen.cpp
+SFML/Graphics.hpp
+-
+../../header/screen/SplashScreen.h
+C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/app/src/main/header/screen/SplashScreen.h
+../../../../../library/src/main/header/LoadFont.h
+C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/library/src/main/header/LoadFont.h
+
 C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/app/src/main/header/App.h
 Utils.h
 C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/app/src/main/header/Utils.h
@@ -35,6 +43,10 @@ header/screen/SplashScreen.h
 C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/app/src/main/header/screen/SplashScreen.h
 header/screen/GameMenuScreen.h
 C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/app/src/main/header/screen/GameMenuScreen.h
+
+C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/library/src/main/header/LoadFont.h
+SFML/Graphics.hpp
+-
 
 C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/library/src/main/header/LoadImage.h
 SFML/Graphics.hpp

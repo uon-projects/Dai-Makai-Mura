@@ -31,10 +31,12 @@ using namespace sf;
 class SplashScreen
 {
 
-public:
+private:
 	RectangleShape splashScreenBg;
 	Sprite mSplashLogo;
 	LoadImage mLoader;
+	Font font;
+	Text text;
 
 public:
 	SplashScreen();

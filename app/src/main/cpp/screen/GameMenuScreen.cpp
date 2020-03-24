@@ -29,7 +29,7 @@
 GameMenuScreen::GameMenuScreen()
 {
 
-	gameMenuScreenBackground.setFillColor(Color(52, 235, 116));
+	gameMenuScreenBackground.setFillColor(Color(0,150,136));
 	exitBtn.setSize(Vector2f(70, 30));
 	exitBtn.setColor(Color(244,67,54));
 	exitBtn.setHoverColor(Color(211,47,47));
