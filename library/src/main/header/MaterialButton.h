@@ -48,6 +48,8 @@ public:
 
 	void setSize(const Vector2f &size);
 
+	bool isClicked(RenderWindow &window);
+
 private:
 	Vector2f mySize;
 	IntRect btnBounders;

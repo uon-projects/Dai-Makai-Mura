@@ -6,45 +6,9 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/app/src/main/cpp/screen/GameMenuScreen.cpp
-../../header/screen/GameMenuScreen.h
-C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/app/src/main/header/screen/GameMenuScreen.h
-
-C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/app/src/main/header/App.h
-Utils.h
-C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/app/src/main/header/Utils.h
-
-C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/app/src/main/header/Utils.h
-
-C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/app/src/main/header/screen/GameMenuScreen.h
-SFML/Graphics.hpp
--
-../../../../../library/src/main/header/MaterialButton.h
+C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/library/src/main/cpp/MaterialButton.cpp
+../header/MaterialButton.h
 C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/library/src/main/header/MaterialButton.h
-
-C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/app/src/main/header/screen/SplashScreen.h
-SFML/Graphics.hpp
--
-../../../../../library/src/main/header/Loader.h
-C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/library/src/main/header/Loader.h
-
-C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/app/src/main/main.cpp
-iostream
--
-SFML/Graphics.hpp
--
-header/App.h
-C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/app/src/main/header/App.h
-header/screen/SplashScreen.h
-C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/app/src/main/header/screen/SplashScreen.h
-header/screen/GameMenuScreen.h
-C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/app/src/main/header/screen/GameMenuScreen.h
-
-C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/library/src/main/header/Loader.h
-SFML/Graphics.hpp
--
-list
--
 
 C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/library/src/main/header/MaterialButton.h
 SFML/Graphics.hpp

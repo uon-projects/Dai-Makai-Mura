@@ -23,7 +23,6 @@
 
 // Created by TeodorHMX1 on 19/03/2020.
 
-#include <iostream>
 #include "../header/MaterialButton.h"
 
 MaterialButton::~MaterialButton()
@@ -37,18 +36,13 @@ MaterialButton::MaterialButton(const Vector2f &size)
 	color = Color::Black;
 	hoverColor = Color::Black;
 	activeColor = Color::Black;
-	std::cout<<"here";
 	update();
 }
 
 void MaterialButton::setSize(const Vector2f &size)
 {
 	mySize = size;
-	setOrigin(mySize.x/2, mySize.y/2);
-	btnBounders = IntRect(getPosition().x - getGlobalBounds().width / 2,
-	                  getPosition().y - getGlobalBounds().height / 2,
-	                  getGlobalBounds().width,
-	                  getGlobalBounds().height);
+	setOrigin(mySize.x / 2, mySize.y / 2);
 	update();
 }
 
@@ -62,10 +56,14 @@ Vector2f MaterialButton::getPoint(size_t index) const
 	switch (index)
 	{
 		default:
-		case 0: return Vector2f(0, 0);
-		case 1: return Vector2f(mySize.x, 0);
-		case 2: return Vector2f(mySize.x, mySize.y);
-		case 3: return Vector2f(0, mySize.y);
+		case 0:
+			return Vector2f(0, 0);
+		case 1:
+			return Vector2f(mySize.x, 0);
+		case 2:
+			return Vector2f(mySize.x, mySize.y);
+		case 3:
+			return Vector2f(0, mySize.y);
 	}
 }
 
@@ -82,4 +80,28 @@ void MaterialButton::setHoverColor(Color newHoverColor)
 void MaterialButton::setActiveColor(Color newActiveColor)
 {
 	activeColor = newActiveColor;
+}
+
+bool MaterialButton::isClicked(RenderWindow &window)
+{
+	btnBounders = IntRect(getPosition().x - getGlobalBounds().width / 2,
+	                      getPosition().y - getGlobalBounds().height / 2,
+	                      getGlobalBounds().width,
+	                      getGlobalBounds().height);
+	if (btnBounders.contains(Mouse::getPosition(window)))
+	{
+		if (Mouse::isButtonPressed(Mouse::Left))
+		{
+			setFillColor(activeColor);
+			return true;
+		} else
+		{
+			setFillColor(hoverColor);
+			return false;
+		}
+	} else
+	{
+		setFillColor(color);
+		return false;
+	}
 }

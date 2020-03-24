@@ -40,7 +40,7 @@ public:
 	~GameMenuScreen();
 
 public:
-	void draw(sf::RenderWindow &window);
+	void draw(RenderWindow &window);
 
 private:
 	MaterialButton rectangle;

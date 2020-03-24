@@ -30,10 +30,9 @@ GameMenuScreen::GameMenuScreen()
 
 	gameMenuScreenBackground.setFillColor(Color(52, 235, 116));
 	rectangle.setSize(Vector2f(100, 50));
-	rectangle.setColor(Color(255,224,178));
-	rectangle.setHoverColor(Color(255, 255, 255));
-	rectangle.setActiveColor(Color(255, 255, 255));
-	rectangle.setFillColor(Color(23, 23, 23));
+	rectangle.setColor(Color::Green);
+	rectangle.setHoverColor(Color::Blue);
+	rectangle.setActiveColor(Color::Cyan);
 
 }
 
@@ -47,24 +46,11 @@ void GameMenuScreen::draw(RenderWindow &window)
 
 	gameMenuScreenBackground.setSize(Vector2f(window.getSize().x, window.getSize().y));
 	window.draw(gameMenuScreenBackground);
-
-//	sf::IntRect btnCharactersRect(rectangle.getPosition().x - rectangle.getGlobalBounds().width / 2,
-//	                              rectangle.getPosition().y - rectangle.getGlobalBounds().height / 2,
-//	                              rectangle.getGlobalBounds().width,
-//	                              rectangle.getGlobalBounds().height);
-//	if (btnCharactersRect.contains(sf::Mouse::getPosition(window)))
-//	{
-//		if (sf::Mouse::isButtonPressed(sf::Mouse::Left))
-//		{
-//
-//		}
-//		rectangle.setFillColor(sf::Color(255, 255, 255));
-//	}
-//	else
-//	{
-//		rectangle.setFillColor(sf::Color(255,224,178));
-//	}
-	rectangle.setPosition((float) window.getSize().x/2, (float) window.getSize().y/2);
+	rectangle.setPosition((float) window.getSize().x / 2, (float) window.getSize().y / 2);
+	if (rectangle.isClicked(window))
+	{
+		printf("clicked!\n")
+	}
 	window.draw(rectangle);
 
 }
