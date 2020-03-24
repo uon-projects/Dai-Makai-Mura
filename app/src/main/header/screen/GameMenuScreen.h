@@ -43,6 +43,6 @@ public:
 	void draw(RenderWindow &window);
 
 private:
-	MaterialButton rectangle;
+	MaterialButton exitBtn;
 
 };

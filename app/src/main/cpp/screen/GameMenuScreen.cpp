@@ -30,12 +30,12 @@ GameMenuScreen::GameMenuScreen()
 {
 
 	gameMenuScreenBackground.setFillColor(Color(52, 235, 116));
-	rectangle.setSize(Vector2f(100, 50));
-	rectangle.setColor(Color::Green);
-	rectangle.setHoverColor(Color::Blue);
-	rectangle.setActiveColor(Color::Cyan);
-	rectangle.setText("Hello There!");
-	rectangle.setCharacterSize(20);
+	exitBtn.setSize(Vector2f(70, 30));
+	exitBtn.setColor(Color(244,67,54));
+	exitBtn.setHoverColor(Color(211,47,47));
+	exitBtn.setActiveColor(Color(198,40,40));
+	exitBtn.setText("Exit");
+	exitBtn.setCharacterSize(18);
 
 }
 
@@ -50,12 +50,12 @@ void GameMenuScreen::draw(RenderWindow &window)
 	gameMenuScreenBackground.setSize(Vector2f(window.getSize().x, window.getSize().y));
 	window.draw(gameMenuScreenBackground);
 
-	rectangle.setBtnPosition((float) window.getSize().x / 2, (float) window.getSize().y / 2);
-	if (rectangle.isClicked(window))
+	exitBtn.setBtnPosition((float) window.getSize().x - 90, (float) 50);
+	if (exitBtn.isClicked(window))
 	{
-		printf("clicked!\n");
+		window.close();
 	}
-	window.draw(rectangle);
-	rectangle.drawText(window);
+	window.draw(exitBtn);
+	exitBtn.drawText(window);
 
 }
