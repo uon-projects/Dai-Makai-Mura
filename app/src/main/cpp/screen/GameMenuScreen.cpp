@@ -46,6 +46,7 @@ void GameMenuScreen::draw(RenderWindow &window)
 
 	MaterialButton rectangle;
 	rectangle.setSize(Vector2f(100, 50));
+	rectangle.setOrigin(rectangle.getGlobalBounds().width/2, rectangle.getGlobalBounds().height/2);
 	rectangle.setPosition(0, 0);
 	rectangle.setFillColor(Color(23, 23, 23));
 	window.draw(rectangle);
