@@ -56,7 +56,7 @@ void GameMenuScreen::draw(RenderWindow &window)
 
 	Text text;
 	Font font;
-	if (!font.loadFromFile("app/src/main/res/font/font1.otf"))
+	if (!font.loadFromFile("font1.otf"))
 	{
 		// error...
 	}
