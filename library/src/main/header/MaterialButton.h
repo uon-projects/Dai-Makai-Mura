@@ -42,14 +42,17 @@ public:
 public:
 	explicit MaterialButton(const Vector2f& size = Vector2f(0, 0));
 
-	virtual std::size_t getPointCount() const;
+	virtual size_t getPointCount() const;
 
-	virtual Vector2f getPoint(std::size_t index) const;
+	virtual Vector2f getPoint(size_t index) const;
 
 	void setSize(const Vector2f &size);
 
 private:
 	Vector2f mySize;
 	IntRect btnBounders;
+	Color color;
+	Color hoverColor;
+	Color activeColor;
 
 };

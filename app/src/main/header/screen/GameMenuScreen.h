@@ -24,6 +24,7 @@
 // Created by TeodorHMX1 on 17/03/2020.
 
 #include <SFML/Graphics.hpp>
+#include "../../../../../library/src/main/header/MaterialButton.h"
 
 using namespace sf;
 
@@ -40,5 +41,8 @@ public:
 
 public:
 	void draw(sf::RenderWindow &window);
+
+private:
+	MaterialButton rectangle;
 
 };

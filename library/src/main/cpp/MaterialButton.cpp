@@ -23,6 +23,7 @@
 
 // Created by TeodorHMX1 on 19/03/2020.
 
+#include <iostream>
 #include "../header/MaterialButton.h"
 
 MaterialButton::~MaterialButton()
@@ -33,6 +34,10 @@ MaterialButton::~MaterialButton()
 MaterialButton::MaterialButton(const Vector2f &size)
 {
 	mySize = size;
+	color = Color::Black;
+	hoverColor = Color::Black;
+	activeColor = Color::Black;
+	std::cout<<"here";
 	update();
 }
 
@@ -47,12 +52,12 @@ void MaterialButton::setSize(const Vector2f &size)
 	update();
 }
 
-std::size_t MaterialButton::getPointCount() const
+size_t MaterialButton::getPointCount() const
 {
 	return 4;
 }
 
-Vector2f MaterialButton::getPoint(std::size_t index) const
+Vector2f MaterialButton::getPoint(size_t index) const
 {
 	switch (index)
 	{
@@ -64,17 +69,17 @@ Vector2f MaterialButton::getPoint(std::size_t index) const
 	}
 }
 
-void MaterialButton::setColor(Color color)
+void MaterialButton::setColor(Color newColor)
 {
-
+	color = newColor;
 }
 
-void MaterialButton::setActiveColor(Color color)
+void MaterialButton::setHoverColor(Color newHoverColor)
 {
-
+	hoverColor = newHoverColor;
 }
 
-void MaterialButton::setHoverColor(Color color)
+void MaterialButton::setActiveColor(Color newActiveColor)
 {
-
+	activeColor = newActiveColor;
 }

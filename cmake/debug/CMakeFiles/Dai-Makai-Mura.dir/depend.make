@@ -164,6 +164,7 @@ CMakeFiles/Dai-Makai-Mura.dir/app/src/main/main.cpp.obj: ../../app/src/main/head
 CMakeFiles/Dai-Makai-Mura.dir/app/src/main/main.cpp.obj: ../../app/src/main/header/screen/SplashScreen.h
 CMakeFiles/Dai-Makai-Mura.dir/app/src/main/main.cpp.obj: ../../app/src/main/main.cpp
 CMakeFiles/Dai-Makai-Mura.dir/app/src/main/main.cpp.obj: ../../library/src/main/header/Loader.h
+CMakeFiles/Dai-Makai-Mura.dir/app/src/main/main.cpp.obj: ../../library/src/main/header/MaterialButton.h
 CMakeFiles/Dai-Makai-Mura.dir/app/src/main/main.cpp.obj: C:/mingw32/include/SFML/Config.hpp
 CMakeFiles/Dai-Makai-Mura.dir/app/src/main/main.cpp.obj: C:/mingw32/include/SFML/Graphics.hpp
 CMakeFiles/Dai-Makai-Mura.dir/app/src/main/main.cpp.obj: C:/mingw32/include/SFML/Graphics/BlendMode.hpp
