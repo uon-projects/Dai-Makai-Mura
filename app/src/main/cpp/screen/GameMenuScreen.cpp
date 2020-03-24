@@ -42,37 +42,6 @@ GameMenuScreen::~GameMenuScreen()
 
 }
 
-#ifdef _WIN32
-#include <windows.h>
-
-std::string getexepath()
-{
-	char result[ MAX_PATH ];
-	return std::string( result, GetModuleFileName( NULL, result, MAX_PATH ) );
-}
-#endif
-
-#ifdef _WIN64
-#include <windows.h>
-
-std::string getexepath()
-{
-	char result[ MAX_PATH ];
-	return std::string( result, GetModuleFileName( NULL, result, MAX_PATH ) );
-}
-#endif
-
-#ifdef __linux
-#include <unistd.h>
-
-std::string getexepath()
-  {
-  char result[ PATH_MAX ];
-  ssize_t count = readlink( "/proc/self/exe", result, PATH_MAX );
-  return std::string( result, (count > 0) ? count : 0 );
-
-#endif
-
 void GameMenuScreen::draw(RenderWindow &window)
 {
 
