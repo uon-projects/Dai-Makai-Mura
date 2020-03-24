@@ -28,10 +28,26 @@
 
 Sprite LoadImage::loadSpriteFromTexture(std::string assetName, image_ext extension)
 {
+	std::string image_extension;
+	if (extension == png)
+	{
+		image_extension = ".png";
+	} else if (extension == jpg)
+	{
+		image_extension = ".jpg";
+	} else if (extension == jpeg)
+	{
+		image_extension = ".jpeg";
+	} else
+	{
+		image_extension = ".png";
+	}
 	sf::Texture zfTexture;
-	if (!zfTexture.loadFromFile("res/drawable/" + assetName + "." + assetExtension)) {
+	if (!zfTexture.loadFromFile("res/drawable/" + assetName + image_extension))
+	{
 		system("pause");
 	}
+	zfTexture.setSmooth(true);
 	zfTextures.push_front(zfTexture);
 	sf::Sprite zfSprite(zfTextures.front());
 	return zfSprite;
