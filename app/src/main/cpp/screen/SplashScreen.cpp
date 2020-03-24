@@ -47,7 +47,12 @@ void SplashScreen::draw(RenderWindow &window)
 	splashScreenBg.setSize(Vector2f(window.getSize().x, window.getSize().y));
 	window.draw(splashScreenBg);
 
-	mSplashLogo.setScale(0.15, 0.15);
+	mSplashLogo.setScale(0.12, 0.12);
+	float windowHeightHalf = (float) window.getSize().y / 2;
+	float windowWidthHalf = (float) window.getSize().x / 2;
+	float spriteHeightHalf = mSplashLogo.getGlobalBounds().width / 2;
+	float spriteWidthHalf = mSplashLogo.getGlobalBounds().width / 2;
+	mSplashLogo.setPosition(windowWidthHalf - spriteWidthHalf, windowHeightHalf - spriteHeightHalf - 50);
 	window.draw(mSplashLogo);
 
 }
