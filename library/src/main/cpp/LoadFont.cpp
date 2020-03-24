@@ -21,41 +21,17 @@
  * 
  **/
 
-// Created by TeodorHMX1 on 17/03/2020.
+// Created by TeodorHMX1 on 24/03/2020.
 
-#include "../../header/screen/GameMenuScreen.h"
-#include "../../../../../library/src/main/header/LoadFont.h"
+#include "../header/LoadFont.h"
 
-GameMenuScreen::GameMenuScreen()
+Font LoadFont::loadFont()
 {
-
-	gameMenuScreenBackground.setFillColor(Color(52, 235, 116));
-	rectangle.setSize(Vector2f(100, 50));
-	rectangle.setColor(Color::Green);
-	rectangle.setHoverColor(Color::Blue);
-	rectangle.setActiveColor(Color::Cyan);
-	rectangle.setText("Hello There!");
-	rectangle.setCharacterSize(20);
-
-}
-
-GameMenuScreen::~GameMenuScreen()
-{
-
-}
-
-void GameMenuScreen::draw(RenderWindow &window)
-{
-
-	gameMenuScreenBackground.setSize(Vector2f(window.getSize().x, window.getSize().y));
-	window.draw(gameMenuScreenBackground);
-
-	rectangle.setBtnPosition((float) window.getSize().x / 2, (float) window.getSize().y / 2);
-	if (rectangle.isClicked(window))
+	Font font;
+	if (!font.loadFromFile("res/font/font1.otf"))
 	{
-		printf("clicked!\n");
+		system("pause");
 	}
-	window.draw(rectangle);
-	rectangle.drawText(window);
+	return font;
 
 }

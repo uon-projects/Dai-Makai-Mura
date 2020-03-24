@@ -257,6 +257,33 @@ app/src/main/main.cpp.s:
 	$(MAKE) -f CMakeFiles\Dai-Makai-Mura.dir\build.make CMakeFiles/Dai-Makai-Mura.dir/app/src/main/main.cpp.s
 .PHONY : app/src/main/main.cpp.s
 
+library/src/main/cpp/LoadFont.obj: library/src/main/cpp/LoadFont.cpp.obj
+
+.PHONY : library/src/main/cpp/LoadFont.obj
+
+# target to build an object file
+library/src/main/cpp/LoadFont.cpp.obj:
+	$(MAKE) -f CMakeFiles\Dai-Makai-Mura.dir\build.make CMakeFiles/Dai-Makai-Mura.dir/library/src/main/cpp/LoadFont.cpp.obj
+.PHONY : library/src/main/cpp/LoadFont.cpp.obj
+
+library/src/main/cpp/LoadFont.i: library/src/main/cpp/LoadFont.cpp.i
+
+.PHONY : library/src/main/cpp/LoadFont.i
+
+# target to preprocess a source file
+library/src/main/cpp/LoadFont.cpp.i:
+	$(MAKE) -f CMakeFiles\Dai-Makai-Mura.dir\build.make CMakeFiles/Dai-Makai-Mura.dir/library/src/main/cpp/LoadFont.cpp.i
+.PHONY : library/src/main/cpp/LoadFont.cpp.i
+
+library/src/main/cpp/LoadFont.s: library/src/main/cpp/LoadFont.cpp.s
+
+.PHONY : library/src/main/cpp/LoadFont.s
+
+# target to generate assembly for a file
+library/src/main/cpp/LoadFont.cpp.s:
+	$(MAKE) -f CMakeFiles\Dai-Makai-Mura.dir\build.make CMakeFiles/Dai-Makai-Mura.dir/library/src/main/cpp/LoadFont.cpp.s
+.PHONY : library/src/main/cpp/LoadFont.cpp.s
+
 library/src/main/cpp/Loader.obj: library/src/main/cpp/Loader.cpp.obj
 
 .PHONY : library/src/main/cpp/Loader.obj
@@ -362,6 +389,9 @@ help:
 	@echo ... app/src/main/main.obj
 	@echo ... app/src/main/main.i
 	@echo ... app/src/main/main.s
+	@echo ... library/src/main/cpp/LoadFont.obj
+	@echo ... library/src/main/cpp/LoadFont.i
+	@echo ... library/src/main/cpp/LoadFont.s
 	@echo ... library/src/main/cpp/Loader.obj
 	@echo ... library/src/main/cpp/Loader.i
 	@echo ... library/src/main/cpp/Loader.s
