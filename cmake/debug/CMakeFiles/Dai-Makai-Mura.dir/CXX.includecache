@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/app/src/main/cpp/screen/LvlChooseScreen.cpp
+../../header/screen/LvlChooseScreen.h
+C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/app/src/main/header/screen/LvlChooseScreen.h
+
 C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/app/src/main/header/App.h
 Utils.h
 C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/app/src/main/header/Utils.h
@@ -20,6 +24,10 @@ C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/library/src/m
 ../App.h
 C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/app/src/main/header/App.h
 
+C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/app/src/main/header/screen/LvlChooseScreen.h
+SFML/Graphics.hpp
+-
+
 C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/app/src/main/header/screen/SplashScreen.h
 SFML/Graphics.hpp
 -
@@ -33,6 +41,8 @@ header/screen/SplashScreen.h
 C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/app/src/main/header/screen/SplashScreen.h
 header/screen/GameMenuScreen.h
 C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/app/src/main/header/screen/GameMenuScreen.h
+header/screen/LvlChooseScreen.h
+C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/app/src/main/header/screen/LvlChooseScreen.h
 
 C:/Users/grigo/Desktop/BSc Games Programming/Year 1/Dai-Makai-Mura/library/src/main/header/LoadImage.h
 SFML/Graphics.hpp

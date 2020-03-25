@@ -203,6 +203,33 @@ app/src/main/cpp/screen/GameMenuScreen.cpp.s:
 	$(MAKE) -f CMakeFiles\Dai-Makai-Mura.dir\build.make CMakeFiles/Dai-Makai-Mura.dir/app/src/main/cpp/screen/GameMenuScreen.cpp.s
 .PHONY : app/src/main/cpp/screen/GameMenuScreen.cpp.s
 
+app/src/main/cpp/screen/LvlChooseScreen.obj: app/src/main/cpp/screen/LvlChooseScreen.cpp.obj
+
+.PHONY : app/src/main/cpp/screen/LvlChooseScreen.obj
+
+# target to build an object file
+app/src/main/cpp/screen/LvlChooseScreen.cpp.obj:
+	$(MAKE) -f CMakeFiles\Dai-Makai-Mura.dir\build.make CMakeFiles/Dai-Makai-Mura.dir/app/src/main/cpp/screen/LvlChooseScreen.cpp.obj
+.PHONY : app/src/main/cpp/screen/LvlChooseScreen.cpp.obj
+
+app/src/main/cpp/screen/LvlChooseScreen.i: app/src/main/cpp/screen/LvlChooseScreen.cpp.i
+
+.PHONY : app/src/main/cpp/screen/LvlChooseScreen.i
+
+# target to preprocess a source file
+app/src/main/cpp/screen/LvlChooseScreen.cpp.i:
+	$(MAKE) -f CMakeFiles\Dai-Makai-Mura.dir\build.make CMakeFiles/Dai-Makai-Mura.dir/app/src/main/cpp/screen/LvlChooseScreen.cpp.i
+.PHONY : app/src/main/cpp/screen/LvlChooseScreen.cpp.i
+
+app/src/main/cpp/screen/LvlChooseScreen.s: app/src/main/cpp/screen/LvlChooseScreen.cpp.s
+
+.PHONY : app/src/main/cpp/screen/LvlChooseScreen.s
+
+# target to generate assembly for a file
+app/src/main/cpp/screen/LvlChooseScreen.cpp.s:
+	$(MAKE) -f CMakeFiles\Dai-Makai-Mura.dir\build.make CMakeFiles/Dai-Makai-Mura.dir/app/src/main/cpp/screen/LvlChooseScreen.cpp.s
+.PHONY : app/src/main/cpp/screen/LvlChooseScreen.cpp.s
+
 app/src/main/cpp/screen/SplashScreen.obj: app/src/main/cpp/screen/SplashScreen.cpp.obj
 
 .PHONY : app/src/main/cpp/screen/SplashScreen.obj
@@ -383,6 +410,9 @@ help:
 	@echo ... app/src/main/cpp/screen/GameMenuScreen.obj
 	@echo ... app/src/main/cpp/screen/GameMenuScreen.i
 	@echo ... app/src/main/cpp/screen/GameMenuScreen.s
+	@echo ... app/src/main/cpp/screen/LvlChooseScreen.obj
+	@echo ... app/src/main/cpp/screen/LvlChooseScreen.i
+	@echo ... app/src/main/cpp/screen/LvlChooseScreen.s
 	@echo ... app/src/main/cpp/screen/SplashScreen.obj
 	@echo ... app/src/main/cpp/screen/SplashScreen.i
 	@echo ... app/src/main/cpp/screen/SplashScreen.s

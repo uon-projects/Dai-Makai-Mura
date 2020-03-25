@@ -26,6 +26,7 @@
 #include <SFML/Graphics.hpp>
 #include "header/screen/SplashScreen.h"
 #include "header/screen/GameMenuScreen.h"
+#include "header/screen/LvlChooseScreen.h"
 
 using namespace std;
 using namespace sf;
@@ -33,9 +34,10 @@ using namespace sf;
 #define WindowX 800
 #define WindowY 500
 
+App *mApp;
 SplashScreen mSplashScreen;
 GameMenuScreen mGameMenu;
-App *mApp;
+LvlChooseScreen mLvlChooseScreen;
 Vector2f theGameWindow_currentDimensions(WindowX, WindowY); // NOLINT(cert-err58-cpp)
 Vector2f theGameWindow_perspectiveDimensions(WindowX, WindowY); // NOLINT(cert-err58-cpp)
 RenderWindow theGameWindow( // NOLINT(cert-err58-cpp)
@@ -127,7 +129,7 @@ void draw()
 		mGameMenu.draw(theGameWindow);
 	} else if (currentScreen == choose_lvl)
 	{
-		
+		mLvlChooseScreen.draw(theGameWindow);
 	} else if (currentScreen == game)
 	{
 
