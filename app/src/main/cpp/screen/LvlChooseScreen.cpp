@@ -21,64 +21,48 @@
  * 
  **/
 
-// Created by TeodorHMX1 on 17/03/2020.
+// Created by TeodorHMX1 on 25/03/2020.
 
-#include "../../header/screen/GameMenuScreen.h"
-#include "../../../../../library/src/main/header/LoadFont.h"
+#include "../../header/screen/LvlChooseScreen.h"
 
-GameMenuScreen::GameMenuScreen()
+LvlChooseScreen::LvlChooseScreen()
 {
 
-	gameMenuScreenBackground.setFillColor(Color(0,150,136));
+	lvlChooseScreenBackground.setFillColor(Color(0,150,136));
 
-	exitBtn.setSize(Vector2f(70, 30));
+	exitBtn.setSize(Vector2f(90, 30));
 	exitBtn.setColor(Color(244,67,54));
 	exitBtn.setHoverColor(Color(211,47,47));
 	exitBtn.setActiveColor(Color(198,40,40));
-	exitBtn.setText("Exit");
+	exitBtn.setText("Go Back");
 	exitBtn.setCharacterSize(18);
 
-	playBtn.setSize(Vector2f(90, 40));
-	playBtn.setColor(Color(156,39,176));
-	playBtn.setHoverColor(Color(123,31,162));
-	playBtn.setActiveColor(Color(106,27,154));
-	playBtn.setText("Play");
-	playBtn.setCharacterSize(24);
-
 }
 
-GameMenuScreen::~GameMenuScreen()
+LvlChooseScreen::~LvlChooseScreen()
 {
 
 }
 
-void GameMenuScreen::draw(RenderWindow &window)
+
+void LvlChooseScreen::draw(RenderWindow &window)
 {
 
-	gameMenuScreenBackground.setSize(Vector2f(window.getSize().x, window.getSize().y));
-	window.draw(gameMenuScreenBackground);
+	lvlChooseScreenBackground.setSize(Vector2f(window.getSize().x, window.getSize().y));
+	window.draw(lvlChooseScreenBackground);
 
-	exitBtn.setBtnPosition((float) window.getSize().x - 70, (float) 50);
+	exitBtn.setBtnPosition((float) 90, (float) 50);
 	if (exitBtn.isClicked(window))
 	{
-		window.close();
+		this->mApp->setCurrentScreen(menu);
 	}
 	window.draw(exitBtn);
 	exitBtn.drawText(window);
 
-	playBtn.setBtnPosition((float) window.getSize().x/2, (float) 100);
-	if (playBtn.isClicked(window))
-	{
-		this->mApp->setCurrentScreen(choose_lvl);
-	}
-	window.draw(playBtn);
-	playBtn.drawText(window);
-
 }
 
-void GameMenuScreen::setApp(App *app)
+void LvlChooseScreen::setApp(App *app)
 {
 	this->mApp = app;
 	exitBtn.setApp(this->mApp);
-	playBtn.setApp(this->mApp);
 }

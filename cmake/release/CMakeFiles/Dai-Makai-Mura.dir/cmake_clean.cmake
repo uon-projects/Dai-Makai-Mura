@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Dai-Makai-Mura.dir/app/src/main/cpp/App.cpp.obj"
   "CMakeFiles/Dai-Makai-Mura.dir/app/src/main/cpp/Utils.cpp.obj"
   "CMakeFiles/Dai-Makai-Mura.dir/app/src/main/cpp/screen/GameMenuScreen.cpp.obj"
+  "CMakeFiles/Dai-Makai-Mura.dir/app/src/main/cpp/screen/LvlChooseScreen.cpp.obj"
   "CMakeFiles/Dai-Makai-Mura.dir/app/src/main/cpp/screen/SplashScreen.cpp.obj"
   "CMakeFiles/Dai-Makai-Mura.dir/app/src/main/main.cpp.obj"
   "CMakeFiles/Dai-Makai-Mura.dir/library/src/main/cpp/LoadFont.cpp.obj"
