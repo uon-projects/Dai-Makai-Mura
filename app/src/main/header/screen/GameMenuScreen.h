@@ -25,6 +25,7 @@
 
 #include <SFML/Graphics.hpp>
 #include "../../../../../library/src/main/header/MaterialButton.h"
+#include "../App.h"
 
 using namespace sf;
 
@@ -33,6 +34,7 @@ class GameMenuScreen
 
 public:
 	RectangleShape gameMenuScreenBackground;
+	App *mApp;
 
 public:
 	GameMenuScreen();
@@ -41,6 +43,8 @@ public:
 
 public:
 	void draw(RenderWindow &window);
+
+	void setApp(App *app);
 
 private:
 	MaterialButton exitBtn;
