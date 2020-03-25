@@ -86,6 +86,7 @@ void init()
 
 	mApp = new App;
 	mGameMenu.setApp(mApp);
+	mLvlChooseScreen.setApp(mApp);
 
 	theGameWindow.setFramerateLimit(60);
 

@@ -23,6 +23,7 @@
 
 // Created by TeodorHMX1 on 19/03/2020.
 
+#pragma once
 #include <SFML/Graphics.hpp>
 
 using namespace sf;

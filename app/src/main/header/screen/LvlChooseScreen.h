@@ -25,6 +25,7 @@
 
 #include <SFML/Graphics.hpp>
 #include "../App.h"
+#include "../../../../../library/src/main/header/MaterialButton.h"
 
 using namespace sf;
 
@@ -42,5 +43,10 @@ public:
 
 public:
 	void draw(RenderWindow &window);
+
+	void setApp(App *app);
+
+private:
+	MaterialButton exitBtn;
 
 };
