@@ -58,7 +58,7 @@ void GameMenuScreen::draw(RenderWindow &window)
 	gameMenuScreenBackground.setSize(Vector2f(window.getSize().x, window.getSize().y));
 	window.draw(gameMenuScreenBackground);
 
-	exitBtn.setBtnPosition((float) window.getSize().x - 90, (float) 50);
+	exitBtn.setBtnPosition((float) window.getSize().x - 70, (float) 50);
 	if (exitBtn.isClicked(window))
 	{
 		window.close();
