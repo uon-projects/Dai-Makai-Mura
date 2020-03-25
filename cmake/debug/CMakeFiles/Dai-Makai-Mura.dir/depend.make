@@ -9,6 +9,8 @@ CMakeFiles/Dai-Makai-Mura.dir/app/src/main/cpp/Utils.cpp.obj: ../../app/src/main
 CMakeFiles/Dai-Makai-Mura.dir/app/src/main/cpp/Utils.cpp.obj: ../../app/src/main/header/Utils.h
 
 CMakeFiles/Dai-Makai-Mura.dir/app/src/main/cpp/screen/GameMenuScreen.cpp.obj: ../../app/src/main/cpp/screen/GameMenuScreen.cpp
+CMakeFiles/Dai-Makai-Mura.dir/app/src/main/cpp/screen/GameMenuScreen.cpp.obj: ../../app/src/main/header/App.h
+CMakeFiles/Dai-Makai-Mura.dir/app/src/main/cpp/screen/GameMenuScreen.cpp.obj: ../../app/src/main/header/Utils.h
 CMakeFiles/Dai-Makai-Mura.dir/app/src/main/cpp/screen/GameMenuScreen.cpp.obj: ../../app/src/main/header/screen/GameMenuScreen.h
 CMakeFiles/Dai-Makai-Mura.dir/app/src/main/cpp/screen/GameMenuScreen.cpp.obj: ../../library/src/main/header/LoadFont.h
 CMakeFiles/Dai-Makai-Mura.dir/app/src/main/cpp/screen/GameMenuScreen.cpp.obj: ../../library/src/main/header/MaterialButton.h
