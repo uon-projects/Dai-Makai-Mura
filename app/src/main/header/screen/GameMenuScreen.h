@@ -44,6 +44,8 @@ public:
 public:
 	void draw(RenderWindow &window);
 
+	void setApp(App &app);
+
 private:
 	MaterialButton exitBtn;
 	MaterialButton playBtn;

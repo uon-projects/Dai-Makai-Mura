@@ -23,7 +23,6 @@
 
 // Created by TeodorHMX1 on 17/03/2020.
 
-#include <iostream>
 #include <SFML/Graphics.hpp>
 #include "header/screen/SplashScreen.h"
 #include "header/screen/GameMenuScreen.h"
@@ -57,6 +56,8 @@ int main()
 
 	Clock clockTime;
 	Time speed;
+
+	mGameMenu.setApp(mApp);
 
 	theGameWindow.setFramerateLimit(60);
 	init();
