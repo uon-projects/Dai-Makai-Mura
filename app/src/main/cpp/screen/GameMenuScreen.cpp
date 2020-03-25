@@ -69,14 +69,14 @@ void GameMenuScreen::draw(RenderWindow &window)
 	playBtn.setBtnPosition((float) window.getSize().x/2, (float) 100);
 	if (playBtn.isClicked(window))
 	{
-		this->mApp.setCurrentScreen(choose_lvl);
+		this->mApp->setCurrentScreen(choose_lvl);
 	}
 	window.draw(playBtn);
 	playBtn.drawText(window);
 
 }
 
-void GameMenuScreen::setApp(App &app)
+void GameMenuScreen::setApp(App *app)
 {
 	this->mApp = app;
 }

@@ -34,7 +34,7 @@ class GameMenuScreen
 
 public:
 	RectangleShape gameMenuScreenBackground;
-	App mApp;
+	App *mApp;
 
 public:
 	GameMenuScreen();
@@ -44,7 +44,7 @@ public:
 public:
 	void draw(RenderWindow &window);
 
-	void setApp(App &app);
+	void setApp(App *app);
 
 private:
 	MaterialButton exitBtn;

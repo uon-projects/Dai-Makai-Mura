@@ -35,7 +35,7 @@ using namespace sf;
 
 SplashScreen mSplashScreen;
 GameMenuScreen mGameMenu;
-App mApp;
+App *mApp;
 Vector2f theGameWindow_currentDimensions(WindowX, WindowY); // NOLINT(cert-err58-cpp)
 Vector2f theGameWindow_perspectiveDimensions(WindowX, WindowY); // NOLINT(cert-err58-cpp)
 RenderWindow theGameWindow( // NOLINT(cert-err58-cpp)
@@ -57,9 +57,6 @@ int main()
 	Clock clockTime;
 	Time speed;
 
-	mGameMenu.setApp(mApp);
-
-	theGameWindow.setFramerateLimit(60);
 	init();
 
 	while (theGameWindow.isOpen())
@@ -84,6 +81,11 @@ void init()
 {
 
 	inGameClock.restart();
+
+	mApp = new App;
+	mGameMenu.setApp(mApp);
+
+	theGameWindow.setFramerateLimit(60);
 
 }
 
@@ -110,7 +112,7 @@ void update(float seconds)
 void draw()
 {
 
-	screen currentScreen = mApp.getCurrentScreen();
+	screen currentScreen = mApp->getCurrentScreen();
 	if (currentScreen == splash)
 	{
 		float sec = inGameClock.getElapsedTime().asSeconds();
@@ -118,11 +120,14 @@ void draw()
 		if (sec >= 2.0)
 		{
 			inGameClock.restart();
-			mApp.setCurrentScreen(menu);
+			mApp->setCurrentScreen(menu);
 		}
 	} else if (currentScreen == menu)
 	{
 		mGameMenu.draw(theGameWindow);
+	} else if (currentScreen == choose_lvl)
+	{
+		
 	} else if (currentScreen == game)
 	{
 
