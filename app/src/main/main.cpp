@@ -25,7 +25,6 @@
 
 #include <iostream>
 #include <SFML/Graphics.hpp>
-#include "header/App.h"
 #include "header/screen/SplashScreen.h"
 #include "header/screen/GameMenuScreen.h"
 

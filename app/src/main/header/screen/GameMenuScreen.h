@@ -25,6 +25,7 @@
 
 #include <SFML/Graphics.hpp>
 #include "../../../../../library/src/main/header/MaterialButton.h"
+#include "../App.h"
 
 using namespace sf;
 
@@ -33,6 +34,7 @@ class GameMenuScreen
 
 public:
 	RectangleShape gameMenuScreenBackground;
+	App mApp;
 
 public:
 	GameMenuScreen();
