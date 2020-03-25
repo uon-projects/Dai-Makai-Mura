@@ -79,4 +79,6 @@ void GameMenuScreen::draw(RenderWindow &window)
 void GameMenuScreen::setApp(App *app)
 {
 	this->mApp = app;
+	exitBtn.setApp(this->mApp);
+	playBtn.setApp(this->mApp);
 }

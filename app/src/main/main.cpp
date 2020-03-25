@@ -99,6 +99,7 @@ void inputListener()
 
 	while (theGameWindow.pollEvent(event))
 	{
+		mApp->setEvent(event);
 		if (event.key.code == Keyboard::Escape || event.type == Event::Closed)
 		{
 			theGameWindow.close();

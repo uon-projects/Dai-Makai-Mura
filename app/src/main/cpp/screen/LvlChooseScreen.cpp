@@ -64,4 +64,5 @@ void LvlChooseScreen::draw(RenderWindow &window)
 void LvlChooseScreen::setApp(App *app)
 {
 	this->mApp = app;
+	exitBtn.setApp(this->mApp);
 }

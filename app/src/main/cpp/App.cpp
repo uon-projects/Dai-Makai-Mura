@@ -44,3 +44,13 @@ void App::setCurrentScreen(screen screenChose)
 {
 	this->currentScreen = screenChose;
 }
+
+Event App::getEvent()
+{
+	return this->event;
+}
+
+void App::setEvent(Event eventN)
+{
+	this->event = eventN;
+}

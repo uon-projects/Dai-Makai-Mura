@@ -25,6 +25,7 @@
 
 #pragma once
 #include <SFML/Graphics.hpp>
+#include "../../../../app/src/main/header/App.h"
 
 using namespace sf;
 
@@ -59,6 +60,8 @@ public:
 
 	void drawText(RenderWindow &);
 
+	void setApp(App *app);
+
 private:
 	Vector2f mySize;
 	IntRect btnBounders;
@@ -69,5 +72,6 @@ private:
 	Text text;
 	String content;
 	int characterSize;
+	App *mApp;
 
 };

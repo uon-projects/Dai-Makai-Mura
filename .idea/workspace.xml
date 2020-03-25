@@ -14,12 +14,15 @@
   <component name="ChangeListManager">
     <list default="true" id="f5136dbc-fa19-4e83-9ace-75ad5814e213" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/cpp/screen/LvlChooseScreen.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/cpp/screen/LvlChooseScreen.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/header/screen/LvlChooseScreen.h" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/header/screen/LvlChooseScreen.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/cpp/App.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/cpp/App.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/cpp/screen/GameMenuScreen.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/cpp/screen/GameMenuScreen.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/header/App.h" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/header/App.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/main.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake/debug/CMakeFiles/Dai-Makai-Mura.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake/debug/CMakeFiles/Dai-Makai-Mura.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake/debug/CMakeFiles/Dai-Makai-Mura.dir/app/src/main/cpp/App.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake/debug/CMakeFiles/Dai-Makai-Mura.dir/app/src/main/cpp/App.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake/debug/CMakeFiles/Dai-Makai-Mura.dir/app/src/main/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake/debug/CMakeFiles/Dai-Makai-Mura.dir/app/src/main/main.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake/debug/CMakeFiles/Dai-Makai-Mura.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake/debug/CMakeFiles/Dai-Makai-Mura.dir/objects.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/src/main/cpp/MaterialButton.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/library/src/main/cpp/MaterialButton.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/library/src/main/header/MaterialButton.h" beforeDir="false" afterPath="$PROJECT_DIR$/library/src/main/header/MaterialButton.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -131,22 +134,22 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="463" y="142" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1585054064994" />
-    <state width="1323" height="192" key="GridCell.Tab.0.bottom" timestamp="1585176813637">
+    <state width="1323" height="192" key="GridCell.Tab.0.bottom" timestamp="1585178106687">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1585176813637" />
-    <state width="1323" height="192" key="GridCell.Tab.0.center" timestamp="1585176813636">
+    <state width="1323" height="192" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1585178106687" />
+    <state width="1323" height="192" key="GridCell.Tab.0.center" timestamp="1585178106686">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1585176813636" />
-    <state width="1323" height="192" key="GridCell.Tab.0.left" timestamp="1585176813636">
+    <state width="1323" height="192" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1585178106686" />
+    <state width="1323" height="192" key="GridCell.Tab.0.left" timestamp="1585178106686">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1585176813636" />
-    <state width="1323" height="192" key="GridCell.Tab.0.right" timestamp="1585176813637">
+    <state width="1323" height="192" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1585178106686" />
+    <state width="1323" height="192" key="GridCell.Tab.0.right" timestamp="1585178106686">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1585176813637" />
+    <state width="1323" height="192" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1585178106686" />
     <state width="1323" height="238" key="GridCell.Tab.1.bottom" timestamp="1585056267814">
       <screen x="0" y="0" width="1366" height="768" />
     </state>

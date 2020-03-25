@@ -25,6 +25,9 @@
 
 #pragma once
 #include "Utils.h"
+#include <SFML/Graphics.hpp>
+
+using namespace sf;
 
 class App
 {
@@ -37,8 +40,11 @@ public:
 public:
 	screen getCurrentScreen();
 	void setCurrentScreen(screen);
+	Event getEvent();
+	void setEvent(Event);
 
 private:
 	screen currentScreen;
+	Event event;
 
 };

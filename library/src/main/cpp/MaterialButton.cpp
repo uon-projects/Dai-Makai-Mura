@@ -101,15 +101,17 @@ bool MaterialButton::isClicked(RenderWindow &window)
 	{
 		this->text.setCharacterSize(characterSize - 2);
 		this->text.setOrigin(this->text.getLocalBounds().width / 2, this->text.getLocalBounds().height / 1.3f);
-		if (Mouse::isButtonPressed(Mouse::Left))
+
+		Event event = this->mApp->getEvent(); // NOLINT(cppcoreguidelines-pro-type-member-init,hicpp-member-init)
+		bool clicked = (event.type == event.MouseButtonReleased && event.mouseButton.button == sf::Mouse::Left);
+		if (clicked)
 		{
 			setFillColor(activeColor);
-			return true;
 		} else
 		{
 			setFillColor(hoverColor);
-			return false;
 		}
+		return clicked;
 	} else
 	{
 		this->text.setCharacterSize(characterSize);
@@ -143,4 +145,9 @@ void MaterialButton::setBtnPosition(float x, float y)
 void MaterialButton::drawText(RenderWindow &window)
 {
 	window.draw(text);
+}
+
+void MaterialButton::setApp(App *app)
+{
+	this->mApp = app;
 }
