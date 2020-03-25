@@ -21,30 +21,32 @@
  * 
  **/
 
-// Created by TeodorHMX1 on 17/03/2020.
+// Created by TeodorHMX1 on 25/03/2020.
 
-#pragma once
-#include "Utils.h"
 #include <SFML/Graphics.hpp>
+#include "../App.h"
+#include "../../../../../library/src/main/header/MaterialButton.h"
 
 using namespace sf;
 
-class App
+class LvlChooseScreen
 {
 
 public:
-	App();
-
-	~App();
+	RectangleShape lvlChooseScreenBackground;
+	App *mApp;
 
 public:
-	screen getCurrentScreen();
-	void setCurrentScreen(screen);
-	Event getEvent();
-	void setEvent(Event);
+	LvlChooseScreen();
+
+	~LvlChooseScreen();
+
+public:
+	void draw(RenderWindow &window);
+
+	void setApp(App *app);
 
 private:
-	screen currentScreen;
-	Event event;
+	MaterialButton exitBtn;
 
 };
