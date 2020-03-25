@@ -23,6 +23,7 @@
 
 // Created by TeodorHMX1 on 17/03/2020.
 
+#pragma once
 
 enum screen : int
 {

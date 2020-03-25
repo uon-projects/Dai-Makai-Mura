@@ -24,6 +24,7 @@
 // Created by TeodorHMX1 on 25/03/2020.
 
 #include <SFML/Graphics.hpp>
+#include "../App.h"
 
 using namespace sf;
 
@@ -32,6 +33,7 @@ class LvlChooseScreen
 
 public:
 	RectangleShape lvlChooseScreenBackground;
+	App *mApp;
 
 public:
 	LvlChooseScreen();

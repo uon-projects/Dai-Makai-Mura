@@ -13,26 +13,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f5136dbc-fa19-4e83-9ace-75ad5814e213" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake/debug/CMakeFiles/Dai-Makai-Mura.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake/debug/CMakeFiles/Dai-Makai-Mura.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake/debug/CMakeFiles/Dai-Makai-Mura.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake/debug/CMakeFiles/Dai-Makai-Mura.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake/debug/CMakeFiles/Dai-Makai-Mura.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake/debug/CMakeFiles/Dai-Makai-Mura.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake/debug/CMakeFiles/Dai-Makai-Mura.dir/objects1.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake/debug/CMakeFiles/Dai-Makai-Mura.dir/objects1.rsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake/debug/CMakeFiles/Dai-Makai-Mura.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake/debug/CMakeFiles/Dai-Makai-Mura.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake/debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake/debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake/debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake/debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake/debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake/debug/CMakeFiles/progress.marks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake/debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake/debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake/release/CMakeFiles/Dai-Makai-Mura.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake/release/CMakeFiles/Dai-Makai-Mura.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake/release/CMakeFiles/Dai-Makai-Mura.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake/release/CMakeFiles/Dai-Makai-Mura.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake/release/CMakeFiles/Dai-Makai-Mura.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake/release/CMakeFiles/Dai-Makai-Mura.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake/release/CMakeFiles/Dai-Makai-Mura.dir/objects1.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake/release/CMakeFiles/Dai-Makai-Mura.dir/objects1.rsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake/release/CMakeFiles/Dai-Makai-Mura.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake/release/CMakeFiles/Dai-Makai-Mura.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake/release/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake/release/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake/release/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake/release/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake/release/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake/release/CMakeFiles/progress.marks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake/release/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake/release/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/header/App.h" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/header/App.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/header/Utils.h" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/header/Utils.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/header/screen/LvlChooseScreen.h" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/header/screen/LvlChooseScreen.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake/debug/CMakeFiles/Dai-Makai-Mura.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake/debug/CMakeFiles/Dai-Makai-Mura.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake/debug/CMakeFiles/Dai-Makai-Mura.dir/app/src/main/cpp/App.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake/debug/CMakeFiles/Dai-Makai-Mura.dir/app/src/main/cpp/App.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake/debug/CMakeFiles/Dai-Makai-Mura.dir/app/src/main/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake/debug/CMakeFiles/Dai-Makai-Mura.dir/app/src/main/main.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake/debug/CMakeFiles/Dai-Makai-Mura.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake/debug/CMakeFiles/Dai-Makai-Mura.dir/objects.a" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,22 +131,22 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="463" y="142" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1585054064994" />
-    <state width="1323" height="192" key="GridCell.Tab.0.bottom" timestamp="1585176098097">
+    <state width="1323" height="192" key="GridCell.Tab.0.bottom" timestamp="1585176548526">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1585176098097" />
-    <state width="1323" height="192" key="GridCell.Tab.0.center" timestamp="1585176098096">
+    <state width="1323" height="192" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1585176548526" />
+    <state width="1323" height="192" key="GridCell.Tab.0.center" timestamp="1585176548524">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1585176098096" />
-    <state width="1323" height="192" key="GridCell.Tab.0.left" timestamp="1585176098096">
+    <state width="1323" height="192" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1585176548524" />
+    <state width="1323" height="192" key="GridCell.Tab.0.left" timestamp="1585176548524">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1585176098096" />
-    <state width="1323" height="192" key="GridCell.Tab.0.right" timestamp="1585176098097">
+    <state width="1323" height="192" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1585176548524" />
+    <state width="1323" height="192" key="GridCell.Tab.0.right" timestamp="1585176548525">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1585176098097" />
+    <state width="1323" height="192" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1585176548525" />
     <state width="1323" height="238" key="GridCell.Tab.1.bottom" timestamp="1585056267814">
       <screen x="0" y="0" width="1366" height="768" />
     </state>

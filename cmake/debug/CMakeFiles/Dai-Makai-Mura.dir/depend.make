@@ -87,6 +87,8 @@ CMakeFiles/Dai-Makai-Mura.dir/app/src/main/cpp/screen/GameMenuScreen.cpp.obj: C:
 CMakeFiles/Dai-Makai-Mura.dir/app/src/main/cpp/screen/GameMenuScreen.cpp.obj: C:/mingw32/include/SFML/Window/WindowStyle.hpp
 
 CMakeFiles/Dai-Makai-Mura.dir/app/src/main/cpp/screen/LvlChooseScreen.cpp.obj: ../../app/src/main/cpp/screen/LvlChooseScreen.cpp
+CMakeFiles/Dai-Makai-Mura.dir/app/src/main/cpp/screen/LvlChooseScreen.cpp.obj: ../../app/src/main/header/App.h
+CMakeFiles/Dai-Makai-Mura.dir/app/src/main/cpp/screen/LvlChooseScreen.cpp.obj: ../../app/src/main/header/Utils.h
 CMakeFiles/Dai-Makai-Mura.dir/app/src/main/cpp/screen/LvlChooseScreen.cpp.obj: ../../app/src/main/header/screen/LvlChooseScreen.h
 CMakeFiles/Dai-Makai-Mura.dir/app/src/main/cpp/screen/LvlChooseScreen.cpp.obj: C:/mingw32/include/SFML/Config.hpp
 CMakeFiles/Dai-Makai-Mura.dir/app/src/main/cpp/screen/LvlChooseScreen.cpp.obj: C:/mingw32/include/SFML/Graphics.hpp
