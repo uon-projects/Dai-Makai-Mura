@@ -14,7 +14,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f5136dbc-fa19-4e83-9ace-75ad5814e213" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/cpp/screen/GameMenuScreen.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/cpp/screen/GameMenuScreen.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake/debug/CMakeFiles/Dai-Makai-Mura.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake/debug/CMakeFiles/Dai-Makai-Mura.dir/CXX.includecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake/debug/CMakeFiles/Dai-Makai-Mura.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake/debug/CMakeFiles/Dai-Makai-Mura.dir/objects.a" afterDir="false" />
     </list>
@@ -40,7 +39,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/cmake/debug" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Nikil" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="CMakeSettings" />
   </component>
@@ -100,6 +99,7 @@
       <workItem from="1584616213257" duration="376000" />
       <workItem from="1585053882904" duration="17251000" />
       <workItem from="1585173472933" duration="1848000" />
+      <workItem from="1585678098557" duration="892000" />
     </task>
     <servers />
   </component>
@@ -123,10 +123,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="580" y="170" key="EnvironmentVariablesDialog/0.0.1366.768@0.0.1366.768" timestamp="1585054074195" />
-    <state x="463" y="142" key="FileChooserDialogImpl" timestamp="1585054064994">
+    <state x="463" y="142" key="FileChooserDialogImpl" timestamp="1585678953106">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="463" y="142" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1585054064994" />
+    <state x="463" y="142" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1585678953106" />
     <state width="1323" height="192" key="GridCell.Tab.0.bottom" timestamp="1585178430522">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
