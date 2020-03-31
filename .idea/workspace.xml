@@ -12,11 +12,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f5136dbc-fa19-4e83-9ace-75ad5814e213" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake/debug/CMakeFiles/Dai-Makai-Mura.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake/debug/CMakeFiles/Dai-Makai-Mura.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake/debug/CMakeFiles/Dai-Makai-Mura.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake/debug/CMakeFiles/Dai-Makai-Mura.dir/objects.a" afterDir="false" />
-    </list>
+    <list default="true" id="f5136dbc-fa19-4e83-9ace-75ad5814e213" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -99,7 +95,7 @@
       <workItem from="1584616213257" duration="376000" />
       <workItem from="1585053882904" duration="17251000" />
       <workItem from="1585173472933" duration="1848000" />
-      <workItem from="1585678098557" duration="892000" />
+      <workItem from="1585678098557" duration="913000" />
     </task>
     <servers />
   </component>
@@ -127,22 +123,22 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="463" y="142" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1585678953106" />
-    <state width="1323" height="192" key="GridCell.Tab.0.bottom" timestamp="1585178430522">
+    <state width="1323" height="192" key="GridCell.Tab.0.bottom" timestamp="1585679178009">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1585178430522" />
-    <state width="1323" height="192" key="GridCell.Tab.0.center" timestamp="1585178430522">
+    <state width="1323" height="192" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1585679178009" />
+    <state width="1323" height="192" key="GridCell.Tab.0.center" timestamp="1585679178009">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1585178430522" />
-    <state width="1323" height="192" key="GridCell.Tab.0.left" timestamp="1585178430522">
+    <state width="1323" height="192" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1585679178009" />
+    <state width="1323" height="192" key="GridCell.Tab.0.left" timestamp="1585679178009">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1585178430522" />
-    <state width="1323" height="192" key="GridCell.Tab.0.right" timestamp="1585178430522">
+    <state width="1323" height="192" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1585679178009" />
+    <state width="1323" height="192" key="GridCell.Tab.0.right" timestamp="1585679178009">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1585178430522" />
+    <state width="1323" height="192" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1585679178009" />
     <state width="1323" height="238" key="GridCell.Tab.1.bottom" timestamp="1585056267814">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
