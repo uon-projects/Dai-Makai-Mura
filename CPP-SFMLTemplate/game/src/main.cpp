@@ -3,6 +3,7 @@
 #include "header/screen/GameMenuScreen.h"
 #include "header/screen/LvlChooseScreen.h"
 #include "header/screen/HowToPlayScreen.h"
+#include "header/screen/GameScreen.h"
 
 using namespace std;
 using namespace sf;
@@ -15,6 +16,7 @@ SplashScreen mSplashScreen;
 GameMenuScreen mGameMenu;
 LvlChooseScreen mLvlChooseScreen;
 HowToPlayScreen mHowToPlayScreen;
+GameScreen mGameScreen;
 Vector2i theGameWindow_currentDimensions(WindowX, WindowY);
 Vector2i theGameWindow_perspectiveDimensions(WindowX, WindowY);
 RenderWindow theGameWindow(
@@ -65,6 +67,7 @@ void init()
     mGameMenu.setApp(mApp);
     mLvlChooseScreen.setApp(mApp);
     mHowToPlayScreen.setApp(mApp);
+    mGameScreen.setApp(mApp);
 
     theGameWindow.setFramerateLimit(60);
 
@@ -115,7 +118,7 @@ void draw()
         mHowToPlayScreen.draw(theGameWindow);
     } else if (currentScreen == game)
     {
-
+        mGameScreen.draw(theGameWindow);
     }
 
 }

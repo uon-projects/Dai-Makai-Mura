@@ -28,23 +28,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9d525570-9151-426c-ab34-6ec04bf7ed5a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/CPP-SFMLTemplate/Debug/Ghouls n Ghosts.unsuccessfulbuild" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CPP-SFMLTemplate/game/src/header/screen/GameScreen.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CPP-SFMLTemplate/Debug/CL.read.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-SFMLTemplate/Debug/CL.read.1.tlog" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CPP-SFMLTemplate/Debug/CPP-SFMLTemplate.log" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-SFMLTemplate/Debug/CPP-SFMLTemplate.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CPP-SFMLTemplate/Debug/main.obj" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-SFMLTemplate/Debug/main.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CPP-SFMLTemplate/Debug/main.obj" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/CPP-SFMLTemplate/Debug/vc110.idb" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-SFMLTemplate/Debug/vc110.idb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CPP-SFMLTemplate/Debug/vc110.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-SFMLTemplate/Debug/vc110.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CPP-SFMLTemplate/game/src/header/App.h" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-SFMLTemplate/game/src/header/App.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CPP-SFMLTemplate/game/src/header/Utils.h" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-SFMLTemplate/game/src/header/Utils.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CPP-SFMLTemplate/game/src/header/screen/LvlChooseScreen.h" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-SFMLTemplate/game/src/header/screen/LvlChooseScreen.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CPP-SFMLTemplate/library/src/cpp/FontManager.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CPP-SFMLTemplate/library/src/cpp/LoadImage.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CPP-SFMLTemplate/library/src/cpp/MaterialButton.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CPP-SFMLTemplate/library/src/header/LoadImage.h" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-SFMLTemplate/library/src/header/LoadImage.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Debug/Ghouls n Ghosts.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Debug/Ghouls n Ghosts.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Debug/Ghouls n Ghosts.ilk" beforeDir="false" afterPath="$PROJECT_DIR$/Debug/Ghouls n Ghosts.ilk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Debug/Ghouls n Ghosts.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Debug/Ghouls n Ghosts.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ghouls n Ghosts.sdf" beforeDir="false" afterPath="$PROJECT_DIR$/Ghouls n Ghosts.sdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CPP-SFMLTemplate/game/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-SFMLTemplate/game/src/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,13 +62,13 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.first.check.clang-format" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/CPP-SFMLTemplate/library/src/header" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/CPP-SFMLTemplate/game/src/header/screen" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C/C++" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\teo\Documents\Github\Dai-Makai-Mura\CPP-SFMLTemplate\library\src\header" />
       <recent name="C:\Users\teo\Documents\Github\Dai-Makai-Mura\CPP-SFMLTemplate\game\src\header\screen" />
+      <recent name="C:\Users\teo\Documents\Github\Dai-Makai-Mura\CPP-SFMLTemplate\library\src\header" />
       <recent name="C:\Users\teo\Documents\Github\Dai-Makai-Mura\CPP-SFMLTemplate\game\src\cpp\screen" />
       <recent name="C:\Users\teo\Documents\Github\Dai-Makai-Mura" />
     </key>
