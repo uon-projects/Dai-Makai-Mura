@@ -1,18 +1,287 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
-    <generated>
-      <config projectName="Dai-Makai-Mura" targetName="Dai-Makai-Mura" />
-    </generated>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
   </component>
-  <component name="CMakeSettings" AUTO_RELOAD="true">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated />
+  </component>
+  <component name="CMakeSettings">
     <configurations>
-      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" GENERATION_DIR="cmake/debug" />
-      <configuration PROFILE_NAME="Release" CONFIG_NAME="Release" GENERATION_DIR="cmake/release" />
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f5136dbc-fa19-4e83-9ace-75ad5814e213" name="Default Changelist" comment="" />
+    <list default="true" id="9d525570-9151-426c-ab34-6ec04bf7ed5a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/grigo.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/untitled1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CPP-SFMLTemplate.v11.suo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dai Makai Mura.sdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dai Makai Mura.sln" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dai Makai Mura.v11.suo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dai Makai Mura.vcxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dai Makai Mura.vcxproj.filters" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/App.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/CL.read.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/CL.write.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/Dai Makai Mura.lastbuildstate" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/Dai Makai Mura.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/Dai Makai Mura.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/Dai Makai Mura.unsuccessfulbuild" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/GameMenuScreen.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/Loader.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/SplashScreen.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/Utils.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/cl.command.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/link-cvtres.read.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/link-cvtres.write.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/link-rc.read.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/link-rc.write.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/link.command.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/link.read.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/link.write.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/main.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/vc110.idb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug/vc110.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SFMLibrary/include/SFML/Audio.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLibrary/include/SFML/Audio.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SFMLibrary/include/SFML/Audio/AlResource.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLibrary/include/SFML/Audio/AlResource.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SFMLibrary/include/SFML/Audio/Export.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLibrary/include/SFML/Audio/Export.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SFMLibrary/include/SFML/Audio/InputSoundFile.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLibrary/include/SFML/Audio/InputSoundFile.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SFMLibrary/include/SFML/Audio/Listener.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLibrary/include/SFML/Audio/Listener.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SFMLibrary/include/SFML/Audio/Music.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLibrary/include/SFML/Audio/Music.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SFMLibrary/include/SFML/Audio/OutputSoundFile.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLibrary/include/SFML/Audio/OutputSoundFile.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SFMLibrary/include/SFML/Audio/Sound.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLibrary/include/SFML/Audio/Sound.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SFMLibrary/include/SFML/Audio/SoundBuffer.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLibrary/include/SFML/Audio/SoundBuffer.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SFMLibrary/include/SFML/Audio/SoundBufferRecorder.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLibrary/include/SFML/Audio/SoundBufferRecorder.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SFMLibrary/include/SFML/Audio/SoundFileFactory.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLibrary/include/SFML/Audio/SoundFileFactory.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SFMLibrary/include/SFML/Audio/SoundFileFactory.inl" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLibrary/include/SFML/Audio/SoundFileFactory.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SFMLibrary/include/SFML/Audio/SoundFileReader.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLibrary/include/SFML/Audio/SoundFileReader.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SFMLibrary/include/SFML/Audio/SoundFileWriter.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLibrary/include/SFML/Audio/SoundFileWriter.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SFMLibrary/include/SFML/Audio/SoundRecorder.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLibrary/include/SFML/Audio/SoundRecorder.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SFMLibrary/include/SFML/Audio/SoundSource.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLibrary/include/SFML/Audio/SoundSource.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SFMLibrary/include/SFML/Audio/SoundStream.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLibrary/include/SFML/Audio/SoundStream.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SFMLibrary/include/SFML/Config.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLibrary/include/SFML/Config.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SFMLibrary/include/SFML/Graphics.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLibrary/include/SFML/Graphics.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SFMLibrary/include/SFML/Graphics/BlendMode.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLibrary/include/SFML/Graphics/BlendMode.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SFMLibrary/include/SFML/Graphics/CircleShape.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLibrary/include/SFML/Graphics/CircleShape.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SFMLibrary/include/SFML/Graphics/Color.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLibrary/include/SFML/Graphics/Color.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SFMLibrary/include/SFML/Graphics/ConvexShape.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLibrary/include/SFML/Graphics/ConvexShape.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SFMLibrary/include/SFML/Graphics/Drawable.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLibrary/include/SFML/Graphics/Drawable.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SFMLibrary/include/SFML/Graphics/Export.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLibrary/include/SFML/Graphics/Export.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SFMLibrary/include/SFML/Graphics/Font.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLibrary/include/SFML/Graphics/Font.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SFMLibrary/include/SFML/Graphics/Glsl.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLibrary/include/SFML/Graphics/Glsl.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SFMLibrary/include/SFML/Graphics/Glsl.inl" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLibrary/include/SFML/Graphics/Glsl.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SFMLibrary/include/SFML/Graphics/Glyph.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLibrary/include/SFML/Graphics/Glyph.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SFMLibrary/include/SFML/Graphics/Image.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLibrary/include/SFML/Graphics/Image.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SFMLibrary/include/SFML/Graphics/PrimitiveType.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLibrary/include/SFML/Graphics/PrimitiveType.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SFMLibrary/include/SFML/Graphics/Rect.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLibrary/include/SFML/Graphics/Rect.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SFMLibrary/include/SFML/Graphics/Rect.inl" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLibrary/include/SFML/Graphics/Rect.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SFMLibrary/include/SFML/Graphics/RectangleShape.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLibrary/include/SFML/Graphics/RectangleShape.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SFMLibrary/include/SFML/Graphics/RenderStates.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLibrary/include/SFML/Graphics/RenderStates.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SFMLibrary/include/SFML/Graphics/RenderTarget.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLibrary/include/SFML/Graphics/RenderTarget.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SFMLibrary/include/SFML/Graphics/RenderTexture.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLibrary/include/SFML/Graphics/RenderTexture.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SFMLibrary/include/SFML/Graphics/RenderWindow.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLibrary/include/SFML/Graphics/RenderWindow.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SFMLibrary/include/SFML/Graphics/Shader.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLibrary/include/SFML/Graphics/Shader.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SFMLibrary/include/SFML/Graphics/Shape.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLibrary/include/SFML/Graphics/Shape.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SFMLibrary/include/SFML/Graphics/Sprite.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLibrary/include/SFML/Graphics/Sprite.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SFMLibrary/include/SFML/Graphics/Text.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLibrary/include/SFML/Graphics/Text.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SFMLibrary/include/SFML/Graphics/Texture.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLibrary/include/SFML/Graphics/Texture.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SFMLibrary/include/SFML/Graphics/Transform.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLibrary/include/SFML/Graphics/Transform.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SFMLibrary/include/SFML/Graphics/Transformable.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLibrary/include/SFML/Graphics/Transformable.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SFMLibrary/include/SFML/Graphics/Vertex.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLibrary/include/SFML/Graphics/Vertex.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SFMLibrary/include/SFML/Graphics/VertexArray.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLibrary/include/SFML/Graphics/VertexArray.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SFMLibrary/include/SFML/Graphics/View.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLibrary/include/SFML/Graphics/View.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SFMLibrary/include/SFML/Main.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLibrary/include/SFML/Main.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SFMLibrary/include/SFML/Network.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLibrary/include/SFML/Network.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SFMLibrary/include/SFML/Network/Export.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLibrary/include/SFML/Network/Export.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SFMLibrary/include/SFML/Network/Ftp.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLibrary/include/SFML/Network/Ftp.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SFMLibrary/include/SFML/Network/Http.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLibrary/include/SFML/Network/Http.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SFMLibrary/include/SFML/Network/IpAddress.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLibrary/include/SFML/Network/IpAddress.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SFMLibrary/include/SFML/Network/Packet.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLibrary/include/SFML/Network/Packet.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SFMLibrary/include/SFML/Network/Socket.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLibrary/include/SFML/Network/Socket.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SFMLibrary/include/SFML/Network/SocketHandle.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLibrary/include/SFML/Network/SocketHandle.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SFMLibrary/include/SFML/Network/SocketSelector.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLibrary/include/SFML/Network/SocketSelector.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SFMLibrary/include/SFML/Network/TcpListener.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLibrary/include/SFML/Network/TcpListener.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SFMLibrary/include/SFML/Network/TcpSocket.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLibrary/include/SFML/Network/TcpSocket.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SFMLibrary/include/SFML/Network/UdpSocket.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLibrary/include/SFML/Network/UdpSocket.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SFMLibrary/include/SFML/OpenGL.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLibrary/include/SFML/OpenGL.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SFMLibrary/include/SFML/System.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLibrary/include/SFML/System.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SFMLibrary/include/SFML/System/Clock.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLibrary/include/SFML/System/Clock.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SFMLibrary/include/SFML/System/Err.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLibrary/include/SFML/System/Err.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SFMLibrary/include/SFML/System/Export.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLibrary/include/SFML/System/Export.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SFMLibrary/include/SFML/System/FileInputStream.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLibrary/include/SFML/System/FileInputStream.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SFMLibrary/include/SFML/System/InputStream.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLibrary/include/SFML/System/InputStream.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SFMLibrary/include/SFML/System/Lock.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLibrary/include/SFML/System/Lock.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SFMLibrary/include/SFML/System/MemoryInputStream.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLibrary/include/SFML/System/MemoryInputStream.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SFMLibrary/include/SFML/System/Mutex.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLibrary/include/SFML/System/Mutex.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SFMLibrary/include/SFML/System/NativeActivity.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLibrary/include/SFML/System/NativeActivity.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SFMLibrary/include/SFML/System/NonCopyable.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLibrary/include/SFML/System/NonCopyable.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SFMLibrary/include/SFML/System/Sleep.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLibrary/include/SFML/System/Sleep.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SFMLibrary/include/SFML/System/String.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLibrary/include/SFML/System/String.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SFMLibrary/include/SFML/System/String.inl" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLibrary/include/SFML/System/String.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SFMLibrary/include/SFML/System/Thread.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLibrary/include/SFML/System/Thread.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SFMLibrary/include/SFML/System/Thread.inl" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLibrary/include/SFML/System/Thread.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SFMLibrary/include/SFML/System/ThreadLocal.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLibrary/include/SFML/System/ThreadLocal.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SFMLibrary/include/SFML/System/ThreadLocalPtr.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLibrary/include/SFML/System/ThreadLocalPtr.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SFMLibrary/include/SFML/System/ThreadLocalPtr.inl" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLibrary/include/SFML/System/ThreadLocalPtr.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SFMLibrary/include/SFML/System/Time.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLibrary/include/SFML/System/Time.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SFMLibrary/include/SFML/System/Utf.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLibrary/include/SFML/System/Utf.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SFMLibrary/include/SFML/System/Utf.inl" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLibrary/include/SFML/System/Utf.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SFMLibrary/include/SFML/System/Vector2.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLibrary/include/SFML/System/Vector2.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SFMLibrary/include/SFML/System/Vector2.inl" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLibrary/include/SFML/System/Vector2.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SFMLibrary/include/SFML/System/Vector3.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLibrary/include/SFML/System/Vector3.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SFMLibrary/include/SFML/System/Vector3.inl" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLibrary/include/SFML/System/Vector3.inl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SFMLibrary/include/SFML/Window.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLibrary/include/SFML/Window.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SFMLibrary/include/SFML/Window/Context.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLibrary/include/SFML/Window/Context.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SFMLibrary/include/SFML/Window/ContextSettings.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLibrary/include/SFML/Window/ContextSettings.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SFMLibrary/include/SFML/Window/Event.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLibrary/include/SFML/Window/Event.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SFMLibrary/include/SFML/Window/Export.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLibrary/include/SFML/Window/Export.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SFMLibrary/include/SFML/Window/GlResource.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLibrary/include/SFML/Window/GlResource.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SFMLibrary/include/SFML/Window/Joystick.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLibrary/include/SFML/Window/Joystick.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SFMLibrary/include/SFML/Window/Keyboard.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLibrary/include/SFML/Window/Keyboard.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SFMLibrary/include/SFML/Window/Mouse.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLibrary/include/SFML/Window/Mouse.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SFMLibrary/include/SFML/Window/Sensor.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLibrary/include/SFML/Window/Sensor.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SFMLibrary/include/SFML/Window/Touch.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLibrary/include/SFML/Window/Touch.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SFMLibrary/include/SFML/Window/VideoMode.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLibrary/include/SFML/Window/VideoMode.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SFMLibrary/include/SFML/Window/Window.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLibrary/include/SFML/Window/Window.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SFMLibrary/include/SFML/Window/WindowHandle.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLibrary/include/SFML/Window/WindowHandle.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SFMLibrary/include/SFML/Window/WindowStyle.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/SFMLibrary/include/SFML/Window/WindowStyle.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/cpp/App.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/cpp/Utils.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/cpp/screen/GameMenuScreen.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/cpp/screen/LvlChooseScreen.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/cpp/screen/SplashScreen.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/header/App.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/header/Utils.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/header/screen/GameMenuScreen.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/header/screen/LvlChooseScreen.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/header/screen/SplashScreen.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/main.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/enemy_bullet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/enemy_character.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/fireball_vector.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/iceball_vector.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/main_character.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/main_character_vector.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/zeoflow_logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/font/font1.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake/FindSFML.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake/debug/CMakeCache.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake/debug/CMakeFiles/3.15.3/CMakeCCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake/debug/CMakeFiles/3.15.3/CMakeCXXCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake/debug/CMakeFiles/3.15.3/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake/debug/CMakeFiles/3.15.3/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake/debug/CMakeFiles/3.15.3/CMakeRCCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake/debug/CMakeFiles/3.15.3/CMakeSystem.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake/debug/CMakeFiles/3.15.3/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake/debug/CMakeFiles/3.15.3/CompilerIdC/a.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake/debug/CMakeFiles/3.15.3/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake/debug/CMakeFiles/3.15.3/CompilerIdCXX/a.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake/debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake/debug/CMakeFiles/CMakeOutput.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake/debug/CMakeFiles/Dai-Makai-Mura.dir/CXX.includecache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake/debug/CMakeFiles/Dai-Makai-Mura.dir/DependInfo.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake/debug/CMakeFiles/Dai-Makai-Mura.dir/app/src/main/cpp/App.cpp.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake/debug/CMakeFiles/Dai-Makai-Mura.dir/app/src/main/cpp/Utils.cpp.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake/debug/CMakeFiles/Dai-Makai-Mura.dir/app/src/main/cpp/screen/GameMenuScreen.cpp.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake/debug/CMakeFiles/Dai-Makai-Mura.dir/app/src/main/cpp/screen/LvlChooseScreen.cpp.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake/debug/CMakeFiles/Dai-Makai-Mura.dir/app/src/main/cpp/screen/SplashScreen.cpp.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake/debug/CMakeFiles/Dai-Makai-Mura.dir/app/src/main/main.cpp.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake/debug/CMakeFiles/Dai-Makai-Mura.dir/build.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake/debug/CMakeFiles/Dai-Makai-Mura.dir/cmake_clean.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake/debug/CMakeFiles/Dai-Makai-Mura.dir/depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake/debug/CMakeFiles/Dai-Makai-Mura.dir/depend.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake/debug/CMakeFiles/Dai-Makai-Mura.dir/flags.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake/debug/CMakeFiles/Dai-Makai-Mura.dir/includes_CXX.rsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake/debug/CMakeFiles/Dai-Makai-Mura.dir/library/src/main/cpp/LoadFont.cpp.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake/debug/CMakeFiles/Dai-Makai-Mura.dir/library/src/main/cpp/LoadImage.cpp.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake/debug/CMakeFiles/Dai-Makai-Mura.dir/library/src/main/cpp/MaterialButton.cpp.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake/debug/CMakeFiles/Dai-Makai-Mura.dir/library/src/main/cpp/RoundedRectangleShape.cpp.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake/debug/CMakeFiles/Dai-Makai-Mura.dir/link.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake/debug/CMakeFiles/Dai-Makai-Mura.dir/linklibs.rsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake/debug/CMakeFiles/Dai-Makai-Mura.dir/objects.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake/debug/CMakeFiles/Dai-Makai-Mura.dir/objects1.rsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake/debug/CMakeFiles/Dai-Makai-Mura.dir/progress.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake/debug/CMakeFiles/Makefile.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake/debug/CMakeFiles/Makefile2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake/debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake/debug/CMakeFiles/clion-environment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake/debug/CMakeFiles/clion-log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake/debug/CMakeFiles/cmake.check_cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake/debug/CMakeFiles/progress.marks" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake/debug/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake/debug/cmake_install.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake/debug/res/drawable/background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake/debug/res/drawable/enemy_bullet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake/debug/res/drawable/enemy_character.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake/debug/res/drawable/fireball_vector.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake/debug/res/drawable/iceball_vector.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake/debug/res/drawable/main_character.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake/debug/res/drawable/main_character_vector.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake/debug/res/drawable/zeoflow_logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake/debug/res/font/font1.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake/release/CMakeCache.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake/release/CMakeFiles/3.15.3/CMakeCCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake/release/CMakeFiles/3.15.3/CMakeCXXCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake/release/CMakeFiles/3.15.3/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake/release/CMakeFiles/3.15.3/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake/release/CMakeFiles/3.15.3/CMakeRCCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake/release/CMakeFiles/3.15.3/CMakeSystem.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake/release/CMakeFiles/3.15.3/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake/release/CMakeFiles/3.15.3/CompilerIdC/a.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake/release/CMakeFiles/3.15.3/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake/release/CMakeFiles/3.15.3/CompilerIdCXX/a.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake/release/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake/release/CMakeFiles/CMakeOutput.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake/release/CMakeFiles/Dai-Makai-Mura.dir/DependInfo.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake/release/CMakeFiles/Dai-Makai-Mura.dir/build.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake/release/CMakeFiles/Dai-Makai-Mura.dir/cmake_clean.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake/release/CMakeFiles/Dai-Makai-Mura.dir/depend.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake/release/CMakeFiles/Dai-Makai-Mura.dir/flags.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake/release/CMakeFiles/Dai-Makai-Mura.dir/includes_CXX.rsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake/release/CMakeFiles/Dai-Makai-Mura.dir/link.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake/release/CMakeFiles/Dai-Makai-Mura.dir/linklibs.rsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake/release/CMakeFiles/Dai-Makai-Mura.dir/objects1.rsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake/release/CMakeFiles/Dai-Makai-Mura.dir/progress.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake/release/CMakeFiles/Makefile.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake/release/CMakeFiles/Makefile2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake/release/CMakeFiles/TargetDirectories.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake/release/CMakeFiles/clion-environment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake/release/CMakeFiles/clion-log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake/release/CMakeFiles/cmake.check_cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake/release/CMakeFiles/progress.marks" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake/release/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake/release/cmake_install.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/src/main/cpp/LoadFont.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/src/main/cpp/LoadImage.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/src/main/cpp/MaterialButton.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/src/main/cpp/RoundedRectangleShape.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/src/main/header/LoadFont.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/src/main/header/LoadImage.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/src/main/header/MaterialButton.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/library/src/main/header/RoundedRectangleShape.h" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,147 +290,83 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1ZGjSR3fa7qDIbOjpCwGG3QxmK0" />
+  <component name="ProjectId" id="1foopYlbz175MOSp4U2ecBX1U1u" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Nikil" />
-    <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="CMakeSettings" />
+    <property name="cf.first.check.clang-format" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C/C++" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\grigo\Desktop\BSc Games Programming\Year 1\Dai-Makai-Mura\cmake\debug" />
-      <recent name="C:\Users\grigo\Desktop\BSc Games Programming\Year 1\Dai-Makai-Mura\app" />
-      <recent name="C:\Users\grigo\Desktop\BSc Games Programming\Year 1\Dai-Makai-Mura\app\src\main\cpp\screen" />
-      <recent name="C:\Users\grigo\Desktop\BSc Games Programming\Year 1\Dai-Makai-Mura\app\src\main\res\font" />
-      <recent name="C:\Users\grigo\Desktop\BSc Games Programming\Year 1\Dai-Makai-Mura\SFML\include\SFML" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\grigo\Desktop\BSc Games Programming\Year 1\Dai-Makai-Mura\app\src\main\header\screen" />
-      <recent name="C:\Users\grigo\Desktop\BSc Games Programming\Year 1\Dai-Makai-Mura\library\src\main\header" />
-      <recent name="C:\Users\grigo\Desktop\BSc Games Programming\Year 1\Dai-Makai-Mura" />
-      <recent name="C:\Users\grigo\Desktop\BSc Games Programming\Year 1\Dai-Makai-Mura\app\src\main\cpp\screen" />
-      <recent name="C:\Users\grigo\Desktop\BSc Games Programming\Year 1\Dai-Makai-Mura\library\src\main\cpp" />
+      <recent name="C:\Users\teo\Documents\Github\Dai-Makai-Mura" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\teo\Documents\Github\Dai-Makai-Mura" />
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="Dai-Makai-Mura" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Dai-Makai-Mura" TARGET_NAME="Dai-Makai-Mura" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Dai-Makai-Mura" RUN_TARGET_NAME="Dai-Makai-Mura">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
   </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
-  </component>
-  <component name="SvnConfiguration">
-    <configuration />
-  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="f5136dbc-fa19-4e83-9ace-75ad5814e213" name="Default Changelist" comment="" />
-      <created>1584472323971</created>
+      <changelist id="9d525570-9151-426c-ab34-6ec04bf7ed5a" name="Default Changelist" comment="" />
+      <created>1596894009215</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1584472323971</updated>
-      <workItem from="1584472326082" duration="4317000" />
-      <workItem from="1584477005347" duration="3144000" />
-      <workItem from="1584533991946" duration="1123000" />
-      <workItem from="1584535129248" duration="349000" />
-      <workItem from="1584539705284" duration="1473000" />
-      <workItem from="1584541406777" duration="6000" />
-      <workItem from="1584541417558" duration="1258000" />
-      <workItem from="1584609836672" duration="2403000" />
-      <workItem from="1584616213257" duration="376000" />
-      <workItem from="1585053882904" duration="17251000" />
-      <workItem from="1585173472933" duration="1848000" />
-      <workItem from="1585678098557" duration="913000" />
+      <updated>1596894009215</updated>
+      <workItem from="1596894016264" duration="5449000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="137" y="42" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585054055732">
+    <state x="413" y="130" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1596899292807">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="137" y="42" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.768@0.0.1366.768" timestamp="1585054055732" />
-    <state x="434" y="194" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1584475414986">
+    <state x="413" y="130" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.768@0.0.1366.768" timestamp="1596899292807" />
+    <state x="463" y="138" key="FileChooserDialogImpl" timestamp="1596894148104">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="434" y="194" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.768@0.0.1366.768" timestamp="1584475414986" />
-    <state x="413" y="134" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1584487015088">
+    <state x="463" y="138" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1596894148104" />
+    <state x="184" y="28" key="SettingsEditor" timestamp="1596894875775">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="413" y="134" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.768@0.0.1366.768" timestamp="1584487015088" />
-    <state x="580" y="170" key="EnvironmentVariablesDialog" timestamp="1585054074195">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state x="580" y="170" key="EnvironmentVariablesDialog/0.0.1366.768@0.0.1366.768" timestamp="1585054074195" />
-    <state x="463" y="142" key="FileChooserDialogImpl" timestamp="1585678953106">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state x="463" y="142" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1585678953106" />
-    <state width="1323" height="192" key="GridCell.Tab.0.bottom" timestamp="1585679178009">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1585679178009" />
-    <state width="1323" height="192" key="GridCell.Tab.0.center" timestamp="1585679178009">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1585679178009" />
-    <state width="1323" height="192" key="GridCell.Tab.0.left" timestamp="1585679178009">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1585679178009" />
-    <state width="1323" height="192" key="GridCell.Tab.0.right" timestamp="1585679178009">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1585679178009" />
-    <state width="1323" height="238" key="GridCell.Tab.1.bottom" timestamp="1585056267814">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state width="1323" height="238" key="GridCell.Tab.1.bottom/0.0.1366.768@0.0.1366.768" timestamp="1585056267814" />
-    <state width="1323" height="238" key="GridCell.Tab.1.center" timestamp="1585056267814">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state width="1323" height="238" key="GridCell.Tab.1.center/0.0.1366.768@0.0.1366.768" timestamp="1585056267814" />
-    <state width="1323" height="238" key="GridCell.Tab.1.left" timestamp="1585056267814">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state width="1323" height="238" key="GridCell.Tab.1.left/0.0.1366.768@0.0.1366.768" timestamp="1585056267814" />
-    <state width="1323" height="238" key="GridCell.Tab.1.right" timestamp="1585056267814">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state width="1323" height="238" key="GridCell.Tab.1.right/0.0.1366.768@0.0.1366.768" timestamp="1585056267814" />
-    <state x="349" y="51" key="SettingsEditor" timestamp="1585054145636">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state x="349" y="51" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1585054145636" />
-    <state x="408" y="32" key="refactoring.ChangeSignatureDialog" timestamp="1585174074812">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state x="408" y="32" key="refactoring.ChangeSignatureDialog/0.0.1366.768@0.0.1366.768" timestamp="1585174074812" />
+    <state x="184" y="28" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1596894875775" />
   </component>
 </project>
