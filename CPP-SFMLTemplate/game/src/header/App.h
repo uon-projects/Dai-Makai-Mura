@@ -11,7 +11,7 @@ class App
 public:
     App()
     {
-        this->currentScreen = splash;
+        currentScreen = splash;
     }
 
     ~App()
@@ -22,22 +22,22 @@ public:
 public:
     screen getCurrentScreen()
     {
-        return this->currentScreen;
+        return currentScreen;
     }
 
     void setCurrentScreen(screen screenChose)
     {
-        this->currentScreen = screenChose;
+        currentScreen = screenChose;
     }
 
     Event getEvent()
     {
-        return this->event;
+        return event;
     }
 
     void setEvent(Event eventN)
     {
-        this->event = eventN;
+        event = eventN;
     }
 
 private:
