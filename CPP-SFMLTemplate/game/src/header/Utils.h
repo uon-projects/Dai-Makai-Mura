@@ -4,8 +4,9 @@ enum screen : int
 {
     splash = 0,
     menu = 1,
-    choose_lvl = 2,
-    game = 3
+    how_to_play = 2,
+    choose_lvl = 3,
+    game = 4
 };
 
 class Utils
