@@ -85,10 +85,7 @@ void inputListener()
             theGameWindow.close();
         } else if (event.type == sf::Event::KeyPressed && mApp->getCurrentScreen() == game)
         {
-            if (event.key.code == sf::Keyboard::Space)
-            {
-                mGameScreen.jump(750.0f);
-            }
+            mGameScreen.inputListener(event);
         }
     }
 
@@ -96,6 +93,11 @@ void inputListener()
 
 void update(float seconds)
 {
+
+    if(mApp->getCurrentScreen() == game)
+    {
+        mGameScreen.update(seconds);
+    }
 
 }
 
