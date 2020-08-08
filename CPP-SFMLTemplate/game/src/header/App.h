@@ -3,11 +3,15 @@
 #include "Utils.h"
 #include <SFML/Graphics.hpp>
 #include "../../../library/src/header/LoadImage.h"
+#include "player/MainCharacter.h"
 
 using namespace sf;
 
 class App
 {
+
+#define WindowX 800
+#define WindowY 500
 
 public:
     App()
@@ -15,6 +19,13 @@ public:
         currentScreen = splash;
         lvlUnlocked = 1;
         mCharacter = LoadImage().loadSpriteFromTexture("zeoflow_logo", png);
+        mMainCharacter.Init(
+                "game/src/res/vector/main_character.png",
+                sf::Vector2f(
+                        WindowX * 0.25f,
+                        WindowY * 0.5f
+                ),
+                200);
     }
 
     ~App()
@@ -56,9 +67,14 @@ public:
         event = eventN;
     }
 
-    Sprite getMainCharacter()
+    Sprite getCharacterSprite()
     {
         return mCharacter;
+    }
+
+    MainCharacter getMainCharacter()
+    {
+        return mMainCharacter;
     }
 
 private:
@@ -66,5 +82,6 @@ private:
     Event event;
     int lvlUnlocked;
     Sprite mCharacter;
+    MainCharacter mMainCharacter;
 
 };

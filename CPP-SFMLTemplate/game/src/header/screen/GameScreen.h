@@ -1,6 +1,9 @@
 #include <SFML/Graphics.hpp>
 #include "../../../../library/src/header/MaterialButton.h"
 #include "../App.h"
+#include "../player/MainCharacter.h"
+#include "../player/EnemyCharacter.h"
+#include "../player/EnemyBullet.h"
 
 using namespace sf;
 
@@ -84,6 +87,11 @@ public:
         exitBtn.setApp(this->mApp);
         playBtn.setApp(this->mApp);
         howToPlayBtn.setApp(this->mApp);
+    }
+
+    void jump(float velocity)
+    {
+        mApp->getMainCharacter().Jump(velocity);
     }
 
 private:

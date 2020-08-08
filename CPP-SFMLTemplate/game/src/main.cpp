@@ -1,4 +1,5 @@
 #include <SFML/Graphics.hpp>
+#include "header/Utils.h"
 #include "header/screen/SplashScreen.h"
 #include "header/screen/GameMenuScreen.h"
 #include "header/screen/LvlChooseScreen.h"
@@ -7,9 +8,6 @@
 
 using namespace std;
 using namespace sf;
-
-#define WindowX 800
-#define WindowY 500
 
 App *mApp;
 SplashScreen mSplashScreen;
@@ -70,6 +68,7 @@ void init()
     mGameScreen.setApp(mApp);
 
     theGameWindow.setFramerateLimit(60);
+    srand((int) time(0));
 
 }
 
@@ -84,6 +83,12 @@ void inputListener()
         if (event.key.code == Keyboard::Escape || event.type == Event::Closed)
         {
             theGameWindow.close();
+        } else if (event.type == sf::Event::KeyPressed && mApp->getCurrentScreen() == game)
+        {
+            if (event.key.code == sf::Keyboard::Space)
+            {
+                mGameScreen.jump(750.0f);
+            }
         }
     }
 

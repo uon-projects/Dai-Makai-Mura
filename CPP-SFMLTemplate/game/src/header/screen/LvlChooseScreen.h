@@ -78,7 +78,7 @@ public:
         exitBtn.drawText(window);
 
         lvlBtn1 = getLevelBtnColor(lvlBtn1);
-        if (lvlBtn1.isClicked(window))
+        if (lvlBtn1.isClicked(window) && lvlBtn1.getBtnLevel() <= this->mApp->getLevelsUnlocked())
         {
             this->mApp->setCurrentScreen(game);
         }
@@ -86,7 +86,7 @@ public:
         lvlBtn1.drawText(window);
 
         lvlBtn2 = getLevelBtnColor(lvlBtn2);
-        if (lvlBtn2.isClicked(window))
+        if (lvlBtn2.isClicked(window) && lvlBtn2.getBtnLevel() <= this->mApp->getLevelsUnlocked())
         {
             this->mApp->setCurrentScreen(game);
         }
@@ -94,7 +94,7 @@ public:
         lvlBtn2.drawText(window);
 
         lvlBtn3 = getLevelBtnColor(lvlBtn3);
-        if (lvlBtn3.isClicked(window))
+        if (lvlBtn3.isClicked(window) && lvlBtn3.getBtnLevel() <= this->mApp->getLevelsUnlocked())
         {
             this->mApp->setCurrentScreen(game);
         }
@@ -102,7 +102,7 @@ public:
         lvlBtn3.drawText(window);
 
         lvlBtn4 = getLevelBtnColor(lvlBtn4);
-        if (lvlBtn4.isClicked(window))
+        if (lvlBtn4.isClicked(window) && lvlBtn4.getBtnLevel() <= this->mApp->getLevelsUnlocked())
         {
             this->mApp->setCurrentScreen(game);
         }
