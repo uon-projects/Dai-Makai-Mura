@@ -2,6 +2,7 @@
 
 #include "Utils.h"
 #include <SFML/Graphics.hpp>
+#include "../../../library/src/header/LoadImage.h"
 
 using namespace sf;
 
@@ -12,6 +13,8 @@ public:
     App()
     {
         currentScreen = splash;
+        lvlUnlocked = 1;
+        mCharacter = LoadImage().loadSpriteFromTexture("zeoflow_logo", png);
     }
 
     ~App()
@@ -30,6 +33,19 @@ public:
         currentScreen = screenChose;
     }
 
+    int getLevelsUnlocked()
+    {
+        return lvlUnlocked;
+    }
+
+    void increaseLevelsUnlocked()
+    {
+        if (lvlUnlocked < 4)
+        {
+            lvlUnlocked++;
+        }
+    }
+
     Event getEvent()
     {
         return event;
@@ -40,8 +56,15 @@ public:
         event = eventN;
     }
 
+    Sprite getMainCharacter()
+    {
+        return mCharacter;
+    }
+
 private:
     screen currentScreen;
     Event event;
+    int lvlUnlocked;
+    Sprite mCharacter;
 
 };

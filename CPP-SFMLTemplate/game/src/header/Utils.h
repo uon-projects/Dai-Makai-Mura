@@ -12,5 +12,4 @@ enum screen : int
 class Utils
 {
 
-
 };
