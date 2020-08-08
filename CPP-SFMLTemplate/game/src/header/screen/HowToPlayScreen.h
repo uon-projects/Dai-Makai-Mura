@@ -1,7 +1,12 @@
 #include <SFML/Graphics.hpp>
 #include "../../../../library/src/header/MaterialButton.h"
+#include "../../../../library/src/header/FontManager.h"
 #include "../App.h"
+#include <fstream>
+#include <string>
+#include <iostream>
 
+using namespace std;
 using namespace sf;
 
 class HowToPlayScreen
@@ -15,6 +20,8 @@ public:
     HowToPlayScreen()
     {
 
+		font = FontManager().loadFont();
+
         lvlChooseScreenBackground.setFillColor(Color(0, 150, 136));
 
         exitBtn.setSize(Vector2f(90, 30));
@@ -24,6 +31,13 @@ public:
         exitBtn.setText("Go Back");
         exitBtn.setCharacterSize(18);
 
+        ifstream howTo(".\\game\\src\\res\\file\\howTo.txt");
+        string content((istreambuf_iterator<char>(howTo)), (istreambuf_iterator<char>()));
+        contentHowToPlay.setFont(font);
+        contentHowToPlay.setString(content);
+        contentHowToPlay.setFillColor(Color::White);
+        contentHowToPlay.setCharacterSize(16);
+        contentHowToPlay.setPosition((float) 50, (float) 80);
     }
 
     ~HowToPlayScreen()
@@ -46,6 +60,8 @@ public:
         window.draw(exitBtn);
         exitBtn.drawText(window);
 
+        window.draw(contentHowToPlay);
+
     }
 
     void setApp(App *app)
@@ -56,5 +72,7 @@ public:
 
 private:
     MaterialButton exitBtn;
+    Text contentHowToPlay;
+	Font font;
 
 };
