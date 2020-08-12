@@ -3,6 +3,7 @@
 #include "Utils.h"
 #include <SFML/Graphics.hpp>
 #include "../../../library/src/header/LoadImage.h"
+#include "./player/MainCharacter.h"
 
 using namespace sf;
 
@@ -64,10 +65,16 @@ public:
         return mCharacter;
     }
 
+    MainCharacter getMainCharacter()
+    {
+        return mMainCharacter;
+    }
+
 private:
     screen currentScreen;
     Event event;
     int lvlUnlocked;
     Sprite mCharacter;
+    MainCharacter mMainCharacter;
 
 };

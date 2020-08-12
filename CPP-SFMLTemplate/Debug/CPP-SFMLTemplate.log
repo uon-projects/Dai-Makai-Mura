@@ -1,8 +1,9 @@
-﻿Build started 12/08/2020 16:36:56.
+﻿Build started 12/08/2020 17:10:42.
      1>Project "C:\Users\teo\Documents\Github\Dai-Makai-Mura\CPP-SFMLTemplate\CPP-SFMLTemplate.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
          E:\PC Software\VS2012\VC\bin\CL.exe /c /I"C:\SFML v2.4.0 (Win32 - Visual Studio 2012)\include" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt game\src\main.cpp
          main.cpp
+     1>c:\users\teo\documents\github\dai-makai-mura\cpp-sfmltemplate\game\src\header\player\maincharacter.h(47): warning C4244: 'argument' : conversion from 'unsigned int' to 'float', possible loss of data
      1>c:\users\teo\documents\github\dai-makai-mura\cpp-sfmltemplate\library\src\header\materialbutton.h(86): warning C4244: 'argument' : conversion from 'const float' to 'int', possible loss of data
      1>c:\users\teo\documents\github\dai-makai-mura\cpp-sfmltemplate\library\src\header\levelbutton.h(83): warning C4244: 'argument' : conversion from 'const float' to 'int', possible loss of data
        Link:
@@ -12,4 +13,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:02.23
+Time Elapsed 00:00:02.74
