@@ -1,9 +1,6 @@
 #include <SFML/Graphics.hpp>
 #include "../../../../library/src/header/MaterialButton.h"
 #include "../App.h"
-#include "../player/MainCharacter.h"
-#include "../player/EnemyCharacter.h"
-#include "../player/EnemyBullet.h"
 
 #include <fstream>
 #include <string>
@@ -40,8 +37,6 @@ public:
         gameMenuScreenBackground.setSize(Vector2f((float) window.getSize().x, (float) window.getSize().y));
         window.draw(gameMenuScreenBackground);
 
-//        window.draw(mApp->getMainCharacter().GetSprite());
-
     }
 
     void setApp(App *app)
@@ -51,25 +46,12 @@ public:
 
     void inputListener(Event event)
     {
-
-        if (event.key.code == sf::Keyboard::Space)
-        {
-            mApp->getMainCharacter().Jump(750.0f);
-        }
-        else if (event.key.code == sf::Keyboard::Left)
-        {
-            mApp->getMainCharacter().Move(-20.0f);
-        }
-        else if (event.key.code == sf::Keyboard::Right)
-        {
-            mApp->getMainCharacter().Move(20.0f);
-        }
-
+        cout<<"inputListener: GameScreen "<<event.key.code<<'\n';
     }
 
     void update(float speed)
     {
-        mApp->getMainCharacter().Update(speed);
+
     }
 
 };
