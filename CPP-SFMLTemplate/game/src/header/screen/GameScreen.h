@@ -1,6 +1,7 @@
 #include <SFML/Graphics.hpp>
 #include "../../../../library/src/header/MaterialButton.h"
 #include "../App.h"
+#include "../player/MainCharacter.h"
 
 #include <fstream>
 #include <string>
@@ -12,9 +13,10 @@ using namespace sf;
 class GameScreen
 {
 
-public:
+private:
     RectangleShape gameMenuScreenBackground;
     App *mApp;
+    MainCharacter *mMainCharacter;
 
 public:
     GameScreen()
@@ -36,13 +38,14 @@ public:
         gameMenuScreenBackground.setSize(Vector2f((float) window.getSize().x, (float) window.getSize().y));
         window.draw(gameMenuScreenBackground);
 
-        window.draw(mApp->getMainCharacter().getSprite());
+        window.draw(mMainCharacter->getSprite());
 
     }
 
     void setApp(App *app)
     {
         this->mApp = app;
+        mMainCharacter = mApp->getMainCharacter();
     }
 
     void inputListener(Event event)

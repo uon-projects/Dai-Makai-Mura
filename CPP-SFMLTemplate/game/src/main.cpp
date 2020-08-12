@@ -125,7 +125,6 @@ void draw()
         mHowToPlayScreen.draw(theGameWindow);
     } else if (currentScreen == game)
     {
-        mApp->getMainCharacter().reset();
         mGameScreen.draw(theGameWindow);
     }
 

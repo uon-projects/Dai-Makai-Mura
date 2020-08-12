@@ -55,14 +55,15 @@ public:
 
     void reset()
     {
-        cout<<"Reset!";
-        mMainCharacterPosition = Vector2f(400.0f, 300.0f);
+        mMainCharacterPosition = Vector2f(300.0f, 200.0f);
         mMainCharacterSprite.setPosition(mMainCharacterPosition);
-        mMainCharacterSprite.setPosition(Vector2f(300.0f, 200.0f));
+        cout<<mMainCharacterPosition.x<<'\n';
     }
 
     RectangleShape getSprite()
     {
+        cout<<mMainCharacterPosition.x<<'\n';
+        mMainCharacterSprite.setPosition(mMainCharacterPosition);
         return mMainCharacterSprite;
     }
 

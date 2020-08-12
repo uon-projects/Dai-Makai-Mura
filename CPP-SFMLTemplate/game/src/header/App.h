@@ -19,6 +19,7 @@ public:
         currentScreen = splash;
         lvlUnlocked = 1;
         mCharacter = LoadImage().loadSpriteFromTexture("zeoflow_logo", png);
+        mMainCharacter = new MainCharacter;
     }
 
     ~App()
@@ -35,6 +36,10 @@ public:
     void setCurrentScreen(screen screenChose)
     {
         currentScreen = screenChose;
+        if (screenChose == game)
+        {
+            mMainCharacter->reset();
+        }
     }
 
     int getLevelsUnlocked()
@@ -65,7 +70,7 @@ public:
         return mCharacter;
     }
 
-    MainCharacter getMainCharacter()
+    MainCharacter * getMainCharacter()
     {
         return mMainCharacter;
     }
@@ -75,6 +80,6 @@ private:
     Event event;
     int lvlUnlocked;
     Sprite mCharacter;
-    MainCharacter mMainCharacter;
+    MainCharacter *mMainCharacter;
 
 };
