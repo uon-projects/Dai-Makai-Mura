@@ -1,20 +1,20 @@
 #include <SFML/Graphics.hpp>
+#include "header/Utils.h"
 #include "header/screen/SplashScreen.h"
 #include "header/screen/GameMenuScreen.h"
 #include "header/screen/LvlChooseScreen.h"
 #include "header/screen/HowToPlayScreen.h"
+#include "header/screen/GameScreen.h"
 
 using namespace std;
 using namespace sf;
-
-#define WindowX 800
-#define WindowY 500
 
 App *mApp;
 SplashScreen mSplashScreen;
 GameMenuScreen mGameMenu;
 LvlChooseScreen mLvlChooseScreen;
 HowToPlayScreen mHowToPlayScreen;
+GameScreen mGameScreen;
 Vector2i theGameWindow_currentDimensions(WindowX, WindowY);
 Vector2i theGameWindow_perspectiveDimensions(WindowX, WindowY);
 RenderWindow theGameWindow(
@@ -65,8 +65,10 @@ void init()
     mGameMenu.setApp(mApp);
     mLvlChooseScreen.setApp(mApp);
     mHowToPlayScreen.setApp(mApp);
+    mGameScreen.setApp(mApp);
 
     theGameWindow.setFramerateLimit(60);
+    srand((int) time(0));
 
 }
 
@@ -81,6 +83,9 @@ void inputListener()
         if (event.key.code == Keyboard::Escape || event.type == Event::Closed)
         {
             theGameWindow.close();
+        } else if (event.type == sf::Event::KeyPressed && mApp->getCurrentScreen() == game)
+        {
+            mGameScreen.inputListener(event);
         }
     }
 
@@ -88,6 +93,11 @@ void inputListener()
 
 void update(float seconds)
 {
+
+    if(mApp->getCurrentScreen() == game)
+    {
+        mGameScreen.update(seconds);
+    }
 
 }
 
@@ -115,7 +125,7 @@ void draw()
         mHowToPlayScreen.draw(theGameWindow);
     } else if (currentScreen == game)
     {
-
+        mGameScreen.draw(theGameWindow);
     }
 
 }

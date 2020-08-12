@@ -102,7 +102,7 @@ public:
             {
                 setFillColor(hoverColor);
             }
-            Sprite mCharacter = mApp->getMainCharacter();
+            Sprite mCharacter = mApp->getCharacterSprite();
             mCharacter.setScale(0.12f, 0.12f);
             mCharacter.setPosition(pos.x - 30, pos.y + 40);
             window.draw(mCharacter);

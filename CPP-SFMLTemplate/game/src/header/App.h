@@ -9,6 +9,9 @@ using namespace sf;
 class App
 {
 
+#define WindowX 800
+#define WindowY 500
+
 public:
     App()
     {
@@ -56,7 +59,7 @@ public:
         event = eventN;
     }
 
-    Sprite getMainCharacter()
+    Sprite getCharacterSprite()
     {
         return mCharacter;
     }
