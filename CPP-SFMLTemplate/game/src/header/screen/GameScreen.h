@@ -22,7 +22,7 @@ public:
     GameScreen()
     {
 
-        gameMenuScreenBackground.setFillColor(Color(0, 150, 136));
+        gameMenuScreenBackground.setFillColor(Color(105, 89, 4));
 
     }
 
@@ -52,17 +52,18 @@ public:
     {
         if (event.key.code == Keyboard::Left || event.key.code == Keyboard::A)
         {
-            cout << "left\n";
+            mMainCharacter->move(-20.0f);
         } else if (event.key.code == Keyboard::Right || event.key.code == Keyboard::D)
         {
-            cout << "right\n";
-        } else if (event.key.code == Keyboard::Up || event.key.code == Keyboard::W)
+            mMainCharacter->move(20.0f);
+        } /*else if (event.key.code == Keyboard::Up || event.key.code == Keyboard::W)
         {
             cout << "up\n";
         } else if (event.key.code == Keyboard::Down || event.key.code == Keyboard::S)
         {
             cout << "down\n";
-		} else if (event.key.code == Keyboard::Num1 || event.key.code == Keyboard::Numpad1)
+		} */
+        if (event.key.code == Keyboard::Num1 || event.key.code == Keyboard::Numpad1)
         {
             cout << "1\n";
         } else if (event.key.code == Keyboard::Num2 || event.key.code == Keyboard::Numpad2)
@@ -71,16 +72,17 @@ public:
         } else if (event.key.code == Keyboard::Num3 || event.key.code == Keyboard::Numpad3)
         {
             cout << "3\n";
-        } else if (event.key.code == Keyboard::Space)
+        }
+        if (event.key.code == Keyboard::Space)
         {
-            cout << "space\n";
+            mMainCharacter->jump(750.0f);
         }
     }
 
     void update(float speed)
     {
 
-
+        mMainCharacter->update(speed);
 
     }
 

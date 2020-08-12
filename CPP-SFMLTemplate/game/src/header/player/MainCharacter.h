@@ -29,6 +29,10 @@ public:
     MainCharacter()
     {
 
+        mJumpCount = 0;
+        mMovesCount = 0;
+        mMainCharacterGravity = 8.0f;
+
         mMainCharacterMass = 200.0f;
         mMainCharacterOnGround = false;
         mMainCharacterOnMove = false;
@@ -57,14 +61,76 @@ public:
     {
         mMainCharacterPosition = Vector2f(300.0f, 200.0f);
         mMainCharacterSprite.setPosition(mMainCharacterPosition);
-        cout<<mMainCharacterPosition.x<<'\n';
     }
 
     RectangleShape getSprite()
     {
-        cout<<mMainCharacterPosition.x<<'\n';
         mMainCharacterSprite.setPosition(mMainCharacterPosition);
         return mMainCharacterSprite;
+    }
+
+    void update(float mSpeed)
+    {
+        int mGroundLevel = 460;
+
+        mMainCharacterVelocity -= mMainCharacterMass * mMainCharacterGravity * mSpeed;
+        mMainCharacterPosition.y -= mMainCharacterVelocity * mSpeed / 1.2;
+        if (!mMainCharacterOnGround && mMainCharacterOnMove)
+        {
+            mMainCharacterPosition.x += mMainCharacterVelocityMove * mSpeed * 8;
+            if (mMainCharacterOnMove && mMainCharacterOnGround)
+            {
+                mMainCharacterOnMove = false;
+                mMovesCount = 0;
+            }
+        } else if (mMainCharacterOnMove)
+        {
+            if (mMovesCount < 20)
+            {
+                mMainCharacterVelocityMove /= 1.1;
+                mMainCharacterPosition.x += mMainCharacterVelocityMove * mSpeed * 24;
+                mMovesCount++;
+
+            }
+        }
+
+        mMainCharacterSprite.setPosition(mMainCharacterPosition);
+        if (mMainCharacterPosition.y >= (mGroundLevel * 0.75f))
+        {
+            mMainCharacterPosition.y = mGroundLevel * 0.75f;
+            mMainCharacterVelocity = 0;
+            if (!mMainCharacterOnGround)
+            {
+                mMovesCount = 12;
+                mMainCharacterVelocityMove /= 1.6;
+            }
+            mMainCharacterOnGround = true;
+            mJumpCount = 0;
+        }
+    }
+
+    void jump(float mVelocity)
+    {
+        if (mJumpCount < 2)
+        {
+            mJumpCount++;
+            mMainCharacterVelocity = mVelocity;
+            mMainCharacterOnGround = false;
+        }
+    }
+
+    void move(float mVelocity)
+    {
+        if (mVelocity < 0)
+        {
+            mMainCharacterSprite.setScale(Vector2f(-2.0f, 2.0f));
+        } else
+        {
+            mMainCharacterSprite.setScale(Vector2f(2.0f, 2.0f));
+        }
+        mMainCharacterVelocityMove = mVelocity;
+        mMainCharacterOnMove = true;
+        mMovesCount = 0;
     }
 
 };
