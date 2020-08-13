@@ -75,7 +75,7 @@ public:
         int characterPosSX = mSpriteLocStart.x + 70;
         int characterPosEX = mSpriteLocStart.x + mSpriteLocSize.x - 70;
 
-        vector < ItemModel * > mLvlItems = this->getItemsByLvl(mLvl);
+        vector < ItemModel * > mLvlItems = getItemsByLvl(mLvl);
 
         for (ItemModel *mItem : mLvlItems)
         {
@@ -96,6 +96,7 @@ public:
                 }
             }
         }
+
         return mNearestGroundLvl;
     }
 
