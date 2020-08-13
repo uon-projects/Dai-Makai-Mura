@@ -94,7 +94,7 @@ void inputListener()
 void update(float seconds)
 {
 
-    if(mApp->getCurrentScreen() == game)
+    if (mApp->getCurrentScreen() == game)
     {
         mGameScreen.update(seconds);
     }

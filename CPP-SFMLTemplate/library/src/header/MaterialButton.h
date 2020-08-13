@@ -90,11 +90,10 @@ public:
             this->text.setOrigin(this->text.getLocalBounds().width / 2, this->text.getLocalBounds().height / 1.3f);
 
             bool clicked;
-            if(this->mApp == nullptr)
+            if (this->mApp == nullptr)
             {
                 clicked = false;
-            }
-            else
+            } else
             {
                 Event event = this->mApp->getEvent();
                 clicked = (event.type == event.MouseButtonReleased && event.mouseButton.button == sf::Mouse::Left);
