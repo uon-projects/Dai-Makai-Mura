@@ -140,12 +140,12 @@ public:
 
         if (mMainCharacterPosition.y >= mGroundLevel)
         {
-            mMainCharacterPosition.y = mGroundLevel;
+            mMainCharacterPosition.y = (float) mGroundLevel;
             mMainCharacterVelocity = 0;
             if (mMainCharacterJump)
             {
                 mMovesCount = 12;
-                mMainCharacterVelocityMove /= 1.6;
+                mMainCharacterVelocityMove /= 1.6f;
             } else
             {
 

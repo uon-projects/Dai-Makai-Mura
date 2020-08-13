@@ -6,6 +6,7 @@
 #include <SFML/Graphics.hpp>
 #include "../../../../library/src/header/MaterialButton.h"
 #include "../App.h"
+#include "../npc/NPCharacter.h"
 #include "../player/MainCharacter.h"
 #include "../game/GameMap.h"
 
@@ -21,6 +22,7 @@ private:
     MainCharacter *mMainCharacter;
     GameMap *mGameMap;
     vector<MainCharacterBullet *> mMainCharacterBullets;
+    vector<NPCharacter *> mNPCharacters;
 
 public:
     GameScreen()
@@ -40,6 +42,7 @@ public:
     {
 
         int i, j;
+        RectangleShape item;
 
         gameMenuScreenBackground.setSize(Vector2f((float) window.getSize().x, (float) window.getSize().y));
         window.draw(gameMenuScreenBackground);
@@ -47,7 +50,6 @@ public:
         vector<ItemModel *> mLvlItems = mGameMap->getItemsByLvl(mApp->getLvlSelected());
         for (ItemModel *mItem : mLvlItems)
         {
-            RectangleShape item;
             item.setFillColor(Color(6, 209, 50));
             item.setPosition(Vector2f((float) mItem->getStartPos().x, (float) mItem->getStartPos().y));
             item.setSize(Vector2f((float) mItem->getSize().x, (float) mItem->getSize().y));

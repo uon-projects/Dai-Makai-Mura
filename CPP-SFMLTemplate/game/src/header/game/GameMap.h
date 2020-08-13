@@ -47,7 +47,9 @@ public:
     {
 
         addItem(1, 0, 450, 800, 50);
-        addItem(1, 0, 300, 650, 20);
+        addItem(1, 0, 300, 550, 20);
+        addItem(1, 550, 225, 70, 20);
+        addItem(1, 650, 150, 150, 20);
 
     }
 
@@ -70,8 +72,8 @@ public:
     {
         int mNearestGroundLvl = -1;
         int characterPosY = mSpriteLocStart.y + mSpriteLocSize.y;
-        int characterPosSX = mSpriteLocStart.x + 50;
-        int characterPosEX = mSpriteLocStart.x + mSpriteLocSize.x - 50;
+        int characterPosSX = mSpriteLocStart.x + 70;
+        int characterPosEX = mSpriteLocStart.x + mSpriteLocSize.x - 70;
 
         vector < ItemModel * > mLvlItems = this->getItemsByLvl(mLvl);
 
