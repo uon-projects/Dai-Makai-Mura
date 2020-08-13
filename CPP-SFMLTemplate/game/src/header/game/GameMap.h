@@ -31,23 +31,24 @@ public:
         initializeLvl1();
     }
 
-    void initializeLvl1()
+    void addItem(int mLvl, int mStartPosX, int mStartPosY, int mSizeW, int mSizeH)
     {
         ItemModel *mItemModel;
 
         mItemModel = new ItemModel(
-                1,
-                Vector2i(0, 450),
-                Vector2i(800, 50)
+                mLvl,
+                Vector2i(mStartPosX, mStartPosY),
+                Vector2i(mSizeW, mSizeH)
         );
         mItems.push_back(mItemModel);
+    }
 
-        mItemModel = new ItemModel(
-                1,
-                Vector2i(100, 300),
-                Vector2i(700, 20)
-        );
-        mItems.push_back(mItemModel);
+    void initializeLvl1()
+    {
+
+        addItem(1, 0, 450, 800, 50);
+        addItem(1, 0, 300, 650, 20);
+
     }
 
     vector<ItemModel *> getItemsByLvl(int mLvl)

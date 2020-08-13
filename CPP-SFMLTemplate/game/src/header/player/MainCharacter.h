@@ -65,9 +65,15 @@ public:
         this->mGameMap = mGameMap;
     }
 
-    void reset()
+    void reset(int lvlSelected)
     {
-        mMainCharacterPosition = Vector2f(100.0f, 100.0f);
+        if (lvlSelected == 1)
+        {
+            mMainCharacterPosition = Vector2f(50.0f, 330.0f);
+        } else
+        {
+            mMainCharacterPosition = Vector2f(100.0f, 100.0f);
+        }
         mMainCharacterSprite.setPosition(mMainCharacterPosition);
     }
 

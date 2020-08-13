@@ -44,7 +44,7 @@ public:
         gameMenuScreenBackground.setSize(Vector2f((float) window.getSize().x, (float) window.getSize().y));
         window.draw(gameMenuScreenBackground);
 
-        vector<ItemModel *> mLvlItems = mGameMap->getItemsByLvl(1);
+        vector<ItemModel *> mLvlItems = mGameMap->getItemsByLvl(mApp->getLvlSelected());
         for (ItemModel *mItem : mLvlItems)
         {
             RectangleShape item;
