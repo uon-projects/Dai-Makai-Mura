@@ -37,15 +37,15 @@ public:
 
         mItemModel = new ItemModel(
                 1,
-                Vector2i(0, 400),
-                Vector2i(800, 100)
+                Vector2i(0, 450),
+                Vector2i(800, 50)
         );
         mItems.push_back(mItemModel);
 
         mItemModel = new ItemModel(
                 1,
                 Vector2i(100, 300),
-                Vector2i(700, 10)
+                Vector2i(700, 20)
         );
         mItems.push_back(mItemModel);
     }
@@ -69,8 +69,8 @@ public:
     {
         int mNearestGroundLvl = -1;
         int characterPosY = mSpriteLocStart.y + mSpriteLocSize.y;
-        int characterPosSX = mSpriteLocStart.x + 45;
-        int characterPosEX = mSpriteLocStart.x + mSpriteLocSize.x - 45;
+        int characterPosSX = mSpriteLocStart.x + 50;
+        int characterPosEX = mSpriteLocStart.x + mSpriteLocSize.x - 50;
 
         vector < ItemModel * > mLvlItems = this->getItemsByLvl(mLvl);
 

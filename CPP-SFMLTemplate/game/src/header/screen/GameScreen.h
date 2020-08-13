@@ -26,7 +26,7 @@ public:
     GameScreen()
     {
 
-        gameMenuScreenBackground.setFillColor(Color(105, 89, 4));
+        gameMenuScreenBackground.setFillColor(Color(6, 117, 186));
 
     }
 
@@ -48,7 +48,7 @@ public:
         for (ItemModel *mItem : mLvlItems)
         {
             RectangleShape item;
-            item.setFillColor(Color(23, 68, 200));
+            item.setFillColor(Color(6, 209, 50));
             item.setPosition(Vector2f((float) mItem->getStartPos().x, (float) mItem->getStartPos().y));
             item.setSize(Vector2f((float) mItem->getSize().x, (float) mItem->getSize().y));
             window.draw(item);
@@ -75,7 +75,7 @@ public:
     {
 
         MainCharacterBullet *mMainCharacterBullet = new MainCharacterBullet();
-        mMainCharacterBullet->init(mMainCharacter->getSprite().getPosition(), type);
+        mMainCharacterBullet->init(mMainCharacter->getCharacterPosition(), type, mMainCharacter->faceRight());
         mMainCharacterBullets.push_back(mMainCharacterBullet);
 
     }

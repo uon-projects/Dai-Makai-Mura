@@ -18,6 +18,7 @@ private:
     float mEnemyBulletSpeed;
     int mClassType;
     int mLifes;
+    bool isRightFace;
 
 public:
     MainCharacterBullet()
@@ -30,11 +31,13 @@ public:
 
     }
 
-    void init(Vector2f mPosition, int mType)
+    void init(Vector2f mPosition, int mType, bool isRightFace)
     {
         mEnemyBulletSpeed = 400.0f;
+        mPosition.y += 55;
         mBulletPosition = mPosition;
         mClassType = mType;
+        this->isRightFace = isRightFace;
 
         switch (mClassType)
         {
@@ -59,20 +62,19 @@ public:
         }
 
         mBulletPosition.y += 30;
-        mBulletPosition.x += 5;
 
         mBulletSprite.setSize(Vector2f(60, 110));
         mBulletSprite.setTexture(&mBulletTexture);
         mBulletSprite.setTextureRect(IntRect(mBulletSize.x * 0, mBulletSize.y * 0, mBulletSize.x, mBulletSize.y));
         mBulletSprite.setPosition(mBulletPosition);
-        mBulletSprite.setScale(Vector2f(0.6, 0.6));
+        isRightFace ? (mBulletSprite.setScale(Vector2f(0.6, 0.6))) : (mBulletSprite.setScale(Vector2f(0.6, -0.6)));
         mBulletSprite.setRotation(-90);
         mBulletSprite.setOrigin(mBulletSize.x / 2, mBulletSize.y / 2);
     }
 
     void update(float speed)
     {
-        mBulletSprite.move(mEnemyBulletSpeed * speed, 0);
+        mBulletSprite.move(mEnemyBulletSpeed * (isRightFace ? speed : speed * (-1)), 0);
     }
 
     RectangleShape getSprite()

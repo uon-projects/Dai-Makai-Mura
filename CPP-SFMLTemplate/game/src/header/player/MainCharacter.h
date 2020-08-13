@@ -24,6 +24,7 @@ private:
     float mMainCharacterGravity; //The Average Value At Earth's Surface (Standard Gravity) is, by definition, 9.80665 m/s^2 (9.80f).
     bool mMainCharacterJump;
     bool mMainCharacterOnMove;
+    bool isRightFace;
     GameMap *mGameMap;
 
 public:
@@ -50,6 +51,7 @@ public:
                         mTextureMainCharacterSize.y));
         mMainCharacterSprite.setScale(Vector2f(2.0f, 2.0f));
         mMainCharacterSprite.setOrigin(mTextureMainCharacterSize.x / 2, 0);
+        isRightFace = true;
 
     }
 
@@ -73,6 +75,11 @@ public:
     {
         mMainCharacterSprite.setPosition(mMainCharacterPosition);
         return mMainCharacterSprite;
+    }
+
+    Vector2f getCharacterPosition()
+    {
+        return mMainCharacterPosition;
     }
 
     void update(float mSpeed)
@@ -159,13 +166,20 @@ public:
         if (mVelocity < 0)
         {
             mMainCharacterSprite.setScale(Vector2f(-2.0f, 2.0f));
+            isRightFace = false;
         } else
         {
             mMainCharacterSprite.setScale(Vector2f(2.0f, 2.0f));
+            isRightFace = true;
         }
         mMainCharacterVelocityMove = mVelocity;
         mMainCharacterOnMove = true;
         mMovesCount = 0;
+    }
+
+    bool faceRight()
+    {
+        return isRightFace;
     }
 
 };
