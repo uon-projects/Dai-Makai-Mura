@@ -31,23 +31,26 @@ public:
         initializeLvl1();
     }
 
-    void initializeLvl1()
+    void addItem(int mLvl, int mStartPosX, int mStartPosY, int mSizeW, int mSizeH)
     {
         ItemModel *mItemModel;
 
         mItemModel = new ItemModel(
-                1,
-                Vector2i(0, 450),
-                Vector2i(800, 50)
+                mLvl,
+                Vector2i(mStartPosX, mStartPosY),
+                Vector2i(mSizeW, mSizeH)
         );
         mItems.push_back(mItemModel);
+    }
 
-        mItemModel = new ItemModel(
-                1,
-                Vector2i(100, 300),
-                Vector2i(700, 20)
-        );
-        mItems.push_back(mItemModel);
+    void initializeLvl1()
+    {
+
+        addItem(1, 0, 450, 800, 50);
+        addItem(1, 0, 300, 550, 20);
+        addItem(1, 550, 225, 70, 20);
+        addItem(1, 650, 150, 150, 20);
+
     }
 
     vector<ItemModel *> getItemsByLvl(int mLvl)
@@ -69,10 +72,10 @@ public:
     {
         int mNearestGroundLvl = -1;
         int characterPosY = mSpriteLocStart.y + mSpriteLocSize.y;
-        int characterPosSX = mSpriteLocStart.x + 50;
-        int characterPosEX = mSpriteLocStart.x + mSpriteLocSize.x - 50;
+        int characterPosSX = mSpriteLocStart.x + 70;
+        int characterPosEX = mSpriteLocStart.x + mSpriteLocSize.x - 70;
 
-        vector < ItemModel * > mLvlItems = this->getItemsByLvl(mLvl);
+        vector < ItemModel * > mLvlItems = getItemsByLvl(mLvl);
 
         for (ItemModel *mItem : mLvlItems)
         {
@@ -93,6 +96,7 @@ public:
                 }
             }
         }
+
         return mNearestGroundLvl;
     }
 

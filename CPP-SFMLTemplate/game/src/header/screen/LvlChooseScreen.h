@@ -72,39 +72,43 @@ public:
 
         if (exitBtn.isClicked(window))
         {
-            this->mApp->setCurrentScreen(menu);
+            mApp->setCurrentScreen(menu);
         }
         window.draw(exitBtn);
         exitBtn.drawText(window);
 
         lvlBtn1 = getLevelBtnColor(lvlBtn1);
-        if (lvlBtn1.isClicked(window) && lvlBtn1.getBtnLevel() <= this->mApp->getLevelsUnlocked())
+        if (lvlBtn1.isClicked(window) && lvlBtn1.getBtnLevel() <= mApp->getLevelsUnlocked())
         {
-            this->mApp->setCurrentScreen(game);
+            mApp->setLvl(1);
+            mApp->setCurrentScreen(game);
         }
         window.draw(lvlBtn1);
         lvlBtn1.drawText(window);
 
         lvlBtn2 = getLevelBtnColor(lvlBtn2);
-        if (lvlBtn2.isClicked(window) && lvlBtn2.getBtnLevel() <= this->mApp->getLevelsUnlocked())
+        if (lvlBtn2.isClicked(window) && lvlBtn2.getBtnLevel() <= mApp->getLevelsUnlocked())
         {
-            this->mApp->setCurrentScreen(game);
+            mApp->setLvl(2);
+            mApp->setCurrentScreen(game);
         }
         window.draw(lvlBtn2);
         lvlBtn2.drawText(window);
 
         lvlBtn3 = getLevelBtnColor(lvlBtn3);
-        if (lvlBtn3.isClicked(window) && lvlBtn3.getBtnLevel() <= this->mApp->getLevelsUnlocked())
+        if (lvlBtn3.isClicked(window) && lvlBtn3.getBtnLevel() <= mApp->getLevelsUnlocked())
         {
-            this->mApp->setCurrentScreen(game);
+            mApp->setLvl(3);
+            mApp->setCurrentScreen(game);
         }
         window.draw(lvlBtn3);
         lvlBtn3.drawText(window);
 
         lvlBtn4 = getLevelBtnColor(lvlBtn4);
-        if (lvlBtn4.isClicked(window) && lvlBtn4.getBtnLevel() <= this->mApp->getLevelsUnlocked())
+        if (lvlBtn4.isClicked(window) && lvlBtn4.getBtnLevel() <= mApp->getLevelsUnlocked())
         {
-            this->mApp->setCurrentScreen(game);
+            mApp->setLvl(4);
+            mApp->setCurrentScreen(game);
         }
         window.draw(lvlBtn4);
         lvlBtn4.drawText(window);
@@ -113,7 +117,7 @@ public:
 
     LevelButton getLevelBtnColor(LevelButton lvlBtn)
     {
-        if (lvlBtn.getBtnLevel() <= this->mApp->getLevelsUnlocked())
+        if (lvlBtn.getBtnLevel() <= mApp->getLevelsUnlocked())
         {
             lvlBtn.setColor(Color(5, 240, 83));
             lvlBtn.setHoverColor(Color(4, 194, 67));
@@ -130,12 +134,12 @@ public:
 
     void setApp(App *app)
     {
-        this->mApp = app;
-        exitBtn.setApp(this->mApp);
-        lvlBtn1.setApp(this->mApp);
-        lvlBtn2.setApp(this->mApp);
-        lvlBtn3.setApp(this->mApp);
-        lvlBtn4.setApp(this->mApp);
+        mApp = app;
+        exitBtn.setApp(mApp);
+        lvlBtn1.setApp(mApp);
+        lvlBtn2.setApp(mApp);
+        lvlBtn3.setApp(mApp);
+        lvlBtn4.setApp(mApp);
     }
 
 private:

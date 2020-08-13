@@ -40,13 +40,23 @@ public:
         currentScreen = screenChose;
         if (screenChose == game)
         {
-            mMainCharacter->reset();
+            mMainCharacter->reset(mLvlSelected);
         }
     }
 
     int getLevelsUnlocked()
     {
         return lvlUnlocked;
+    }
+
+    void setLvl(int mLvl)
+    {
+        this->mLvlSelected = mLvl;
+    }
+
+    int getLvlSelected()
+    {
+        return mLvlSelected;
     }
 
     void increaseLevelsUnlocked()
@@ -89,5 +99,6 @@ private:
     Sprite mCharacter;
     MainCharacter *mMainCharacter;
     GameMap *mGameMap;
+    int mLvlSelected;
 
 };

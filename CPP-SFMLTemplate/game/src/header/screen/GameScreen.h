@@ -6,6 +6,7 @@
 #include <SFML/Graphics.hpp>
 #include "../../../../library/src/header/MaterialButton.h"
 #include "../App.h"
+#include "../npc/NPCharacter.h"
 #include "../player/MainCharacter.h"
 #include "../game/GameMap.h"
 
@@ -21,6 +22,7 @@ private:
     MainCharacter *mMainCharacter;
     GameMap *mGameMap;
     vector<MainCharacterBullet *> mMainCharacterBullets;
+    vector<NPCharacter *> mNPCharacters;
 
 public:
     GameScreen()
@@ -40,18 +42,23 @@ public:
     {
 
         int i, j;
+        RectangleShape item;
 
         gameMenuScreenBackground.setSize(Vector2f((float) window.getSize().x, (float) window.getSize().y));
         window.draw(gameMenuScreenBackground);
 
-        vector<ItemModel *> mLvlItems = mGameMap->getItemsByLvl(1);
+        vector < ItemModel * > mLvlItems = mGameMap->getItemsByLvl(mApp->getLvlSelected());
         for (ItemModel *mItem : mLvlItems)
         {
-            RectangleShape item;
             item.setFillColor(Color(6, 209, 50));
             item.setPosition(Vector2f((float) mItem->getStartPos().x, (float) mItem->getStartPos().y));
             item.setSize(Vector2f((float) mItem->getSize().x, (float) mItem->getSize().y));
             window.draw(item);
+        }
+
+        for (NPCharacter *mNPCharacter : mNPCharacters)
+        {
+            window.draw(mNPCharacter->getSprite());
         }
 
         window.draw(mMainCharacter->getSprite());
@@ -63,12 +70,23 @@ public:
 
     }
 
+    void initNPCs()
+    {
+        NPCharacter *mNPCharacter;
+        mNPCharacter = new NPCharacter(mApp->getGameMap(), true, 50, 150, 300);
+        mNPCharacters.push_back(mNPCharacter);
+        mNPCharacter = new NPCharacter(mApp->getGameMap(), false, 500, 150, 300);
+        mNPCharacters.push_back(mNPCharacter);
+    }
+
     void setApp(App *app)
     {
         this->mApp = app;
         mMainCharacter = mApp->getMainCharacter();
         mGameMap = mApp->getGameMap();
         mMainCharacter->setGameMap(mApp->getGameMap());
+
+        initNPCs();
     }
 
     void shootBullets(int type)
@@ -131,6 +149,11 @@ public:
                 mMainCharacterBullets.erase(mMainCharacterBullets.begin() + i);
                 delete (mMainCharacterBullet);
             }
+        }
+
+        for (NPCharacter *mNPCharacter : mNPCharacters)
+        {
+            mNPCharacter->update(speed);
         }
 
     }
