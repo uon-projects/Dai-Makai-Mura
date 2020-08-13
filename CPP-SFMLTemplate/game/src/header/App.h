@@ -49,6 +49,14 @@ public:
         return lvlUnlocked;
     }
 
+    void increaseLevelsUnlocked()
+    {
+        if (lvlUnlocked < 4)
+        {
+            lvlUnlocked++;
+        }
+    }
+
     void setLvl(int mLvl)
     {
         this->mLvlSelected = mLvl;
@@ -57,14 +65,6 @@ public:
     int getLvlSelected()
     {
         return mLvlSelected;
-    }
-
-    void increaseLevelsUnlocked()
-    {
-        if (lvlUnlocked < 4)
-        {
-            lvlUnlocked++;
-        }
     }
 
     Event getEvent()
@@ -100,5 +100,6 @@ private:
     MainCharacter *mMainCharacter;
     GameMap *mGameMap;
     int mLvlSelected;
+    int mCharacterLives;
 
 };
