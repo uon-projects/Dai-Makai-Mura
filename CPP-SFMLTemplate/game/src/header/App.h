@@ -3,6 +3,7 @@
 #include "Utils.h"
 #include <SFML/Graphics.hpp>
 #include "../../../library/src/header/LoadImage.h"
+#include "./player/MainCharacter.h"
 
 using namespace sf;
 
@@ -18,6 +19,7 @@ public:
         currentScreen = splash;
         lvlUnlocked = 1;
         mCharacter = LoadImage().loadSpriteFromTexture("zeoflow_logo", png);
+        mMainCharacter = new MainCharacter;
     }
 
     ~App()
@@ -34,6 +36,10 @@ public:
     void setCurrentScreen(screen screenChose)
     {
         currentScreen = screenChose;
+        if (screenChose == game)
+        {
+            mMainCharacter->reset();
+        }
     }
 
     int getLevelsUnlocked()
@@ -64,10 +70,16 @@ public:
         return mCharacter;
     }
 
+    MainCharacter * getMainCharacter()
+    {
+        return mMainCharacter;
+    }
+
 private:
     screen currentScreen;
     Event event;
     int lvlUnlocked;
     Sprite mCharacter;
+    MainCharacter *mMainCharacter;
 
 };
