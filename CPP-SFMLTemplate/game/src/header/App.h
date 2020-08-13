@@ -3,7 +3,8 @@
 #include "Utils.h"
 #include <SFML/Graphics.hpp>
 #include "../../../library/src/header/LoadImage.h"
-#include "./player/MainCharacter.h"
+#include "player/MainCharacter.h"
+#include "game/GameMap.h"
 
 using namespace sf;
 
@@ -20,6 +21,7 @@ public:
         lvlUnlocked = 1;
         mCharacter = LoadImage().loadSpriteFromTexture("zeoflow_logo", png);
         mMainCharacter = new MainCharacter;
+        mGameMap = new GameMap;
     }
 
     ~App()
@@ -70,9 +72,14 @@ public:
         return mCharacter;
     }
 
-    MainCharacter * getMainCharacter()
+    MainCharacter *getMainCharacter()
     {
         return mMainCharacter;
+    }
+
+    GameMap *getGameMap()
+    {
+        return mGameMap;
     }
 
 private:
@@ -81,5 +88,6 @@ private:
     int lvlUnlocked;
     Sprite mCharacter;
     MainCharacter *mMainCharacter;
+    GameMap *mGameMap;
 
 };

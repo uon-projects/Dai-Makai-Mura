@@ -20,7 +20,7 @@ public:
     HowToPlayScreen()
     {
 
-		font = FontManager().loadFont();
+        font = FontManager().loadFont();
 
         lvlChooseScreenBackground.setFillColor(Color(0, 150, 136));
 
@@ -73,6 +73,6 @@ public:
 private:
     MaterialButton exitBtn;
     Text contentHowToPlay;
-	Font font;
+    Font font;
 
 };

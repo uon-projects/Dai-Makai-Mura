@@ -3,6 +3,7 @@
 
 #include <SFML/Graphics.hpp>
 #include <iostream>
+#include "../game/GameMap.h"
 
 using namespace std;
 using namespace sf;
@@ -23,6 +24,7 @@ private:
     float mMainCharacterGravity; //The Average Value At Earth's Surface (Standard Gravity) is, by definition, 9.80665 m/s^2 (9.80f).
     bool mMainCharacterJump;
     bool mMainCharacterOnMove;
+    GameMap *mGameMap;
 
 public:
     MainCharacter()
@@ -47,7 +49,7 @@ public:
                 IntRect(mTextureMainCharacterSize.x * 7, mTextureMainCharacterSize.y * 0, mTextureMainCharacterSize.x,
                         mTextureMainCharacterSize.y));
         mMainCharacterSprite.setScale(Vector2f(2.0f, 2.0f));
-        mMainCharacterSprite.setOrigin(mTextureMainCharacterSize.x / 2, mTextureMainCharacterSize.y / 2);
+        mMainCharacterSprite.setOrigin(mTextureMainCharacterSize.x / 2, 0);
 
     }
 
@@ -56,9 +58,14 @@ public:
 
     }
 
+    void setGameMap(GameMap *mGameMap)
+    {
+        this->mGameMap = mGameMap;
+    }
+
     void reset()
     {
-        mMainCharacterPosition = Vector2f(300.0f, 200.0f);
+        mMainCharacterPosition = Vector2f(100.0f, 100.0f);
         mMainCharacterSprite.setPosition(mMainCharacterPosition);
     }
 
@@ -70,7 +77,13 @@ public:
 
     void update(float mSpeed)
     {
-        int mGroundLevel = 460;
+        Vector2f mSpriteLocStart;
+        mSpriteLocStart.x = mMainCharacterSprite.getGlobalBounds().left;
+        mSpriteLocStart.y = mMainCharacterSprite.getGlobalBounds().top;
+        Vector2f mSpriteLocSize;
+        mSpriteLocSize.x = mMainCharacterSprite.getGlobalBounds().width;
+        mSpriteLocSize.y = mMainCharacterSprite.getGlobalBounds().height;
+        int mGroundLevel = mGameMap->getNearestGroundLvl(1, mSpriteLocStart, mSpriteLocSize) - mSpriteLocSize.y;
 
         mMainCharacterVelocity -= mMainCharacterMass * mMainCharacterGravity * mSpeed;
         mMainCharacterPosition.y -= mMainCharacterVelocity * mSpeed / 1.2;
@@ -80,7 +93,8 @@ public:
             if (mMainCharacterPosition.x + mMainCharacterVelocityMove * mSpeed * 8 < mTextureMainCharacterSize.x / 2)
             {
                 mMainCharacterPosition.x = mTextureMainCharacterSize.x / 2;
-            } else if (mMainCharacterPosition.x + mMainCharacterVelocityMove * mSpeed * 8 > 800 - mTextureMainCharacterSize.x / 2)
+            } else if (mMainCharacterPosition.x + mMainCharacterVelocityMove * mSpeed * 8 >
+                       800 - mTextureMainCharacterSize.x / 2)
             {
                 mMainCharacterPosition.x = 800 - mTextureMainCharacterSize.x / 2;
             } else
@@ -92,10 +106,12 @@ public:
             if (mMovesCount < 20)
             {
                 mMainCharacterVelocityMove /= 1.1;
-                if (mMainCharacterPosition.x + mMainCharacterVelocityMove * mSpeed * 24 < mTextureMainCharacterSize.x / 2)
+                if (mMainCharacterPosition.x + mMainCharacterVelocityMove * mSpeed * 24 <
+                    mTextureMainCharacterSize.x / 2)
                 {
                     mMainCharacterPosition.x = mTextureMainCharacterSize.x / 2;
-                } else if (mMainCharacterPosition.x + mMainCharacterVelocityMove * mSpeed * 24 > 800 - mTextureMainCharacterSize.x / 2)
+                } else if (mMainCharacterPosition.x + mMainCharacterVelocityMove * mSpeed * 24 >
+                           800 - mTextureMainCharacterSize.x / 2)
                 {
                     mMainCharacterPosition.x = 800 - mTextureMainCharacterSize.x / 2;
                 } else
@@ -109,9 +125,9 @@ public:
             }
         }
 
-        if (mMainCharacterPosition.y >= (mGroundLevel * 0.75f))
+        if (mMainCharacterPosition.y >= mGroundLevel)
         {
-            mMainCharacterPosition.y = mGroundLevel * 0.75f;
+            mMainCharacterPosition.y = mGroundLevel;
             mMainCharacterVelocity = 0;
             if (mMainCharacterJump)
             {

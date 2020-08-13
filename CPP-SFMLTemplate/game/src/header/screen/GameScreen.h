@@ -7,6 +7,7 @@
 #include "../../../../library/src/header/MaterialButton.h"
 #include "../App.h"
 #include "../player/MainCharacter.h"
+#include "../game/GameMap.h"
 
 using namespace std;
 using namespace sf;
@@ -18,6 +19,7 @@ private:
     RectangleShape gameMenuScreenBackground;
     App *mApp;
     MainCharacter *mMainCharacter;
+    GameMap *mGameMap;
     vector<MainCharacterBullet *> mMainCharacterBullets;
 
 public:
@@ -37,8 +39,20 @@ public:
     void draw(RenderWindow &window)
     {
 
+        int i, j;
+
         gameMenuScreenBackground.setSize(Vector2f((float) window.getSize().x, (float) window.getSize().y));
         window.draw(gameMenuScreenBackground);
+
+        vector<ItemModel *> mLvlItems = mGameMap->getItemsByLvl(1);
+        for (ItemModel *mItem : mLvlItems)
+        {
+            RectangleShape item;
+            item.setFillColor(Color(23, 68, 200));
+            item.setPosition(Vector2f((float) mItem->getStartPos().x, (float) mItem->getStartPos().y));
+            item.setSize(Vector2f((float) mItem->getSize().x, (float) mItem->getSize().y));
+            window.draw(item);
+        }
 
         window.draw(mMainCharacter->getSprite());
 
@@ -53,6 +67,8 @@ public:
     {
         this->mApp = app;
         mMainCharacter = mApp->getMainCharacter();
+        mGameMap = mApp->getGameMap();
+        mMainCharacter->setGameMap(mApp->getGameMap());
     }
 
     void shootBullets(int type)
@@ -69,6 +85,10 @@ public:
         if (event.key.code == Keyboard::Space)
         {
             mMainCharacter->jump(650.0f);
+        }
+        if (event.key.code == Keyboard::X)
+        {
+            system("pause");
         }
         if (event.key.code == Keyboard::Left || event.key.code == Keyboard::A)
         {
