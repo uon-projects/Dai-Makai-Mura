@@ -22,7 +22,7 @@ private:
     float mMainCharacterVelocity;
     float mMainCharacterVelocityMove;
     float mMainCharacterGravity; //The Average Value At Earth's Surface (Standard Gravity) is, by definition, 9.80665 m/s^2 (9.80f).
-    bool mMainCharacterOnGround;
+    bool mMainCharacterJump;
     bool mMainCharacterOnMove;
 
 public:
@@ -34,7 +34,7 @@ public:
         mMainCharacterGravity = 8.0f;
 
         mMainCharacterMass = 200.0f;
-        mMainCharacterOnGround = false;
+        mMainCharacterJump = false;
         mMainCharacterOnMove = false;
 
         mMainCharacterTexture.loadFromFile("game/src/res/vector/main_character.png");
@@ -75,14 +75,10 @@ public:
 
         mMainCharacterVelocity -= mMainCharacterMass * mMainCharacterGravity * mSpeed;
         mMainCharacterPosition.y -= mMainCharacterVelocity * mSpeed / 1.2;
-        if (!mMainCharacterOnGround && mMainCharacterOnMove)
+
+        if (mMainCharacterJump && mMainCharacterOnMove)
         {
             mMainCharacterPosition.x += mMainCharacterVelocityMove * mSpeed * 8;
-            if (mMainCharacterOnMove && mMainCharacterOnGround)
-            {
-                mMainCharacterOnMove = false;
-                mMovesCount = 0;
-            }
         } else if (mMainCharacterOnMove)
         {
             if (mMovesCount < 20)
@@ -90,23 +86,29 @@ public:
                 mMainCharacterVelocityMove /= 1.1;
                 mMainCharacterPosition.x += mMainCharacterVelocityMove * mSpeed * 24;
                 mMovesCount++;
-
+            } else
+            {
+                mMainCharacterOnMove = false;
             }
         }
 
-        mMainCharacterSprite.setPosition(mMainCharacterPosition);
         if (mMainCharacterPosition.y >= (mGroundLevel * 0.75f))
         {
             mMainCharacterPosition.y = mGroundLevel * 0.75f;
             mMainCharacterVelocity = 0;
-            if (!mMainCharacterOnGround)
+            if (mMainCharacterJump)
             {
                 mMovesCount = 12;
                 mMainCharacterVelocityMove /= 1.6;
+            } else
+            {
+
             }
-            mMainCharacterOnGround = true;
+            mMainCharacterJump = false;
             mJumpCount = 0;
         }
+
+        mMainCharacterSprite.setPosition(mMainCharacterPosition);
     }
 
     void jump(float mVelocity)
@@ -115,7 +117,7 @@ public:
         {
             mJumpCount++;
             mMainCharacterVelocity = mVelocity;
-            mMainCharacterOnGround = false;
+            mMainCharacterJump = true;
         }
     }
 

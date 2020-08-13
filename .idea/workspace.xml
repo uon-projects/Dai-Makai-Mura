@@ -83,11 +83,6 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -105,7 +100,8 @@
       <workItem from="1596894016264" duration="5449000" />
       <workItem from="1596900831054" duration="55000" />
       <workItem from="1596900909848" duration="3676000" />
-      <workItem from="1597238968605" duration="4204000" />
+      <workItem from="1597238968605" duration="5043000" />
+      <workItem from="1597307779330" duration="2786000" />
     </task>
     <servers />
   </component>
@@ -141,6 +137,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="184" y="28" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1596894875775" />
+    <state x="500" y="72" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1597311280101">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="500" y="72" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1366.768@0.0.1366.768" timestamp="1597311280101" />
     <state x="339" y="172" key="run.anything.popup" timestamp="1597240082753">
       <screen x="0" y="0" width="1366" height="768" />
     </state>

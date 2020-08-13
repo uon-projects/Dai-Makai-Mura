@@ -50,6 +50,10 @@ public:
 
     void inputListener(Event event)
     {
+        if (event.key.code == Keyboard::Space)
+        {
+            mMainCharacter->jump(650.0f);
+        }
         if (event.key.code == Keyboard::Left || event.key.code == Keyboard::A)
         {
             mMainCharacter->move(-20.0f);
@@ -72,10 +76,6 @@ public:
         } else if (event.key.code == Keyboard::Num3 || event.key.code == Keyboard::Numpad3)
         {
             cout << "3\n";
-        }
-        if (event.key.code == Keyboard::Space)
-        {
-            mMainCharacter->jump(750.0f);
         }
     }
 
