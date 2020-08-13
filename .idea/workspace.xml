@@ -29,18 +29,8 @@
   <component name="ChangeListManager">
     <list default="true" id="9d525570-9151-426c-ab34-6ec04bf7ed5a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CPP-SFMLTemplate/Debug/CPP-SFMLTemplate.log" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-SFMLTemplate/Debug/CPP-SFMLTemplate.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CPP-SFMLTemplate/Debug/link.read.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-SFMLTemplate/Debug/link.read.1.tlog" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CPP-SFMLTemplate/Debug/main.obj" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-SFMLTemplate/Debug/main.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CPP-SFMLTemplate/Debug/vc110.idb" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-SFMLTemplate/Debug/vc110.idb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CPP-SFMLTemplate/Debug/vc110.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-SFMLTemplate/Debug/vc110.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CPP-SFMLTemplate/game/src/header/game/GameMap.h" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-SFMLTemplate/game/src/header/game/GameMap.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CPP-SFMLTemplate/game/src/header/npc/NPCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-SFMLTemplate/game/src/header/npc/NPCharacter.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CPP-SFMLTemplate/game/src/header/App.h" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-SFMLTemplate/game/src/header/App.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CPP-SFMLTemplate/game/src/header/screen/GameScreen.h" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-SFMLTemplate/game/src/header/screen/GameScreen.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Debug/Ghouls n Ghosts.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Debug/Ghouls n Ghosts.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Debug/Ghouls n Ghosts.ilk" beforeDir="false" afterPath="$PROJECT_DIR$/Debug/Ghouls n Ghosts.ilk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Debug/Ghouls n Ghosts.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Debug/Ghouls n Ghosts.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ghouls n Ghosts.sdf" beforeDir="false" afterPath="$PROJECT_DIR$/Ghouls n Ghosts.sdf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +94,7 @@
       <workItem from="1596900831054" duration="55000" />
       <workItem from="1596900909848" duration="3676000" />
       <workItem from="1597238968605" duration="5043000" />
-      <workItem from="1597307779330" duration="19808000" />
+      <workItem from="1597307779330" duration="20148000" />
     </task>
     <servers />
   </component>

@@ -42,7 +42,7 @@ public:
         switch (mClassType)
         {
             case 1:
-                mEnemyBulletSpeed *= 0.8;
+                mEnemyBulletSpeed *= 1.5;
                 mBulletTexture.loadFromFile("game/src/res/vector/fireball_character.png");
                 mBulletSize = mBulletTexture.getSize();
                 mBulletSize.x /= 10;
@@ -50,7 +50,7 @@ public:
                 mLifes = 1;
                 break;
             case 2:
-                mEnemyBulletSpeed *= 2;
+                mEnemyBulletSpeed *= 0.8;
                 mBulletTexture.loadFromFile("game/src/res/vector/iceball_character.png");
                 mBulletSize = mBulletTexture.getSize();
                 mBulletSize.x /= 11;

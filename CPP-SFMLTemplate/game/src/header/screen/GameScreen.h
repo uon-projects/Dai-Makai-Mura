@@ -156,6 +156,30 @@ public:
             mNPCharacter->update(speed);
         }
 
+        for (i = 0; i < mNPCharacters.size(); i++)
+        {
+            NPCharacter *mNPCharacter = mNPCharacters[i];
+            bool killed = false;
+            for (j = 0; j < mMainCharacterBullets.size(); j++)
+            {
+                MainCharacterBullet* mMainCharacterBullet = mMainCharacterBullets[j];
+                if(mNPCharacter -> getSprite().getGlobalBounds().intersects(mMainCharacterBullet -> getSprite().getGlobalBounds()))
+                {
+                    killed = true;
+                    if(mMainCharacterBullet->decreaseLife())
+                    {
+                        mMainCharacterBullets.erase(mMainCharacterBullets.begin() + j);
+                        delete(mMainCharacterBullet);
+                        break;
+                    }
+                }
+            }
+            if(killed) {
+                mNPCharacters.erase(mNPCharacters.begin() + i);
+                delete(mNPCharacter);
+            }
+        }
+
     }
 
 };
