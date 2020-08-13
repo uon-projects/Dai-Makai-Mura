@@ -9,6 +9,7 @@
 #include "../npc/NPCharacter.h"
 #include "../player/MainCharacter.h"
 #include "../game/GameMap.h"
+#include "../Collision.h"
 
 using namespace std;
 using namespace sf;
@@ -23,12 +24,15 @@ private:
     GameMap *mGameMap;
     vector<MainCharacterBullet *> mMainCharacterBullets;
     vector<NPCharacter *> mNPCharacters;
+    RectangleShape mEndPortal;
 
 public:
     GameScreen()
     {
 
         gameMenuScreenBackground.setFillColor(Color(6, 117, 186));
+        mEndPortal.setFillColor(Color(6, 209, 50));
+        mEndPortal.setSize(Vector2f(50, 50));
 
     }
 
@@ -67,6 +71,9 @@ public:
         {
             window.draw(mMainCharacterBullet->getSprite());
         }
+
+        mEndPortal.setPosition(Vector2f(100, 100));
+        window.draw(mEndPortal);
 
     }
 
@@ -154,6 +161,10 @@ public:
         for (NPCharacter *mNPCharacter : mNPCharacters)
         {
             mNPCharacter->update(speed);
+            if (mNPCharacter->getSprite().getGlobalBounds().intersects(mMainCharacter->getSprite().getGlobalBounds()))
+            {
+                mMainCharacter->jump(500.0f);
+            }
         }
 
         for (i = 0; i < mNPCharacters.size(); i++)
@@ -162,21 +173,23 @@ public:
             bool killed = false;
             for (j = 0; j < mMainCharacterBullets.size(); j++)
             {
-                MainCharacterBullet* mMainCharacterBullet = mMainCharacterBullets[j];
-                if(mNPCharacter -> getSprite().getGlobalBounds().intersects(mMainCharacterBullet -> getSprite().getGlobalBounds()))
+                MainCharacterBullet *mMainCharacterBullet = mMainCharacterBullets[j];
+                if (mNPCharacter->getSprite().getGlobalBounds().intersects(
+                        mMainCharacterBullet->getSprite().getGlobalBounds()))
                 {
                     killed = true;
-                    if(mMainCharacterBullet->decreaseLife())
+                    if (mMainCharacterBullet->decreaseLife())
                     {
                         mMainCharacterBullets.erase(mMainCharacterBullets.begin() + j);
-                        delete(mMainCharacterBullet);
+                        delete (mMainCharacterBullet);
                         break;
                     }
                 }
             }
-            if(killed) {
+            if (killed)
+            {
                 mNPCharacters.erase(mNPCharacters.begin() + i);
-                delete(mNPCharacter);
+                delete (mNPCharacter);
             }
         }
 
