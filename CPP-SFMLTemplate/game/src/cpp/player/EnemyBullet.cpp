@@ -1,7 +1,7 @@
 //The Enemy Bullet Class Implementation...
 
 //Header Files
-#include "../../header/player/EnemyBullet.h"
+#include "../../header/player/MainCharacterBullet.h"
 
 EnemyBullet::EnemyBullet()
 {

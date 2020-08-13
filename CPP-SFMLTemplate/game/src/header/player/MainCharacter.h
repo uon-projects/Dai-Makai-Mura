@@ -5,7 +5,6 @@
 #include <iostream>
 
 using namespace std;
-
 using namespace sf;
 
 class MainCharacter
@@ -78,13 +77,31 @@ public:
 
         if (mMainCharacterJump && mMainCharacterOnMove)
         {
-            mMainCharacterPosition.x += mMainCharacterVelocityMove * mSpeed * 8;
+            if (mMainCharacterPosition.x + mMainCharacterVelocityMove * mSpeed * 8 < mTextureMainCharacterSize.x / 2)
+            {
+                mMainCharacterPosition.x = mTextureMainCharacterSize.x / 2;
+            } else if (mMainCharacterPosition.x + mMainCharacterVelocityMove * mSpeed * 8 > 800 - mTextureMainCharacterSize.x / 2)
+            {
+                mMainCharacterPosition.x = 800 - mTextureMainCharacterSize.x / 2;
+            } else
+            {
+                mMainCharacterPosition.x += mMainCharacterVelocityMove * mSpeed * 8;
+            }
         } else if (mMainCharacterOnMove)
         {
             if (mMovesCount < 20)
             {
                 mMainCharacterVelocityMove /= 1.1;
-                mMainCharacterPosition.x += mMainCharacterVelocityMove * mSpeed * 24;
+                if (mMainCharacterPosition.x + mMainCharacterVelocityMove * mSpeed * 24 < mTextureMainCharacterSize.x / 2)
+                {
+                    mMainCharacterPosition.x = mTextureMainCharacterSize.x / 2;
+                } else if (mMainCharacterPosition.x + mMainCharacterVelocityMove * mSpeed * 24 > 800 - mTextureMainCharacterSize.x / 2)
+                {
+                    mMainCharacterPosition.x = 800 - mTextureMainCharacterSize.x / 2;
+                } else
+                {
+                    mMainCharacterPosition.x += mMainCharacterVelocityMove * mSpeed * 24;
+                }
                 mMovesCount++;
             } else
             {
