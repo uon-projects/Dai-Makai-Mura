@@ -1,11 +1,12 @@
+#include <fstream>
+#include <string>
+#include <iostream>
+#include <vector>
+#include "../player/MainCharacterBullet.h"
 #include <SFML/Graphics.hpp>
 #include "../../../../library/src/header/MaterialButton.h"
 #include "../App.h"
 #include "../player/MainCharacter.h"
-
-#include <fstream>
-#include <string>
-#include <iostream>
 
 using namespace std;
 using namespace sf;
@@ -17,6 +18,7 @@ private:
     RectangleShape gameMenuScreenBackground;
     App *mApp;
     MainCharacter *mMainCharacter;
+    vector<MainCharacterBullet *> mMainCharacterBullets;
 
 public:
     GameScreen()
@@ -40,6 +42,11 @@ public:
 
         window.draw(mMainCharacter->getSprite());
 
+        for (MainCharacterBullet *mMainCharacterBullet : mMainCharacterBullets)
+        {
+            window.draw(mMainCharacterBullet->getSprite());
+        }
+
     }
 
     void setApp(App *app)
@@ -48,8 +55,21 @@ public:
         mMainCharacter = mApp->getMainCharacter();
     }
 
+    void shootBullets(int type)
+    {
+
+        MainCharacterBullet *mMainCharacterBullet = new MainCharacterBullet();
+        mMainCharacterBullet->init(mMainCharacter->getSprite().getPosition(), type);
+        mMainCharacterBullets.push_back(mMainCharacterBullet);
+
+    }
+
     void inputListener(Event event)
     {
+        if (event.key.code == Keyboard::Space)
+        {
+            mMainCharacter->jump(650.0f);
+        }
         if (event.key.code == Keyboard::Left || event.key.code == Keyboard::A)
         {
             mMainCharacter->move(-20.0f);
@@ -65,24 +85,33 @@ public:
 		} */
         if (event.key.code == Keyboard::Num1 || event.key.code == Keyboard::Numpad1)
         {
-            cout << "1\n";
+            shootBullets(1);
         } else if (event.key.code == Keyboard::Num2 || event.key.code == Keyboard::Numpad2)
         {
-            cout << "2\n";
+            shootBullets(2);
         } else if (event.key.code == Keyboard::Num3 || event.key.code == Keyboard::Numpad3)
         {
-            cout << "3\n";
-        }
-        if (event.key.code == Keyboard::Space)
-        {
-            mMainCharacter->jump(750.0f);
+            shootBullets(3);
         }
     }
 
     void update(float speed)
     {
 
+        int i, j;
+
         mMainCharacter->update(speed);
+
+        for (i = 0; i < mMainCharacterBullets.size(); i++)
+        {
+            MainCharacterBullet *mMainCharacterBullet = mMainCharacterBullets[i];
+            mMainCharacterBullet->update(speed);
+            if ((mMainCharacterBullet->getSprite().getPosition().x) > WindowX)
+            {
+                mMainCharacterBullets.erase(mMainCharacterBullets.begin() + i);
+                delete (mMainCharacterBullet);
+            }
+        }
 
     }
 
