@@ -47,6 +47,29 @@ public:
         }
     }
 
+    int getCharacterLives()
+    {
+        return lives;
+    }
+
+    void decreaseLives()
+    {
+        if (lives > 0)
+        {
+            lives--;
+        }
+    }
+
+    void increaseLives()
+    {
+        lives++;
+    }
+
+    void resetLives()
+    {
+        lives = 3;
+    }
+
     int getLevelsUnlocked()
     {
         return lvlUnlocked;
@@ -120,6 +143,11 @@ public:
         return mGameMap;
     }
 
+    LoadImage *getImageLoader()
+    {
+        return mLoadImage;
+    }
+
 private:
     screen currentScreen;
     Event event;
@@ -131,5 +159,6 @@ private:
     int mLvlSelected;
     int mCharacterLives;
     bool mNewGameLvl;
+    int lives;
 
 };

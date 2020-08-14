@@ -80,6 +80,7 @@ public:
         lvlBtn1 = getLevelBtnColor(lvlBtn1);
         if (lvlBtn1.isClicked(window) && lvlBtn1.getBtnLevel() <= mApp->getLevelsUnlocked())
         {
+            mApp->resetLives();
             mApp->setLvl(1);
             mApp->setCurrentScreen(game);
         }
@@ -89,6 +90,7 @@ public:
         lvlBtn2 = getLevelBtnColor(lvlBtn2);
         if (lvlBtn2.isClicked(window) && lvlBtn2.getBtnLevel() <= mApp->getLevelsUnlocked())
         {
+            mApp->resetLives();
             mApp->setLvl(2);
             mApp->setCurrentScreen(game);
         }
@@ -98,6 +100,7 @@ public:
         lvlBtn3 = getLevelBtnColor(lvlBtn3);
         if (lvlBtn3.isClicked(window) && lvlBtn3.getBtnLevel() <= mApp->getLevelsUnlocked())
         {
+            mApp->resetLives();
             mApp->setLvl(3);
             mApp->setCurrentScreen(game);
         }
@@ -107,6 +110,7 @@ public:
         lvlBtn4 = getLevelBtnColor(lvlBtn4);
         if (lvlBtn4.isClicked(window) && lvlBtn4.getBtnLevel() <= mApp->getLevelsUnlocked())
         {
+            mApp->resetLives();
             mApp->setLvl(4);
             mApp->setCurrentScreen(game);
         }
