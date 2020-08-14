@@ -267,7 +267,7 @@ public:
             if (mEndPortal.getGlobalBounds().intersects(mMainCharacter->getSprite().getGlobalBounds()))
             {
                 mApp->increaseLevelsUnlocked();
-                mApp->setCurrentScreen(choose_lvl);
+                mApp->setCurrentScreen(end_screen);
                 mMainCharacter->jump(100.0f);
             }
         }
