@@ -308,8 +308,6 @@ public:
             int &mStartPos,
             int &mSizeWidth,
             int &mProgressPos,
-            int &mMultiplierFactor,
-            int &mMultiplier,
             int &rageY
     )
     {
@@ -339,12 +337,22 @@ public:
         } else if (mStartPos > 550 && mEndPos <= 800)
         {
             mSide = 8;
+        } else if (mStartPos >= 100 && mEndPos <= 300)
+        {
+            mSide = 9;
+        } else if (mStartPos >= 500 && mEndPos <= 700)
+        {
+            mSide = 10;
+        } else if (mStartPos >= 300)
+        {
+            mSide = 2;
+        } else if (mEndPos <= 500)
+        {
+            mSide = 4;
         } else
         {
-            cout << mStartPos << ' ' << mEndPos << ' ';
-            mSide = 9;
+            mSide = 11;
         }
-        cout << mSide << '\n';
         switch (mSide)
         {
             case 1:
@@ -360,39 +368,43 @@ public:
                 mSizeWidth = (rand() % 15 * rand() % 15) + 120;
                 break;
             case 4:
-                mStartPos = 450 + rand() % 200;
+                mStartPos = 500 - rand() % 200;
                 mSizeWidth = (rand() % 15 * rand() % 15) + 120;
                 break;
             case 5:
-                mStartPos = 250 + rand() % 200;
+                mStartPos = 340 - rand() % 100;
                 mSizeWidth = (rand() % 15 * rand() % 15) + 120;
                 break;
             case 6:
-                mStartPos = 550 + rand() % 100;
+                mStartPos = 550 - rand() % 200;
                 mSizeWidth = (rand() % 15 * rand() % 15) + 120;
                 break;
             case 7:
-                mStartPos = 300 + rand() % 100;
+                mStartPos = 400 + rand() % 100;
                 mSizeWidth = (rand() % 15 * rand() % 15) + 120;
                 break;
             case 8:
-                mStartPos = 450 + rand() % 100;
+                mStartPos = 400 - rand() % 100;
                 mSizeWidth = (rand() % 15 * rand() % 15) + 120;
                 break;
             case 9:
-                mStartPos = 250 + rand() % 200;
+                mStartPos = 300 + rand() % 200;
+                mSizeWidth = (rand() % 15 * rand() % 15) + 120;
+                break;
+            case 10:
+                mStartPos = 500 - rand() % 200;
+                mSizeWidth = (rand() % 15 * rand() % 15) + 120;
+                break;
+            case 11:
+                mStartPos = 100 + rand() % 600;
                 mSizeWidth = (rand() % 15 * rand() % 15) + 120;
                 break;
             default:
                 break;
         }
-        int randNo = rand() % 2;
-        if (randNo == 0)
-        {
-            randNo = -1;
-        }
-        rageY += (rand() % 7 * rand() % 7 + 70) * randNo;
+        rageY += (rand() % 7 * rand() % 7 + 100);
         mProgressPos = rageY;
+        rageY -= rand() % 10 * rand() % 10;
     }
 
     void initializeLvl4()
@@ -404,14 +416,13 @@ public:
         int rageY = 200;
         int posX = 0;
         int posY = 0;
-        for (i = 0; i < 1; i++)
+        for (i = 0; i < 10; i++)
         {
             int mStartPos;
             int mSizeWidth;
             int mProgressPos;
             int mMultiplierFactor;
             int mMultiplier;
-            int extraRageY;
             int mSide;
 
             generateNewPlatform(
@@ -428,20 +439,20 @@ public:
             if (posX == 0 && posY == 0)
             {
                 posX = mStartPos + 20;
-                posY = rageY + 20;
+                posY = mProgressPos + 20;
             }
 
-            extraRageY = rageY;
-            rageY += mMultiplier;
+            cout << "R1: " << rageY << ' ';
             generateExtraNewPlatform(
                     mSide,
                     mStartPos,
                     mSizeWidth,
                     mProgressPos,
-                    mMultiplierFactor,
-                    mMultiplier,
-                    extraRageY
+                    rageY
             );
+            cout << "R2: " << rageY << '\n';
+            rageY -= 100;
+            rageY += rand() % 200;
             addItem(4, mStartPos, mProgressPos, mSizeWidth, 20, 2);
         }
         addStartPos(4, posX, posY);
