@@ -133,7 +133,6 @@ public:
         {
             Sprite mHeart = mApp->getImageLoader()->loadSpriteFromTexture("heart", png);
             mHeart.setPosition(Vector2f(36 * i + 10, 10));
-            mHeart.setColor(Color(235, 27, 16));
             window.draw(mHeart);
         }
 
