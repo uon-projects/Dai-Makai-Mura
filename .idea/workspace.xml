@@ -29,14 +29,17 @@
   <component name="ChangeListManager">
     <list default="true" id="9d525570-9151-426c-ab34-6ec04bf7ed5a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CPP-SFMLTemplate/Debug/CL.read.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-SFMLTemplate/Debug/CL.read.1.tlog" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CPP-SFMLTemplate/Debug/CPP-SFMLTemplate.log" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-SFMLTemplate/Debug/CPP-SFMLTemplate.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CPP-SFMLTemplate/Debug/main.obj" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-SFMLTemplate/Debug/main.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CPP-SFMLTemplate/Debug/vc110.idb" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-SFMLTemplate/Debug/vc110.idb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CPP-SFMLTemplate/Debug/vc110.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-SFMLTemplate/Debug/vc110.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CPP-SFMLTemplate/game/src/header/game/GameMap.h" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-SFMLTemplate/game/src/header/game/GameMap.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CPP-SFMLTemplate/game/src/header/screen/GameScreen.h" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-SFMLTemplate/game/src/header/screen/GameScreen.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Debug/Ghouls n Ghosts.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Debug/Ghouls n Ghosts.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Debug/Ghouls n Ghosts.ilk" beforeDir="false" afterPath="$PROJECT_DIR$/Debug/Ghouls n Ghosts.ilk" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Debug/Ghouls n Ghosts.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Debug/Ghouls n Ghosts.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ghouls n Ghosts.sdf" beforeDir="false" afterPath="$PROJECT_DIR$/Ghouls n Ghosts.sdf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,6 +85,13 @@
       <recent name="C:\Users\teo\Documents\Github\Dai-Makai-Mura\CPP-SFMLTemplate\game\src\res\vector" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -97,7 +107,8 @@
       <workItem from="1597307779330" duration="21963000" />
       <workItem from="1597332376643" duration="41000" />
       <workItem from="1597386798534" duration="27866000" />
-      <workItem from="1597424036168" duration="14849000" />
+      <workItem from="1597424036168" duration="15664000" />
+      <workItem from="1597442503001" duration="2167000" />
     </task>
     <servers />
   </component>
@@ -137,10 +148,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="500" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1366.768@0.0.1366.768" timestamp="1597407439129" />
-    <state x="339" y="172" key="run.anything.popup" timestamp="1597415972574">
+    <state x="339" y="172" key="run.anything.popup" timestamp="1597444020983">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="339" y="172" key="run.anything.popup/0.0.1366.768@0.0.1366.768" timestamp="1597415972574" />
+    <state x="339" y="172" key="run.anything.popup/0.0.1366.768@0.0.1366.768" timestamp="1597444020983" />
     <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1596903223969">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
