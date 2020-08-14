@@ -17,26 +17,26 @@ public:
 
         gameMenuScreenBackground.setFillColor(Color(0, 150, 136));
 
-        exitBtn.setSize(Vector2f(70, 30));
-        exitBtn.setColor(Color(244, 67, 54));
-        exitBtn.setHoverColor(Color(211, 47, 47));
-        exitBtn.setActiveColor(Color(198, 40, 40));
-        exitBtn.setText("Exit");
-        exitBtn.setCharacterSize(18);
+        mBackToMenu.setSize(Vector2f(170, 40));
+        mBackToMenu.setColor(Color(244, 67, 54));
+        mBackToMenu.setHoverColor(Color(211, 47, 47));
+        mBackToMenu.setActiveColor(Color(198, 40, 40));
+        mBackToMenu.setText("Return to Menu");
+        mBackToMenu.setCharacterSize(20);
 
-        playBtn.setSize(Vector2f(90, 40));
-        playBtn.setColor(Color(156, 39, 176));
-        playBtn.setHoverColor(Color(123, 31, 162));
-        playBtn.setActiveColor(Color(106, 27, 154));
-        playBtn.setText("Play");
-        playBtn.setCharacterSize(24);
+        mNavigateToLvlSelector.setSize(Vector2f(160, 40));
+        mNavigateToLvlSelector.setColor(Color(156, 39, 176));
+        mNavigateToLvlSelector.setHoverColor(Color(123, 31, 162));
+        mNavigateToLvlSelector.setActiveColor(Color(106, 27, 154));
+        mNavigateToLvlSelector.setText("Level Selector");
+        mNavigateToLvlSelector.setCharacterSize(20);
 
-        howToPlayBtn.setSize(Vector2f(170, 40));
-        howToPlayBtn.setColor(Color(156, 39, 176));
-        howToPlayBtn.setHoverColor(Color(123, 31, 162));
-        howToPlayBtn.setActiveColor(Color(106, 27, 154));
-        howToPlayBtn.setText("How To Play");
-        howToPlayBtn.setCharacterSize(24);
+        mNextLvl.setSize(Vector2f(130, 40));
+        mNextLvl.setColor(Color(156, 39, 176));
+        mNextLvl.setHoverColor(Color(123, 31, 162));
+        mNextLvl.setActiveColor(Color(106, 27, 154));
+        mNextLvl.setText("Next Level");
+        mNextLvl.setCharacterSize(20);
 
     }
 
@@ -49,47 +49,63 @@ public:
     void draw(RenderWindow &window)
     {
 
+        bool showNextLvl = mApp->getLvlSelected() < mApp->getLevelsUnlocked();
+
         gameMenuScreenBackground.setSize(Vector2f((float) window.getSize().x, (float) window.getSize().y));
-        window.draw(gameMenuScreenBackground);
 
-        exitBtn.setBtnPosition((float) window.getSize().x - 70, (float) 50);
-        if (exitBtn.isClicked(window))
+        mNavigateToLvlSelector.setBtnPosition((float) window.getSize().x / 2, (float) 100);
+        if (showNextLvl)
         {
-            window.close();
+            mNextLvl.setBtnPosition((float) window.getSize().x / 2, (float) 150);
+            mBackToMenu.setBtnPosition((float) window.getSize().x / 2, (float) 200);
+        } else
+        {
+            mBackToMenu.setBtnPosition((float) window.getSize().x / 2, (float) 150);
         }
-        window.draw(exitBtn);
-        exitBtn.drawText(window);
 
-        playBtn.setBtnPosition((float) window.getSize().x / 2, (float) 100);
-        if (playBtn.isClicked(window))
+        if (mNavigateToLvlSelector.isClicked(window))
         {
             this->mApp->setCurrentScreen(choose_lvl);
         }
-        window.draw(playBtn);
-        playBtn.drawText(window);
-
-        howToPlayBtn.setBtnPosition((float) window.getSize().x / 2, (float) 150);
-        if (howToPlayBtn.isClicked(window))
+        if (showNextLvl)
         {
-            this->mApp->setCurrentScreen(how_to_play);
+            if (mNextLvl.isClicked(window))
+            {
+                mApp->setLvl(mApp->getLvlSelected() + 1);
+                this->mApp->setCurrentScreen(game);
+            }
         }
-        window.draw(howToPlayBtn);
-        howToPlayBtn.drawText(window);
+        if (mBackToMenu.isClicked(window))
+        {
+            mApp->setCurrentScreen(menu);
+        }
+
+        window.draw(gameMenuScreenBackground);
+
+        window.draw(mBackToMenu);
+        mBackToMenu.drawText(window);
+        if (showNextLvl)
+        {
+            window.draw(mNavigateToLvlSelector);
+            mNavigateToLvlSelector.drawText(window);
+        }
+        window.draw(mNextLvl);
+        mNextLvl.drawText(window);
 
     }
 
     void setApp(App *app)
     {
         this->mApp = app;
-        exitBtn.setApp(this->mApp);
-        playBtn.setApp(this->mApp);
-        howToPlayBtn.setApp(this->mApp);
+        mBackToMenu.setApp(this->mApp);
+        mNavigateToLvlSelector.setApp(this->mApp);
+        mNextLvl.setApp(this->mApp);
     }
 
 private:
-    MaterialButton exitBtn;
-    MaterialButton playBtn;
-    MaterialButton howToPlayBtn;
+    MaterialButton mBackToMenu;
+    MaterialButton mNavigateToLvlSelector;
+    MaterialButton mNextLvl;
     Font font;
 
 };
