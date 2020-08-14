@@ -74,6 +74,13 @@ public:
 
     int getGameOffsetY()
     {
+        if (mMainCharacterPosition.y > -130)
+        {
+            mGameOffsetY = 500;
+        } else
+        {
+            mGameOffsetY = 500 - mMainCharacterPosition.y - 130;
+        }
         return mGameOffsetY;
     }
 
@@ -94,10 +101,13 @@ public:
 
     void update(float mSpeed, int mLvlSelected, int mGameOffsetY = 0)
     {
+        Vector2f mSpriteLocStart;
+        mSpriteLocStart.x = mMainCharacterSprite.getGlobalBounds().width;
+        mSpriteLocStart.y = mMainCharacterPosition.y;
         Vector2f mSpriteLocSize;
         mSpriteLocSize.x = mMainCharacterSprite.getGlobalBounds().width;
         mSpriteLocSize.y = mMainCharacterSprite.getGlobalBounds().height;
-        int mGroundLevel = mGameMap->getNearestGroundLvl(mLvlSelected, mMainCharacterPosition, mSpriteLocSize, mGameOffsetY);
+        int mGroundLevel = mGameMap->getNearestGroundLvl(mLvlSelected, mSpriteLocStart, mSpriteLocSize, mGameOffsetY);
         mMainCharacterVelocity -= mMainCharacterMass * mMainCharacterGravity * mSpeed;
         mMainCharacterPosition.y -= mMainCharacterVelocity * mSpeed / 1.2;
 

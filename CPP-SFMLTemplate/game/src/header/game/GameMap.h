@@ -136,19 +136,21 @@ public:
         {
             int itemPosSX = mItem->getStartPos().x;
             int itemPosEX = mItem->getSize().x + mItem->getStartPos().x;
-            cout << mItem->getStartPos().y << ' ' <<characterPosY<<'\n';
-            if (mItem->getStartPos().y <= characterPosY && mNearestGroundLvl == -1)
+            int itemPosY = mItem->getStartPos().y;
+            if (itemPosY <= characterPosY && mNearestGroundLvl == -1)
             {
                 if (itemPosSX <= characterPosSX && itemPosEX >= characterPosEX)
                 {
                     mNearestGroundLvl = mItem->getStartPos().y;
                 }
-            } else if (mNearestGroundLvl != -1 && mItem->getStartPos().y <= characterPosY &&
-                       mNearestGroundLvl < mItem->getStartPos().y)
+            } else if(mNearestGroundLvl != -1)
             {
-                if (itemPosSX <= characterPosSX && itemPosEX >= characterPosEX)
+                if (itemPosY <= characterPosY && mNearestGroundLvl < itemPosY)
                 {
-                    mNearestGroundLvl = mItem->getStartPos().y;
+                    if (itemPosSX <= characterPosSX && itemPosEX >= characterPosEX)
+                    {
+                        mNearestGroundLvl = mItem->getStartPos().y;
+                    }
                 }
             }
         }

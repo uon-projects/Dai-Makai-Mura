@@ -1,4 +1,4 @@
-﻿Build started 14/08/2020 14:20:10.
+﻿Build started 14/08/2020 15:34:31.
      1>Project "C:\Users\teo\Documents\Github\Dai-Makai-Mura\CPP-SFMLTemplate\CPP-SFMLTemplate.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
          E:\PC Software\VS2012\VC\bin\CL.exe /c /I"C:\SFML v2.4.0 (Win32 - Visual Studio 2012)\include" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt game\src\main.cpp
@@ -9,12 +9,13 @@
      1>c:\users\teo\documents\github\dai-makai-mura\cpp-sfmltemplate\game\src\header\game\gamemap.h(130): warning C4244: 'initializing' : conversion from 'float' to 'int', possible loss of data
      1>c:\users\teo\documents\github\dai-makai-mura\cpp-sfmltemplate\game\src\header\game\gamemap.h(131): warning C4244: 'initializing' : conversion from 'float' to 'int', possible loss of data
      1>c:\users\teo\documents\github\dai-makai-mura\cpp-sfmltemplate\game\src\header\player\maincharacter.h(54): warning C4244: 'argument' : conversion from 'unsigned int' to 'float', possible loss of data
-     1>c:\users\teo\documents\github\dai-makai-mura\cpp-sfmltemplate\game\src\header\player\maincharacter.h(102): warning C4244: '-=' : conversion from 'double' to 'float', possible loss of data
-     1>c:\users\teo\documents\github\dai-makai-mura\cpp-sfmltemplate\game\src\header\player\maincharacter.h(108): warning C4244: '=' : conversion from 'unsigned int' to 'float', possible loss of data
-     1>c:\users\teo\documents\github\dai-makai-mura\cpp-sfmltemplate\game\src\header\player\maincharacter.h(112): warning C4244: '=' : conversion from 'unsigned int' to 'float', possible loss of data
-     1>c:\users\teo\documents\github\dai-makai-mura\cpp-sfmltemplate\game\src\header\player\maincharacter.h(121): warning C4305: '/=' : truncation from 'double' to 'float'
-     1>c:\users\teo\documents\github\dai-makai-mura\cpp-sfmltemplate\game\src\header\player\maincharacter.h(125): warning C4244: '=' : conversion from 'unsigned int' to 'float', possible loss of data
-     1>c:\users\teo\documents\github\dai-makai-mura\cpp-sfmltemplate\game\src\header\player\maincharacter.h(129): warning C4244: '=' : conversion from 'unsigned int' to 'float', possible loss of data
+     1>c:\users\teo\documents\github\dai-makai-mura\cpp-sfmltemplate\game\src\header\player\maincharacter.h(83): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+     1>c:\users\teo\documents\github\dai-makai-mura\cpp-sfmltemplate\game\src\header\player\maincharacter.h(113): warning C4244: '-=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\teo\documents\github\dai-makai-mura\cpp-sfmltemplate\game\src\header\player\maincharacter.h(119): warning C4244: '=' : conversion from 'unsigned int' to 'float', possible loss of data
+     1>c:\users\teo\documents\github\dai-makai-mura\cpp-sfmltemplate\game\src\header\player\maincharacter.h(123): warning C4244: '=' : conversion from 'unsigned int' to 'float', possible loss of data
+     1>c:\users\teo\documents\github\dai-makai-mura\cpp-sfmltemplate\game\src\header\player\maincharacter.h(132): warning C4305: '/=' : truncation from 'double' to 'float'
+     1>c:\users\teo\documents\github\dai-makai-mura\cpp-sfmltemplate\game\src\header\player\maincharacter.h(136): warning C4244: '=' : conversion from 'unsigned int' to 'float', possible loss of data
+     1>c:\users\teo\documents\github\dai-makai-mura\cpp-sfmltemplate\game\src\header\player\maincharacter.h(140): warning C4244: '=' : conversion from 'unsigned int' to 'float', possible loss of data
      1>c:\users\teo\documents\github\dai-makai-mura\cpp-sfmltemplate\library\src\header\materialbutton.h(86): warning C4244: 'argument' : conversion from 'const float' to 'int', possible loss of data
      1>c:\users\teo\documents\github\dai-makai-mura\cpp-sfmltemplate\library\src\header\levelbutton.h(83): warning C4244: 'argument' : conversion from 'const float' to 'int', possible loss of data
      1>c:\users\teo\documents\github\dai-makai-mura\cpp-sfmltemplate\game\src\header\player\maincharacterbullet.h(50): warning C4305: '*=' : truncation from 'double' to 'float'
@@ -34,4 +35,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:03.29
+Time Elapsed 00:00:03.42

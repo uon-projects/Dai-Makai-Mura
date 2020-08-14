@@ -72,14 +72,6 @@ public:
 
     int getGameOffsetY()
     {
-//        cout << mMainCharacter->getCharacterPosition().y << '\n';
-//        if (mMainCharacter->getCharacterPosition().y > 230)
-//        {
-//            mGameOffsetY = 500;
-//        } else
-//        {
-//            mGameOffsetY = 230 - mMainCharacter->getCharacterPosition().y;
-//        }
         return mMainCharacter->getGameOffsetY();
     }
 
