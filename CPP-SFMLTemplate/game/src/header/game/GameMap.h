@@ -34,6 +34,8 @@ public:
         initializeNPCs();
         initializeLvl1();
         initializeLvl2();
+        initializeLvl3();
+        initializeLvl4();
     }
 
     void addStartPos(int mLvl, int mStartPosX, int mStartPosY)
@@ -169,6 +171,7 @@ public:
     {
         addStartPos(1, 100, 50);
         addStartPos(2, 600, 50);
+        addStartPos(3, 225, 80);
     }
 
     void initializeNPCs()
@@ -181,6 +184,15 @@ public:
         //lvl 2
         addNPCStartPos(2, 70, 50, 300, true);
         addNPCStartPos(2, 675, 320, 100, false);
+
+        //lvl 3
+        addNPCStartPos(3, 600, 190, 100, true);
+        addNPCStartPos(3, 300, 360, 120, false);
+        addNPCStartPos(3, 70, 480, 120, true);
+        addNPCStartPos(3, 70, 640, 300, true);
+        addNPCStartPos(3, 370, 640, 300, false);
+        addNPCStartPos(3, 240, 800, 60, false);
+        addNPCStartPos(3, 260, 800, 60, true);
     }
 
     void initializeLvl1()
@@ -199,6 +211,48 @@ public:
     }
 
     void initializeLvl2()
+    {
+
+        //blocks
+        addItem(2, 0, 0, 800, 50, 0);
+        addItem(2, 250, 150, 100, 20, 0);
+        addItem(2, 375, 300, 425, 20, 0);
+        addItem(2, 375, 450, 75, 20, 0);
+        addItem(2, 525, 450, 275, 20, 0);
+        addItem(2, 100, 550, 250, 20, 0);
+        addItem(2, 300, 700, 400, 20, 0);
+        addItem(2, 450, 800, 100, 20, 0);
+
+        //portals
+        addItem(2, 475, 1050, 50, 20, 1);
+
+    }
+
+    void initializeLvl3()
+    {
+
+        //blocks
+        addItem(3, 50, 60, 500, 20, 0);
+        addItem(3, 600, 170, 100, 20, 0);
+        addItem(3, 450, 280, 100, 20, 0);
+        addItem(3, 600, 390, 100, 20, 0);
+        addItem(3, 450, 500, 100, 20, 0);
+        addItem(3, 600, 610, 100, 20, 0);
+        addItem(3, 450, 720, 100, 20, 0);
+        addItem(3, 150, 340, 200, 20, 0);
+        addItem(3, 50, 460, 175, 20, 0);
+        addItem(3, 0, 620, 400, 20, 0);
+        addItem(3, 200, 780, 125, 20, 0);
+        addItem(3, 400, 900, 80, 20, 0);
+        addItem(3, 300, 1020, 120, 20, 0);
+        addItem(3, 50, 1100, 150, 20, 0);
+
+        //portals
+        addItem(3, 50, 1120, 20, 100, 1);
+
+    }
+
+    void initializeLvl4()
     {
 
         //blocks
