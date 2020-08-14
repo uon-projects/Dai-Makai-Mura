@@ -20,6 +20,7 @@ private:
     int mInitialPosY;
     bool isRightFace;
     App *mApp;
+    float mScaleSprite;
 
 public:
     MainCharacterBullet(App *app)
@@ -35,30 +36,37 @@ public:
     void init(Vector2f mPosition, int mType, bool isRightFace)
     {
         mEnemyBulletSpeed = 4.0f;
-        mPosition.y -= 50;
-        mInitialPosY = mPosition.y;
-        mBulletPosition = mPosition;
         mClassType = mType;
         this->isRightFace = isRightFace;
+        mScaleSprite = 0.3f;
 
         switch (mClassType)
         {
             case 1:
                 mLifes = 1;
                 mEnemyBulletSpeed *= 1.5;
+                mPosition.y -= 53;
+                mPosition.x = isRightFace ? (mPosition.x + 15) : (mPosition.x - 15);
+                mScaleSprite = 0.3f;
+                mBulletSprite = mApp->getBullet1Sprite();
                 break;
             case 2:
                 mLifes = 2;
                 mEnemyBulletSpeed *= 0.8;
+                mPosition.y -= 55;
+                mPosition.x = isRightFace ? (mPosition.x + 15) : (mPosition.x - 15);
+                mScaleSprite = 0.4f;
+                mBulletSprite = mApp->getBullet2Sprite();
                 break;
             default:
                 return;
         }
 
-        mBulletSprite = mApp->getFireSprite();
+        mInitialPosY = mPosition.y;
+        mBulletPosition = mPosition;
         mBulletSprite.setPosition(mBulletPosition);
-        isRightFace ? (mBulletSprite.setScale(Vector2f(0.6, 0.6))) : (mBulletSprite.setScale(Vector2f(0.6, -0.6)));
-        mBulletSprite.setRotation(-90);
+        isRightFace ? (mBulletSprite.setScale(Vector2f(mScaleSprite, mScaleSprite))) : (mBulletSprite.setScale(Vector2f(-mScaleSprite, mScaleSprite)));
+        mBulletSprite.setRotation(0);
     }
 
     void update()

@@ -169,8 +169,9 @@ public:
     void update(float speed)
     {
 
-        int i, j;
+        int i, j, mGameOffsetY;
         RectangleShape mEndPortal;
+        mGameOffsetY = mMainCharacter->getGameOffsetY();
 
         mMainCharacter->update(speed, mApp->getLvlSelected());
 
@@ -178,7 +179,7 @@ public:
         {
             MainCharacterBullet *mMainCharacterBullet = mMainCharacterBullets[i];
             mMainCharacterBullet->update();
-            if ((mMainCharacterBullet->getSprite(mApp->getGameOffsetY()).getPosition().x) > WindowX)
+            if ((mMainCharacterBullet->getSprite(mGameOffsetY).getPosition().x) > WindowX)
             {
                 mMainCharacterBullets.erase(mMainCharacterBullets.begin() + i);
                 delete (mMainCharacterBullet);
@@ -223,8 +224,8 @@ public:
         vector < ItemModel * > mEndPortals = mGameMap->getEndPortalByLvl(mApp->getLvlSelected());
         for (ItemModel *mEndPortalItem : mEndPortals)
         {
-            mEndPortal.setPosition(
-                    Vector2f((float) mEndPortalItem->getStartPos().x, (float) mEndPortalItem->getStartPos().y));
+            mEndPortal.setPosition(Vector2f((float) mEndPortalItem->getStartPos().x,
+                                            (float) mEndPortalItem->getStartPos().y + mGameOffsetY));
             mEndPortal.setSize(Vector2f((float) mEndPortalItem->getSize().x, (float) mEndPortalItem->getSize().y));
             if (mEndPortal.getGlobalBounds().intersects(mMainCharacter->getSprite().getGlobalBounds()))
             {
