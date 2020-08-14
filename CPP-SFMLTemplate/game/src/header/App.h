@@ -17,9 +17,10 @@ class App
 public:
     App()
     {
+        mLoadImage = new LoadImage();
         currentScreen = splash;
         lvlUnlocked = 1;
-        mCharacter = LoadImage().loadSpriteFromTexture("zeoflow_logo", png);
+        mCharacter = mLoadImage->loadSpriteFromTexture("zeoflow_logo", png);
         mMainCharacter = new MainCharacter;
         mGameMap = new GameMap;
     }
@@ -82,6 +83,11 @@ public:
         return mCharacter;
     }
 
+    Sprite getFireSprite()
+    {
+        return mLoadImage->loadSpriteFromTexture("fire1", png);
+    }
+
     MainCharacter *getMainCharacter()
     {
         return mMainCharacter;
@@ -99,6 +105,7 @@ private:
     Sprite mCharacter;
     MainCharacter *mMainCharacter;
     GameMap *mGameMap;
+    LoadImage *mLoadImage;
     int mLvlSelected;
     int mCharacterLives;
 

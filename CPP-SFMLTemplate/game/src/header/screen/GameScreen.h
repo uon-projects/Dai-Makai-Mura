@@ -9,7 +9,6 @@
 #include "../npc/NPCharacter.h"
 #include "../player/MainCharacter.h"
 #include "../game/GameMap.h"
-#include "../Collision.h"
 
 using namespace std;
 using namespace sf;
@@ -99,7 +98,7 @@ public:
     void shootBullets(int type)
     {
 
-        MainCharacterBullet *mMainCharacterBullet = new MainCharacterBullet();
+        MainCharacterBullet *mMainCharacterBullet = new MainCharacterBullet(mApp);
         mMainCharacterBullet->init(mMainCharacter->getCharacterPosition(), type, mMainCharacter->faceRight());
         mMainCharacterBullets.push_back(mMainCharacterBullet);
 
@@ -136,7 +135,7 @@ public:
             shootBullets(2);
         } else if (event.key.code == Keyboard::Num3 || event.key.code == Keyboard::Numpad3)
         {
-            shootBullets(3);
+            shootBullets(1);
         }
     }
 
