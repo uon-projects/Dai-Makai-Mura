@@ -112,8 +112,7 @@ public:
         vector < ItemModel * > lvlItems;
         for (ItemModel *mItem : mItems)
         {
-            // TODO remove type 2
-            if (mItem->getLvl() == mLvl && (mItem->getType() == 0 || mItem->getType() == 2))
+            if (mItem->getLvl() == mLvl && (mItem->getType() == 0))
             {
                 lvlItems.push_back(mItem);
             }
@@ -264,8 +263,11 @@ public:
     )
     {
 
-        mSide = rand() % 64 / 16;
 
+        if (mSide == -1)
+        {
+            mSide = rand() % 64 / 16;
+        }
         switch (mSide)
         {
             case 0:
@@ -416,49 +418,92 @@ public:
         int rageY = 200;
         int posX = 0;
         int posY = 0;
-        for (i = 0; i < 10; i++)
+        int mRecommendedSide = -1;
+        for (i = 0; i < 4; i++)
         {
-            int mStartPos;
-            int mSizeWidth;
-            int mProgressPos;
+            int mStartPos1;
+            int mSizeWidth1;
+            int mStartPos2;
+            int mSizeWidth2;
+            int mProgressPos1;
+            int mProgressPos2;
             int mMultiplierFactor;
             int mMultiplier;
-            int mSide;
+            int mSide1;
+            int mSide2;
+            int mPrevPosY;
+            int mSpawnNPC;
 
+            mSide1 = mRecommendedSide;
+            mRecommendedSide = -1;
             generateNewPlatform(
-                    mSide,
-                    mStartPos,
-                    mSizeWidth,
-                    mProgressPos,
+                    mSide1,
+                    mStartPos1,
+                    mSizeWidth1,
+                    mProgressPos1,
                     mMultiplierFactor,
                     mMultiplier,
                     rageY
             );
-            addItem(4, mStartPos, mProgressPos, mSizeWidth, 20, 0);
+            addItem(4, mStartPos1, mProgressPos1, mSizeWidth1, 20, 0);
+            mSpawnNPC = rand() % 10;
+            if (mSpawnNPC < 4 && mProgressPos1 > 500)
+            {
+                addNPCStartPos(4, mStartPos1 + 10, mProgressPos1 + 20, mSizeWidth1 - 20, true);
+            }
 
             if (posX == 0 && posY == 0)
             {
-                posX = mStartPos + 20;
-                posY = mProgressPos + 20;
+                posX = mStartPos1 + 20;
+                posY = mProgressPos1 + 20;
+                addStartPos(4, posX, posY);
             }
 
-            cout << "R1: " << rageY << ' ';
+            mSide2 = mSide1;
             generateExtraNewPlatform(
-                    mSide,
-                    mStartPos,
-                    mSizeWidth,
-                    mProgressPos,
+                    mSide2,
+                    mStartPos2,
+                    mSizeWidth2,
+                    mProgressPos2,
                     rageY
             );
-            cout << "R2: " << rageY << '\n';
-            rageY -= 100;
-            rageY += rand() % 200;
-            addItem(4, mStartPos, mProgressPos, mSizeWidth, 20, 2);
-        }
-        addStartPos(4, posX, posY);
+            addItem(4, mStartPos2, mProgressPos2, mSizeWidth2, 20, 0);
+            mSpawnNPC = rand() % 10;
+            if (mSpawnNPC < 4 && mProgressPos2 > 500)
+            {
+                addNPCStartPos(4, mStartPos2 + 10, mProgressPos2 + 20, mSizeWidth2 - 20, true);
+            }
 
-        //portals
-        addItem(2, 475, 1050, 50, 20, 1);
+            mPrevPosY = rageY;
+            rageY -= 40;
+            rageY += rand() % 200;
+            if ((abs)(rageY - mPrevPosY) <= 40)
+            {
+                if (mStartPos2 >= 400 || mStartPos2 + mSizeWidth2 > 700)
+                {
+                    mRecommendedSide = 0;
+                } else if (mStartPos1 < 100 || mStartPos1 + mSizeWidth1 <= 400)
+                {
+                    mRecommendedSide = 3;
+                } else
+                {
+                    mRecommendedSide = rand() % 2 + 1;
+                }
+            }
+
+            if (i == 3)
+            {
+                if (mProgressPos1 > mProgressPos2)
+                {
+                    //portal
+                    addItem(4, mStartPos1, mProgressPos1 + 170, mSizeWidth1, 10, 1);
+                } else
+                {
+                    //portal
+                    addItem(4, mStartPos2, mProgressPos2 + 170, mSizeWidth2, 10, 1);
+                }
+            }
+        }
 
     }
 

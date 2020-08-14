@@ -86,13 +86,7 @@ public:
         vector < ItemModel * > mLvlItems = mGameMap->getItemsByLvl(mApp->getLvlSelected());
         for (ItemModel *mItem : mLvlItems)
         {
-            if (mItem->getType() == 0)
-            {
-                item.setFillColor(Color(168, 12, 147, 150));
-            } else if (mItem->getType() == 2)
-            {
-                item.setFillColor(Color(168, 12, 147, 100));
-            }
+            item.setFillColor(Color(168, 12, 147, 150));
             item.setPosition(Vector2f((float) mItem->getStartPos().x, (float) mItem->getStartPos().y + mGameOffsetY));
             item.setSize(Vector2f((float) mItem->getSize().x, (float) mItem->getSize().y));
             window.draw(item);
