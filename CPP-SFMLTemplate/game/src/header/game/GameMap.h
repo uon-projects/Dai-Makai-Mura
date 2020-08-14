@@ -33,6 +33,7 @@ public:
         initializeStartPos();
         initializeNPCs();
         initializeLvl1();
+        initializeLvl2();
     }
 
     void addStartPos(int mLvl, int mStartPosX, int mStartPosY)
@@ -47,11 +48,6 @@ public:
         mCharacterStartPos.push_back(mItemModel);
     }
 
-    void initializeStartPos()
-    {
-        addStartPos(1, 100, 50);
-    }
-
     void addNPCStartPos(int mLvl, int mStartPosX, int mStartPosY, int mArea, bool mFaceRight)
     {
         ItemModel *mItemModel;
@@ -64,13 +60,6 @@ public:
                 mFaceRight
         );
         mNPCStartPos.push_back(mItemModel);
-    }
-
-    void initializeNPCs()
-    {
-        addNPCStartPos(1, 400, 50, 200, true);
-        addNPCStartPos(1, 620, 500, 240, false);
-        addNPCStartPos(1, 430, 500, 140, false);
     }
 
     vector<ItemModel *> getNPCByLvl(int mLvl)
@@ -114,21 +103,6 @@ public:
                 mType
         );
         mItems.push_back(mItemModel);
-    }
-
-    void initializeLvl1()
-    {
-
-        //blocks
-        addItem(1, 0, 0, 800, 50, 0);
-        addItem(1, 250, 150, 100, 20, 0);
-        addItem(1, 375, 250, 100, 20, 0);
-        addItem(1, 250, 350, 100, 20, 0);
-        addItem(1, 375, 450, 425, 20, 0);
-
-        //portals
-        addItem(1, 790, 470, 10, 120, 1);
-
     }
 
     vector<ItemModel *> getItemsByLvl(int mLvl)
@@ -189,6 +163,57 @@ public:
             }
         }
         return mNearestGroundLvl;
+    }
+
+    void initializeStartPos()
+    {
+        addStartPos(1, 100, 50);
+        addStartPos(2, 600, 50);
+    }
+
+    void initializeNPCs()
+    {
+        //lvl 1
+        addNPCStartPos(1, 400, 50, 200, true);
+        addNPCStartPos(1, 620, 500, 240, false);
+        addNPCStartPos(1, 430, 500, 140, false);
+
+        //lvl 2
+        addNPCStartPos(2, 70, 50, 300, true);
+        addNPCStartPos(2, 675, 320, 100, false);
+    }
+
+    void initializeLvl1()
+    {
+
+        //blocks
+        addItem(1, 0, 0, 800, 50, 0);
+        addItem(1, 250, 150, 100, 20, 0);
+        addItem(1, 375, 250, 100, 20, 0);
+        addItem(1, 250, 350, 100, 20, 0);
+        addItem(1, 375, 450, 425, 20, 0);
+
+        //portals
+        addItem(1, 790, 470, 10, 120, 1);
+
+    }
+
+    void initializeLvl2()
+    {
+
+        //blocks
+        addItem(2, 0, 0, 800, 50, 0);
+        addItem(2, 250, 150, 100, 20, 0);
+        addItem(2, 375, 300, 425, 20, 0);
+        addItem(2, 375, 450, 75, 20, 0);
+        addItem(2, 525, 450, 275, 20, 0);
+        addItem(2, 100, 550, 250, 20, 0);
+        addItem(2, 300, 700, 400, 20, 0);
+        addItem(2, 450, 800, 100, 20, 0);
+
+        //portals
+        addItem(2, 475, 1050, 50, 20, 1);
+
     }
 
 };

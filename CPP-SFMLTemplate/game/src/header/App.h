@@ -19,7 +19,7 @@ public:
     {
         mLoadImage = new LoadImage();
         currentScreen = splash;
-        lvlUnlocked = 1;
+        lvlUnlocked = 4;
         mCharacter = mLoadImage->loadSpriteFromTexture("zeoflow_logo", png);
         mMainCharacter = new MainCharacter;
         mGameMap = new GameMap;

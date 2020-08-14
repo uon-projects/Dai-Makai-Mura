@@ -1,6 +1,7 @@
 #include <fstream>
 #include <string>
 #include <iostream>
+#include <stdlib.h>
 #include <vector>
 #include "../player/MainCharacterBullet.h"
 #include <SFML/Graphics.hpp>
@@ -25,14 +26,24 @@ private:
     vector<NPCharacter *> mNPCharacters;
     int mColorEndPortal;
     bool mColorAscending;
+    int mBgRI, mBgGI, mBgBI;
+    int mBgRE, mBgGE, mBgBE;
+    int mBackgroundR, mBackgroundG, mBackgroundB;
 
 public:
     GameScreen()
     {
 
-        gameMenuScreenBackground.setFillColor(Color(21, 105, 232));
         mColorEndPortal = 77;
         mColorAscending = true;
+
+        mBgRI = 32;
+        mBgGI = 165;
+        mBgBI = 227;
+
+        mBgRE = 0;
+        mBgGE = 0;
+        mBgBE = 0;
 
     }
 
@@ -42,8 +53,25 @@ public:
     }
 
 public:
+    int getPercentColor(int mMaxHeight, int mColorMin, int mColorMax)
+    {
+        int mCharacterProgress = mMainCharacter->getGameHeight() * (-1);
+        int mPercentProgress = (int) mCharacterProgress * 100 / mMaxHeight;
+        int mColorArea = (abs)(mColorMin - mColorMax);
+        if (mPercentProgress > 100)
+        {
+            mPercentProgress = 100;
+        }
+        int mColor = (100 - mPercentProgress) * mColorArea / 100;
+        return mColor;
+    }
+
     void draw(RenderWindow &window)
     {
+
+        mBackgroundR = getPercentColor(1000, mBgRI, mBgRE);
+        mBackgroundG = getPercentColor(1400, mBgGI, mBgGE);
+        mBackgroundB = getPercentColor(2000, mBgBI, mBgBE);
 
         int i, j, mGameOffsetY;
         RectangleShape item;
@@ -51,13 +79,14 @@ public:
 
         mGameOffsetY = mApp->getGameOffsetY();
 
+        gameMenuScreenBackground.setFillColor(Color(mBackgroundR, mBackgroundG, mBackgroundB));
         gameMenuScreenBackground.setSize(Vector2f((float) window.getSize().x, (float) window.getSize().y));
         window.draw(gameMenuScreenBackground);
 
         vector < ItemModel * > mLvlItems = mGameMap->getItemsByLvl(mApp->getLvlSelected());
         for (ItemModel *mItem : mLvlItems)
         {
-            item.setFillColor(Color(6, 209, 50));
+            item.setFillColor(Color(168, 12, 147, 150));
             item.setPosition(Vector2f((float) mItem->getStartPos().x, (float) mItem->getStartPos().y + mGameOffsetY));
             item.setSize(Vector2f((float) mItem->getSize().x, (float) mItem->getSize().y));
             window.draw(item);
@@ -249,6 +278,11 @@ public:
     {
         mColorEndPortal = 77;
         mColorAscending = true;
+
+        mBackgroundR = mBgRI;
+        mBackgroundG = mBgGI;
+        mBackgroundB = mBgBI;
+
         initNPCs();
     }
 
