@@ -42,9 +42,28 @@ public:
         currentScreen = screenChose;
         if (screenChose == game)
         {
+            lives = 3;
             mNewGameLvl = true;
             mMainCharacter->reset(mLvlSelected);
         }
+    }
+
+    int getCharacterLives()
+    {
+        return lvlUnlocked;
+    }
+
+    void decreaseLives()
+    {
+        if (lives > 0)
+        {
+            lives--;
+        }
+    }
+
+    void increaseLives()
+    {
+        lives++;
     }
 
     int getLevelsUnlocked()
@@ -131,5 +150,6 @@ private:
     int mLvlSelected;
     int mCharacterLives;
     bool mNewGameLvl;
+    int lives;
 
 };
