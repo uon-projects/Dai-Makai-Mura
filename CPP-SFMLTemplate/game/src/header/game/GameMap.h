@@ -47,7 +47,7 @@ public:
 
     void initializeStartPos()
     {
-        addStartPos(1, 50, 50);
+        addStartPos(1, 100, 50);
     }
 
     Vector2f getCharacterStartPos(int mLvl)
@@ -125,39 +125,32 @@ public:
 
     int getNearestGroundLvl(int mLvl, Vector2f mSpriteLocStart, Vector2f mSpriteLocSize, int mGameOffsetY = 0)
     {
-        int mNearestGroundLvl = -1;
+        int mNearestGroundLvl = 0;
+
         int characterPosY = mSpriteLocStart.y;
-        int characterPosSX = mSpriteLocStart.x + 70;
-        int characterPosEX = mSpriteLocStart.x + mSpriteLocSize.x - 70;
+        int characterPosSX = mSpriteLocStart.x + 50;
+        int characterPosEX = mSpriteLocStart.x + mSpriteLocSize.x - 50;
 
         vector < ItemModel * > mLvlItems = getItemsByLvl(mLvl);
-
         for (ItemModel *mItem : mLvlItems)
         {
-            int itemPosSX = mItem->getStartPos().x;
-            int itemPosEX = mItem->getSize().x + mItem->getStartPos().x;
+            int itemPosSX = mItem->getStartPos().x - 30;
+            int itemPosEX = mItem->getSize().x + mItem->getStartPos().x + 30;
             int itemPosY = mItem->getStartPos().y;
-            if (itemPosY <= characterPosY && mNearestGroundLvl == -1)
+            if (itemPosY >= characterPosY)
             {
-                if (itemPosSX <= characterPosSX && itemPosEX >= characterPosEX)
+                if (characterPosSX >= itemPosSX && characterPosEX <= itemPosEX)
                 {
-                    mNearestGroundLvl = mItem->getStartPos().y;
-                }
-            } else if(mNearestGroundLvl != -1)
-            {
-                if (itemPosY <= characterPosY && mNearestGroundLvl < itemPosY)
-                {
-                    if (itemPosSX <= characterPosSX && itemPosEX >= characterPosEX)
+                    if (mNearestGroundLvl == 0)
                     {
-                        mNearestGroundLvl = mItem->getStartPos().y;
+                        mNearestGroundLvl = itemPosY;
+                    } else if (mNearestGroundLvl >= characterPosY)
+                    {
+                        mNearestGroundLvl = itemPosY;
                     }
                 }
             }
         }
-        cout << characterPosY << ' ';
-//        cout<<mNearestGroundLvl;
-        cout << '\n';
-//        system("pause");
         return mNearestGroundLvl;
     }
 

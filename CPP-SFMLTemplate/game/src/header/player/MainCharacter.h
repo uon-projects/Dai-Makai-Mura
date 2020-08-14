@@ -102,7 +102,7 @@ public:
     void update(float mSpeed, int mLvlSelected, int mGameOffsetY = 0)
     {
         Vector2f mSpriteLocStart;
-        mSpriteLocStart.x = mMainCharacterSprite.getGlobalBounds().width;
+        mSpriteLocStart.x = mMainCharacterSprite.getGlobalBounds().left;
         mSpriteLocStart.y = mMainCharacterPosition.y;
         Vector2f mSpriteLocSize;
         mSpriteLocSize.x = mMainCharacterSprite.getGlobalBounds().width;

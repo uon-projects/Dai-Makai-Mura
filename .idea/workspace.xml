@@ -33,7 +33,6 @@
       <change beforePath="$PROJECT_DIR$/CPP-SFMLTemplate/Debug/main.obj" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-SFMLTemplate/Debug/main.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CPP-SFMLTemplate/Debug/vc110.idb" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-SFMLTemplate/Debug/vc110.idb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CPP-SFMLTemplate/Debug/vc110.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-SFMLTemplate/Debug/vc110.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CPP-SFMLTemplate/game/src/header/App.h" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-SFMLTemplate/game/src/header/App.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CPP-SFMLTemplate/game/src/header/game/GameMap.h" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-SFMLTemplate/game/src/header/game/GameMap.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CPP-SFMLTemplate/game/src/header/player/MainCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-SFMLTemplate/game/src/header/player/MainCharacter.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Debug/Ghouls n Ghosts.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Debug/Ghouls n Ghosts.exe" afterDir="false" />
@@ -98,7 +97,7 @@
       <workItem from="1597238968605" duration="5043000" />
       <workItem from="1597307779330" duration="21963000" />
       <workItem from="1597332376643" duration="41000" />
-      <workItem from="1597386798534" duration="16111000" />
+      <workItem from="1597386798534" duration="17965000" />
     </task>
     <servers />
   </component>
