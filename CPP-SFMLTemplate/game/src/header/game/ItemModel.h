@@ -12,15 +12,17 @@ class ItemModel
 
 private:
     int mLvl;
+    int mType;
     Vector2i mStartPos;
     Vector2i mSize;
 
 public:
-    ItemModel(int mLvl, Vector2i mStartPos, Vector2i mSize)
+    ItemModel(int mLvl, Vector2i mStartPos, Vector2i mSize, int mType)
     {
         this->mLvl = mLvl;
         this->mStartPos = mStartPos;
         this->mSize = mSize;
+        this->mType = mType;
     }
 
     ~ItemModel()
@@ -31,6 +33,11 @@ public:
     int getLvl()
     {
         return mLvl;
+    }
+
+    int getType()
+    {
+        return mType;
     }
 
     Vector2i getStartPos()
