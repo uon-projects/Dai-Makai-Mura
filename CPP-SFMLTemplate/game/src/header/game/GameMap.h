@@ -15,6 +15,7 @@ class GameMap
 private:
     vector<ItemModel *> mItems;
     vector<ItemModel *> mCharacterStartPos;
+    vector<ItemModel *> mNPCStartPos;
 
 public:
     GameMap()
@@ -30,6 +31,7 @@ public:
     void initialize()
     {
         initializeStartPos();
+        initializeNPCs();
         initializeLvl1();
     }
 
@@ -48,6 +50,41 @@ public:
     void initializeStartPos()
     {
         addStartPos(1, 100, 50);
+    }
+
+    void addNPCStartPos(int mLvl, int mStartPosX, int mStartPosY, int mArea, bool mFaceRight)
+    {
+        ItemModel *mItemModel;
+
+        mStartPosY *= -1;
+        mItemModel = new ItemModel(
+                mLvl,
+                Vector2i(mStartPosX, mStartPosY),
+                mArea,
+                mFaceRight
+        );
+        mNPCStartPos.push_back(mItemModel);
+    }
+
+    void initializeNPCs()
+    {
+        addNPCStartPos(1, 400, 50, 200, true);
+        addNPCStartPos(1, 620, 500, 240, false);
+        addNPCStartPos(1, 430, 500, 140, false);
+    }
+
+    vector<ItemModel *> getNPCByLvl(int mLvl)
+    {
+        vector < ItemModel * > npcList;
+        for (ItemModel *mNPC : mNPCStartPos)
+        {
+            if (mNPC->getLvl() == mLvl)
+            {
+                npcList.push_back(mNPC);
+            }
+        }
+
+        return npcList;
     }
 
     Vector2f getCharacterStartPos(int mLvl)

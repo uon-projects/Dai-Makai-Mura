@@ -116,7 +116,7 @@ public:
         return mMainCharacterPosition.y;
     }
 
-    void update(float mSpeed, int mLvlSelected, int mGameOffsetY = 0)
+    void update(float mSpeed, int mLvlSelected)
     {
         Vector2f mSpriteLocStart;
         mSpriteLocStart.x = mMainCharacterSprite.getGlobalBounds().left;

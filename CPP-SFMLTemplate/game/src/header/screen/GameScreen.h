@@ -104,11 +104,19 @@ public:
 
     void initNPCs()
     {
+        vector < ItemModel * > mNPCs = mGameMap->getNPCByLvl(mApp->getLvlSelected());
         NPCharacter *mNPCharacter;
-        mNPCharacter = new NPCharacter(mApp->getGameMap(), true, 50, 150, 300);
-        mNPCharacters.push_back(mNPCharacter);
-        mNPCharacter = new NPCharacter(mApp->getGameMap(), false, 500, 150, 300);
-        mNPCharacters.push_back(mNPCharacter);
+        for (ItemModel *mNPC : mNPCs)
+        {
+            mNPCharacter = new NPCharacter(
+                    mApp->getGameMap(),
+                    mNPC->isFacingRight(),
+                    mNPC->getStartPos().x,
+                    mNPC->getStartPos().y,
+                    mNPC->getArea()
+            );
+            mNPCharacters.push_back(mNPCharacter);
+        }
     }
 
     void setApp(App *app)
@@ -188,7 +196,7 @@ public:
 
         for (NPCharacter *mNPCharacter : mNPCharacters)
         {
-            mNPCharacter->update(speed);
+            mNPCharacter->update(speed, mApp->getLvlSelected(), mMainCharacter->getGameOffsetY());
             if (mNPCharacter->getSprite().getGlobalBounds().intersects(mMainCharacter->getSprite().getGlobalBounds()))
             {
                 mMainCharacter->jump(500.0f);
@@ -241,7 +249,7 @@ public:
     {
         mColorEndPortal = 77;
         mColorAscending = true;
-//        initNPCs();
+        initNPCs();
     }
 
 };
