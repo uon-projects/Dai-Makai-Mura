@@ -31,14 +31,15 @@ public:
         initializeLvl1();
     }
 
-    void addItem(int mLvl, int mStartPosX, int mStartPosY, int mSizeW, int mSizeH)
+    void addItem(int mLvl, int mStartPosX, int mStartPosY, int mSizeW, int mSizeH, int mType)
     {
         ItemModel *mItemModel;
 
         mItemModel = new ItemModel(
                 mLvl,
                 Vector2i(mStartPosX, mStartPosY),
-                Vector2i(mSizeW, mSizeH)
+                Vector2i(mSizeW, mSizeH),
+                mType
         );
         mItems.push_back(mItemModel);
     }
@@ -46,10 +47,11 @@ public:
     void initializeLvl1()
     {
 
-        addItem(1, 0, 450, 800, 50);
-        addItem(1, 0, 300, 550, 20);
-        addItem(1, 550, 225, 70, 20);
-        addItem(1, 650, 150, 150, 20);
+        addItem(1, 0, 450, 800, 500, 0);
+        addItem(1, 0, 300, 550, 20, 0);
+        addItem(1, 565, 225, 70, 20, 0);
+        addItem(1, 650, 150, 150, 20, 0);
+        addItem(1, 790, 30, 10, 120, 1);
 
     }
 
@@ -59,13 +61,28 @@ public:
 
         for (ItemModel *mItem : mItems)
         {
-            if (mItem->getLvl() == mLvl)
+            if (mItem->getLvl() == mLvl && mItem->getType() == 0)
             {
                 lvlItems.push_back(mItem);
             }
         }
 
         return lvlItems;
+    }
+
+    vector<ItemModel *> getEndPortalByLvl(int mLvl)
+    {
+        vector < ItemModel * > endPortals;
+
+        for (ItemModel *mItem : mItems)
+        {
+            if (mItem->getLvl() == mLvl && mItem->getType() == 1)
+            {
+                endPortals.push_back(mItem);
+            }
+        }
+
+        return endPortals;
     }
 
     int getNearestGroundLvl(int mLvl, Vector2f mSpriteLocStart, Vector2f mSpriteLocSize)

@@ -23,15 +23,16 @@ private:
     GameMap *mGameMap;
     vector<MainCharacterBullet *> mMainCharacterBullets;
     vector<NPCharacter *> mNPCharacters;
-    RectangleShape mEndPortal;
+    int mColorEndPortal;
+    bool mColorAscending;
 
 public:
     GameScreen()
     {
 
-        gameMenuScreenBackground.setFillColor(Color(6, 117, 186));
-        mEndPortal.setFillColor(Color(6, 209, 50));
-        mEndPortal.setSize(Vector2f(50, 50));
+        gameMenuScreenBackground.setFillColor(Color(21, 105, 232));
+        mColorEndPortal = 77;
+        mColorAscending = true;
 
     }
 
@@ -46,6 +47,7 @@ public:
 
         int i, j;
         RectangleShape item;
+        RectangleShape mEndPortal;
 
         gameMenuScreenBackground.setSize(Vector2f((float) window.getSize().x, (float) window.getSize().y));
         window.draw(gameMenuScreenBackground);
@@ -59,6 +61,30 @@ public:
             window.draw(item);
         }
 
+        vector < ItemModel * > mEndPortals = mGameMap->getEndPortalByLvl(mApp->getLvlSelected());
+        for (ItemModel *mEndPortalItem : mEndPortals)
+        {
+            mEndPortal.setFillColor(Color(232, 21, mColorEndPortal));
+            if (mColorAscending)
+            {
+                mColorEndPortal++;
+                if(mColorEndPortal == 155)
+                {
+                    mColorAscending = false;
+                }
+            } else
+            {
+                mColorEndPortal--;
+                if(mColorEndPortal == 77)
+                {
+                    mColorAscending = true;
+                }
+            }
+            mEndPortal.setPosition(Vector2f((float) mEndPortalItem->getStartPos().x, (float) mEndPortalItem->getStartPos().y));
+            mEndPortal.setSize(Vector2f((float) mEndPortalItem->getSize().x, (float) mEndPortalItem->getSize().y));
+            window.draw(mEndPortal);
+        }
+
         for (NPCharacter *mNPCharacter : mNPCharacters)
         {
             window.draw(mNPCharacter->getSprite());
@@ -70,9 +96,6 @@ public:
         {
             window.draw(mMainCharacterBullet->getSprite());
         }
-
-        mEndPortal.setPosition(Vector2f(100, 100));
-        window.draw(mEndPortal);
 
     }
 
@@ -143,6 +166,7 @@ public:
     {
 
         int i, j;
+        RectangleShape mEndPortal;
 
         mMainCharacter->update(speed);
 
@@ -189,6 +213,17 @@ public:
             {
                 mNPCharacters.erase(mNPCharacters.begin() + i);
                 delete (mNPCharacter);
+            }
+        }
+
+        vector < ItemModel * > mEndPortals = mGameMap->getEndPortalByLvl(mApp->getLvlSelected());
+        for (ItemModel *mEndPortalItem : mEndPortals)
+        {
+            mEndPortal.setPosition(Vector2f((float) mEndPortalItem->getStartPos().x, (float) mEndPortalItem->getStartPos().y));
+            mEndPortal.setSize(Vector2f((float) mEndPortalItem->getSize().x, (float) mEndPortalItem->getSize().y));
+            if (mEndPortal.getGlobalBounds().intersects(mMainCharacter->getSprite().getGlobalBounds()))
+            {
+                mMainCharacter->jump(100.0f);
             }
         }
 
