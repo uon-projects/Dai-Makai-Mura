@@ -74,12 +74,12 @@ public:
 
     int getGameOffsetY()
     {
-        if (mMainCharacterPosition.y > -130)
+        if (mMainCharacterPosition.y > -170)
         {
             mGameOffsetY = 500;
         } else
         {
-            mGameOffsetY = 500 - mMainCharacterPosition.y - 130;
+            mGameOffsetY = 500 - mMainCharacterPosition.y - 170;
         }
         return mGameOffsetY;
     }
@@ -96,7 +96,24 @@ public:
 
     Vector2f getCharacterPosition()
     {
-        return mMainCharacterPosition;
+        Vector2f mPos;
+        mPos.y += mGameOffsetY;
+        mPos.y -= mMainCharacterSprite.getGlobalBounds().height;
+        mPos.x = mMainCharacterPosition.x;
+        return mPos;
+    }
+
+    int getGameHeight()
+    {
+        int gameHeight = 0;
+        if (mMainCharacterPosition.y > -170)
+        {
+            mGameOffsetY = 500;
+        } else
+        {
+            mGameOffsetY = 500 - mMainCharacterPosition.y - 170;
+        }
+        return mMainCharacterPosition.y;
     }
 
     void update(float mSpeed, int mLvlSelected, int mGameOffsetY = 0)

@@ -17,6 +17,7 @@ private:
     float mEnemyBulletSpeed;
     int mClassType;
     int mLifes;
+    int mInitialPosY;
     bool isRightFace;
     App *mApp;
 
@@ -33,8 +34,9 @@ public:
 
     void init(Vector2f mPosition, int mType, bool isRightFace)
     {
-        mEnemyBulletSpeed = 400.0f;
-        mPosition.y += 55;
+        mEnemyBulletSpeed = 4.0f;
+        mPosition.y -= 50;
+        mInitialPosY = mPosition.y;
         mBulletPosition = mPosition;
         mClassType = mType;
         this->isRightFace = isRightFace;
@@ -54,19 +56,21 @@ public:
         }
 
         mBulletSprite = mApp->getFireSprite();
-        mBulletPosition.y += 30;
         mBulletSprite.setPosition(mBulletPosition);
         isRightFace ? (mBulletSprite.setScale(Vector2f(0.6, 0.6))) : (mBulletSprite.setScale(Vector2f(0.6, -0.6)));
         mBulletSprite.setRotation(-90);
     }
 
-    void update(float speed)
+    void update()
     {
-        mBulletSprite.move(mEnemyBulletSpeed * (isRightFace ? speed : speed * (-1)), 0);
+        mBulletPosition.x = mBulletPosition.x + (mEnemyBulletSpeed * (isRightFace ? 1 : -1));
+        mBulletSprite.setPosition(mBulletPosition);
     }
 
-    Sprite getSprite()
+    Sprite getSprite(int mGameOffsetY)
     {
+        mBulletPosition.y = mGameOffsetY + mInitialPosY;
+        mBulletSprite.setPosition(mBulletPosition);
         return mBulletSprite;
     }
 

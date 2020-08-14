@@ -73,7 +73,8 @@ public:
         mMainCharacterVelocity -= mMainCharacterMass * mMainCharacterGravity * mSpeed;
         mMainCharacterPosition.y -= mMainCharacterVelocity * mSpeed / 1.2;
 
-        isRightFace ? (mMainCharacterSprite.setScale(Vector2f(2.0f, 2.0f))) : (mMainCharacterSprite.setScale(Vector2f(-2.0f, 2.0f)));
+        isRightFace ? (mMainCharacterSprite.setScale(Vector2f(2.0f, 2.0f))) : (mMainCharacterSprite.setScale(
+                Vector2f(-2.0f, 2.0f)));
         isRightFace ? (mMainCharacterPosition.x += 1) : (mMainCharacterPosition.x -= 1);
 
         mCurrentMoved += 1;

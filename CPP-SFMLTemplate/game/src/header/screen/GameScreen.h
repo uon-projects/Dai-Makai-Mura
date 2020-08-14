@@ -70,19 +70,20 @@ public:
             if (mColorAscending)
             {
                 mColorEndPortal++;
-                if(mColorEndPortal == 155)
+                if (mColorEndPortal == 155)
                 {
                     mColorAscending = false;
                 }
             } else
             {
                 mColorEndPortal--;
-                if(mColorEndPortal == 77)
+                if (mColorEndPortal == 77)
                 {
                     mColorAscending = true;
                 }
             }
-            mEndPortal.setPosition(Vector2f((float) mEndPortalItem->getStartPos().x, (float) mEndPortalItem->getStartPos().y + mGameOffsetY));
+            mEndPortal.setPosition(Vector2f((float) mEndPortalItem->getStartPos().x,
+                                            (float) mEndPortalItem->getStartPos().y + mGameOffsetY));
             mEndPortal.setSize(Vector2f((float) mEndPortalItem->getSize().x, (float) mEndPortalItem->getSize().y));
             window.draw(mEndPortal);
         }
@@ -92,12 +93,11 @@ public:
             window.draw(mNPCharacter->getSprite());
         }
 
-        mMainCharacter->getSprite().setPosition(Vector2f((float) mMainCharacter->getCharacterPosition().x, (float) mMainCharacter->getCharacterPosition().y + mGameOffsetY));
         window.draw(mMainCharacter->getSprite());
 
         for (MainCharacterBullet *mMainCharacterBullet : mMainCharacterBullets)
         {
-            window.draw(mMainCharacterBullet->getSprite());
+            window.draw(mMainCharacterBullet->getSprite(mGameOffsetY));
         }
 
     }
@@ -123,7 +123,10 @@ public:
     {
 
         MainCharacterBullet *mMainCharacterBullet = new MainCharacterBullet(mApp);
-        mMainCharacterBullet->init(mMainCharacter->getCharacterPosition(), type, mMainCharacter->faceRight());
+        Vector2f mPosition;
+        mPosition.x = mMainCharacter->getCharacterPosition().x;
+        mPosition.y = mMainCharacter->getGameHeight();
+        mMainCharacterBullet->init(mPosition, type, mMainCharacter->faceRight());
         mMainCharacterBullets.push_back(mMainCharacterBullet);
 
     }
@@ -174,8 +177,8 @@ public:
         for (i = 0; i < mMainCharacterBullets.size(); i++)
         {
             MainCharacterBullet *mMainCharacterBullet = mMainCharacterBullets[i];
-            mMainCharacterBullet->update(speed);
-            if ((mMainCharacterBullet->getSprite().getPosition().x) > WindowX)
+            mMainCharacterBullet->update();
+            if ((mMainCharacterBullet->getSprite(mApp->getGameOffsetY()).getPosition().x) > WindowX)
             {
                 mMainCharacterBullets.erase(mMainCharacterBullets.begin() + i);
                 delete (mMainCharacterBullet);
@@ -199,7 +202,7 @@ public:
             {
                 MainCharacterBullet *mMainCharacterBullet = mMainCharacterBullets[j];
                 if (mNPCharacter->getSprite().getGlobalBounds().intersects(
-                        mMainCharacterBullet->getSprite().getGlobalBounds()))
+                        mMainCharacterBullet->getSprite(mApp->getGameOffsetY()).getGlobalBounds()))
                 {
                     killed = true;
                     if (mMainCharacterBullet->decreaseLife())
@@ -220,7 +223,8 @@ public:
         vector < ItemModel * > mEndPortals = mGameMap->getEndPortalByLvl(mApp->getLvlSelected());
         for (ItemModel *mEndPortalItem : mEndPortals)
         {
-            mEndPortal.setPosition(Vector2f((float) mEndPortalItem->getStartPos().x, (float) mEndPortalItem->getStartPos().y));
+            mEndPortal.setPosition(
+                    Vector2f((float) mEndPortalItem->getStartPos().x, (float) mEndPortalItem->getStartPos().y));
             mEndPortal.setSize(Vector2f((float) mEndPortalItem->getSize().x, (float) mEndPortalItem->getSize().y));
             if (mEndPortal.getGlobalBounds().intersects(mMainCharacter->getSprite().getGlobalBounds()))
             {
