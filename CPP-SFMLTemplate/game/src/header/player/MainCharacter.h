@@ -69,7 +69,7 @@ public:
     void reset(int lvlSelected)
     {
         mMainCharacterPosition = mGameMap->getCharacterStartPos(lvlSelected);
-        mGameOffsetY = 500;
+        mGameOffsetY = getGameOffsetY();
     }
 
     int getGameOffsetY()
@@ -118,6 +118,7 @@ public:
 
     void update(float mSpeed, int mLvlSelected)
     {
+        mMainCharacterSprite = getSprite();
         Vector2f mSpriteLocStart;
         mSpriteLocStart.x = mMainCharacterSprite.getGlobalBounds().left;
         mSpriteLocStart.y = mMainCharacterPosition.y;
