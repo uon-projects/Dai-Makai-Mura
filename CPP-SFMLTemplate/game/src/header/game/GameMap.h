@@ -58,7 +58,6 @@ public:
     vector<ItemModel *> getItemsByLvl(int mLvl)
     {
         vector < ItemModel * > lvlItems;
-
         for (ItemModel *mItem : mItems)
         {
             if (mItem->getLvl() == mLvl && mItem->getType() == 0)

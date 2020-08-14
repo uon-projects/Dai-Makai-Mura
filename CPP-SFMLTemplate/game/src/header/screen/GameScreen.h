@@ -114,8 +114,6 @@ public:
         mMainCharacter = mApp->getMainCharacter();
         mGameMap = mApp->getGameMap();
         mMainCharacter->setGameMap(mApp->getGameMap());
-
-        initNPCs();
     }
 
     void shootBullets(int type)
@@ -227,6 +225,13 @@ public:
             }
         }
 
+    }
+
+    void initNewLvl()
+    {
+        mColorEndPortal = 77;
+        mColorAscending = true;
+        initNPCs();
     }
 
 };

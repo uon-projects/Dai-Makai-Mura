@@ -23,6 +23,7 @@ public:
         mCharacter = mLoadImage->loadSpriteFromTexture("zeoflow_logo", png);
         mMainCharacter = new MainCharacter;
         mGameMap = new GameMap;
+        mNewGameLvl = false;
     }
 
     ~App()
@@ -41,6 +42,7 @@ public:
         currentScreen = screenChose;
         if (screenChose == game)
         {
+            mNewGameLvl = true;
             mMainCharacter->reset(mLvlSelected);
         }
     }
@@ -56,6 +58,16 @@ public:
         {
             lvlUnlocked++;
         }
+    }
+
+    bool isNewGame()
+    {
+        bool isNewGame = mNewGameLvl;
+        if(mNewGameLvl)
+        {
+            mNewGameLvl = false;
+        }
+        return isNewGame;
     }
 
     void setLvl(int mLvl)
@@ -108,5 +120,6 @@ private:
     LoadImage *mLoadImage;
     int mLvlSelected;
     int mCharacterLives;
+    bool mNewGameLvl;
 
 };
