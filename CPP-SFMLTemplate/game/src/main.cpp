@@ -96,7 +96,7 @@ void update(float seconds)
 
     if (mApp->getCurrentScreen() == game)
     {
-        if(mApp->isNewGame())
+        if (mApp->isNewGame())
         {
             mGameScreen.initNewLvl();
         }

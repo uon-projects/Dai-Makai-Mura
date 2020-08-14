@@ -45,9 +45,11 @@ public:
     void draw(RenderWindow &window)
     {
 
-        int i, j;
+        int i, j, mGameOffsetY;
         RectangleShape item;
         RectangleShape mEndPortal;
+
+        mGameOffsetY = mApp->getGameOffsetY();
 
         gameMenuScreenBackground.setSize(Vector2f((float) window.getSize().x, (float) window.getSize().y));
         window.draw(gameMenuScreenBackground);
@@ -56,7 +58,7 @@ public:
         for (ItemModel *mItem : mLvlItems)
         {
             item.setFillColor(Color(6, 209, 50));
-            item.setPosition(Vector2f((float) mItem->getStartPos().x, (float) mItem->getStartPos().y));
+            item.setPosition(Vector2f((float) mItem->getStartPos().x, (float) mItem->getStartPos().y + mGameOffsetY));
             item.setSize(Vector2f((float) mItem->getSize().x, (float) mItem->getSize().y));
             window.draw(item);
         }
@@ -68,19 +70,20 @@ public:
             if (mColorAscending)
             {
                 mColorEndPortal++;
-                if(mColorEndPortal == 155)
+                if (mColorEndPortal == 155)
                 {
                     mColorAscending = false;
                 }
             } else
             {
                 mColorEndPortal--;
-                if(mColorEndPortal == 77)
+                if (mColorEndPortal == 77)
                 {
                     mColorAscending = true;
                 }
             }
-            mEndPortal.setPosition(Vector2f((float) mEndPortalItem->getStartPos().x, (float) mEndPortalItem->getStartPos().y));
+            mEndPortal.setPosition(Vector2f((float) mEndPortalItem->getStartPos().x,
+                                            (float) mEndPortalItem->getStartPos().y + mGameOffsetY));
             mEndPortal.setSize(Vector2f((float) mEndPortalItem->getSize().x, (float) mEndPortalItem->getSize().y));
             window.draw(mEndPortal);
         }
@@ -94,18 +97,26 @@ public:
 
         for (MainCharacterBullet *mMainCharacterBullet : mMainCharacterBullets)
         {
-            window.draw(mMainCharacterBullet->getSprite());
+            window.draw(mMainCharacterBullet->getSprite(mGameOffsetY));
         }
 
     }
 
     void initNPCs()
     {
+        vector < ItemModel * > mNPCs = mGameMap->getNPCByLvl(mApp->getLvlSelected());
         NPCharacter *mNPCharacter;
-        mNPCharacter = new NPCharacter(mApp->getGameMap(), true, 50, 150, 300);
-        mNPCharacters.push_back(mNPCharacter);
-        mNPCharacter = new NPCharacter(mApp->getGameMap(), false, 500, 150, 300);
-        mNPCharacters.push_back(mNPCharacter);
+        for (ItemModel *mNPC : mNPCs)
+        {
+            mNPCharacter = new NPCharacter(
+                    mApp->getGameMap(),
+                    mNPC->isFacingRight(),
+                    mNPC->getStartPos().x,
+                    mNPC->getStartPos().y,
+                    mNPC->getArea()
+            );
+            mNPCharacters.push_back(mNPCharacter);
+        }
     }
 
     void setApp(App *app)
@@ -120,7 +131,10 @@ public:
     {
 
         MainCharacterBullet *mMainCharacterBullet = new MainCharacterBullet(mApp);
-        mMainCharacterBullet->init(mMainCharacter->getCharacterPosition(), type, mMainCharacter->faceRight());
+        Vector2f mPosition;
+        mPosition.x = mMainCharacter->getCharacterPosition().x;
+        mPosition.y = mMainCharacter->getGameHeight();
+        mMainCharacterBullet->init(mPosition, type, mMainCharacter->faceRight());
         mMainCharacterBullets.push_back(mMainCharacterBullet);
 
     }
@@ -163,16 +177,17 @@ public:
     void update(float speed)
     {
 
-        int i, j;
+        int i, j, mGameOffsetY;
         RectangleShape mEndPortal;
+        mGameOffsetY = mMainCharacter->getGameOffsetY();
 
-        mMainCharacter->update(speed);
+        mMainCharacter->update(speed, mApp->getLvlSelected());
 
         for (i = 0; i < mMainCharacterBullets.size(); i++)
         {
             MainCharacterBullet *mMainCharacterBullet = mMainCharacterBullets[i];
-            mMainCharacterBullet->update(speed);
-            if ((mMainCharacterBullet->getSprite().getPosition().x) > WindowX)
+            mMainCharacterBullet->update();
+            if ((mMainCharacterBullet->getSprite(mGameOffsetY).getPosition().x) > WindowX)
             {
                 mMainCharacterBullets.erase(mMainCharacterBullets.begin() + i);
                 delete (mMainCharacterBullet);
@@ -181,7 +196,7 @@ public:
 
         for (NPCharacter *mNPCharacter : mNPCharacters)
         {
-            mNPCharacter->update(speed);
+            mNPCharacter->update(speed, mApp->getLvlSelected(), mMainCharacter->getGameOffsetY());
             if (mNPCharacter->getSprite().getGlobalBounds().intersects(mMainCharacter->getSprite().getGlobalBounds()))
             {
                 mMainCharacter->jump(500.0f);
@@ -196,7 +211,7 @@ public:
             {
                 MainCharacterBullet *mMainCharacterBullet = mMainCharacterBullets[j];
                 if (mNPCharacter->getSprite().getGlobalBounds().intersects(
-                        mMainCharacterBullet->getSprite().getGlobalBounds()))
+                        mMainCharacterBullet->getSprite(mApp->getGameOffsetY()).getGlobalBounds()))
                 {
                     killed = true;
                     if (mMainCharacterBullet->decreaseLife())
@@ -217,10 +232,13 @@ public:
         vector < ItemModel * > mEndPortals = mGameMap->getEndPortalByLvl(mApp->getLvlSelected());
         for (ItemModel *mEndPortalItem : mEndPortals)
         {
-            mEndPortal.setPosition(Vector2f((float) mEndPortalItem->getStartPos().x, (float) mEndPortalItem->getStartPos().y));
+            mEndPortal.setPosition(Vector2f((float) mEndPortalItem->getStartPos().x,
+                                            (float) mEndPortalItem->getStartPos().y + mGameOffsetY));
             mEndPortal.setSize(Vector2f((float) mEndPortalItem->getSize().x, (float) mEndPortalItem->getSize().y));
             if (mEndPortal.getGlobalBounds().intersects(mMainCharacter->getSprite().getGlobalBounds()))
             {
+                mApp->increaseLevelsUnlocked();
+                mApp->setCurrentScreen(choose_lvl);
                 mMainCharacter->jump(100.0f);
             }
         }

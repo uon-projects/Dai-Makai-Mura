@@ -26,6 +26,7 @@ private:
     bool mMainCharacterOnMove;
     bool isRightFace;
     GameMap *mGameMap;
+    int mGameOffsetY;
 
 public:
     MainCharacter()
@@ -67,37 +68,63 @@ public:
 
     void reset(int lvlSelected)
     {
-        if (lvlSelected == 1)
+        mMainCharacterPosition = mGameMap->getCharacterStartPos(lvlSelected);
+        mGameOffsetY = 500;
+    }
+
+    int getGameOffsetY()
+    {
+        if (mMainCharacterPosition.y > -170)
         {
-            mMainCharacterPosition = Vector2f(50.0f, 330.0f);
+            mGameOffsetY = 500;
         } else
         {
-            mMainCharacterPosition = Vector2f(100.0f, 100.0f);
+            mGameOffsetY = 500 - mMainCharacterPosition.y - 170;
         }
-        mMainCharacterSprite.setPosition(mMainCharacterPosition);
+        return mGameOffsetY;
     }
 
     RectangleShape getSprite()
     {
+        mMainCharacterPosition.y += mGameOffsetY;
+        mMainCharacterPosition.y -= mMainCharacterSprite.getGlobalBounds().height;
         mMainCharacterSprite.setPosition(mMainCharacterPosition);
+        mMainCharacterPosition.y -= mGameOffsetY;
+        mMainCharacterPosition.y += mMainCharacterSprite.getGlobalBounds().height;
         return mMainCharacterSprite;
     }
 
     Vector2f getCharacterPosition()
     {
-        return mMainCharacterPosition;
+        Vector2f mPos;
+        mPos.y += mGameOffsetY;
+        mPos.y -= mMainCharacterSprite.getGlobalBounds().height;
+        mPos.x = mMainCharacterPosition.x;
+        return mPos;
     }
 
-    void update(float mSpeed)
+    int getGameHeight()
+    {
+        int gameHeight = 0;
+        if (mMainCharacterPosition.y > -170)
+        {
+            mGameOffsetY = 500;
+        } else
+        {
+            mGameOffsetY = 500 - mMainCharacterPosition.y - 170;
+        }
+        return mMainCharacterPosition.y;
+    }
+
+    void update(float mSpeed, int mLvlSelected)
     {
         Vector2f mSpriteLocStart;
         mSpriteLocStart.x = mMainCharacterSprite.getGlobalBounds().left;
-        mSpriteLocStart.y = mMainCharacterSprite.getGlobalBounds().top;
+        mSpriteLocStart.y = mMainCharacterPosition.y;
         Vector2f mSpriteLocSize;
         mSpriteLocSize.x = mMainCharacterSprite.getGlobalBounds().width;
         mSpriteLocSize.y = mMainCharacterSprite.getGlobalBounds().height;
-        int mGroundLevel = mGameMap->getNearestGroundLvl(1, mSpriteLocStart, mSpriteLocSize) - mSpriteLocSize.y;
-
+        int mGroundLevel = mGameMap->getNearestGroundLvl(mLvlSelected, mSpriteLocStart, mSpriteLocSize, mGameOffsetY);
         mMainCharacterVelocity -= mMainCharacterMass * mMainCharacterGravity * mSpeed;
         mMainCharacterPosition.y -= mMainCharacterVelocity * mSpeed / 1.2;
 
@@ -153,8 +180,6 @@ public:
             mMainCharacterJump = false;
             mJumpCount = 0;
         }
-
-        mMainCharacterSprite.setPosition(mMainCharacterPosition);
     }
 
     void jump(float mVelocity)

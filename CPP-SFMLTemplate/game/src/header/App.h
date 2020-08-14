@@ -63,11 +63,16 @@ public:
     bool isNewGame()
     {
         bool isNewGame = mNewGameLvl;
-        if(mNewGameLvl)
+        if (mNewGameLvl)
         {
             mNewGameLvl = false;
         }
         return isNewGame;
+    }
+
+    int getGameOffsetY()
+    {
+        return mMainCharacter->getGameOffsetY();
     }
 
     void setLvl(int mLvl)
@@ -95,9 +100,14 @@ public:
         return mCharacter;
     }
 
-    Sprite getFireSprite()
+    Sprite getBullet1Sprite()
     {
-        return mLoadImage->loadSpriteFromTexture("fire1", png);
+        return mLoadImage->loadSpriteFromTexture("bullet1", png);
+    }
+
+    Sprite getBullet2Sprite()
+    {
+        return mLoadImage->loadSpriteFromTexture("bullet2", png);
     }
 
     MainCharacter *getMainCharacter()
