@@ -70,6 +70,14 @@ public:
     {
         mMainCharacterPosition = mGameMap->getCharacterStartPos(lvlSelected);
         mGameOffsetY = getGameOffsetY();
+
+        mJumpCount = 0;
+        mMovesCount = 0;
+        mMainCharacterGravity = 8.0f;
+
+        mMainCharacterMass = 200.0f;
+        mMainCharacterJump = false;
+        mMainCharacterOnMove = false;
     }
 
     int getGameOffsetY()

@@ -42,7 +42,6 @@ public:
         currentScreen = screenChose;
         if (screenChose == game)
         {
-            lives = 3;
             mNewGameLvl = true;
             mMainCharacter->reset(mLvlSelected);
         }
@@ -50,7 +49,7 @@ public:
 
     int getCharacterLives()
     {
-        return lvlUnlocked;
+        return lives;
     }
 
     void decreaseLives()
@@ -64,6 +63,11 @@ public:
     void increaseLives()
     {
         lives++;
+    }
+
+    void resetLives()
+    {
+        lives = 3;
     }
 
     int getLevelsUnlocked()
@@ -137,6 +141,11 @@ public:
     GameMap *getGameMap()
     {
         return mGameMap;
+    }
+
+    LoadImage *getImageLoader()
+    {
+        return mLoadImage;
     }
 
 private:

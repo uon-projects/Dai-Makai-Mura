@@ -129,6 +129,14 @@ public:
             window.draw(mMainCharacterBullet->getSprite(mGameOffsetY));
         }
 
+        for (i = 0; i < mApp->getCharacterLives(); i++)
+        {
+            Sprite mHeart = mApp->getImageLoader()->loadSpriteFromTexture("heart", png);
+            mHeart.setPosition(Vector2f(36 * i + 10, 10));
+            mHeart.setColor(Color(235, 27, 16));
+            window.draw(mHeart);
+        }
+
     }
 
     void initNPCs()
@@ -228,7 +236,15 @@ public:
             mNPCharacter->update(speed, mApp->getLvlSelected(), mMainCharacter->getGameOffsetY());
             if (mNPCharacter->getSprite().getGlobalBounds().intersects(mMainCharacter->getSprite().getGlobalBounds()))
             {
-                mMainCharacter->jump(500.0f);
+                mApp->decreaseLives();
+                if (mApp->getCharacterLives() == 0)
+                {
+                    mApp->setCurrentScreen(end_screen);
+                } else
+                {
+                    mApp->setLvl(mApp->getLvlSelected());
+                    mApp->setCurrentScreen(game);
+                }
             }
         }
 
@@ -268,7 +284,6 @@ public:
             {
                 mApp->increaseLevelsUnlocked();
                 mApp->setCurrentScreen(end_screen);
-                mMainCharacter->jump(100.0f);
             }
         }
 
@@ -276,6 +291,10 @@ public:
 
     void initNewLvl()
     {
+        mMainCharacterBullets.clear();
+        mNPCharacters.clear();
+        mMainCharacter->reset(mApp->getLvlSelected());
+
         mColorEndPortal = 77;
         mColorAscending = true;
 

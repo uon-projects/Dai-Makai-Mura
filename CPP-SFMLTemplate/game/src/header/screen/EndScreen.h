@@ -67,14 +67,6 @@ public:
         {
             this->mApp->setCurrentScreen(choose_lvl);
         }
-        if (showNextLvl)
-        {
-            if (mNextLvl.isClicked(window))
-            {
-                mApp->setLvl(mApp->getLvlSelected() + 1);
-                this->mApp->setCurrentScreen(game);
-            }
-        }
         if (mBackToMenu.isClicked(window))
         {
             mApp->setCurrentScreen(menu);
@@ -84,13 +76,20 @@ public:
 
         window.draw(mBackToMenu);
         mBackToMenu.drawText(window);
+        window.draw(mNavigateToLvlSelector);
+        mNavigateToLvlSelector.drawText(window);
+
         if (showNextLvl)
         {
-            window.draw(mNavigateToLvlSelector);
-            mNavigateToLvlSelector.drawText(window);
+            if (mNextLvl.isClicked(window))
+            {
+                mApp->resetLives();
+                mApp->setLvl(mApp->getLvlSelected() + 1);
+                this->mApp->setCurrentScreen(game);
+            }
+            window.draw(mNextLvl);
+            mNextLvl.drawText(window);
         }
-        window.draw(mNextLvl);
-        mNextLvl.drawText(window);
 
     }
 
