@@ -14,6 +14,7 @@ class GameMap
 
 private:
     vector<ItemModel *> mItems;
+    vector<ItemModel *> mCharacterStartPos;
 
 public:
     GameMap()
@@ -28,16 +29,50 @@ public:
 
     void initialize()
     {
+        initializeStartPos();
         initializeLvl1();
+    }
+
+    void addStartPos(int mLvl, int mStartPosX, int mStartPosY)
+    {
+        ItemModel *mItemModel;
+
+        mStartPosY *= -1;
+        mItemModel = new ItemModel(
+                mLvl,
+                Vector2i(mStartPosX, mStartPosY)
+        );
+        mCharacterStartPos.push_back(mItemModel);
+    }
+
+    void initializeStartPos()
+    {
+        addStartPos(1, 50, 50);
+    }
+
+    Vector2f getCharacterStartPos(int mLvl)
+    {
+        Vector2f mStartPosOfLvl = Vector2f(0.0f, 0.0f);
+        for (ItemModel *mStartPos : mCharacterStartPos)
+        {
+            if (mStartPos->getLvl() == mLvl)
+            {
+                mStartPosOfLvl.x = mStartPos->getStartPos().x;
+                mStartPosOfLvl.y = mStartPos->getStartPos().y;
+            }
+        }
+
+        return mStartPosOfLvl;
     }
 
     void addItem(int mLvl, int mStartPosX, int mStartPosY, int mSizeW, int mSizeH, int mType)
     {
         ItemModel *mItemModel;
 
+        mStartPosY *= -1;
         mItemModel = new ItemModel(
                 mLvl,
-                Vector2i(mStartPosX, mStartPosY),
+                Vector2i(mStartPosX, mStartPosY - mSizeH),
                 Vector2i(mSizeW, mSizeH),
                 mType
         );
@@ -47,11 +82,15 @@ public:
     void initializeLvl1()
     {
 
-        addItem(1, 0, 450, 800, 500, 0);
-        addItem(1, 0, 300, 550, 20, 0);
-        addItem(1, 565, 225, 70, 20, 0);
-        addItem(1, 650, 150, 150, 20, 0);
-        addItem(1, 790, 30, 10, 120, 1);
+        //blocks
+        addItem(1, 0, 0, 800, 50, 0);
+        addItem(1, 250, 150, 100, 20, 0);
+        addItem(1, 375, 250, 100, 20, 0);
+        addItem(1, 250, 350, 100, 20, 0);
+        addItem(1, 375, 450, 425, 20, 0);
+
+        //portals
+        addItem(1, 790, 470, 10, 120, 1);
 
     }
 
@@ -84,10 +123,10 @@ public:
         return endPortals;
     }
 
-    int getNearestGroundLvl(int mLvl, Vector2f mSpriteLocStart, Vector2f mSpriteLocSize)
+    int getNearestGroundLvl(int mLvl, Vector2f mSpriteLocStart, Vector2f mSpriteLocSize, int mGameOffsetY = 0)
     {
         int mNearestGroundLvl = -1;
-        int characterPosY = mSpriteLocStart.y + mSpriteLocSize.y;
+        int characterPosY = mSpriteLocStart.y;
         int characterPosSX = mSpriteLocStart.x + 70;
         int characterPosEX = mSpriteLocStart.x + mSpriteLocSize.x - 70;
 
@@ -97,14 +136,15 @@ public:
         {
             int itemPosSX = mItem->getStartPos().x;
             int itemPosEX = mItem->getSize().x + mItem->getStartPos().x;
-            if (mItem->getStartPos().y >= characterPosY && mNearestGroundLvl == -1)
+            cout << mItem->getStartPos().y << ' ' <<characterPosY<<'\n';
+            if (mItem->getStartPos().y <= characterPosY && mNearestGroundLvl == -1)
             {
                 if (itemPosSX <= characterPosSX && itemPosEX >= characterPosEX)
                 {
                     mNearestGroundLvl = mItem->getStartPos().y;
                 }
-            } else if (mNearestGroundLvl != -1 && mItem->getStartPos().y >= characterPosY &&
-                       mNearestGroundLvl > mItem->getStartPos().y)
+            } else if (mNearestGroundLvl != -1 && mItem->getStartPos().y <= characterPosY &&
+                       mNearestGroundLvl < mItem->getStartPos().y)
             {
                 if (itemPosSX <= characterPosSX && itemPosEX >= characterPosEX)
                 {
@@ -112,7 +152,10 @@ public:
                 }
             }
         }
-
+        cout << characterPosY << ' ';
+//        cout<<mNearestGroundLvl;
+        cout << '\n';
+//        system("pause");
         return mNearestGroundLvl;
     }
 

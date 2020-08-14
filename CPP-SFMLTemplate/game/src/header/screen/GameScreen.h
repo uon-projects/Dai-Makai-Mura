@@ -45,9 +45,11 @@ public:
     void draw(RenderWindow &window)
     {
 
-        int i, j;
+        int i, j, mGameOffsetY;
         RectangleShape item;
         RectangleShape mEndPortal;
+
+        mGameOffsetY = mApp->getGameOffsetY();
 
         gameMenuScreenBackground.setSize(Vector2f((float) window.getSize().x, (float) window.getSize().y));
         window.draw(gameMenuScreenBackground);
@@ -56,7 +58,7 @@ public:
         for (ItemModel *mItem : mLvlItems)
         {
             item.setFillColor(Color(6, 209, 50));
-            item.setPosition(Vector2f((float) mItem->getStartPos().x, (float) mItem->getStartPos().y));
+            item.setPosition(Vector2f((float) mItem->getStartPos().x, (float) mItem->getStartPos().y + mGameOffsetY));
             item.setSize(Vector2f((float) mItem->getSize().x, (float) mItem->getSize().y));
             window.draw(item);
         }
@@ -80,7 +82,7 @@ public:
                     mColorAscending = true;
                 }
             }
-            mEndPortal.setPosition(Vector2f((float) mEndPortalItem->getStartPos().x, (float) mEndPortalItem->getStartPos().y));
+            mEndPortal.setPosition(Vector2f((float) mEndPortalItem->getStartPos().x, (float) mEndPortalItem->getStartPos().y + mGameOffsetY));
             mEndPortal.setSize(Vector2f((float) mEndPortalItem->getSize().x, (float) mEndPortalItem->getSize().y));
             window.draw(mEndPortal);
         }
@@ -90,6 +92,7 @@ public:
             window.draw(mNPCharacter->getSprite());
         }
 
+        mMainCharacter->getSprite().setPosition(Vector2f((float) mMainCharacter->getCharacterPosition().x, (float) mMainCharacter->getCharacterPosition().y + mGameOffsetY));
         window.draw(mMainCharacter->getSprite());
 
         for (MainCharacterBullet *mMainCharacterBullet : mMainCharacterBullets)
@@ -166,7 +169,7 @@ public:
         int i, j;
         RectangleShape mEndPortal;
 
-        mMainCharacter->update(speed);
+        mMainCharacter->update(speed, mApp->getLvlSelected());
 
         for (i = 0; i < mMainCharacterBullets.size(); i++)
         {
@@ -221,6 +224,8 @@ public:
             mEndPortal.setSize(Vector2f((float) mEndPortalItem->getSize().x, (float) mEndPortalItem->getSize().y));
             if (mEndPortal.getGlobalBounds().intersects(mMainCharacter->getSprite().getGlobalBounds()))
             {
+                mApp->increaseLevelsUnlocked();
+                mApp->setCurrentScreen(choose_lvl);
                 mMainCharacter->jump(100.0f);
             }
         }
@@ -231,7 +236,7 @@ public:
     {
         mColorEndPortal = 77;
         mColorAscending = true;
-        initNPCs();
+//        initNPCs();
     }
 
 };

@@ -17,6 +17,12 @@ private:
     Vector2i mSize;
 
 public:
+    ItemModel(int mLvl, Vector2i mStartPos)
+    {
+        this->mLvl = mLvl;
+        this->mStartPos = mStartPos;
+    }
+
     ItemModel(int mLvl, Vector2i mStartPos, Vector2i mSize, int mType)
     {
         this->mLvl = mLvl;

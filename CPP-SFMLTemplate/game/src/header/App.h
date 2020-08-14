@@ -63,11 +63,24 @@ public:
     bool isNewGame()
     {
         bool isNewGame = mNewGameLvl;
-        if(mNewGameLvl)
+        if (mNewGameLvl)
         {
             mNewGameLvl = false;
         }
         return isNewGame;
+    }
+
+    int getGameOffsetY()
+    {
+//        cout << mMainCharacter->getCharacterPosition().y << '\n';
+//        if (mMainCharacter->getCharacterPosition().y > 230)
+//        {
+//            mGameOffsetY = 500;
+//        } else
+//        {
+//            mGameOffsetY = 230 - mMainCharacter->getCharacterPosition().y;
+//        }
+        return mMainCharacter->getGameOffsetY();
     }
 
     void setLvl(int mLvl)

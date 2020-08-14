@@ -26,6 +26,7 @@ private:
     bool mMainCharacterOnMove;
     bool isRightFace;
     GameMap *mGameMap;
+    int mGameOffsetY;
 
 public:
     MainCharacter()
@@ -67,19 +68,22 @@ public:
 
     void reset(int lvlSelected)
     {
-        if (lvlSelected == 1)
-        {
-            mMainCharacterPosition = Vector2f(50.0f, 330.0f);
-        } else
-        {
-            mMainCharacterPosition = Vector2f(100.0f, 100.0f);
-        }
-        mMainCharacterSprite.setPosition(mMainCharacterPosition);
+        mMainCharacterPosition = mGameMap->getCharacterStartPos(lvlSelected);
+        mGameOffsetY = 500;
+    }
+
+    int getGameOffsetY()
+    {
+        return mGameOffsetY;
     }
 
     RectangleShape getSprite()
     {
+        mMainCharacterPosition.y += mGameOffsetY;
+        mMainCharacterPosition.y -= mMainCharacterSprite.getGlobalBounds().height;
         mMainCharacterSprite.setPosition(mMainCharacterPosition);
+        mMainCharacterPosition.y -= mGameOffsetY;
+        mMainCharacterPosition.y += mMainCharacterSprite.getGlobalBounds().height;
         return mMainCharacterSprite;
     }
 
@@ -88,16 +92,12 @@ public:
         return mMainCharacterPosition;
     }
 
-    void update(float mSpeed)
+    void update(float mSpeed, int mLvlSelected, int mGameOffsetY = 0)
     {
-        Vector2f mSpriteLocStart;
-        mSpriteLocStart.x = mMainCharacterSprite.getGlobalBounds().left;
-        mSpriteLocStart.y = mMainCharacterSprite.getGlobalBounds().top;
         Vector2f mSpriteLocSize;
         mSpriteLocSize.x = mMainCharacterSprite.getGlobalBounds().width;
         mSpriteLocSize.y = mMainCharacterSprite.getGlobalBounds().height;
-        int mGroundLevel = mGameMap->getNearestGroundLvl(1, mSpriteLocStart, mSpriteLocSize) - mSpriteLocSize.y;
-
+        int mGroundLevel = mGameMap->getNearestGroundLvl(mLvlSelected, mMainCharacterPosition, mSpriteLocSize, mGameOffsetY);
         mMainCharacterVelocity -= mMainCharacterMass * mMainCharacterGravity * mSpeed;
         mMainCharacterPosition.y -= mMainCharacterVelocity * mSpeed / 1.2;
 
@@ -153,8 +153,6 @@ public:
             mMainCharacterJump = false;
             mJumpCount = 0;
         }
-
-        mMainCharacterSprite.setPosition(mMainCharacterPosition);
     }
 
     void jump(float mVelocity)
