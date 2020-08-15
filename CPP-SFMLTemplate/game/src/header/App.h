@@ -19,7 +19,7 @@ public:
     {
         mLoadImage = new LoadImage();
         currentScreen = splash;
-        lvlUnlocked = 4;
+        lvlUnlocked = 1;
         mCharacter = mLoadImage->loadSpriteFromTexture("c00a_01idle_00", png);
         mMainCharacter = new MainCharacter;
         mGameMap = new GameMap;
