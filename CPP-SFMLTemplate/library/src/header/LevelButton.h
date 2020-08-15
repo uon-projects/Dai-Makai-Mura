@@ -103,8 +103,8 @@ public:
                 setFillColor(hoverColor);
             }
             Sprite mCharacter = mApp->getCharacterSprite();
-            mCharacter.setScale(0.3f, 0.3f);
-            mCharacter.setPosition(pos.x - 100, pos.y - 110);
+            mCharacter.setScale(-0.5f, 0.5f);
+            mCharacter.setPosition(pos.x + 60, pos.y - 180);
             if (level > mApp->getLevelsUnlocked())
             {
                 mCharacter.setColor(Color::Red);

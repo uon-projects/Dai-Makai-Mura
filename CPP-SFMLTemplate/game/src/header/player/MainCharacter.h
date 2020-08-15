@@ -14,6 +14,7 @@ class MainCharacter
 
 private:
     Sprite mMainCharacterSprite;
+    float mCharacterScale;
     Vector2f mMainCharacterPosition;
     int mJumpCount;
     int mMovesCount;
@@ -28,7 +29,6 @@ private:
     GameMap *mGameMap;
     int mGameOffsetY;
     LoadImage *mLoadImage;
-    float mCharacterScale;
 
 public:
     MainCharacter()
@@ -38,6 +38,7 @@ public:
         mJumpCount = 0;
         mMovesCount = 0;
         mMainCharacterGravity = 8.0f;
+        mMainCharacterVelocity = 20.0f;
 
         mMainCharacterMass = 200.0f;
         mMainCharacterJump = false;
@@ -171,8 +172,6 @@ public:
                 mMainCharacterOnMove = false;
             }
         }
-
-        cout << mMainCharacterPosition.x << '\n';
 
         if (mMainCharacterPosition.y >= mGroundLevel)
         {
