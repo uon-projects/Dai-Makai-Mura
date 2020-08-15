@@ -37,8 +37,6 @@
       <change beforePath="$PROJECT_DIR$/CPP-SFMLTemplate/game/src/header/game/GameMap.h" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-SFMLTemplate/game/src/header/game/GameMap.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CPP-SFMLTemplate/game/src/header/npc/NPCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-SFMLTemplate/game/src/header/npc/NPCharacter.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CPP-SFMLTemplate/game/src/header/player/MainCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-SFMLTemplate/game/src/header/player/MainCharacter.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CPP-SFMLTemplate/game/src/header/screen/GameScreen.h" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-SFMLTemplate/game/src/header/screen/GameScreen.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CPP-SFMLTemplate/library/src/header/LevelButton.h" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-SFMLTemplate/library/src/header/LevelButton.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Debug/Ghouls n Ghosts.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Debug/Ghouls n Ghosts.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Debug/Ghouls n Ghosts.ilk" beforeDir="false" afterPath="$PROJECT_DIR$/Debug/Ghouls n Ghosts.ilk" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Debug/Ghouls n Ghosts.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Debug/Ghouls n Ghosts.pdb" afterDir="false" />
@@ -131,6 +129,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="137" y="38" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597459781822">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="137" y="38" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.768@0.0.1366.768" timestamp="1597459781822" />
     <state x="425" y="185" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1596902530255">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -151,10 +153,14 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="500" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1366.768@0.0.1366.768" timestamp="1597407439129" />
-    <state x="339" y="172" key="run.anything.popup" timestamp="1597444020983">
+    <state x="0" y="0" width="587" height="768" key="find.popup" timestamp="1597456843540">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="339" y="172" key="run.anything.popup/0.0.1366.768@0.0.1366.768" timestamp="1597444020983" />
+    <state x="0" y="0" width="587" height="768" key="find.popup/0.0.1366.768@0.0.1366.768" timestamp="1597456843540" />
+    <state x="339" y="172" key="run.anything.popup" timestamp="1597456084216">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="339" y="172" key="run.anything.popup/0.0.1366.768@0.0.1366.768" timestamp="1597456084216" />
     <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1596903223969">
       <screen x="0" y="0" width="1366" height="768" />
     </state>

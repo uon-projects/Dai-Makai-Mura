@@ -15,7 +15,7 @@ class NPCharacter
 private:
     GameMap *mGameMap;
     Texture mMainCharacterTexture;
-    RectangleShape mMainCharacterSprite;
+    Sprite mMainCharacterSprite;
     Vector2u mTextureMainCharacterSize;
     bool isRightFace;
     float mMainCharacterGravity; //The Average Value At Earth's Surface (Standard Gravity) is, by definition, 9.80665 m/s^2 (9.80f).
@@ -27,6 +27,7 @@ private:
     int mGameOffsetY;
 	LoadImage *mLoadImage;
     float mMainCharacterVelocityMove;
+    float mNPCScale;
 
 public:
     NPCharacter(GameMap *mGameMap, bool isRightFace, float startX, float startY, int range, LoadImage *mLoadImage)
@@ -45,19 +46,19 @@ public:
 
         mCurrentMoved = 0;
 
-        mMainCharacterTexture.loadFromFile("game/src/res/vector/main_character.png");
+        mMainCharacterTexture.loadFromFile("game/src/res/drawable/e003a_01idle_00.png");
         mTextureMainCharacterSize = mMainCharacterTexture.getSize();
-        mTextureMainCharacterSize.x /= 18;
-        mTextureMainCharacterSize.y /= 19;
+        mTextureMainCharacterSize.x /= 1;
+        mTextureMainCharacterSize.y /= 1;
         mMainCharacterVelocity = 20.0f;
 
-        mMainCharacterSprite.setSize(Vector2f(60, 60));
-        mMainCharacterSprite.setTexture(&mMainCharacterTexture);
+        mNPCScale = 0.4f;
+        mMainCharacterSprite.setTexture(mMainCharacterTexture);
         mMainCharacterSprite.setTextureRect(
                 IntRect(mTextureMainCharacterSize.x * 0, mTextureMainCharacterSize.y * 0, mTextureMainCharacterSize.x,
                         mTextureMainCharacterSize.y));
-        mMainCharacterSprite.setScale(Vector2f(2.0f, 2.0f));
-        mMainCharacterSprite.setOrigin(mTextureMainCharacterSize.x / 2, 0);
+        mMainCharacterSprite.setScale(Vector2f(mNPCScale, mNPCScale));
+        mMainCharacterSprite.setOrigin(mTextureMainCharacterSize.x / 2, -110);
         mMainCharacterSprite.setPosition(mMainCharacterPosition);
     }
 
@@ -80,8 +81,8 @@ public:
         mMainCharacterVelocity -= mMainCharacterMass * mMainCharacterGravity * mSpeed;
         mMainCharacterPosition.y -= mMainCharacterVelocity * mSpeed / 1.2;
 
-        isRightFace ? (mMainCharacterSprite.setScale(Vector2f(2.0f, 2.0f))) : (mMainCharacterSprite.setScale(
-                Vector2f(-2.0f, 2.0f)));
+        isRightFace ? (mMainCharacterSprite.setScale(Vector2f(-mNPCScale, mNPCScale))) : (mMainCharacterSprite.setScale(
+                Vector2f(mNPCScale, mNPCScale)));
         isRightFace ? (mMainCharacterPosition.x += 1) : (mMainCharacterPosition.x -= 1);
 
         mCurrentMoved += 1;
@@ -96,7 +97,7 @@ public:
         }
     }
 
-    RectangleShape getSprite()
+    Sprite getSprite()
     {
         mMainCharacterPosition.y += mGameOffsetY;
         mMainCharacterPosition.y -= mMainCharacterSprite.getGlobalBounds().height;
