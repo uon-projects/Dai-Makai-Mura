@@ -139,10 +139,40 @@ public:
     int getNearestGroundLvl(int mLvl, Vector2f mSpriteLocStart, Vector2f mSpriteLocSize, int mGameOffsetY = 0)
     {
         int mNearestGroundLvl = 0;
-
         int characterPosY = mSpriteLocStart.y;
-        int characterPosSX = mSpriteLocStart.x + 20;
-        int characterPosEX = mSpriteLocStart.x + mSpriteLocSize.x - 20;
+        int characterPosSX = mSpriteLocStart.x + 64;
+        int characterPosEX = mSpriteLocStart.x + mSpriteLocSize.x - 64;
+
+        vector < ItemModel * > mLvlItems = getItemsByLvl(mLvl);
+        for (ItemModel *mItem : mLvlItems)
+        {
+            int itemPosSX = mItem->getStartPos().x - 30;
+            int itemPosEX = mItem->getSize().x + mItem->getStartPos().x + 30;
+            int itemPosY = mItem->getStartPos().y;
+            if (itemPosY >= characterPosY)
+            {
+                if (characterPosSX >= itemPosSX && characterPosEX <= itemPosEX)
+                {
+                    if (mNearestGroundLvl == 0)
+                    {
+                        mNearestGroundLvl = itemPosY;
+                    } else if (mNearestGroundLvl >= characterPosY)
+                    {
+                        mNearestGroundLvl = itemPosY;
+                    }
+                }
+            }
+        }
+        return mNearestGroundLvl;
+    }
+
+    int getNearestGroundLvlCharacter(int mLvl, Vector2f mSpriteLocStart, Vector2f mSpriteLocSize, int mGameOffsetY = 0)
+    {
+
+        int mNearestGroundLvl = 0;
+        int characterPosY = mSpriteLocStart.y;
+        int characterPosSX = mSpriteLocStart.x + 64;
+        int characterPosEX = mSpriteLocStart.x + mSpriteLocSize.x - 64;
 
         vector < ItemModel * > mLvlItems = getItemsByLvl(mLvl);
         for (ItemModel *mItem : mLvlItems)

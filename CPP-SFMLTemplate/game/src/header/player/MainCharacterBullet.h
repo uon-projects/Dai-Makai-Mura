@@ -19,13 +19,12 @@ private:
     int mLifes;
     int mInitialPosY;
     bool isRightFace;
-    App *mApp;
     float mScaleSprite;
 
 public:
-    MainCharacterBullet(App *app)
+    MainCharacterBullet()
     {
-        this->mApp = app;
+
     }
 
     ~MainCharacterBullet()
@@ -33,39 +32,21 @@ public:
 
     }
 
-    void init(Vector2f mPosition, int mType, bool isRightFace)
+    void init(Vector2f mPosition, int mType, bool isRightFaceN, int mLifesN, float mEnemyBulletSpeedN,
+              float mScaleSpriteN, Sprite mBulletSpriteN)
     {
-        mEnemyBulletSpeed = 4.0f;
         mClassType = mType;
-        this->isRightFace = isRightFace;
-        mScaleSprite = 0.3f;
-
-        switch (mClassType)
-        {
-            case 1:
-                mLifes = 1;
-                mEnemyBulletSpeed *= 1.5;
-                mPosition.y -= 53;
-                mPosition.x = isRightFace ? (mPosition.x + 15) : (mPosition.x - 15);
-                mScaleSprite = 0.3f;
-                mBulletSprite = mApp->getBullet1Sprite();
-                break;
-            case 2:
-                mLifes = 2;
-                mEnemyBulletSpeed *= 0.8;
-                mPosition.y -= 55;
-                mPosition.x = isRightFace ? (mPosition.x + 15) : (mPosition.x - 15);
-                mScaleSprite = 0.4f;
-                mBulletSprite = mApp->getBullet2Sprite();
-                break;
-            default:
-                return;
-        }
+        isRightFace = isRightFaceN;
+        mLifes = mLifesN;
+        mEnemyBulletSpeed = mEnemyBulletSpeedN;
+        mScaleSprite = mScaleSpriteN;
+        mBulletSprite = mBulletSpriteN;
 
         mInitialPosY = mPosition.y;
         mBulletPosition = mPosition;
         mBulletSprite.setPosition(mBulletPosition);
-        isRightFace ? (mBulletSprite.setScale(Vector2f(mScaleSprite, mScaleSprite))) : (mBulletSprite.setScale(Vector2f(-mScaleSprite, mScaleSprite)));
+        isRightFace ? (mBulletSprite.setScale(Vector2f(mScaleSprite, mScaleSprite))) : (mBulletSprite.setScale(
+                Vector2f(-mScaleSprite, mScaleSprite)));
         mBulletSprite.setRotation(0);
     }
 

@@ -14,6 +14,7 @@ class MainCharacter
 
 private:
     Sprite mMainCharacterSprite;
+    Texture mMainCharacterTexture;
     float mCharacterScale;
     Vector2f mMainCharacterPosition;
     int mJumpCount;
@@ -38,7 +39,7 @@ public:
         mJumpCount = 0;
         mMovesCount = 0;
         mMainCharacterGravity = 8.0f;
-        mMainCharacterVelocity = 20.0f;
+        mMainCharacterVelocity = 0.0f;
 
         mMainCharacterMass = 200.0f;
         mMainCharacterJump = false;
@@ -60,6 +61,7 @@ public:
 
     void reset(int lvlSelected)
     {
+
         mMainCharacterPosition = mGameMap->getCharacterStartPos(lvlSelected);
         mGameOffsetY = getGameOffsetY();
 
@@ -71,22 +73,29 @@ public:
         mMainCharacterJump = false;
         mMainCharacterOnMove = false;
 
-        mMainCharacterSprite = mLoadImage->loadSpriteFromTexture("Idle__000", png);
-        mCharacterScale = 0.2f;
-        mMainCharacterSprite.setScale(Vector2f(mCharacterScale, mCharacterScale));
-        mTextureMainCharacterSize.x = mMainCharacterSprite.getGlobalBounds().width;
-        mTextureMainCharacterSize.y = mMainCharacterSprite.getGlobalBounds().height;
-        mMainCharacterSprite.setOrigin(Vector2f(mTextureMainCharacterSize.x / 2, 0));
+        mMainCharacterTexture.loadFromFile("game/src/res/drawable/c00a_01idle_00.png");
+        mTextureMainCharacterSize = mMainCharacterTexture.getSize();
+        mTextureMainCharacterSize.x /= 1;
+        mTextureMainCharacterSize.y /= 1;
+        mMainCharacterSprite.setTexture(mMainCharacterTexture);
+        mMainCharacterSprite.setTextureRect(
+                IntRect(mTextureMainCharacterSize.x * 0, mTextureMainCharacterSize.y * 0, mTextureMainCharacterSize.x,
+                        mTextureMainCharacterSize.y));
+        mCharacterScale = 0.37f;
+        mMainCharacterSprite.setScale(Vector2f(-mCharacterScale, mCharacterScale));
+        mMainCharacterSprite.setOrigin(Vector2f(mTextureMainCharacterSize.x / 2, -110));
+        mMainCharacterSprite.setPosition(mMainCharacterPosition);
+
     }
 
     int getGameOffsetY()
     {
-        if (mMainCharacterPosition.y > -170)
+        if (mMainCharacterPosition.y > -220)
         {
             mGameOffsetY = 500;
         } else
         {
-            mGameOffsetY = 500 - mMainCharacterPosition.y - 170;
+            mGameOffsetY = 500 - mMainCharacterPosition.y - 220;
         }
         return mGameOffsetY;
     }
@@ -132,9 +141,13 @@ public:
         Vector2f mSpriteLocSize;
         mSpriteLocSize.x = mMainCharacterSprite.getGlobalBounds().width;
         mSpriteLocSize.y = mMainCharacterSprite.getGlobalBounds().height;
-        int mGroundLevel = mGameMap->getNearestGroundLvl(mLvlSelected, mSpriteLocStart, mSpriteLocSize, mGameOffsetY);
+        int mGroundLevel = mGameMap->getNearestGroundLvlCharacter(mLvlSelected, mSpriteLocStart, mSpriteLocSize,
+                                                                  mGameOffsetY);
         mMainCharacterVelocity -= mMainCharacterMass * mMainCharacterGravity * mSpeed;
-        mMainCharacterPosition.y -= mMainCharacterVelocity * mSpeed / 1.2;
+        if(mMainCharacterJump || mGroundLevel > mMainCharacterPosition.y)
+        {
+            mMainCharacterPosition.y -= mMainCharacterVelocity * mSpeed / 1.2;
+        }
 
         if (mMainCharacterJump && mMainCharacterOnMove)
         {
@@ -154,15 +167,15 @@ public:
             if (mMovesCount < 20)
             {
                 mMainCharacterVelocityMove /= 1.1;
-                if (mMainCharacterPosition.x + mMainCharacterVelocityMove * mSpeed * 24 <
-                    mTextureMainCharacterSize.x)
-                {
-                    mMainCharacterPosition.x = mTextureMainCharacterSize.x;
-                } else if (mMainCharacterPosition.x + mMainCharacterVelocityMove * mSpeed * 24 >
-                           800 - mTextureMainCharacterSize.x)
-                {
-                    mMainCharacterPosition.x = 800 - mTextureMainCharacterSize.x;
-                } else
+//                if (mMainCharacterPosition.x + mMainCharacterVelocityMove * mSpeed * 24 <
+//                    mTextureMainCharacterSize.x / 2)
+//                {
+//                    mMainCharacterPosition.x = mTextureMainCharacterSize.x / 2;
+//                } else if (mMainCharacterPosition.x + mMainCharacterVelocityMove * mSpeed * 24 >
+//                           800 - mTextureMainCharacterSize.x / 2)
+//                {
+//                    mMainCharacterPosition.x = 800 - mTextureMainCharacterSize.x / 2;
+//                } else
                 {
                     mMainCharacterPosition.x += mMainCharacterVelocityMove * mSpeed * 24;
                 }
@@ -181,9 +194,6 @@ public:
             {
                 mMovesCount = 12;
                 mMainCharacterVelocityMove /= 1.6f;
-            } else
-            {
-
             }
             mMainCharacterJump = false;
             mJumpCount = 0;
@@ -204,11 +214,11 @@ public:
     {
         if (mVelocity < 0)
         {
-            mMainCharacterSprite.setScale(Vector2f(-mCharacterScale, mCharacterScale));
+            mMainCharacterSprite.setScale(Vector2f(mCharacterScale, mCharacterScale));
             isRightFace = false;
         } else
         {
-            mMainCharacterSprite.setScale(Vector2f(mCharacterScale, mCharacterScale));
+            mMainCharacterSprite.setScale(Vector2f(-mCharacterScale, mCharacterScale));
             isRightFace = true;
         }
         mMainCharacterVelocityMove = mVelocity;
