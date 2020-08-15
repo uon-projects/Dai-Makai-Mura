@@ -4,6 +4,7 @@
 #include <SFML/Graphics.hpp>
 #include <iostream>
 #include "../game/GameMap.h"
+#include "../../../../library/src/header/LoadImage.h"
 
 using namespace std;
 using namespace sf;
@@ -12,8 +13,7 @@ class MainCharacter
 {
 
 private:
-    Texture mMainCharacterTexture;
-    RectangleShape mMainCharacterSprite;
+    Sprite mMainCharacterSprite;
     Vector2f mMainCharacterPosition;
     int mJumpCount;
     int mMovesCount;
@@ -27,10 +27,13 @@ private:
     bool isRightFace;
     GameMap *mGameMap;
     int mGameOffsetY;
+    LoadImage *mLoadImage;
+    float mCharacterScale;
 
 public:
     MainCharacter()
     {
+        mLoadImage = new LoadImage();
 
         mJumpCount = 0;
         mMovesCount = 0;
@@ -40,18 +43,6 @@ public:
         mMainCharacterJump = false;
         mMainCharacterOnMove = false;
 
-        mMainCharacterTexture.loadFromFile("game/src/res/vector/main_character.png");
-        mTextureMainCharacterSize = mMainCharacterTexture.getSize();
-        mTextureMainCharacterSize.x /= 18;
-        mTextureMainCharacterSize.y /= 19;
-
-        mMainCharacterSprite.setSize(Vector2f(60, 60));
-        mMainCharacterSprite.setTexture(&mMainCharacterTexture);
-        mMainCharacterSprite.setTextureRect(
-                IntRect(mTextureMainCharacterSize.x * 7, mTextureMainCharacterSize.y * 0, mTextureMainCharacterSize.x,
-                        mTextureMainCharacterSize.y));
-        mMainCharacterSprite.setScale(Vector2f(2.0f, 2.0f));
-        mMainCharacterSprite.setOrigin(mTextureMainCharacterSize.x / 2, 0);
         isRightFace = true;
 
     }
@@ -78,6 +69,13 @@ public:
         mMainCharacterMass = 200.0f;
         mMainCharacterJump = false;
         mMainCharacterOnMove = false;
+
+        mMainCharacterSprite = mLoadImage->loadSpriteFromTexture("Idle__000", png);
+        mCharacterScale = 0.2f;
+        mMainCharacterSprite.setScale(Vector2f(mCharacterScale, mCharacterScale));
+        mTextureMainCharacterSize.x = mMainCharacterSprite.getGlobalBounds().width;
+        mTextureMainCharacterSize.y = mMainCharacterSprite.getGlobalBounds().height;
+        mMainCharacterSprite.setOrigin(Vector2f(mTextureMainCharacterSize.x / 2, 0));
     }
 
     int getGameOffsetY()
@@ -92,7 +90,7 @@ public:
         return mGameOffsetY;
     }
 
-    RectangleShape getSprite()
+    Sprite getSprite()
     {
         mMainCharacterPosition.y += mGameOffsetY;
         mMainCharacterPosition.y -= mMainCharacterSprite.getGlobalBounds().height;
@@ -156,13 +154,13 @@ public:
             {
                 mMainCharacterVelocityMove /= 1.1;
                 if (mMainCharacterPosition.x + mMainCharacterVelocityMove * mSpeed * 24 <
-                    mTextureMainCharacterSize.x / 2)
+                    mTextureMainCharacterSize.x)
                 {
-                    mMainCharacterPosition.x = mTextureMainCharacterSize.x / 2;
+                    mMainCharacterPosition.x = mTextureMainCharacterSize.x;
                 } else if (mMainCharacterPosition.x + mMainCharacterVelocityMove * mSpeed * 24 >
-                           800 - mTextureMainCharacterSize.x / 2)
+                           800 - mTextureMainCharacterSize.x)
                 {
-                    mMainCharacterPosition.x = 800 - mTextureMainCharacterSize.x / 2;
+                    mMainCharacterPosition.x = 800 - mTextureMainCharacterSize.x;
                 } else
                 {
                     mMainCharacterPosition.x += mMainCharacterVelocityMove * mSpeed * 24;
@@ -173,6 +171,8 @@ public:
                 mMainCharacterOnMove = false;
             }
         }
+
+        cout << mMainCharacterPosition.x << '\n';
 
         if (mMainCharacterPosition.y >= mGroundLevel)
         {
@@ -205,11 +205,11 @@ public:
     {
         if (mVelocity < 0)
         {
-            mMainCharacterSprite.setScale(Vector2f(-2.0f, 2.0f));
+            mMainCharacterSprite.setScale(Vector2f(-mCharacterScale, mCharacterScale));
             isRightFace = false;
         } else
         {
-            mMainCharacterSprite.setScale(Vector2f(2.0f, 2.0f));
+            mMainCharacterSprite.setScale(Vector2f(mCharacterScale, mCharacterScale));
             isRightFace = true;
         }
         mMainCharacterVelocityMove = mVelocity;
