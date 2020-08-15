@@ -4,6 +4,7 @@
 #include <SFML/Graphics.hpp>
 #include <iostream>
 #include "../game/GameMap.h"
+#include "../../../../library/src/header/LoadImage.h"
 
 using namespace std;
 using namespace sf;
@@ -24,10 +25,11 @@ private:
     int mMovingRange;
     int mCurrentMoved;
     int mGameOffsetY;
+	LoadImage *mLoadImage;
     float mMainCharacterVelocityMove;
 
 public:
-    NPCharacter(GameMap *mGameMap, bool isRightFace, float startX, float startY, int range)
+    NPCharacter(GameMap *mGameMap, bool isRightFace, float startX, float startY, int range, LoadImage *mLoadImage)
     {
         this->mGameMap = mGameMap;
         this->isRightFace = isRightFace;
@@ -35,6 +37,7 @@ public:
         this->mMainCharacterPosition.x = startX;
         this->mMainCharacterPosition.y = startY;
         this->mGameOffsetY = 500;
+        this->mLoadImage = mLoadImage;
 
         mMainCharacterMass = 200.0f;
         mMainCharacterVelocity = 650.0f;

@@ -141,8 +141,8 @@ public:
         int mNearestGroundLvl = 0;
 
         int characterPosY = mSpriteLocStart.y;
-        int characterPosSX = mSpriteLocStart.x + 50;
-        int characterPosEX = mSpriteLocStart.x + mSpriteLocSize.x - 50;
+        int characterPosSX = mSpriteLocStart.x + 20;
+        int characterPosEX = mSpriteLocStart.x + mSpriteLocSize.x - 20;
 
         vector < ItemModel * > mLvlItems = getItemsByLvl(mLvl);
         for (ItemModel *mItem : mLvlItems)

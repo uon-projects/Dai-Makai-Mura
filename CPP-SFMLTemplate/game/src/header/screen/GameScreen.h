@@ -149,7 +149,8 @@ public:
                     mNPC->isFacingRight(),
                     mNPC->getStartPos().x,
                     mNPC->getStartPos().y,
-                    mNPC->getArea()
+                    mNPC->getArea(),
+                    mApp->getImageLoader()
             );
             mNPCharacters.push_back(mNPCharacter);
         }
@@ -191,13 +192,7 @@ public:
         } else if (event.key.code == Keyboard::Right || event.key.code == Keyboard::D)
         {
             mMainCharacter->move(20.0f);
-        } /*else if (event.key.code == Keyboard::Up || event.key.code == Keyboard::W)
-        {
-            cout << "up\n";
-        } else if (event.key.code == Keyboard::Down || event.key.code == Keyboard::S)
-        {
-            cout << "down\n";
-		} */
+        }
         if (event.key.code == Keyboard::Num1 || event.key.code == Keyboard::Numpad1)
         {
             shootBullets(1);

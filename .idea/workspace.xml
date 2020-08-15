@@ -33,7 +33,12 @@
       <change beforePath="$PROJECT_DIR$/CPP-SFMLTemplate/Debug/main.obj" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-SFMLTemplate/Debug/main.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CPP-SFMLTemplate/Debug/vc110.idb" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-SFMLTemplate/Debug/vc110.idb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CPP-SFMLTemplate/Debug/vc110.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-SFMLTemplate/Debug/vc110.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CPP-SFMLTemplate/game/src/header/App.h" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-SFMLTemplate/game/src/header/App.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CPP-SFMLTemplate/game/src/header/game/GameMap.h" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-SFMLTemplate/game/src/header/game/GameMap.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CPP-SFMLTemplate/game/src/header/npc/NPCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-SFMLTemplate/game/src/header/npc/NPCharacter.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CPP-SFMLTemplate/game/src/header/player/MainCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-SFMLTemplate/game/src/header/player/MainCharacter.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CPP-SFMLTemplate/game/src/header/screen/GameScreen.h" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-SFMLTemplate/game/src/header/screen/GameScreen.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CPP-SFMLTemplate/library/src/header/LevelButton.h" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-SFMLTemplate/library/src/header/LevelButton.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Debug/Ghouls n Ghosts.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Debug/Ghouls n Ghosts.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Debug/Ghouls n Ghosts.ilk" beforeDir="false" afterPath="$PROJECT_DIR$/Debug/Ghouls n Ghosts.ilk" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Debug/Ghouls n Ghosts.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Debug/Ghouls n Ghosts.pdb" afterDir="false" />
