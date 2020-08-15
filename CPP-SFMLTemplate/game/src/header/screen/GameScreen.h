@@ -167,11 +167,49 @@ public:
     void shootBullets(int type)
     {
 
-        MainCharacterBullet *mMainCharacterBullet = new MainCharacterBullet(mApp);
+        MainCharacterBullet *mMainCharacterBullet = new MainCharacterBullet();
         Vector2f mPosition;
         mPosition.x = mMainCharacter->getCharacterPosition().x;
         mPosition.y = mMainCharacter->getGameHeight();
-        mMainCharacterBullet->init(mPosition, type, mMainCharacter->faceRight());
+        if (type == 1)
+        {
+            mPosition.y -= 53;
+            if (mMainCharacter->faceRight())
+            {
+                mPosition.x = mPosition.x + 15;
+            } else
+            {
+                mPosition.x = mPosition.x - 15;
+            }
+            mMainCharacterBullet->init(
+                    mPosition,
+                    type,
+                    mMainCharacter->faceRight(),
+                    1,
+                    4.0f * 1.4f,
+                    0.3f,
+                    mApp->getBullet1Sprite()
+            );
+        } else if (type == 2)
+        {
+            mPosition.y -= 55;
+            if (mMainCharacter->faceRight())
+            {
+                mPosition.x = mPosition.x + 15;
+            } else
+            {
+                mPosition.x = mPosition.x - 15;
+            }
+            mMainCharacterBullet->init(
+                    mPosition,
+                    type,
+                    mMainCharacter->faceRight(),
+                    2,
+                    4.0f * 0.8f,
+                    0.4f,
+                    mApp->getBullet2Sprite()
+            );
+        }
         mMainCharacterBullets.push_back(mMainCharacterBullet);
 
     }
@@ -199,9 +237,6 @@ public:
         } else if (event.key.code == Keyboard::Num2 || event.key.code == Keyboard::Numpad2)
         {
             shootBullets(2);
-        } else if (event.key.code == Keyboard::Num3 || event.key.code == Keyboard::Numpad3)
-        {
-            shootBullets(1);
         }
     }
 
