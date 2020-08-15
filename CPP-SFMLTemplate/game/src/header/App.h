@@ -20,7 +20,7 @@ public:
         mLoadImage = new LoadImage();
         currentScreen = splash;
         lvlUnlocked = 1;
-        mCharacter = mLoadImage->loadSpriteFromTexture("zeoflow_logo", png);
+        mCharacter = mLoadImage->loadSpriteFromTexture("Idle__000", png);
         mMainCharacter = new MainCharacter;
         mGameMap = new GameMap;
         mNewGameLvl = false;
