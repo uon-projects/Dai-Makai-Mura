@@ -27,19 +27,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9d525570-9151-426c-ab34-6ec04bf7ed5a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CPP-SFMLTemplate/Debug/CL.read.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-SFMLTemplate/Debug/CL.read.1.tlog" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CPP-SFMLTemplate/Debug/CPP-SFMLTemplate.log" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-SFMLTemplate/Debug/CPP-SFMLTemplate.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CPP-SFMLTemplate/Debug/link.read.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-SFMLTemplate/Debug/link.read.1.tlog" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CPP-SFMLTemplate/Debug/main.obj" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-SFMLTemplate/Debug/main.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CPP-SFMLTemplate/Debug/vc110.idb" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-SFMLTemplate/Debug/vc110.idb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CPP-SFMLTemplate/Debug/vc110.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-SFMLTemplate/Debug/vc110.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CPP-SFMLTemplate/game/src/header/screen/GameScreen.h" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-SFMLTemplate/game/src/header/screen/GameScreen.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Debug/Ghouls n Ghosts.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Debug/Ghouls n Ghosts.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Debug/Ghouls n Ghosts.ilk" beforeDir="false" afterPath="$PROJECT_DIR$/Debug/Ghouls n Ghosts.ilk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Debug/Ghouls n Ghosts.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Debug/Ghouls n Ghosts.pdb" afterDir="false" />
-    </list>
+    <list default="true" id="9d525570-9151-426c-ab34-6ec04bf7ed5a" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
