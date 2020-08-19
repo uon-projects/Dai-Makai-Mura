@@ -151,14 +151,14 @@ public:
 
         if (mMainCharacterJump && mMainCharacterOnMove)
         {
-            if (mMainCharacterPosition.x + mMainCharacterVelocityMove * mSpeed * 8 < mTextureMainCharacterSize.x / 2)
-            {
-                mMainCharacterPosition.x = mTextureMainCharacterSize.x / 2;
-            } else if (mMainCharacterPosition.x + mMainCharacterVelocityMove * mSpeed * 8 >
-                       800 - mTextureMainCharacterSize.x / 2)
-            {
-                mMainCharacterPosition.x = 800 - mTextureMainCharacterSize.x / 2;
-            } else
+//            if (mMainCharacterPosition.x + mMainCharacterVelocityMove * mSpeed * 8 < mTextureMainCharacterSize.x / 2)
+//            {
+//                mMainCharacterPosition.x = mTextureMainCharacterSize.x / 2;
+//            } else if (mMainCharacterPosition.x + mMainCharacterVelocityMove * mSpeed * 8 >
+//                       800 - mTextureMainCharacterSize.x / 2)
+//            {
+//                mMainCharacterPosition.x = 800 - mTextureMainCharacterSize.x / 2;
+//            } else
             {
                 mMainCharacterPosition.x += mMainCharacterVelocityMove * mSpeed * 8;
             }
