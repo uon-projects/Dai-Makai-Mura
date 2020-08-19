@@ -151,14 +151,14 @@ public:
 
         if (mMainCharacterJump && mMainCharacterOnMove)
         {
-//            if (mMainCharacterPosition.x + mMainCharacterVelocityMove * mSpeed * 8 < mTextureMainCharacterSize.x / 2)
-//            {
-//                mMainCharacterPosition.x = mTextureMainCharacterSize.x / 2;
-//            } else if (mMainCharacterPosition.x + mMainCharacterVelocityMove * mSpeed * 8 >
-//                       800 - mTextureMainCharacterSize.x / 2)
-//            {
-//                mMainCharacterPosition.x = 800 - mTextureMainCharacterSize.x / 2;
-//            } else
+            if (mMainCharacterPosition.x + mMainCharacterVelocityMove * mSpeed * 8 < mTextureMainCharacterSize.x / 2)
+            {
+                mMainCharacterPosition.x = mTextureMainCharacterSize.x / 2;
+            } else if (mMainCharacterPosition.x + mMainCharacterVelocityMove * mSpeed * 8 >
+                       800 - mTextureMainCharacterSize.x / 2)
+            {
+                mMainCharacterPosition.x = 800 - mTextureMainCharacterSize.x / 2;
+            } else
             {
                 mMainCharacterPosition.x += mMainCharacterVelocityMove * mSpeed * 8;
             }
@@ -167,15 +167,15 @@ public:
             if (mMovesCount < 20)
             {
                 mMainCharacterVelocityMove /= 1.1;
-//                if (mMainCharacterPosition.x + mMainCharacterVelocityMove * mSpeed * 24 <
-//                    mTextureMainCharacterSize.x / 2)
-//                {
-//                    mMainCharacterPosition.x = mTextureMainCharacterSize.x / 2;
-//                } else if (mMainCharacterPosition.x + mMainCharacterVelocityMove * mSpeed * 24 >
-//                           800 - mTextureMainCharacterSize.x / 2)
-//                {
-//                    mMainCharacterPosition.x = 800 - mTextureMainCharacterSize.x / 2;
-//                } else
+                if (mMainCharacterPosition.x + mMainCharacterVelocityMove * mSpeed * 24 <
+                    mTextureMainCharacterSize.x / 2)
+                {
+                    mMainCharacterPosition.x = mTextureMainCharacterSize.x / 2;
+                } else if (mMainCharacterPosition.x + mMainCharacterVelocityMove * mSpeed * 24 >
+                           800 - mTextureMainCharacterSize.x / 2)
+                {
+                    mMainCharacterPosition.x = 800 - mTextureMainCharacterSize.x / 2;
+                } else
                 {
                     mMainCharacterPosition.x += mMainCharacterVelocityMove * mSpeed * 24;
                 }

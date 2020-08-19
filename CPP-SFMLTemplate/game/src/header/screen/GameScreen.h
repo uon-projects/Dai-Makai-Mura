@@ -6,6 +6,7 @@
 #include "../player/MainCharacterBullet.h"
 #include <SFML/Graphics.hpp>
 #include "../../../../library/src/header/MaterialButton.h"
+#include "../../../../library/src/header/Collision.h"
 #include "../App.h"
 #include "../npc/NPCharacter.h"
 #include "../player/MainCharacter.h"
@@ -263,7 +264,7 @@ public:
         for (NPCharacter *mNPCharacter : mNPCharacters)
         {
             mNPCharacter->update(speed, mApp->getLvlSelected(), mMainCharacter->getGameOffsetY());
-            if (mNPCharacter->getSprite().getGlobalBounds().intersects(mMainCharacter->getSprite().getGlobalBounds()))
+            if(PixelPerfectDetection(mNPCharacter->getSprite(), mMainCharacter->getSprite()))
             {
                 mApp->decreaseLives();
                 if (mApp->getCharacterLives() == 0)
@@ -284,8 +285,7 @@ public:
             for (j = 0; j < mMainCharacterBullets.size(); j++)
             {
                 MainCharacterBullet *mMainCharacterBullet = mMainCharacterBullets[j];
-                if (mNPCharacter->getSprite().getGlobalBounds().intersects(
-                        mMainCharacterBullet->getSprite(mApp->getGameOffsetY()).getGlobalBounds()))
+                if(PixelPerfectDetection(mNPCharacter->getSprite(), mMainCharacterBullet->getSprite(mApp->getGameOffsetY())))
                 {
                     killed = true;
                     if (mMainCharacterBullet->decreaseLife())

@@ -28,29 +28,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9d525570-9151-426c-ab34-6ec04bf7ed5a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Dai-Makai-Mura.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Dai-Makai-Mura.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CPP-SFMLTemplate/Debug/CL.read.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-SFMLTemplate/Debug/CL.read.1.tlog" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CPP-SFMLTemplate/Debug/CPP-SFMLTemplate.log" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-SFMLTemplate/Debug/CPP-SFMLTemplate.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CPP-SFMLTemplate/Debug/link.read.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-SFMLTemplate/Debug/link.read.1.tlog" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CPP-SFMLTemplate/Debug/main.obj" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-SFMLTemplate/Debug/main.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CPP-SFMLTemplate/Debug/vc110.idb" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-SFMLTemplate/Debug/vc110.idb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CPP-SFMLTemplate/Debug/vc110.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-SFMLTemplate/Debug/vc110.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CPP-SFMLTemplate/game/src/cpp/App.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CPP-SFMLTemplate/game/src/cpp/Utils.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CPP-SFMLTemplate/game/src/cpp/player/EnemyBullet.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CPP-SFMLTemplate/game/src/cpp/player/EnemyCharacter.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CPP-SFMLTemplate/game/src/cpp/screen/GameMenuScreen.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CPP-SFMLTemplate/game/src/cpp/screen/HowToPlayScreen.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CPP-SFMLTemplate/game/src/cpp/screen/LvlChooseScreen.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CPP-SFMLTemplate/game/src/cpp/screen/SplashScreen.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CPP-SFMLTemplate/game/src/header/player/MainCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-SFMLTemplate/game/src/header/player/MainCharacter.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CPP-SFMLTemplate/game/src/res/heart/heart.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CPP-SFMLTemplate/library/src/cpp/RoundedRectangleShape.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CPP-SFMLTemplate/library/src/header/RoundedRectangleShape.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CPP-SFMLTemplate/game/src/header/screen/GameScreen.h" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-SFMLTemplate/game/src/header/screen/GameScreen.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Debug/Ghouls n Ghosts.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Debug/Ghouls n Ghosts.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Debug/Ghouls n Ghosts.ilk" beforeDir="false" afterPath="$PROJECT_DIR$/Debug/Ghouls n Ghosts.ilk" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Debug/Ghouls n Ghosts.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Debug/Ghouls n Ghosts.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ghouls n Ghosts.sdf" beforeDir="false" afterPath="$PROJECT_DIR$/Ghouls n Ghosts.sdf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,24 +68,24 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="cf.first.check.clang-format" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/CPP-SFMLTemplate/game/src/res/drawable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/CPP-SFMLTemplate/library/src/header" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C/C++" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\teo\Documents\Github\Dai-Makai-Mura\CPP-SFMLTemplate\library\src\header" />
+      <recent name="C:\Users\teo\Documents\Github\Dai-Makai-Mura\CPP-SFMLTemplate\game\src\res\drawable" />
+      <recent name="C:\Users\teo\Documents\Github\Dai-Makai-Mura\CPP-SFMLTemplate\game\src\header\npc" />
+      <recent name="C:\Users\teo\Documents\Github\Dai-Makai-Mura\CPP-SFMLTemplate\game\src\header\player" />
+      <recent name="C:\Users\teo\Documents\Github\Dai-Makai-Mura\CPP-SFMLTemplate\game\src" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\teo\Documents\Github\Dai-Makai-Mura\CPP-SFMLTemplate\game\src\res\vector" />
       <recent name="C:\Users\teo\Documents\Github\Dai-Makai-Mura\CPP-SFMLTemplate\game\src\header\player" />
       <recent name="C:\Users\teo\Documents\Github\Dai-Makai-Mura\CPP-SFMLTemplate\game\src\header\player\b" />
       <recent name="C:\Users\teo\Documents\Github\Dai-Makai-Mura\CPP-SFMLTemplate" />
       <recent name="C:\Users\teo\Documents\Github\Dai-Makai-Mura" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\teo\Documents\Github\Dai-Makai-Mura\CPP-SFMLTemplate\game\src\res\drawable" />
-      <recent name="C:\Users\teo\Documents\Github\Dai-Makai-Mura\CPP-SFMLTemplate\game\src\header\npc" />
-      <recent name="C:\Users\teo\Documents\Github\Dai-Makai-Mura\CPP-SFMLTemplate\game\src\header\player" />
-      <recent name="C:\Users\teo\Documents\Github\Dai-Makai-Mura\CPP-SFMLTemplate\game\src" />
-      <recent name="C:\Users\teo\Documents\Github\Dai-Makai-Mura\CPP-SFMLTemplate\game\src\res\vector" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
